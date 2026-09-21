@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: travel
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: travel
+  displayName: Travel
+  description: Holidays and getting there
+  glyph: TR
+  accentIndex: 4
+  enabled: 1
+  premium: 0
+  pairs:
+  - crewWord: Aeroplane
+    imposterWord: Helicopter
+    hint: It leaves the ground
+  - crewWord: Passport
+    imposterWord: Boarding pass
+    hint: Do not lose it at the airport
+  - crewWord: Road trip
+    imposterWord: Cruise
+    hint: The journey is the holiday
+  - crewWord: Hotel room
+    imposterWord: Hostel
+    hint: You sleep there for a few nights
+  - crewWord: Souvenir
+    imposterWord: Postcard
+    hint: Proof you went
+  - crewWord: Sunburn
+    imposterWord: Jet lag
+    hint: It ruins the first two days
+  - crewWord: Tour guide
+    imposterWord: Travel agent
+    hint: They know where you should go
+  - crewWord: Sightseeing
+    imposterWord: Hiking
+    hint: A lot of walking
+  - crewWord: Currency
+    imposterWord: Exchange rate
+    hint: You worry about it abroad
+  - crewWord: Delay
+    imposterWord: Cancellation
+    hint: Bad news on the departure board
+  - crewWord: Ferry
+    imposterWord: Tram
+    hint: Public transport with a view
+  - crewWord: Backpacking
+    imposterWord: Camping
+    hint: Cheap and slightly uncomfortable

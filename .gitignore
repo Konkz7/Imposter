@@ -112,3 +112,9 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Party Game local artefacts
+/Builds/
+/Screenshots/
+/*.log
+/*-results.xml

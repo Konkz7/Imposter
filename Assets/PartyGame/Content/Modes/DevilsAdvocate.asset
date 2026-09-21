@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f42dbaec6683244dae26ce478d93324, type: 3}
+  m_Name: DevilsAdvocate
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Modes.GameModeDefinition
+  modeId: 4
+  displayName: Devil's Advocate
+  tagline: Someone is arguing against their own opinion.
+  description: A statement appears and everybody privately picks a side. One player is secretly told to argue the opposite of whatever they chose. Everybody makes their case out loud, then the group votes on who is arguing for a side they do not believe.
+  glyph: DA
+  accentIndex: 5
+  minPlayers: 4
+  maxPlayers: 10
+  minutesPerRound: 7
+  available: 1
+  howToPlay: []

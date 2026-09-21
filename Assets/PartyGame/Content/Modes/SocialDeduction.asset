@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f42dbaec6683244dae26ce478d93324, type: 3}
+  m_Name: SocialDeduction
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Modes.GameModeDefinition
+  modeId: 5
+  displayName: The Suspects
+  tagline: Secret roles, true clues and one accusation a round.
+  description: Everybody gets a secret role for the whole game. Each round the table hears a scene and a public clue, while the investigator and the witness privately receive a narrow, always-true clue. Debate, accuse, and remove one player a round.
+  glyph: SD
+  accentIndex: 2
+  minPlayers: 5
+  maxPlayers: 12
+  minutesPerRound: 10
+  available: 1
+  howToPlay: []

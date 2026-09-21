@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd070696ae389ea4fb49be65c1bdb3b9, type: 3}
+  m_Name: wave-social
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
+  id: wave-social
+  displayName: Around the table
+  description: Party-friendly prompts
+  glyph: PT
+  accentIndex: 6
+  enabled: 1
+  premium: 0
+  questions:
+  - id: w31
+    prompt: Describe a party
+    lowLabel: everyone left early
+    highLabel: talked about for years
+  - id: w32
+    prompt: Describe a first date idea
+    lowLabel: a disaster
+    highLabel: a brilliant idea
+  - id: w33
+    prompt: Describe a group holiday activity
+    lowLabel: nobody wants to do it
+    highLabel: everyone is in
+  - id: w34
+    prompt: Describe a house rule
+    lowLabel: unreasonable
+    highLabel: completely fair
+  - id: w35
+    prompt: Describe a way to say sorry
+    lowLabel: makes it worse
+    highLabel: completely forgiven
+  - id: w36
+    prompt: Describe a small act of kindness
+    lowLabel: barely noticed
+    highLabel: made someone's week
+  - id: w37
+    prompt: Describe a group chat message
+    lowLabel: instantly ignored
+    highLabel: gets forty replies
+  - id: w38
+    prompt: Describe a way to wake someone up
+    lowLabel: cruel
+    highLabel: lovely

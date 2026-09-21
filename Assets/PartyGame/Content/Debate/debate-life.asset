@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54fee15c04df0747a243e93677b33c9, type: 3}
+  m_Name: debate-life
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.DebatePackData
+  id: debate-life
+  displayName: Everyday life
+  description: Habits, homes and routines
+  glyph: LF
+  accentIndex: 0
+  enabled: 1
+  premium: 0
+  statements:
+  - id: d11
+    statement: Working from home is better than working in an office.
+  - id: d12
+    statement: Summer is better than winter.
+  - id: d13
+    statement: Getting up early is worth it.
+  - id: d14
+    statement: Living in a city beats living in the countryside.
+  - id: d15
+    statement: Money can buy happiness.
+  - id: d16
+    statement: It is better to plan a holiday than to improvise one.
+  - id: d17
+    statement: Owning a pet is worth the hassle.
+  - id: d18
+    statement: Driving is better than public transport.
+  - id: d19
+    statement: Tidying up as you go is the only way to live.
+  - id: d20
+    statement: Birthdays stop being fun after a certain age.
+  - id: d21
+    statement: A short holiday every month beats one long one a year.

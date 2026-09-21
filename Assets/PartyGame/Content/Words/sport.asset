@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: sport
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: sport
+  displayName: Sport
+  description: Games, teams and sweating
+  glyph: SP
+  accentIndex: 6
+  enabled: 1
+  premium: 0
+  pairs:
+  - crewWord: Football
+    imposterWord: Rugby
+    hint: Two teams and a pitch
+  - crewWord: Tennis
+    imposterWord: Badminton
+    hint: There is a net in the middle
+  - crewWord: Swimming
+    imposterWord: Diving
+    hint: You need a pool
+  - crewWord: Marathon
+    imposterWord: Sprint
+    hint: Running until it hurts
+  - crewWord: Boxing
+    imposterWord: Wrestling
+    hint: Two people, one ring
+  - crewWord: Cycling
+    imposterWord: Skateboarding
+    hint: It has wheels
+  - crewWord: Golf
+    imposterWord: Snooker
+    hint: Aim carefully and stay quiet
+  - crewWord: Basketball
+    imposterWord: Netball
+    hint: The ball goes through a hoop
+  - crewWord: Skiing
+    imposterWord: Ice skating
+    hint: Cold and slippery
+  - crewWord: Cricket
+    imposterWord: Baseball
+    hint: Someone throws, someone swings
+  - crewWord: Gymnastics
+    imposterWord: Dance
+    hint: Very fit people making it look easy
+  - crewWord: Darts
+    imposterWord: Archery
+    hint: Hit the target

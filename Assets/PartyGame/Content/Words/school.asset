@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: school
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: school
+  displayName: School and work
+  description: Lessons, offices and deadlines
+  glyph: SC
+  accentIndex: 0
+  enabled: 1
+  premium: 0
+  pairs:
+  - crewWord: Homework
+    imposterWord: Revision
+    hint: It happens in the evening
+  - crewWord: Exam
+    imposterWord: Interview
+    hint: Nervous people in a quiet room
+  - crewWord: Teacher
+    imposterWord: Manager
+    hint: They tell you what to do
+  - crewWord: Assembly
+    imposterWord: Meeting
+    hint: Everyone sits and listens
+  - crewWord: Detention
+    imposterWord: Overtime
+    hint: Stuck there longer than planned
+  - crewWord: Playtime
+    imposterWord: Lunch break
+    hint: The best part of the day
+  - crewWord: Report card
+    imposterWord: Appraisal
+    hint: Somebody grades you
+  - crewWord: Textbook
+    imposterWord: Handbook
+    hint: Nobody reads all of it
+  - crewWord: Register
+    imposterWord: Timesheet
+    hint: It records who was there
+  - crewWord: Whiteboard
+    imposterWord: Projector
+    hint: Everyone looks at it
+  - crewWord: Uniform
+    imposterWord: Dress code
+    hint: Rules about what you wear
+  - crewWord: Head teacher
+    imposterWord: Chief executive
+    hint: The person at the top

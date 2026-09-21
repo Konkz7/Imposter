@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e39b65b2141040b7cf429bd456060, type: 3}
+  m_Name: clues-holiday
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
+  id: clues-holiday
+  displayName: The group holiday
+  description: Eight people, one villa, no trust
+  glyph: HO
+  accentIndex: 4
+  enabled: 1
+  premium: 0
+  clues:
+  - id: c21
+    kind: 0
+    text: The hire car came back with a scratch that was not there on Monday.
+  - id: c22
+    kind: 0
+    text: Somebody moved everyone's beach towels and rearranged the sun loungers.
+  - id: c23
+    kind: 0
+    text: The group kitty is forty euros short and everyone says they paid in.
+  - id: c24
+    kind: 0
+    text: The villa wifi password was changed overnight.
+  - id: c25
+    kind: 1
+    text: You were awake late. Exactly one of {a} and {b} was not in bed.
+  - id: c26
+    kind: 2
+    text: You saw someone on the balcony after midnight. {fact}
+  - id: c27
+    kind: 3
+    text: A photo on the group chat gives one thing away. {fact}

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf410db37cb1dd841902c73a0a4621e7, type: 3}
+  m_Name: ContentLibrary
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.ContentLibrary
+  gameModes:
+  - {fileID: 11400000, guid: bfe55e331d99e8d428cb9480ee9f682c, type: 2}
+  - {fileID: 11400000, guid: c3fdffb07cc85804faa8652ccc446317, type: 2}
+  - {fileID: 11400000, guid: 4519ac8afab661f41856b6f78a8c14f4, type: 2}
+  - {fileID: 11400000, guid: f4504fe31dd51ae44bbb8bf864ef699e, type: 2}
+  - {fileID: 11400000, guid: fdeac8841f53e1a4488430f487e9c829, type: 2}
+  wordCategories:
+  - {fileID: 11400000, guid: e8be84d084618c04faa9f71438d49a73, type: 2}
+  - {fileID: 11400000, guid: 6912bad11c86f7b47b44b1b7406e2bc3, type: 2}
+  - {fileID: 11400000, guid: 63ce8c743b326d445b48ab3c7bdbe06c, type: 2}
+  - {fileID: 11400000, guid: bdaa410b10f0ed54d821359bdbe2a7e4, type: 2}
+  - {fileID: 11400000, guid: 892b1850add5c984b8772727087eabd3, type: 2}
+  - {fileID: 11400000, guid: 64cbf19dd192c454e94c7f7bb64f95eb, type: 2}
+  - {fileID: 11400000, guid: b5b3c40be30563d41a2c04af7e9a0379, type: 2}
+  - {fileID: 11400000, guid: 08828e69475bc734a882bdc8a043c3dc, type: 2}
+  - {fileID: 11400000, guid: adcbd2c8fd8ba224ebfb631657bf69b7, type: 2}
+  - {fileID: 11400000, guid: 8c1f77fcfeac5084394f7787a5852b25, type: 2}
+  - {fileID: 11400000, guid: 3ac5ef881eb071148a61f04e052c3d85, type: 2}
+  - {fileID: 11400000, guid: de60adff574c238468d94893883747c6, type: 2}
+  triviaPacks:
+  - {fileID: 11400000, guid: 5e8f254d080739a4b88833acde1439c0, type: 2}
+  - {fileID: 11400000, guid: 6486ddd9f9d6de541be68c609f92fa26, type: 2}
+  - {fileID: 11400000, guid: 762c745e5b50e2a4d8140eb298038df2, type: 2}
+  - {fileID: 11400000, guid: 0649b0fa225969f40b05bdca2d178f74, type: 2}
+  - {fileID: 11400000, guid: 3091f458d31a0034f85eb5c5a9b83b16, type: 2}
+  - {fileID: 11400000, guid: e558ebb0177c48146885bddaf1650530, type: 2}
+  - {fileID: 11400000, guid: 25ac41c8b0efcc24bbc071cd28ffaa99, type: 2}
+  wavelengthPacks:
+  - {fileID: 11400000, guid: 5814ef0dbadb1fc47b24a779390bd3b6, type: 2}
+  - {fileID: 11400000, guid: f55625d2aa3717c4a92d8a7e1e21aa0c, type: 2}
+  - {fileID: 11400000, guid: a6cf964fb2467bf4b854697c433fd477, type: 2}
+  - {fileID: 11400000, guid: b90a8010415de774e858e9b8f438f289, type: 2}
+  debatePacks:
+  - {fileID: 11400000, guid: 668379ab9dd388e479f95f36825462bc, type: 2}
+  - {fileID: 11400000, guid: 992c869518a8b5e44a55668628b03ee5, type: 2}
+  - {fileID: 11400000, guid: 43c30eba8afd4d44f9af579d87498cc2, type: 2}
+  - {fileID: 11400000, guid: bb8bef856cb07964195f1a16d624daa3, type: 2}
+  cluePacks:
+  - {fileID: 11400000, guid: 6eca35b7370d57b459a032af3aae9d49, type: 2}
+  - {fileID: 11400000, guid: 6951bf699f6270a47b2e2c9b379302e6, type: 2}
+  - {fileID: 11400000, guid: 9b70318c1d320fd49b6e5994c0ce0607, type: 2}

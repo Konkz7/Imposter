@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd070696ae389ea4fb49be65c1bdb3b9, type: 3}
+  m_Name: wave-scale
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
+  id: wave-scale
+  displayName: How much?
+  description: Size, difficulty and effort
+  glyph: SC
+  accentIndex: 3
+  enabled: 1
+  premium: 0
+  questions:
+  - id: w21
+    prompt: Name something scary
+    lowLabel: not scary at all
+    highLabel: terrifying
+  - id: w22
+    prompt: Name something expensive
+    lowLabel: practically free
+    highLabel: eye-wateringly costly
+  - id: w23
+    prompt: Name something difficult to learn
+    lowLabel: learned in an afternoon
+    highLabel: takes a lifetime
+  - id: w24
+    prompt: Name something useful
+    lowLabel: completely pointless
+    highLabel: could not live without it
+  - id: w25
+    prompt: Name something noisy
+    lowLabel: silent
+    highLabel: deafening
+  - id: w26
+    prompt: Name something fast
+    lowLabel: painfully slow
+    highLabel: blindingly fast
+  - id: w27
+    prompt: Name a household chore
+    lowLabel: barely counts as a chore
+    highLabel: the worst job in the house
+  - id: w28
+    prompt: Name something tiring
+    lowLabel: restful
+    highLabel: completely exhausting
+  - id: w29
+    prompt: Name something impressive
+    lowLabel: nobody would notice
+    highLabel: everyone would be amazed
+  - id: w30
+    prompt: Name something risky
+    lowLabel: perfectly safe
+    highLabel: genuinely dangerous
