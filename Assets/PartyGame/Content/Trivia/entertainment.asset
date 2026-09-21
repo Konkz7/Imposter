@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d4df53465d53f428d11b3d4c5ef24f, type: 3}
+  m_Name: entertainment
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.TriviaPackData
+  id: entertainment
+  displayName: Entertainment
+  description: Films, books and bands
+  glyph: EN
+  accentIndex: 5
+  enabled: 1
+  premium: 0
+  questions:
+  - id: e1
+    question: Which band released the album Abbey Road?
+    correctAnswer: The Beatles
+    difficulty: 1
+  - id: e2
+    question: What was the first feature-length Disney animated film?
+    correctAnswer: Snow White
+    difficulty: 2
+  - id: e3
+    question: Which planet is Superman originally from?
+    correctAnswer: Krypton
+    difficulty: 1
+  - id: e4
+    question: What is the name of Sherlock Holmes's assistant?
+    correctAnswer: Doctor Watson
+    difficulty: 1
+  - id: e5
+    question: Which hobbit carries the ring in The Lord of the Rings?
+    correctAnswer: Frodo Baggins
+    difficulty: 1
+  - id: e6
+    question: Who wrote the play Romeo and Juliet?
+    correctAnswer: William Shakespeare
+    difficulty: 1
+  - id: e7
+    question: In which fictional town is The Simpsons set?
+    correctAnswer: Springfield
+    difficulty: 1

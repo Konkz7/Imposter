@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd070696ae389ea4fb49be65c1bdb3b9, type: 3}
+  m_Name: wave-everyday
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
+  id: wave-everyday
+  displayName: Everyday life
+  description: Ordinary things, rated out of ten
+  glyph: EV
+  accentIndex: 0
+  enabled: 1
+  premium: 0
+  questions:
+  - id: w1
+    prompt: Describe a place to eat
+    lowLabel: an awful place
+    highLabel: an incredible place
+  - id: w2
+    prompt: Describe a way to spend a Saturday
+    lowLabel: a wasted day
+    highLabel: a perfect day
+  - id: w3
+    prompt: Describe a job
+    lowLabel: a terrible job
+    highLabel: a dream job
+  - id: w4
+    prompt: Describe a holiday destination
+    lowLabel: a grim trip
+    highLabel: the trip of a lifetime
+  - id: w5
+    prompt: Describe a way to travel to work
+    lowLabel: the worst commute
+    highLabel: the best commute
+  - id: w6
+    prompt: Describe a birthday present
+    lowLabel: a thoughtless gift
+    highLabel: an amazing gift
+  - id: w7
+    prompt: Describe a breakfast
+    lowLabel: barely edible
+    highLabel: worth getting up for
+  - id: w8
+    prompt: Describe a place to live
+    lowLabel: somewhere miserable
+    highLabel: somewhere wonderful
+  - id: w9
+    prompt: Describe a way to spend an evening
+    lowLabel: deeply boring
+    highLabel: brilliant fun
+  - id: w10
+    prompt: Describe a piece of clothing
+    lowLabel: an embarrassment
+    highLabel: extremely stylish

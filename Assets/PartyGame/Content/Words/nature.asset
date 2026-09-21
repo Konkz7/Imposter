@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: nature
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: nature
+  displayName: Nature
+  description: Weather, plants and the outdoors
+  glyph: NA
+  accentIndex: 2
+  enabled: 1
+  premium: 0
+  pairs:
+  - crewWord: Thunderstorm
+    imposterWord: Hurricane
+    hint: The weather turns nasty
+  - crewWord: Snow
+    imposterWord: Hail
+    hint: It falls from the sky and is cold
+  - crewWord: Forest
+    imposterWord: Jungle
+    hint: Full of trees
+  - crewWord: Volcano
+    imposterWord: Earthquake
+    hint: The ground is not behaving
+  - crewWord: River
+    imposterWord: Canal
+    hint: Water going somewhere
+  - crewWord: Sunset
+    imposterWord: Sunrise
+    hint: Everyone takes a photo of it
+  - crewWord: Rainbow
+    imposterWord: Lightning
+    hint: You look up to see it
+  - crewWord: Mountain
+    imposterWord: Hill
+    hint: It takes effort to get to the top
+  - crewWord: Desert
+    imposterWord: Beach
+    hint: Sand as far as you can see
+  - crewWord: Cave
+    imposterWord: Tunnel
+    hint: Dark and underground
+  - crewWord: Oak tree
+    imposterWord: Pine tree
+    hint: It has been there a long time
+  - crewWord: Rose
+    imposterWord: Tulip
+    hint: You might buy someone a bunch

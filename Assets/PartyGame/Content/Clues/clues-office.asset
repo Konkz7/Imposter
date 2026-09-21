@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e39b65b2141040b7cf429bd456060, type: 3}
+  m_Name: clues-office
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
+  id: clues-office
+  displayName: The office
+  description: Something is wrong at work
+  glyph: OF
+  accentIndex: 0
+  enabled: 1
+  premium: 0
+  clues:
+  - id: c11
+    kind: 0
+    text: The entire team's lunch disappeared from the fridge before midday.
+  - id: c12
+    kind: 0
+    text: A meeting room was booked all week under a name nobody recognises.
+  - id: c13
+    kind: 0
+    text: The printer jammed at nine and somebody quietly walked away from it.
+  - id: c14
+    kind: 0
+    text: Someone replied all to the wrong email and then deleted the evidence.
+  - id: c15
+    kind: 1
+    text: Security footage is grainy, but exactly one of {a} and {b} was there.
+  - id: c16
+    kind: 1
+    text: 'The door log narrows it to two people: one of {a} and {b} is involved.'
+  - id: c17
+    kind: 2
+    text: You looked up from your desk at the wrong moment. {fact}
+  - id: c18
+    kind: 2
+    text: You passed them in the corridor. {fact}
+  - id: c19
+    kind: 3
+    text: An anonymous message went round the team. {fact}
+  - id: c20
+    kind: 3
+    text: The cleaner mentioned one thing on the way out. {fact}

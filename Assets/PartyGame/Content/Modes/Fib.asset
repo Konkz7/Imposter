@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f42dbaec6683244dae26ce478d93324, type: 3}
+  m_Name: Fib
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Modes.GameModeDefinition
+  modeId: 2
+  displayName: Fib
+  tagline: Invent a believable lie and spot the truth.
+  description: A real question appears with an answer nobody has seen. Everybody secretly writes a fake answer, then the whole list is shuffled together with the real one. Score for finding the truth, and score again every time somebody falls for your lie.
+  glyph: FB
+  accentIndex: 1
+  minPlayers: 4
+  maxPlayers: 10
+  minutesPerRound: 6
+  available: 1
+  howToPlay: []

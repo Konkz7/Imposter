@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: objects
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: objects
+  displayName: Everyday objects
+  description: The stuff lying around the house
+  glyph: OB
+  accentIndex: 7
+  enabled: 1
+  premium: 0
+  pairs:
+  - crewWord: Umbrella
+    imposterWord: Raincoat
+    hint: Only useful in bad weather
+  - crewWord: Kettle
+    imposterWord: Microwave
+    hint: It heats things up
+  - crewWord: Pillow
+    imposterWord: Duvet
+    hint: It belongs on a bed
+  - crewWord: Mirror
+    imposterWord: Window
+    hint: You look at it, or through it
+  - crewWord: Broom
+    imposterWord: Vacuum cleaner
+    hint: It deals with the floor
+  - crewWord: Wallet
+    imposterWord: Keyring
+    hint: Do not leave the house without it
+  - crewWord: Candle
+    imposterWord: Torch
+    hint: It gives off light
+  - crewWord: Scissors
+    imposterWord: Stapler
+    hint: It lives in a drawer
+  - crewWord: Toothbrush
+    imposterWord: Comb
+    hint: Used every morning
+  - crewWord: Ladder
+    imposterWord: Step stool
+    hint: It helps you reach
+  - crewWord: Clock
+    imposterWord: Calendar
+    hint: It tells you you are late
+  - crewWord: Suitcase
+    imposterWord: Rucksack
+    hint: You pack things into it

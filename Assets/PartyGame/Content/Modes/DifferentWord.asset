@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f42dbaec6683244dae26ce478d93324, type: 3}
+  m_Name: DifferentWord
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Modes.GameModeDefinition
+  modeId: 1
+  displayName: Different Word
+  tagline: One of you has a different word. Find them.
+  description: Everybody is given the same secret word except the imposter, who gets something close but not quite right. Take turns describing your word without ever saying it, then vote on who sounded slightly off. The imposter wins by surviving the vote.
+  glyph: WD
+  accentIndex: 0
+  minPlayers: 4
+  maxPlayers: 12
+  minutesPerRound: 5
+  available: 1
+  howToPlay: []

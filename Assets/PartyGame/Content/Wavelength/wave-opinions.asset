@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd070696ae389ea4fb49be65c1bdb3b9, type: 3}
+  m_Name: wave-opinions
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
+  id: wave-opinions
+  displayName: Strong opinions
+  description: Rate it and defend it
+  glyph: OP
+  accentIndex: 5
+  enabled: 1
+  premium: 0
+  questions:
+  - id: w11
+    prompt: Describe a film
+    lowLabel: unwatchable
+    highLabel: a masterpiece
+  - id: w12
+    prompt: Describe a song
+    lowLabel: skip it immediately
+    highLabel: on repeat all week
+  - id: w13
+    prompt: Describe a sport to watch
+    lowLabel: dull beyond belief
+    highLabel: gripping
+  - id: w14
+    prompt: Describe a board game
+    lowLabel: never again
+    highLabel: a classic
+  - id: w15
+    prompt: Describe a television series
+    lowLabel: switched off after one episode
+    highLabel: watched twice
+  - id: w16
+    prompt: Describe a book
+    lowLabel: a slog
+    highLabel: unputdownable
+  - id: w17
+    prompt: Describe a biscuit
+    lowLabel: the last one in the tin
+    highLabel: the first one gone
+  - id: w18
+    prompt: Describe a famous landmark
+    lowLabel: not worth the queue
+    highLabel: worth crossing the world for
+  - id: w19
+    prompt: Describe a hobby
+    lowLabel: a complete waste of time
+    highLabel: genuinely rewarding
+  - id: w20
+    prompt: Describe a form of exercise
+    lowLabel: pure misery
+    highLabel: surprisingly enjoyable

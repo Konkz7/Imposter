@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d4df53465d53f428d11b3d4c5ef24f, type: 3}
+  m_Name: history
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.TriviaPackData
+  id: history
+  displayName: History
+  description: People and dates worth arguing about
+  glyph: HS
+  accentIndex: 4
+  enabled: 1
+  premium: 0
+  questions:
+  - id: h1
+    question: What was the original name of the search project that became Google?
+    correctAnswer: BackRub
+    difficulty: 2
+  - id: h2
+    question: Which city hosted the first modern Olympic Games in 1896?
+    correctAnswer: Athens
+    difficulty: 1
+  - id: h3
+    question: In which year did the Berlin Wall come down?
+    correctAnswer: 1989
+    difficulty: 1
+  - id: h4
+    question: Who was the first person to walk on the Moon?
+    correctAnswer: Neil Armstrong
+    difficulty: 1
+  - id: h5
+    question: Which country gave the Statue of Liberty to the United States?
+    correctAnswer: France
+    difficulty: 1
+  - id: h6
+    question: What was Germany's currency before the euro?
+    correctAnswer: The Deutsche Mark
+    difficulty: 2
+  - id: h7
+    question: Which ship sank on its maiden voyage in 1912?
+    correctAnswer: The Titanic
+    difficulty: 1

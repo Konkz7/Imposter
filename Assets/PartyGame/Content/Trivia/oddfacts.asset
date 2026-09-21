@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d4df53465d53f428d11b3d4c5ef24f, type: 3}
+  m_Name: oddfacts
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.TriviaPackData
+  id: oddfacts
+  displayName: Odd facts
+  description: Things that sound made up but are not
+  glyph: OD
+  accentIndex: 6
+  enabled: 1
+  premium: 0
+  questions:
+  - id: o1
+    question: What is a group of crows called?
+    correctAnswer: A murder
+    difficulty: 2
+  - id: o2
+    question: What is the only mammal that can truly fly?
+    correctAnswer: The bat
+    difficulty: 1
+  - id: o3
+    question: How many hearts does an octopus have?
+    correctAnswer: Three
+    difficulty: 2
+  - id: o4
+    question: What colour is an octopus's blood?
+    correctAnswer: Blue
+    difficulty: 2
+  - id: o5
+    question: Which letter appears in no US state name?
+    correctAnswer: Q
+    difficulty: 3
+  - id: o6
+    question: What is a group of flamingos called?
+    correctAnswer: A flamboyance
+    difficulty: 3
+  - id: o7
+    question: How many stomach compartments does a cow have?
+    correctAnswer: Four
+    difficulty: 2

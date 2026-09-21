@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: food
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: food
+  displayName: Food
+  description: Meals, snacks and everything on the table
+  glyph: FD
+  accentIndex: 3
+  enabled: 1
+  premium: 0
+  pairs:
+  - crewWord: Pizza
+    imposterWord: Burger
+    hint: You usually eat it with your hands
+  - crewWord: Sushi
+    imposterWord: Sandwich
+    hint: It comes in neat little pieces
+  - crewWord: Pancake
+    imposterWord: Waffle
+    hint: Breakfast, often with syrup
+  - crewWord: Curry
+    imposterWord: Stew
+    hint: Slow cooked and served hot
+  - crewWord: Ice cream
+    imposterWord: Milkshake
+    hint: Cold, sweet and dairy
+  - crewWord: Chips
+    imposterWord: Crisps
+    hint: Potato, salt and regret
+  - crewWord: Spaghetti
+    imposterWord: Noodles
+    hint: Long and best twirled
+  - crewWord: Cheese
+    imposterWord: Butter
+    hint: It lives in the fridge door
+  - crewWord: Chocolate
+    imposterWord: Toffee
+    hint: Sweet and best shared
+  - crewWord: Salad
+    imposterWord: Soup
+    hint: Somebody always calls it healthy
+  - crewWord: Roast dinner
+    imposterWord: Barbecue
+    hint: A whole afternoon of cooking
+  - crewWord: Doughnut
+    imposterWord: Croissant
+    hint: Best bought fresh in the morning
+  - crewWord: Popcorn
+    imposterWord: Peanuts
+    hint: Snack food eaten by the handful

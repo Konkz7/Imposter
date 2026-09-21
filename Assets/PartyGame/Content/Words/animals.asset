@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: animals
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: animals
+  displayName: Animals
+  description: Pets, wildlife and things with paws
+  glyph: AN
+  accentIndex: 2
+  enabled: 1
+  premium: 0
+  pairs:
+  - crewWord: Dog
+    imposterWord: Wolf
+    hint: Four legs and a very good nose
+  - crewWord: Cat
+    imposterWord: Lion
+    hint: It lands on its feet
+  - crewWord: Horse
+    imposterWord: Donkey
+    hint: You can put a saddle on it
+  - crewWord: Shark
+    imposterWord: Dolphin
+    hint: It never stops swimming
+  - crewWord: Eagle
+    imposterWord: Owl
+    hint: Sharp eyes and sharper claws
+  - crewWord: Snake
+    imposterWord: Lizard
+    hint: Cold blooded and scaly
+  - crewWord: Rabbit
+    imposterWord: Hamster
+    hint: Small, fluffy and fast
+  - crewWord: Elephant
+    imposterWord: Rhino
+    hint: Enormous and grey
+  - crewWord: Penguin
+    imposterWord: Seal
+    hint: Happier in cold water
+  - crewWord: Bee
+    imposterWord: Wasp
+    hint: Small, striped and not to be annoyed
+  - crewWord: Frog
+    imposterWord: Toad
+    hint: It starts life in the water
+  - crewWord: Monkey
+    imposterWord: Squirrel
+    hint: Excellent at climbing
