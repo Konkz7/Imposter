@@ -22,26 +22,33 @@ namespace PartyGame.Games.SocialDeduction
         private readonly Dictionary<int, string> _roles = new Dictionary<int, string>();
         private readonly ContentRotation<ClueTemplate> _sceneRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
         private readonly ContentRotation<ClueTemplate> _hintRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
+        private readonly ContentRotation<ClueTemplate> _pairRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
+        private readonly ContentRotation<ClueTemplate> _detailRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
 
         private SocialClueFactory _clues;
+        private readonly VoteMemory _memory = new VoteMemory();
         private bool _rolesDealt;
         private bool _gameOver;
         private string _gameOverReason = string.Empty;
+        private string _outcomeHeadline = string.Empty;
 
         public override GameModeId Id => GameModeId.SocialDeduction;
 
+        /// <summary>
+        /// The Suspects is won or lost as a side, not on points. It also cannot afford a
+        /// leaderboard: a suspect who survives a round would collect points in front of
+        /// everybody, which names them outright.
+        /// </summary>
+        public override bool UsesScoring => false;
+
         protected override void OnInitialise()
         {
-            Scoring = new ImposterScoring
-            {
-                CorrectAccusation = 100,
-                CrewCaughtImposter = 200,
-                ImposterSurvived = 250
-            };
             _clues = new SocialClueFactory(Session.Random);
+            _memory.Clear();
             _roles.Clear();
             _rolesDealt = false;
             _gameOver = false;
+            _outcomeHeadline = string.Empty;
         }
 
         public override IReadOnlyList<SettingDefinition> GetSettingDefinitions(ContentService content)
@@ -91,7 +98,7 @@ namespace PartyGame.Games.SocialDeduction
                 "Each round the table hears a scene and a weak public clue.",
                 "The investigator and the witness privately receive a true, narrow clue.",
                 "Debate, then vote. Whoever the group accuses is out of the game.",
-                "The group wins by removing every suspect before the suspects reach half the table."
+                "There are no points. The group wins by removing every suspect; the suspects win by surviving."
             };
         }
 
@@ -101,7 +108,8 @@ namespace PartyGame.Games.SocialDeduction
             {
                 RoundNumber = Session.RoundNumber,
                 GameOver = _gameOver || Session.IsFinalRound,
-                GameOverReason = _gameOver ? _gameOverReason : string.Empty
+                GameOverReason = _gameOver ? _gameOverReason : RanOutOfRoundsReason(),
+                OutcomeHeadline = _gameOver ? _outcomeHeadline : RanOutOfRoundsHeadline()
             };
         }
 
@@ -154,7 +162,7 @@ namespace PartyGame.Games.SocialDeduction
             if (Session.Settings.GetBool(SettingInvestigator, true))
             {
                 var investigator = alive.FirstOrDefault(p => p.RoleId == PlayerRoles.Investigator);
-                var text = _clues.BuildInvestigatorPair(Shuffler.Pick(pairs, Session.Random), suspects, innocents);
+                var text = _clues.BuildInvestigatorPair(_pairRotation.Next(pairs, Session.Random), suspects, innocents);
                 if (investigator != null && !string.IsNullOrEmpty(text))
                     Enqueue(BuildPrivateClue(investigator, "Investigator", text,
                         "This is always true. Use it without giving yourself away."));
@@ -163,10 +171,11 @@ namespace PartyGame.Games.SocialDeduction
             if (Session.Settings.GetBool(SettingWitness, true))
             {
                 var witness = alive.FirstOrDefault(p => p.RoleId == PlayerRoles.Witness);
-                var text = _clues.BuildWitnessDetail(Shuffler.Pick(details, Session.Random), suspects, alive);
+                var text = _clues.BuildWitnessDetail(_detailRotation.Next(details, Session.Random), suspects, alive,
+                    Session.Players.ToList(), _memory);
                 if (witness != null && !string.IsNullOrEmpty(text))
                     Enqueue(BuildPrivateClue(witness, "Witness", text,
-                        "Everything you saw is true, but it may fit more than one person."));
+                        "What you noticed is true, and it always fits more than one person."));
             }
 
             var publicHint = _clues.BuildAnonymousHint(_hintRotation.Next(hints, Session.Random), suspects, alive);
@@ -259,8 +268,8 @@ namespace PartyGame.Games.SocialDeduction
                 case PlayerRoles.Witness:
                     step.Headline = "WITNESS";
                     step.Accent = StepAccent.Success;
-                    step.Lines.Add(new InfoLine("Each round", "You saw something true about a suspect", true));
-                    step.Footnote = "What you saw is true but it may fit several people.";
+                    step.Lines.Add(new InfoLine("Each round", "You notice something true about a suspect", true));
+                    step.Footnote = "Round one aside, you are watching how people vote.";
                     break;
                 default:
                     step.Headline = "YOU ARE CLEAN";
@@ -289,14 +298,36 @@ namespace PartyGame.Games.SocialDeduction
             return step;
         }
 
-        protected override void ApplyScoring()
+        protected override void OnVoteResolved()
         {
-            base.ApplyScoring();
+            // Remembered before anyone is removed, because next round's witness clue is built
+            // from this ballot and the reveal screen is about to show the table the same thing.
+            if (Voting != null && Outcome != null)
+                _memory.Record(Voting.Voters, Voting.VoteOf, Outcome.WinnerId);
 
             if (Outcome == null || !Outcome.HasWinner) return;
             var accused = Session.PlayerOf(Outcome.WinnerId);
             if (accused == null) return;
             accused.IsAlive = false;
+        }
+
+        /// <summary>
+        /// If the round limit runs out with suspects still hidden, they have got away with it.
+        /// </summary>
+        private string RanOutOfRoundsHeadline()
+        {
+            if (!Session.IsFinalRound) return string.Empty;
+            return Session.ActivePlayers.Any(p => p.RoleId == PlayerRoles.Imposter)
+                ? "The suspects win"
+                : "The group wins";
+        }
+
+        private string RanOutOfRoundsReason()
+        {
+            if (!Session.IsFinalRound) return string.Empty;
+            return Session.ActivePlayers.Any(p => p.RoleId == PlayerRoles.Imposter)
+                ? "The rounds ran out with suspects still at the table."
+                : "Every suspect had already been removed.";
         }
 
         protected override void BuildReveal()
@@ -342,6 +373,10 @@ namespace PartyGame.Games.SocialDeduction
                 });
             }
 
+            // With no scoreboard after it, the reveal is the last step of the round, so its
+            // button has to say where it actually goes.
+            reveal.ContinueLabel = _gameOver || Session.IsFinalRound ? "See result" : "Next round";
+
             Enqueue(reveal);
         }
 
@@ -355,8 +390,7 @@ namespace PartyGame.Games.SocialDeduction
             {
                 _gameOver = true;
                 _gameOverReason = "The group removed everyone who was involved.";
-                foreach (var player in Session.Players.Where(p => p.RoleId != PlayerRoles.Imposter))
-                    Session.Scores.AddPoints(player.Id, 200, "The group won");
+                _outcomeHeadline = "The group wins";
                 reveal.Entries.Add(new RevealEntry
                 {
                     Title = "The group wins",
@@ -371,8 +405,7 @@ namespace PartyGame.Games.SocialDeduction
             {
                 _gameOver = true;
                 _gameOverReason = "The suspects now match the rest of the table.";
-                foreach (var player in Session.Players.Where(p => p.RoleId == PlayerRoles.Imposter))
-                    Session.Scores.AddPoints(player.Id, 300, "The suspects won");
+                _outcomeHeadline = "The suspects win";
                 reveal.Entries.Add(new RevealEntry
                 {
                     Title = "The suspects win",

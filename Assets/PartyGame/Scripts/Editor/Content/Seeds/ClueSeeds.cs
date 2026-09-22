@@ -10,8 +10,11 @@ namespace PartyGame.EditorTools
         // SocialClueFactory, so a clue can never contradict what actually happened.
         //
         // Scene lines set a situation without naming anybody. InvestigatorPair lines wrap a
-        // guaranteed "exactly one of these two" fact. WitnessDetail and AnonymousHint lines wrap
-        // a generated true observation. More lines per scenario means fewer repeated rounds.
+        // guaranteed "exactly one of these two" fact. AnonymousHint lines wrap a true but weak
+        // group fact. WitnessDetail lines wrap an observation about how the table voted last
+        // round, so they promise attention rather than a sighting - the app cannot see the room
+        // the players are sitting in, and a clue must never claim otherwise. More lines per
+        // scenario means fewer repeated rounds.
 
         private static List<PackSeed<ClueTemplate>> BuildCluePacks()
         {
@@ -44,9 +47,9 @@ namespace PartyGame.EditorTools
                 C("c9", ClueKind.InvestigatorPair, "You were watching the hallway all evening. Exactly one of {a} and {b} is involved."),
                 C("c10", ClueKind.InvestigatorPair, "Your notes narrow it down: one of {a} and {b} is in on it, the other is not."),
                 C("c11", ClueKind.InvestigatorPair, "You compared stories afterwards. Precisely one of {a} and {b} was lying."),
-                C("c12", ClueKind.WitnessDetail, "You only caught a glimpse of them. {fact}"),
-                C("c13", ClueKind.WitnessDetail, "You were coming down the stairs when you saw them. {fact}"),
-                C("c14", ClueKind.WitnessDetail, "You were outside getting some air and noticed something. {fact}"),
+                C("c12", ClueKind.WitnessDetail, "You have been watching the room all night, not the dancing. {fact}"),
+                C("c13", ClueKind.WitnessDetail, "You were on the stairs with a clear view of everybody. {fact}"),
+                C("c14", ClueKind.WitnessDetail, "You kept an eye on who was backing whom. {fact}"),
                 C("c15", ClueKind.AnonymousHint, "A note was left on the table. {fact}"),
                 C("c16", ClueKind.AnonymousHint, "The neighbour phoned with one detail. {fact}"),
                 C("c17", ClueKind.AnonymousHint, "Someone shouted it across the room and everyone heard. {fact}")
@@ -69,9 +72,9 @@ namespace PartyGame.EditorTools
                 C("c26", ClueKind.InvestigatorPair, "Security footage is grainy, but exactly one of {a} and {b} was there."),
                 C("c27", ClueKind.InvestigatorPair, "The door log narrows it to two people: one of {a} and {b} is involved."),
                 C("c28", ClueKind.InvestigatorPair, "You checked the sign in sheet. One of {a} and {b} is not telling the truth."),
-                C("c29", ClueKind.WitnessDetail, "You looked up from your desk at the wrong moment. {fact}"),
-                C("c30", ClueKind.WitnessDetail, "You passed them in the corridor. {fact}"),
-                C("c31", ClueKind.WitnessDetail, "You were waiting for the lift and saw something. {fact}"),
+                C("c29", ClueKind.WitnessDetail, "You have a clear view of the whole floor from your desk. {fact}"),
+                C("c30", ClueKind.WitnessDetail, "You noticed who closed ranks with whom. {fact}"),
+                C("c31", ClueKind.WitnessDetail, "You were watching the room rather than the screen. {fact}"),
                 C("c32", ClueKind.AnonymousHint, "An anonymous message went round the team. {fact}"),
                 C("c33", ClueKind.AnonymousHint, "The cleaner mentioned one thing on the way out. {fact}"),
                 C("c34", ClueKind.AnonymousHint, "It was written on the whiteboard and nobody rubbed it off. {fact}")
@@ -94,9 +97,9 @@ namespace PartyGame.EditorTools
                 C("c43", ClueKind.InvestigatorPair, "You were awake late. Exactly one of {a} and {b} was not in bed."),
                 C("c44", ClueKind.InvestigatorPair, "You heard two people on the stairs. One of {a} and {b} is involved."),
                 C("c45", ClueKind.InvestigatorPair, "The receipts narrow it down: exactly one of {a} and {b} paid for something odd."),
-                C("c46", ClueKind.WitnessDetail, "You saw someone on the balcony after midnight. {fact}"),
-                C("c47", ClueKind.WitnessDetail, "You were at the pool and noticed something. {fact}"),
-                C("c48", ClueKind.WitnessDetail, "You woke up early and caught a glimpse. {fact}"),
+                C("c46", ClueKind.WitnessDetail, "You have been watching the group from behind your sunglasses. {fact}"),
+                C("c47", ClueKind.WitnessDetail, "You noticed who took whose side at dinner. {fact}"),
+                C("c48", ClueKind.WitnessDetail, "You were up early and paying attention. {fact}"),
                 C("c49", ClueKind.AnonymousHint, "A photo on the group chat gives one thing away. {fact}"),
                 C("c50", ClueKind.AnonymousHint, "The villa owner left a note about it. {fact}"),
                 C("c51", ClueKind.AnonymousHint, "Somebody said it out loud at breakfast and then went quiet. {fact}")
@@ -119,9 +122,9 @@ namespace PartyGame.EditorTools
                 C("c60", ClueKind.InvestigatorPair, "You were at the door greeting guests. Exactly one of {a} and {b} slipped away."),
                 C("c61", ClueKind.InvestigatorPair, "The seating plan narrows it: one of {a} and {b} was not where they should be."),
                 C("c62", ClueKind.InvestigatorPair, "Two people left during the speeches. Exactly one of {a} and {b} is involved."),
-                C("c63", ClueKind.WitnessDetail, "You were fixing your hat in the mirror and saw them behind you. {fact}"),
-                C("c64", ClueKind.WitnessDetail, "You stepped out for the speeches and noticed something. {fact}"),
-                C("c65", ClueKind.WitnessDetail, "You were near the cake table at exactly the wrong moment. {fact}"),
+                C("c63", ClueKind.WitnessDetail, "You had the best view in the room from the top table. {fact}"),
+                C("c64", ClueKind.WitnessDetail, "You noticed which way the room turned. {fact}"),
+                C("c65", ClueKind.WitnessDetail, "You were watching faces during the speeches. {fact}"),
                 C("c66", ClueKind.AnonymousHint, "It turned up in the wedding photos. {fact}"),
                 C("c67", ClueKind.AnonymousHint, "A guest mentioned it to the venue staff. {fact}"),
                 C("c68", ClueKind.AnonymousHint, "The DJ announced it by mistake over the microphone. {fact}")
@@ -144,9 +147,9 @@ namespace PartyGame.EditorTools
                 C("c77", ClueKind.InvestigatorPair, "You did the register twice. Exactly one of {a} and {b} answered late."),
                 C("c78", ClueKind.InvestigatorPair, "Two people were last onto the coach. One of {a} and {b} is involved."),
                 C("c79", ClueKind.InvestigatorPair, "You checked the buddy pairs. Exactly one of {a} and {b} broke theirs."),
-                C("c80", ClueKind.WitnessDetail, "You were at the back of the group and saw it happen. {fact}"),
-                C("c81", ClueKind.WitnessDetail, "You were counting heads and something did not add up. {fact}"),
-                C("c82", ClueKind.WitnessDetail, "You turned round in the gift shop at the wrong moment. {fact}"),
+                C("c80", ClueKind.WitnessDetail, "You were at the back of the group where you could see everyone. {fact}"),
+                C("c81", ClueKind.WitnessDetail, "You were counting heads and watching who stuck together. {fact}"),
+                C("c82", ClueKind.WitnessDetail, "You noticed who took whose side. {fact}"),
                 C("c83", ClueKind.AnonymousHint, "It was reported by a very confident nine year old. {fact}"),
                 C("c84", ClueKind.AnonymousHint, "The museum guide mentioned it on the way out. {fact}"),
                 C("c85", ClueKind.AnonymousHint, "Somebody wrote it in the back of the trip diary. {fact}")
@@ -169,9 +172,9 @@ namespace PartyGame.EditorTools
                 C("c94", ClueKind.InvestigatorPair, "You were up in the night. Exactly one of {a} and {b} was outside their tent."),
                 C("c95", ClueKind.InvestigatorPair, "Two head torches were on at 3am. One of {a} and {b} is involved."),
                 C("c96", ClueKind.InvestigatorPair, "You counted boots by the fire. Exactly one of {a} and {b} had wet ones."),
-                C("c97", ClueKind.WitnessDetail, "You were awake and heard the zip. {fact}"),
-                C("c98", ClueKind.WitnessDetail, "You went to find the toilet block and saw somebody. {fact}"),
-                C("c99", ClueKind.WitnessDetail, "You were poking the fire and glanced up. {fact}"),
+                C("c97", ClueKind.WitnessDetail, "You were awake by the fire, watching. {fact}"),
+                C("c98", ClueKind.WitnessDetail, "You noticed who sided with whom around the fire. {fact}"),
+                C("c99", ClueKind.WitnessDetail, "You have been keeping track of who goes along with what. {fact}"),
                 C("c100", ClueKind.AnonymousHint, "Somebody found it written in the campsite log book. {fact}"),
                 C("c101", ClueKind.AnonymousHint, "The family in the next tent mentioned one thing. {fact}"),
                 C("c102", ClueKind.AnonymousHint, "It came out around the fire and everyone went quiet. {fact}")
@@ -194,9 +197,9 @@ namespace PartyGame.EditorTools
                 C("c111", ClueKind.InvestigatorPair, "You watched the table all evening. Exactly one of {a} and {b} left their seat."),
                 C("c112", ClueKind.InvestigatorPair, "The card machine tells a story: one of {a} and {b} is involved."),
                 C("c113", ClueKind.InvestigatorPair, "Two people spoke to the waiter privately. Exactly one of {a} and {b} did."),
-                C("c114", ClueKind.WitnessDetail, "You came back from the toilets and noticed something. {fact}"),
-                C("c115", ClueKind.WitnessDetail, "You were looking at the specials board and caught it in the mirror. {fact}"),
-                C("c116", ClueKind.WitnessDetail, "You were sat facing the door and saw them. {fact}"),
+                C("c114", ClueKind.WitnessDetail, "You were sat where you could see the whole table. {fact}"),
+                C("c115", ClueKind.WitnessDetail, "You caught the room reflected in the specials board. {fact}"),
+                C("c116", ClueKind.WitnessDetail, "You noticed who agreed with whom over dinner. {fact}"),
                 C("c117", ClueKind.AnonymousHint, "The waiter mentioned it while clearing plates. {fact}"),
                 C("c118", ClueKind.AnonymousHint, "It was on the itemised receipt all along. {fact}"),
                 C("c119", ClueKind.AnonymousHint, "Somebody said it while paying and immediately regretted it. {fact}")
@@ -219,9 +222,9 @@ namespace PartyGame.EditorTools
                 C("c128", ClueKind.InvestigatorPair, "You heard the front door twice. Exactly one of {a} and {b} came in late."),
                 C("c129", ClueKind.InvestigatorPair, "The shared bill app shows it: one of {a} and {b} is not being straight."),
                 C("c130", ClueKind.InvestigatorPair, "Two people were in the kitchen at midnight. Exactly one of {a} and {b} was."),
-                C("c131", ClueKind.WitnessDetail, "You were on the landing and caught a glimpse. {fact}"),
-                C("c132", ClueKind.WitnessDetail, "You were waiting for the kettle and noticed something. {fact}"),
-                C("c133", ClueKind.WitnessDetail, "You looked out of your bedroom door at the wrong moment. {fact}"),
+                C("c131", ClueKind.WitnessDetail, "You were on the landing where you can hear everything. {fact}"),
+                C("c132", ClueKind.WitnessDetail, "You noticed who took whose side in the kitchen. {fact}"),
+                C("c133", ClueKind.WitnessDetail, "You have been keeping track of who agrees with whom. {fact}"),
                 C("c134", ClueKind.AnonymousHint, "It was posted in the house group chat and then deleted. {fact}"),
                 C("c135", ClueKind.AnonymousHint, "The landlord mentioned it during the inspection. {fact}"),
                 C("c136", ClueKind.AnonymousHint, "Somebody left it written on a sticky note on the fridge. {fact}")

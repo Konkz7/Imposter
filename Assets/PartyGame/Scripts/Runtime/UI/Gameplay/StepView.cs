@@ -57,8 +57,12 @@ namespace PartyGame.UI.Gameplay
             var meta = UIFactory.HorizontalGroup(column.transform, "Meta", Theme.SpaceXs, null, TextAnchor.MiddleLeft);
             UIFactory.SetSize(meta.gameObject, 46f, 46f);
 
+            // A private step's accent describes what the card underneath says - danger for an
+            // imposter, primary for everyone else - so tinting the header with it would announce
+            // the role before the owner has even revealed the card, and would be visible to
+            // whoever is still holding the phone. Private steps get a fixed neutral colour.
             _phaseLabel = UIFactory.CreateText(meta.transform, (step.PhaseLabel ?? string.Empty).ToUpperInvariant(),
-                Theme.FontCaption, Theme.ForAccent(step.Accent == StepAccent.Neutral ? StepAccent.Primary : step.Accent),
+                Theme.FontCaption, PhaseLabelColour(step),
                 TextAlignmentOptions.Left, FontStyles.Bold, "Phase");
             _phaseLabel.characterSpacing = 6f;
             UIFactory.SetSize(_phaseLabel.gameObject, flexibleWidth: 1f);
@@ -77,6 +81,17 @@ namespace PartyGame.UI.Gameplay
             Actions = (RectTransform)actions.transform;
 
             Build();
+        }
+
+        /// <summary>
+        /// Nothing visible before a secret is revealed may vary with that secret. Public steps
+        /// can carry their accent into the header; private ones must look identical for every
+        /// player, whatever their card turns out to say.
+        /// </summary>
+        private static Color PhaseLabelColour(GameStep step)
+        {
+            if (step.IsPrivate) return Theme.TextSecondary;
+            return Theme.ForAccent(step.Accent == StepAccent.Neutral ? StepAccent.Primary : step.Accent);
         }
 
         protected abstract void Build();

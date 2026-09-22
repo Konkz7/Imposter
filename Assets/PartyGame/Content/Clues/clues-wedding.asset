@@ -57,13 +57,13 @@ MonoBehaviour:
     text: Two people left during the speeches. Exactly one of {a} and {b} is involved.
   - id: c63
     kind: 2
-    text: You were fixing your hat in the mirror and saw them behind you. {fact}
+    text: You had the best view in the room from the top table. {fact}
   - id: c64
     kind: 2
-    text: You stepped out for the speeches and noticed something. {fact}
+    text: You noticed which way the room turned. {fact}
   - id: c65
     kind: 2
-    text: You were near the cake table at exactly the wrong moment. {fact}
+    text: You were watching faces during the speeches. {fact}
   - id: c66
     kind: 3
     text: It turned up in the wedding photos. {fact}

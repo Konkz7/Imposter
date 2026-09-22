@@ -57,13 +57,13 @@ MonoBehaviour:
     text: You checked the buddy pairs. Exactly one of {a} and {b} broke theirs.
   - id: c80
     kind: 2
-    text: You were at the back of the group and saw it happen. {fact}
+    text: You were at the back of the group where you could see everyone. {fact}
   - id: c81
     kind: 2
-    text: You were counting heads and something did not add up. {fact}
+    text: You were counting heads and watching who stuck together. {fact}
   - id: c82
     kind: 2
-    text: You turned round in the gift shop at the wrong moment. {fact}
+    text: You noticed who took whose side. {fact}
   - id: c83
     kind: 3
     text: It was reported by a very confident nine year old. {fact}

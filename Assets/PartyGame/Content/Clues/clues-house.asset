@@ -57,13 +57,13 @@ MonoBehaviour:
     text: You compared stories afterwards. Precisely one of {a} and {b} was lying.
   - id: c12
     kind: 2
-    text: You only caught a glimpse of them. {fact}
+    text: You have been watching the room all night, not the dancing. {fact}
   - id: c13
     kind: 2
-    text: You were coming down the stairs when you saw them. {fact}
+    text: You were on the stairs with a clear view of everybody. {fact}
   - id: c14
     kind: 2
-    text: You were outside getting some air and noticed something. {fact}
+    text: You kept an eye on who was backing whom. {fact}
   - id: c15
     kind: 3
     text: A note was left on the table. {fact}

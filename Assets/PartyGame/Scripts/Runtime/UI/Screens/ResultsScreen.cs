@@ -15,17 +15,19 @@ namespace PartyGame.UI.Screens
     {
         private GameSession _session;
         private RoundSummary _summary;
+        private bool _usesScoring = true;
 
-        public override string Title => "Final scores";
+        public override string Title => _usesScoring ? "Final scores" : "Result";
         public override string Subtitle => _session != null && _session.Definition != null
             ? _session.Definition.DisplayName
             : string.Empty;
         public override bool ShowBackButton => false;
 
-        public void Configure(GameSession session, RoundSummary summary)
+        public void Configure(GameSession session, RoundSummary summary, bool usesScoring = true)
         {
             _session = session;
             _summary = summary;
+            _usesScoring = usesScoring;
         }
 
         protected override void Build()
@@ -38,6 +40,14 @@ namespace PartyGame.UI.Screens
                     TextAlignmentOptions.Center, FontStyles.Normal, "Empty");
                 UIFactory.FitHeight(empty.gameObject);
                 AddFooterButton("Main menu", ButtonStyle.Primary, App.FinishAndGoHome);
+                return;
+            }
+
+            if (!_usesScoring)
+            {
+                BuildOutcome(content);
+                AddFooterButton("Play again", ButtonStyle.Primary, App.PlayAgain);
+                AddFooterButton("Main menu", ButtonStyle.Secondary, App.FinishAndGoHome);
                 return;
             }
 
@@ -106,6 +116,75 @@ namespace PartyGame.UI.Screens
 
             AddFooterButton("Play again", ButtonStyle.Primary, App.PlayAgain);
             AddFooterButton("Main menu", ButtonStyle.Secondary, App.FinishAndGoHome);
+        }
+
+        /// <summary>
+        /// A side won or lost, so there is no ranking to show. The roles come out here instead,
+        /// which is the part the table actually wants at the end of a deduction game.
+        /// </summary>
+        private void BuildOutcome(Transform content)
+        {
+            var suspects = _session.Players.Where(p => p.RoleId == PlayerRoles.Imposter).ToList();
+            var groupWon = suspects.All(p => !p.IsAlive);
+
+            var banner = UIFactory.CreatePaddedCard(content, "Outcome",
+                Theme.WithAlpha(groupWon ? Theme.Success : Theme.Danger, 0.2f), Theme.SpaceL);
+
+            var headline = string.IsNullOrEmpty(_summary?.OutcomeHeadline)
+                ? (groupWon ? "The group wins" : "The suspects win")
+                : _summary.OutcomeHeadline;
+
+            var headlineText = UIFactory.CreateFittedText(banner, headline, Theme.FontTitle, Theme.FontSubheading,
+                Theme.TextPrimary, TextAlignmentOptions.Center, FontStyles.Bold, "Headline");
+            UIFactory.SetSize(headlineText.gameObject, 120f, 120f);
+
+            if (!string.IsNullOrEmpty(_summary?.GameOverReason))
+            {
+                var reason = UIFactory.CreateText(banner, _summary.GameOverReason, Theme.FontBody,
+                    Theme.TextSecondary, TextAlignmentOptions.Center, FontStyles.Normal, "Reason");
+                UIFactory.FitHeight(reason.gameObject);
+            }
+
+            var label = UIFactory.CreateText(content, "WHO WAS WHO", Theme.FontCaption, Theme.TextMuted,
+                TextAlignmentOptions.Left, FontStyles.Bold, "RolesLabel");
+            label.characterSpacing = 6f;
+            UIFactory.SetSize(label.gameObject, 60f, 60f);
+
+            foreach (var player in _session.Players.OrderBy(p => p.SeatIndex))
+            {
+                var wasSuspect = player.RoleId == PlayerRoles.Imposter;
+                var card = UIFactory.CreateCard("Role-" + player.Id, content,
+                    wasSuspect ? Theme.WithAlpha(Theme.Danger, 0.16f) : Theme.Surface, Theme.RadiusMedium);
+
+                var row = UIFactory.HorizontalGroup(card, "Row", Theme.SpaceS,
+                    new RectOffset((int)Theme.SpaceM, (int)Theme.SpaceM, (int)Theme.SpaceXs, (int)Theme.SpaceXs),
+                    TextAnchor.MiddleLeft);
+                UIFactory.Stretch((RectTransform)row.transform);
+
+                var name = UIFactory.CreateText(row.transform, player.DisplayName, Theme.FontBody,
+                    Theme.TextPrimary, TextAlignmentOptions.Left, FontStyles.Bold, "Name");
+                UIFactory.SetSize(name.gameObject, flexibleWidth: 1f);
+
+                var role = UIFactory.CreateText(row.transform, DescribeRole(player.RoleId),
+                    Theme.FontLabel, wasSuspect ? Theme.Danger : Theme.TextSecondary,
+                    TextAlignmentOptions.Right, FontStyles.Bold, "Role");
+                UIFactory.SetSize(role.gameObject, preferredWidth: 300f, minWidth: 300f);
+
+                UIFactory.SetSize(card.gameObject, 116f, 116f);
+            }
+
+            UIFactory.Spacer(content, Theme.SpaceL);
+        }
+
+        private static string DescribeRole(string roleId)
+        {
+            switch (roleId)
+            {
+                case PlayerRoles.Imposter: return "Suspect";
+                case PlayerRoles.Investigator: return "Investigator";
+                case PlayerRoles.Witness: return "Witness";
+                default: return "Clean";
+            }
         }
 
         public override void OnShown()

@@ -11,6 +11,12 @@ namespace PartyGame.Core.Modes
         public int RoundNumber { get; set; }
         public bool GameOver { get; set; }
         public string GameOverReason { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Who won, for modes that end in a result rather than a ranking. Empty for scored
+        /// modes, where the leaderboard is the outcome.
+        /// </summary>
+        public string OutcomeHeadline { get; set; } = string.Empty;
     }
 
     /// <summary>
@@ -21,6 +27,13 @@ namespace PartyGame.Core.Modes
     public interface IGameMode
     {
         GameModeId Id { get; }
+
+        /// <summary>
+        /// False for modes decided by winning or losing rather than by points. A scored mode
+        /// shows a running leaderboard; an unscored one must not, because a per-round points
+        /// change can give away who is secretly on which side.
+        /// </summary>
+        bool UsesScoring { get; }
 
         /// <summary>Options this mode exposes on the pre-game settings screen.</summary>
         IReadOnlyList<SettingDefinition> GetSettingDefinitions(ContentService content);

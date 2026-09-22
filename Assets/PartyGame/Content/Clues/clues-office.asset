@@ -57,13 +57,13 @@ MonoBehaviour:
     text: You checked the sign in sheet. One of {a} and {b} is not telling the truth.
   - id: c29
     kind: 2
-    text: You looked up from your desk at the wrong moment. {fact}
+    text: You have a clear view of the whole floor from your desk. {fact}
   - id: c30
     kind: 2
-    text: You passed them in the corridor. {fact}
+    text: You noticed who closed ranks with whom. {fact}
   - id: c31
     kind: 2
-    text: You were waiting for the lift and saw something. {fact}
+    text: You were watching the room rather than the screen. {fact}
   - id: c32
     kind: 3
     text: An anonymous message went round the team. {fact}

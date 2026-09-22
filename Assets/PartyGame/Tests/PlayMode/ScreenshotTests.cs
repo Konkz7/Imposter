@@ -109,6 +109,54 @@ namespace PartyGame.Tests.PlayMode
             Shot("21-wavelength-setup");
         }
 
+        /// <summary>
+        /// The Suspects ends in a win or a loss rather than a ranking, so its results screen
+        /// takes a different shape from every other game's. Worth a look, not just an assert.
+        /// </summary>
+        [UnityTest]
+        public IEnumerator CaptureSuspectsOutcome()
+        {
+            ScreenshotCapture.BeginSession(_app.UI.Canvas);
+            _app.Screens.Reset<UI.Screens.MainMenuScreen>();
+            yield return Settle();
+
+            var definition = _app.Services.Content.GetMode(GameModeId.SocialDeduction);
+            var mode = GameModeFactory.Create(GameModeId.SocialDeduction);
+            var settings = new GameSettings();
+            settings.Declare(mode.GetSettingDefinitions(_app.Services.Content));
+            settings.SetInt(CommonSettingKeys.Rounds, 2);
+            settings.SetInt(CommonSettingKeys.DiscussionSeconds, 1);
+            settings.SetString(CommonSettingKeys.TieBehaviour, "random");
+            settings.ClampAll(_app.Services.Roster.Count);
+
+            Assert.IsTrue(_app.StartGame(definition, settings));
+            yield return Settle();
+
+            var shotReveal = false;
+            for (var i = 0; i < 900; i++)
+            {
+                if (!shotReveal && Object.FindAnyObjectByType<RevealStepView>() != null)
+                {
+                    yield return Settle();
+                    Shot("15-suspects-reveal");
+                    shotReveal = true;
+                }
+
+                if (_app.Screens.Current is UI.Screens.ResultsScreen)
+                {
+                    yield return Settle();
+                    Shot("16-suspects-outcome");
+                    yield break;
+                }
+
+                Assert.IsNull(Object.FindAnyObjectByType<ScoreboardStepView>(),
+                    "The Suspects must never show a scoreboard.");
+                yield return Tap();
+            }
+
+            Assert.Fail("The Suspects never reached its results screen.");
+        }
+
         private IEnumerator CaptureGameplay()
         {
             var definition = _app.Services.Content.GetMode(GameModeId.DifferentWord);

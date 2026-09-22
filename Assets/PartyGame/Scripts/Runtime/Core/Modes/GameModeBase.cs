@@ -22,6 +22,8 @@ namespace PartyGame.Core.Modes
 
         public abstract GameModeId Id { get; }
 
+        public virtual bool UsesScoring => true;
+
         public GameStep Current => _index >= 0 && _index < _steps.Count ? _steps[_index] : null;
 
         public bool IsRoundComplete { get; private set; }

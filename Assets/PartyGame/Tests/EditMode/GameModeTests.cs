@@ -4,6 +4,7 @@ using PartyGame.Core.Modes;
 using PartyGame.Core.Session;
 using PartyGame.Games.DevilsAdvocate;
 using PartyGame.Games.DifferentWord;
+using PartyGame.Games.SocialDeduction;
 
 namespace PartyGame.Tests
 {
@@ -515,6 +516,99 @@ namespace PartyGame.Tests
 
             var eliminated = session.Players.First(p => !p.IsAlive);
             Assert.IsFalse(ballots.Any(b => b.ActorPlayerId == eliminated.Id));
+        }
+
+        /// <summary>
+        /// The witness used to describe the room - who was sitting next to whom, which half of
+        /// the circle somebody was in. The app cannot see the room, so those clues were true
+        /// only by accident. Every fact now comes from the ballot the table just watched.
+        /// </summary>
+        [Test]
+        public void EveryWitnessFactIsTrueOfAtLeastTwoPlayersIncludingASuspect()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.SocialDeduction, 7, out _);
+            var players = session.Players.ToList();
+            for (var i = 0; i < players.Count; i++)
+                players[i].RoleId = i < 2 ? PlayerRoles.Imposter : PlayerRoles.Crew;
+
+            var suspects = players.Where(p => p.RoleId == PlayerRoles.Imposter).ToList();
+            var suspectIds = suspects.Select(p => p.Id).ToHashSet();
+            var factory = new SocialClueFactory(session.Random);
+
+            // A plausible ballot: everybody votes for somebody who is not themselves.
+            var memory = new VoteMemory();
+            memory.Record(players.Select(p => p.Id),
+                voter => players[(players.FindIndex(p => p.Id == voter) + 1) % players.Count].Id,
+                players[1].Id);
+
+            for (var attempt = 0; attempt < 200; attempt++)
+            {
+                var fact = factory.BuildWitnessFact(suspects, players, players, memory);
+                Assert.IsNotNull(fact, "The witness was left with nothing to say.");
+                Assert.GreaterOrEqual(fact.Candidates.Count, 2,
+                    "A witness fact that fits one player names them outright: " + fact.Text);
+                Assert.IsTrue(fact.Candidates.Any(suspectIds.Contains),
+                    "A witness fact must be true of a suspect: " + fact.Text);
+            }
+        }
+
+        [Test]
+        public void TheWitnessHasSomethingToSayInTheFirstRound()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.SocialDeduction, 7, out _);
+            var players = session.Players.ToList();
+            players[0].RoleId = PlayerRoles.Imposter;
+            var suspects = players.Where(p => p.RoleId == PlayerRoles.Imposter).ToList();
+
+            // Nobody has voted yet, so there is no behaviour to have noticed.
+            var fact = new SocialClueFactory(session.Random)
+                .BuildWitnessFact(suspects, players, players, new VoteMemory());
+
+            Assert.IsNotNull(fact, "Round one needs a fallback clue.");
+            Assert.AreEqual(2, fact.Candidates.Count);
+            Assert.IsTrue(fact.Candidates.Contains(players[0].Id));
+        }
+
+        [Test]
+        public void NoClueEverDescribesTheRoomThePlayersAreSittingIn()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.SocialDeduction, 6, out var mode,
+                s =>
+                {
+                    s.SetString(CommonSettingKeys.TieBehaviour, "random");
+                    s.SetInt(CommonSettingKeys.Rounds, 3);
+                });
+            var log = ModeTestHarness.PlayWholeGame(session, mode);
+
+            var clues = log.StepsOfType<PrivateInfoStep>()
+                .Where(step => step.PhaseLabel.EndsWith("clue"))
+                .SelectMany(step => step.Lines.Select(line => line.Value))
+                .ToList();
+
+            Assert.IsNotEmpty(clues, "The special roles should have been given clues.");
+            foreach (var clue in clues)
+                foreach (var banned in new[] { "sitting next to", "characters long", "circle", "starts with a letter" })
+                    Assert.IsFalse(clue.Contains(banned),
+                        "A clue claimed something the app cannot know: " + clue);
+        }
+
+        [Test]
+        public void NobodyScoresAndNoLeaderboardIsShown()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.SocialDeduction, 7, out var mode,
+                s =>
+                {
+                    s.SetString(CommonSettingKeys.TieBehaviour, "random");
+                    s.SetInt(CommonSettingKeys.Rounds, 3);
+                });
+            var log = ModeTestHarness.PlayWholeGame(session, mode);
+
+            Assert.IsFalse(mode.UsesScoring, "The Suspects is won or lost, not scored.");
+            Assert.IsEmpty(log.StepsOfType<ScoreboardStep>(),
+                "A scoreboard would show a surviving suspect collecting points.");
+            foreach (var player in session.Players)
+                Assert.AreEqual(0, session.Scores.GetScore(player.Id),
+                    player.DisplayName + " scored in a mode that has no points.");
         }
 
         [Test]
