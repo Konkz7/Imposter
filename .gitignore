@@ -116,6 +116,9 @@ InitTestScene*.unity*
 # Party Game local artefacts
 /Builds/
 /Screenshots/
+
+# Store artwork, regenerated from Theme by the release tooling.
+/StoreAssets/
 /*.log
 /*-results.xml
 
