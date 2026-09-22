@@ -84,6 +84,6 @@ Alternatives:
 ## What still needs a person
 
 - A **feature graphic** (1024x500) for Play. Not generated.
-- A **contact email** for the listing and the privacy policy.
-- A **hosted URL** for `PRIVACY.md`. Play will not accept a submission without one.
+- Nothing further on privacy: the policy is live at
+  <https://konkz7.github.io/Imposter/privacy.html> and the listing contact is amara03@live.co.uk.
 - Confirmation that **"Odd One Out"** is free to use as a store name in your territories.
