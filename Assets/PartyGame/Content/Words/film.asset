@@ -1,0 +1,428 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: film
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: film
+  displayName: Films
+  description: The cinema, and everything in it
+  glyph: FI
+  accentIndex: 5
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Horror film
+    imposterWord: Thriller
+    hint: You watch it with the lights on
+    difficulty: 1
+  - crewWord: Cartoon
+    imposterWord: Anime
+    hint: Drawn rather than filmed
+    difficulty: 1
+  - crewWord: Superhero film
+    imposterWord: Action film
+    hint: Expect explosions
+    difficulty: 1
+  - crewWord: Romcom
+    imposterWord: Musical
+    hint: Somebody ends up in love
+    difficulty: 1
+  - crewWord: Western
+    imposterWord: War film
+    hint: Lots of dust and shouting
+    difficulty: 1
+  - crewWord: Documentary
+    imposterWord: Biopic
+    hint: Based on something that happened
+    difficulty: 1
+  - crewWord: Trailer
+    imposterWord: Advert
+    hint: Short and trying to sell you something
+    difficulty: 1
+  - crewWord: Popcorn
+    imposterWord: Pick and mix
+    hint: You buy it at the cinema
+    difficulty: 1
+  - crewWord: Cinema ticket
+    imposterWord: Seat number
+    hint: You need it to get in and sit down
+    difficulty: 1
+  - crewWord: Sequel
+    imposterWord: Prequel
+    hint: The story continues, in a direction
+    difficulty: 1
+  - crewWord: Blockbuster
+    imposterWord: Indie film
+    hint: Very different budgets
+    difficulty: 2
+  - crewWord: Director
+    imposterWord: Producer
+    hint: They are in charge of something
+    difficulty: 2
+  - crewWord: Actor
+    imposterWord: Stunt double
+    hint: They are both on screen
+    difficulty: 2
+  - crewWord: Screenwriter
+    imposterWord: Editor
+    hint: They shape the story off camera
+    difficulty: 2
+  - crewWord: Soundtrack
+    imposterWord: Score
+    hint: The music in the film
+    difficulty: 2
+  - crewWord: Subtitles
+    imposterWord: Dubbing
+    hint: Words added so you understand
+    difficulty: 2
+  - crewWord: Plot twist
+    imposterWord: Cliffhanger
+    hint: The moment that gets you
+    difficulty: 2
+  - crewWord: Opening scene
+    imposterWord: End credits
+    hint: The beginning or the end
+    difficulty: 2
+  - crewWord: Post credits scene
+    imposterWord: Bonus feature
+    hint: A reward for staying
+    difficulty: 2
+  - crewWord: Casting
+    imposterWord: Auditions
+    hint: Choosing who plays who
+    difficulty: 2
+  - crewWord: Green screen
+    imposterWord: Practical effects
+    hint: How the impossible gets filmed
+    difficulty: 2
+  - crewWord: CGI
+    imposterWord: Stop motion
+    hint: Animation, one way or another
+    difficulty: 2
+  - crewWord: Motion capture
+    imposterWord: Puppetry
+    hint: A performance you do not quite see
+    difficulty: 2
+  - crewWord: Box office
+    imposterWord: Streaming numbers
+    hint: How success gets measured
+    difficulty: 2
+  - crewWord: Premiere
+    imposterWord: Red carpet
+    hint: The fuss before the film
+    difficulty: 2
+  - crewWord: Oscar
+    imposterWord: Bafta
+    hint: An award people thank their mother for
+    difficulty: 2
+  - crewWord: Film festival
+    imposterWord: Awards season
+    hint: When the industry congratulates itself
+    difficulty: 2
+  - crewWord: Critic
+    imposterWord: Review score
+    hint: Somebody telling you what to think
+    difficulty: 2
+  - crewWord: Remake
+    imposterWord: Reboot
+    hint: They have made it again
+    difficulty: 2
+  - crewWord: Franchise
+    imposterWord: Trilogy
+    hint: There is more than one
+    difficulty: 2
+  - crewWord: Spin off
+    imposterWord: Crossover
+    hint: Characters turning up elsewhere
+    difficulty: 2
+  - crewWord: Cameo
+    imposterWord: Supporting role
+    hint: A small part in a big film
+    difficulty: 2
+  - crewWord: Villain
+    imposterWord: Antihero
+    hint: You are not supposed to like them
+    difficulty: 2
+  - crewWord: Sidekick
+    imposterWord: Love interest
+    hint: They exist because of the lead
+    difficulty: 2
+  - crewWord: Protagonist
+    imposterWord: Narrator
+    hint: The film follows them or listens to them
+    difficulty: 2
+  - crewWord: Montage
+    imposterWord: Flashback
+    hint: Time is being messed with
+    difficulty: 2
+  - crewWord: Slow motion
+    imposterWord: Time lapse
+    hint: Speed is being messed with
+    difficulty: 2
+  - crewWord: Jump scare
+    imposterWord: Slow burn
+    hint: Two ways to frighten someone
+    difficulty: 2
+  - crewWord: Found footage
+    imposterWord: Mockumentary
+    hint: Pretending to be real
+    difficulty: 2
+  - crewWord: Film noir
+    imposterWord: Neo noir
+    hint: Rain, hats and moral ambiguity
+    difficulty: 2
+  - crewWord: Spy film
+    imposterWord: Heist film
+    hint: Someone is being deceived
+    difficulty: 2
+  - crewWord: Disaster film
+    imposterWord: Survival film
+    hint: Everything goes wrong
+    difficulty: 2
+  - crewWord: Zombie film
+    imposterWord: Vampire film
+    hint: The dead are misbehaving
+    difficulty: 2
+  - crewWord: Slasher
+    imposterWord: Psychological horror
+    hint: Horror with a method
+    difficulty: 2
+  - crewWord: Sci fi
+    imposterWord: Fantasy
+    hint: Not set in the real world
+    difficulty: 2
+  - crewWord: Space film
+    imposterWord: Time travel film
+    hint: Physics is optional
+    difficulty: 2
+  - crewWord: Road movie
+    imposterWord: Buddy film
+    hint: Two people and a journey
+    difficulty: 2
+  - crewWord: Coming of age
+    imposterWord: Family drama
+    hint: Somebody grows up
+    difficulty: 2
+  - crewWord: Courtroom drama
+    imposterWord: Political thriller
+    hint: People argue in smart clothes
+    difficulty: 2
+  - crewWord: Sports film
+    imposterWord: Underdog story
+    hint: They were not supposed to win
+    difficulty: 2
+  - crewWord: Animated feature
+    imposterWord: Short film
+    hint: Length is the difference
+    difficulty: 2
+  - crewWord: Silent film
+    imposterWord: Black and white
+    hint: Old and missing something
+    difficulty: 2
+  - crewWord: IMAX
+    imposterWord: 3D
+    hint: You paid extra for it
+    difficulty: 2
+  - crewWord: Multiplex
+    imposterWord: Independent cinema
+    hint: Where you watch it
+    difficulty: 2
+  - crewWord: Drive in
+    imposterWord: Outdoor screening
+    hint: Watching a film in the open air
+    difficulty: 2
+  - crewWord: Usher
+    imposterWord: Projectionist
+    hint: A cinema job
+    difficulty: 2
+  - crewWord: Front row
+    imposterWord: Back row
+    hint: Where you end up sitting
+    difficulty: 2
+  - crewWord: Interval
+    imposterWord: Trailers
+    hint: The bit before the film
+    difficulty: 2
+  - crewWord: Box set
+    imposterWord: Double bill
+    hint: More than one sitting
+    difficulty: 2
+  - crewWord: Lead role
+    imposterWord: Ensemble cast
+    hint: One star or many
+    difficulty: 2
+  - crewWord: Method actor
+    imposterWord: Character actor
+    hint: Two ways of taking it seriously
+    difficulty: 2
+  - crewWord: Stunt
+    imposterWord: Special effect
+    hint: It looked dangerous
+    difficulty: 2
+  - crewWord: Costume
+    imposterWord: Make up
+    hint: How the actor was transformed
+    difficulty: 2
+  - crewWord: Set
+    imposterWord: Location
+    hint: Where it was filmed
+    difficulty: 2
+  - crewWord: Studio backlot
+    imposterWord: Soundstage
+    hint: Filming indoors on purpose
+    difficulty: 2
+  - crewWord: Storyboard
+    imposterWord: Script
+    hint: The plan before filming
+    difficulty: 2
+  - crewWord: Rehearsal
+    imposterWord: Take
+    hint: Doing it again
+    difficulty: 2
+  - crewWord: Blooper
+    imposterWord: Outtake
+    hint: It went wrong and they kept it
+    difficulty: 2
+  - crewWord: Cinematography
+    imposterWord: Lighting
+    hint: Why it looks like that
+    difficulty: 2
+  - crewWord: Wide shot
+    imposterWord: Close up
+    hint: How much you can see
+    difficulty: 2
+  - crewWord: Tracking shot
+    imposterWord: Zoom
+    hint: The camera is moving
+    difficulty: 2
+  - crewWord: Film poster
+    imposterWord: Teaser
+    hint: Marketing before release
+    difficulty: 2
+  - crewWord: Rating
+    imposterWord: Age certificate
+    hint: Who is allowed in
+    difficulty: 2
+  - crewWord: Cult classic
+    imposterWord: Guilty pleasure
+    hint: You defend it too strongly
+    difficulty: 2
+  - crewWord: Flop
+    imposterWord: Sleeper hit
+    hint: It did not go as expected
+    difficulty: 2
+  - crewWord: Adaptation
+    imposterWord: Original screenplay
+    hint: Where the story came from
+    difficulty: 2
+  - crewWord: Book to film
+    imposterWord: Game to film
+    hint: It started somewhere else
+    difficulty: 2
+  - crewWord: Dual role
+    imposterWord: Body double
+    hint: One actor, two versions
+    difficulty: 2
+  - crewWord: Opening weekend
+    imposterWord: Long run
+    hint: How a film makes its money
+    difficulty: 2
+  - crewWord: Film school
+    imposterWord: Film crew
+    hint: How people get into it
+    difficulty: 2
+  - crewWord: Foley
+    imposterWord: Sound mixing
+    hint: Somebody built the noises
+    difficulty: 3
+  - crewWord: Colour grading
+    imposterWord: Post production
+    hint: Fixing it after filming
+    difficulty: 3
+  - crewWord: Establishing shot
+    imposterWord: Insert shot
+    hint: A shot with a job to do
+    difficulty: 3
+  - crewWord: Jump cut
+    imposterWord: Match cut
+    hint: An edit you were meant to notice or not
+    difficulty: 3
+  - crewWord: Long take
+    imposterWord: One shot film
+    hint: No cutting for a very long time
+    difficulty: 3
+  - crewWord: Dolly zoom
+    imposterWord: Whip pan
+    hint: A camera move with a name
+    difficulty: 3
+  - crewWord: Diegetic sound
+    imposterWord: Voiceover
+    hint: Whether the characters can hear it
+    difficulty: 3
+  - crewWord: Third act
+    imposterWord: Second act
+    hint: A structural part of the story
+    difficulty: 3
+  - crewWord: MacGuffin
+    imposterWord: Red herring
+    hint: The plot device nobody really cares about
+    difficulty: 3
+  - crewWord: Chekhovs gun
+    imposterWord: Foreshadowing
+    hint: It was mentioned for a reason
+    difficulty: 3
+  - crewWord: Auteur
+    imposterWord: Studio director
+    hint: How much control they had
+    difficulty: 3
+  - crewWord: Arthouse
+    imposterWord: Experimental
+    hint: Difficult on purpose
+    difficulty: 3
+  - crewWord: New wave
+    imposterWord: Golden age
+    hint: A period film students mention
+    difficulty: 3
+  - crewWord: Dailies
+    imposterWord: Rough cut
+    hint: The film before it is finished
+    difficulty: 3
+  - crewWord: Test screening
+    imposterWord: Reshoot
+    hint: They changed it after showing it
+    difficulty: 3
+  - crewWord: Distribution
+    imposterWord: Licensing
+    hint: How the film reaches you
+    difficulty: 3
+  - crewWord: Residuals
+    imposterWord: Royalties
+    hint: Money that arrives years later
+    difficulty: 3
+  - crewWord: Aspect ratio
+    imposterWord: Letterbox
+    hint: Why there are black bars
+    difficulty: 3
+  - crewWord: Frame rate
+    imposterWord: Shutter speed
+    hint: A number that changes how it feels
+    difficulty: 3
+  - crewWord: Anamorphic
+    imposterWord: Widescreen
+    hint: The shape of the picture
+    difficulty: 3
+  - crewWord: Second unit
+    imposterWord: Principal photography
+    hint: Two different filming teams
+    difficulty: 3

@@ -14,29 +14,141 @@ MonoBehaviour:
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.DebatePackData
   id: debate-culture
   displayName: Culture and taste
-  description: Films, music and opinions
+  description: Films, music and what counts as good
   glyph: CU
   accentIndex: 5
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   statements:
-  - id: d22
+  - id: d57
     statement: Books are better than films.
-  - id: d23
+    subcategory: Books
+    tags:
+    - reading
+  - id: d58
     statement: Remakes are never as good as the original.
-  - id: d24
+    subcategory: Film
+    tags:
+    - remakes
+  - id: d59
     statement: Listening to music while working helps.
-  - id: d25
+    subcategory: Music
+    tags:
+    - focus
+  - id: d60
     statement: Watching a series weekly is better than binge watching.
-  - id: d26
+    subcategory: TV
+    tags:
+    - streaming
+  - id: d61
     statement: Live music is always worth the price.
-  - id: d27
+    subcategory: Music
+    tags:
+    - concerts
+  - id: d62
     statement: Spoilers do not actually ruin anything.
-  - id: d28
+    subcategory: Film
+    tags:
+    - spoilers
+  - id: d63
     statement: Video games are a legitimate art form.
-  - id: d29
+    subcategory: Gaming
+    tags:
+    - art
+  - id: d64
     statement: A film over three hours long is too long.
-  - id: d30
+    subcategory: Film
+    tags:
+    - length
+  - id: d65
     statement: Reality television has no redeeming qualities.
-  - id: d31
+    subcategory: TV
+    tags:
+    - reality
+  - id: d66
     statement: Everyone should learn a musical instrument.
+    subcategory: Music
+    tags:
+    - skills
+  - id: d67
+    statement: Subtitles improve every film.
+    subcategory: Film
+    tags:
+    - subtitles
+  - id: d68
+    statement: The book is only better because you read it first.
+    subcategory: Books
+    tags:
+    - adaptations
+  - id: d69
+    statement: Modern art is a con.
+    subcategory: Art
+    tags:
+    - modern
+  - id: d70
+    statement: A bad ending ruins a good series.
+    subcategory: TV
+    tags:
+    - endings
+  - id: d71
+    statement: Musicals are the highest form of theatre.
+    subcategory: Theatre
+    tags:
+    - musicals
+  - id: d72
+    statement: Audiobooks count as reading.
+    subcategory: Books
+    tags:
+    - audiobooks
+  - id: d73
+    statement: Poetry is better read aloud than on the page.
+    subcategory: Books
+    tags:
+    - poetry
+  - id: d74
+    statement: Nobody needs a physical music collection any more.
+    subcategory: Music
+    tags:
+    - vinyl
+  - id: d75
+    statement: Comedy ages worse than any other genre.
+    subcategory: Film
+    tags:
+    - comedy
+  - id: d76
+    statement: Sequels should be banned.
+    subcategory: Film
+    tags:
+    - sequels
+  - id: d77
+    statement: You should always finish a book you have started.
+    subcategory: Books
+    tags:
+    - reading
+  - id: d78
+    statement: Going to the cinema beats watching at home.
+    subcategory: Film
+    tags:
+    - cinema
+  - id: d79
+    statement: The best music was made before you were born.
+    subcategory: Music
+    tags:
+    - nostalgia
+  - id: d80
+    statement: Documentaries are more entertaining than dramas.
+    subcategory: TV
+    tags:
+    - documentary
+  - id: d81
+    statement: A film should never be longer than the book.
+    subcategory: Film
+    tags:
+    - adaptations
+  - id: d82
+    statement: Board games are better than video games.
+    subcategory: Gaming
+    tags:
+    - boardgames

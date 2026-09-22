@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54fee15c04df0747a243e93677b33c9, type: 3}
+  m_Name: debate-work
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.DebatePackData
+  id: debate-work
+  displayName: Work, school and sport
+  description: Offices, classrooms and competition
+  glyph: WK
+  accentIndex: 4
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  statements:
+  - id: d125
+    statement: Meetings should have a strict time limit.
+    subcategory: Work
+    tags:
+    - meetings
+  - id: d126
+    statement: A four day week would make everyone more productive.
+    subcategory: Work
+    tags:
+    - hours
+  - id: d127
+    statement: Homework should be abolished.
+    subcategory: School
+    tags:
+    - homework
+  - id: d128
+    statement: School uniforms are a good idea.
+    subcategory: School
+    tags:
+    - uniform
+  - id: d129
+    statement: Exams are a bad way to measure ability.
+    subcategory: School
+    tags:
+    - exams
+  - id: d130
+    statement: Taking part matters more than winning.
+    subcategory: Sport
+    tags:
+    - competition
+  - id: d131
+    statement: Sports day is more stressful than any exam.
+    subcategory: School
+    tags:
+    - sport
+  - id: d132
+    statement: University is not worth the money any more.
+    subcategory: Education
+    tags:
+    - university
+  - id: d133
+    statement: Everyone should have to work in hospitality at least once.
+    subcategory: Work
+    tags:
+    - experience
+  - id: d134
+    statement: Open plan offices are a disaster.
+    subcategory: Work
+    tags:
+    - offices
+  - id: d135
+    statement: Dress codes at work are pointless.
+    subcategory: Work
+    tags:
+    - clothes
+  - id: d136
+    statement: Team building exercises never work.
+    subcategory: Work
+    tags:
+    - teams
+  - id: d137
+    statement: It is better to be good at one thing than decent at many.
+    subcategory: Skills
+    tags:
+    - career
+  - id: d138
+    statement: Referees should be able to explain decisions out loud.
+    subcategory: Sport
+    tags:
+    - officials
+  - id: d139
+    statement: Video technology has ruined football.
+    subcategory: Sport
+    tags:
+    - football
+  - id: d140
+    statement: Extra time should be scrapped in favour of penalties.
+    subcategory: Sport
+    tags:
+    - football
+  - id: d141
+    statement: PE should be optional at school.
+    subcategory: School
+    tags:
+    - sport
+  - id: d142
+    statement: Learning a language is more useful than learning to code.
+    subcategory: Skills
+    tags:
+    - education
+  - id: d143
+    statement: Handwriting should still be taught properly.
+    subcategory: School
+    tags:
+    - writing
+  - id: d144
+    statement: The best manager is one you barely notice.
+    subcategory: Work
+    tags:
+    - management
+  - id: d145
+    statement: Losing teaches you more than winning.
+    subcategory: Sport
+    tags:
+    - philosophy
+  - id: d146
+    statement: Everyone should have to present in front of a group at school.
+    subcategory: School
+    tags:
+    - confidence

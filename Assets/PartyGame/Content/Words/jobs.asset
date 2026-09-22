@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: jobs
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: jobs
+  displayName: Jobs
+  description: Work, careers and the people who do them
+  glyph: JB
+  accentIndex: 4
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Doctor
+    imposterWord: Nurse
+    hint: They work in a hospital
+    difficulty: 1
+  - crewWord: Teacher
+    imposterWord: Lecturer
+    hint: They stand at the front
+    difficulty: 1
+  - crewWord: Chef
+    imposterWord: Baker
+    hint: They cook for a living
+    difficulty: 1
+  - crewWord: Police officer
+    imposterWord: Security guard
+    hint: They keep people safe
+    difficulty: 1
+  - crewWord: Firefighter
+    imposterWord: Paramedic
+    hint: They arrive in an emergency
+    difficulty: 1
+  - crewWord: Plumber
+    imposterWord: Electrician
+    hint: You call them when something breaks
+    difficulty: 1
+  - crewWord: Builder
+    imposterWord: Carpenter
+    hint: They work on a building site
+    difficulty: 1
+  - crewWord: Driver
+    imposterWord: Courier
+    hint: They are on the road all day
+    difficulty: 1
+  - crewWord: Farmer
+    imposterWord: Gardener
+    hint: They work outdoors with plants
+    difficulty: 1
+  - crewWord: Shop assistant
+    imposterWord: Cashier
+    hint: They serve customers
+    difficulty: 1
+  - crewWord: Waiter
+    imposterWord: Barista
+    hint: They bring you food or coffee
+    difficulty: 1
+  - crewWord: Hairdresser
+    imposterWord: Barber
+    hint: They cut hair
+    difficulty: 1
+  - crewWord: Pilot
+    imposterWord: Cabin crew
+    hint: They work on a plane
+    difficulty: 1
+  - crewWord: Vet
+    imposterWord: Zookeeper
+    hint: They work with animals
+    difficulty: 1
+  - crewWord: Cleaner
+    imposterWord: Caretaker
+    hint: They keep the building working
+    difficulty: 1
+  - crewWord: Surgeon
+    imposterWord: Anaesthetist
+    hint: They are both in the operating theatre
+    difficulty: 2
+  - crewWord: Dentist
+    imposterWord: Orthodontist
+    hint: They look in your mouth
+    difficulty: 2
+  - crewWord: Pharmacist
+    imposterWord: Optician
+    hint: A professional on the high street
+    difficulty: 2
+  - crewWord: Physiotherapist
+    imposterWord: Chiropractor
+    hint: They fix your back
+    difficulty: 2
+  - crewWord: Midwife
+    imposterWord: Health visitor
+    hint: They are there when a baby arrives
+    difficulty: 2
+  - crewWord: Psychologist
+    imposterWord: Psychiatrist
+    hint: They work on the mind
+    difficulty: 2
+  - crewWord: Social worker
+    imposterWord: Support worker
+    hint: They help people in difficulty
+    difficulty: 2
+  - crewWord: Lawyer
+    imposterWord: Solicitor
+    hint: They know the law
+    difficulty: 2
+  - crewWord: Barrister
+    imposterWord: Judge
+    hint: They are in court
+    difficulty: 2
+  - crewWord: Accountant
+    imposterWord: Auditor
+    hint: They look at the numbers
+    difficulty: 2
+  - crewWord: Banker
+    imposterWord: Financial adviser
+    hint: They deal with money
+    difficulty: 2
+  - crewWord: Estate agent
+    imposterWord: Surveyor
+    hint: They are involved in buying a house
+    difficulty: 2
+  - crewWord: Architect
+    imposterWord: Structural engineer
+    hint: They design buildings
+    difficulty: 2
+  - crewWord: Civil engineer
+    imposterWord: Site manager
+    hint: They build the big things
+    difficulty: 2
+  - crewWord: Scientist
+    imposterWord: Researcher
+    hint: They work in a lab
+    difficulty: 2
+  - crewWord: Lab technician
+    imposterWord: Analyst
+    hint: They run the tests
+    difficulty: 2
+  - crewWord: Programmer
+    imposterWord: Developer
+    hint: They write code
+    difficulty: 2
+  - crewWord: Designer
+    imposterWord: Illustrator
+    hint: They make things look right
+    difficulty: 2
+  - crewWord: Data analyst
+    imposterWord: Statistician
+    hint: They find patterns in numbers
+    difficulty: 2
+  - crewWord: Project manager
+    imposterWord: Product manager
+    hint: They run the meetings
+    difficulty: 2
+  - crewWord: Recruiter
+    imposterWord: HR manager
+    hint: They deal with people at work
+    difficulty: 2
+  - crewWord: Receptionist
+    imposterWord: Personal assistant
+    hint: They keep everything running
+    difficulty: 2
+  - crewWord: Marketing manager
+    imposterWord: Copywriter
+    hint: They sell things with words
+    difficulty: 2
+  - crewWord: Salesperson
+    imposterWord: Account manager
+    hint: They talk to customers
+    difficulty: 2
+  - crewWord: Journalist
+    imposterWord: Editor
+    hint: They work with news
+    difficulty: 2
+  - crewWord: Photographer
+    imposterWord: Videographer
+    hint: They point a camera
+    difficulty: 2
+  - crewWord: Actor
+    imposterWord: Presenter
+    hint: They perform for an audience
+    difficulty: 2
+  - crewWord: Musician
+    imposterWord: Composer
+    hint: They work with music
+    difficulty: 2
+  - crewWord: Author
+    imposterWord: Poet
+    hint: They write for a living
+    difficulty: 2
+  - crewWord: Translator
+    imposterWord: Interpreter
+    hint: They work between languages
+    difficulty: 2
+  - crewWord: Librarian
+    imposterWord: Archivist
+    hint: They look after records
+    difficulty: 2
+  - crewWord: Curator
+    imposterWord: Conservator
+    hint: They work in a museum
+    difficulty: 2
+  - crewWord: Tour guide
+    imposterWord: Travel rep
+    hint: They look after visitors
+    difficulty: 2
+  - crewWord: Chef de partie
+    imposterWord: Sous chef
+    hint: A rank in a kitchen
+    difficulty: 2
+  - crewWord: Butcher
+    imposterWord: Fishmonger
+    hint: They work behind a counter
+    difficulty: 2
+  - crewWord: Sommelier
+    imposterWord: Bartender
+    hint: They know about drinks
+    difficulty: 2
+  - crewWord: Baker
+    imposterWord: Pastry chef
+    hint: They work very early
+    difficulty: 2
+  - crewWord: Electrician
+    imposterWord: Engineer
+    hint: They fix what is broken
+    difficulty: 2
+  - crewWord: Mechanic
+    imposterWord: Technician
+    hint: They work under a car
+    difficulty: 2
+  - crewWord: Welder
+    imposterWord: Fabricator
+    hint: They join metal
+    difficulty: 2
+  - crewWord: Painter
+    imposterWord: Decorator
+    hint: They make a room look new
+    difficulty: 2
+  - crewWord: Roofer
+    imposterWord: Scaffolder
+    hint: They work high up
+    difficulty: 2
+  - crewWord: Bricklayer
+    imposterWord: Stonemason
+    hint: They build walls
+    difficulty: 2
+  - crewWord: Joiner
+    imposterWord: Cabinet maker
+    hint: They work with wood
+    difficulty: 2
+  - crewWord: Surveyor
+    imposterWord: Valuer
+    hint: They tell you what it is worth
+    difficulty: 2
+  - crewWord: Train driver
+    imposterWord: Conductor
+    hint: They work on the railway
+    difficulty: 2
+  - crewWord: Lorry driver
+    imposterWord: Delivery driver
+    hint: They drive for a living
+    difficulty: 2
+  - crewWord: Postie
+    imposterWord: Sorting office worker
+    hint: They handle the post
+    difficulty: 2
+  - crewWord: Air traffic controller
+    imposterWord: Ground crew
+    hint: They keep planes safe
+    difficulty: 2
+  - crewWord: Sailor
+    imposterWord: Fisherman
+    hint: They work at sea
+    difficulty: 2
+  - crewWord: Soldier
+    imposterWord: Officer
+    hint: They serve in the forces
+    difficulty: 2
+  - crewWord: Firefighter
+    imposterWord: Coastguard
+    hint: They rescue people
+    difficulty: 2
+  - crewWord: Lifeguard
+    imposterWord: Swimming instructor
+    hint: They work at the pool
+    difficulty: 2
+  - crewWord: Personal trainer
+    imposterWord: Sports coach
+    hint: They make you exercise
+    difficulty: 2
+  - crewWord: Physio
+    imposterWord: Sports therapist
+    hint: They treat injuries
+    difficulty: 2
+  - crewWord: Linesman
+    imposterWord: Touch judge
+    hint: They watch the edge of the pitch
+    difficulty: 2
+  - crewWord: Groundskeeper
+    imposterWord: Greenkeeper
+    hint: They look after the pitch
+    difficulty: 2
+  - crewWord: Vet nurse
+    imposterWord: Animal warden
+    hint: They work with animals professionally
+    difficulty: 2
+  - crewWord: Farmhand
+    imposterWord: Shepherd
+    hint: They work on a farm
+    difficulty: 2
+  - crewWord: Florist
+    imposterWord: Landscaper
+    hint: They work with plants
+    difficulty: 2
+  - crewWord: Tailor
+    imposterWord: Seamstress
+    hint: They alter clothes
+    difficulty: 2
+  - crewWord: Jeweller
+    imposterWord: Watchmaker
+    hint: They work with very small things
+    difficulty: 2
+  - crewWord: Locksmith
+    imposterWord: Glazier
+    hint: They come out to your house
+    difficulty: 2
+  - crewWord: Chimney sweep
+    imposterWord: Window cleaner
+    hint: An old fashioned trade
+    difficulty: 2
+  - crewWord: Undertaker
+    imposterWord: Celebrant
+    hint: They work at a funeral
+    difficulty: 2
+  - crewWord: Actuary
+    imposterWord: Underwriter
+    hint: They price risk
+    difficulty: 3
+  - crewWord: Quantity surveyor
+    imposterWord: Estimator
+    hint: They work out what it will cost
+    difficulty: 3
+  - crewWord: Logistics manager
+    imposterWord: Supply chain analyst
+    hint: They move things around
+    difficulty: 3
+  - crewWord: Procurement officer
+    imposterWord: Buyer
+    hint: They purchase for a business
+    difficulty: 3
+  - crewWord: Compliance officer
+    imposterWord: Risk manager
+    hint: They stop the company getting fined
+    difficulty: 3
+  - crewWord: Radiographer
+    imposterWord: Sonographer
+    hint: They take images of the inside of people
+    difficulty: 3
+  - crewWord: Phlebotomist
+    imposterWord: Biomedical scientist
+    hint: They deal with blood samples
+    difficulty: 3
+  - crewWord: Dispensing optician
+    imposterWord: Optometrist
+    hint: Two different jobs in the same shop
+    difficulty: 3
+  - crewWord: Paralegal
+    imposterWord: Legal executive
+    hint: They work in law without being a solicitor
+    difficulty: 3
+  - crewWord: Town planner
+    imposterWord: Building inspector
+    hint: They decide what gets built
+    difficulty: 3
+  - crewWord: Health inspector
+    imposterWord: Trading standards
+    hint: They turn up and inspect a business
+    difficulty: 3
+  - crewWord: Hydrologist
+    imposterWord: Meteorologist
+    hint: They study water or weather
+    difficulty: 3
+  - crewWord: Geologist
+    imposterWord: Seismologist
+    hint: They study the ground
+    difficulty: 3
+  - crewWord: Epidemiologist
+    imposterWord: Virologist
+    hint: They study disease
+    difficulty: 3
+  - crewWord: Ergonomist
+    imposterWord: Occupational therapist
+    hint: They make work fit the person
+    difficulty: 3
+  - crewWord: Lexicographer
+    imposterWord: Proofreader
+    hint: They are very particular about words
+    difficulty: 3
+  - crewWord: Typesetter
+    imposterWord: Compositor
+    hint: They arrange the page
+    difficulty: 3
+  - crewWord: Foley artist
+    imposterWord: Sound engineer
+    hint: They work with recorded sound
+    difficulty: 3
+  - crewWord: Millwright
+    imposterWord: Fitter
+    hint: They install heavy machinery
+    difficulty: 3
+  - crewWord: Farrier
+    imposterWord: Blacksmith
+    hint: They work with horses or iron
+    difficulty: 3
+  - crewWord: Cooper
+    imposterWord: Thatcher
+    hint: A trade that barely exists now
+    difficulty: 3
+  - crewWord: Ghostwriter
+    imposterWord: Speechwriter
+    hint: They write words for somebody else
+    difficulty: 3

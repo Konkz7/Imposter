@@ -14,49 +14,186 @@ MonoBehaviour:
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
   id: wave-opinions
   displayName: Strong opinions
-  description: Rate it and defend it
+  description: Rate it and then defend it
   glyph: OP
   accentIndex: 5
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   questions:
-  - id: w11
-    prompt: Describe a film
+  - id: w31
+    prompt: Name a film
     lowLabel: unwatchable
     highLabel: a masterpiece
-  - id: w12
-    prompt: Describe a song
+    difficulty: 1
+    tags:
+    - film
+  - id: w32
+    prompt: Name a song
     lowLabel: skip it immediately
     highLabel: on repeat all week
-  - id: w13
-    prompt: Describe a sport to watch
+    difficulty: 1
+    tags:
+    - music
+  - id: w33
+    prompt: Name a sport to watch
     lowLabel: dull beyond belief
     highLabel: gripping
-  - id: w14
-    prompt: Describe a board game
+    difficulty: 1
+    tags:
+    - sport
+  - id: w34
+    prompt: Name a board game
     lowLabel: never again
-    highLabel: a classic
-  - id: w15
-    prompt: Describe a television series
+    highLabel: a genuine classic
+    difficulty: 1
+    tags:
+    - games
+  - id: w35
+    prompt: Name a television series
     lowLabel: switched off after one episode
     highLabel: watched twice
-  - id: w16
-    prompt: Describe a book
+    difficulty: 1
+    tags:
+    - tv
+  - id: w36
+    prompt: Name a book
     lowLabel: a slog
     highLabel: unputdownable
-  - id: w17
-    prompt: Describe a biscuit
-    lowLabel: the last one in the tin
+    difficulty: 1
+    tags:
+    - books
+  - id: w37
+    prompt: Name a biscuit
+    lowLabel: the last one left in the tin
     highLabel: the first one gone
-  - id: w18
-    prompt: Describe a famous landmark
+    difficulty: 1
+    tags:
+    - food
+  - id: w38
+    prompt: Name a famous landmark
     lowLabel: not worth the queue
     highLabel: worth crossing the world for
-  - id: w19
-    prompt: Describe a hobby
+    difficulty: 1
+    tags:
+    - travel
+  - id: w39
+    prompt: Name a hobby
     lowLabel: a complete waste of time
     highLabel: genuinely rewarding
-  - id: w20
-    prompt: Describe a form of exercise
+    difficulty: 1
+    tags:
+    - leisure
+  - id: w40
+    prompt: Name a form of exercise
     lowLabel: pure misery
     highLabel: surprisingly enjoyable
+    difficulty: 1
+    tags:
+    - fitness
+  - id: w41
+    prompt: Name a pizza topping
+    lowLabel: an outrage
+    highLabel: essential
+    difficulty: 2
+    tags:
+    - food
+  - id: w42
+    prompt: Name a musical instrument
+    lowLabel: unbearable to listen to
+    highLabel: beautiful
+    difficulty: 2
+    tags:
+    - music
+  - id: w43
+    prompt: Name a film sequel
+    lowLabel: should never have been made
+    highLabel: better than the original
+    difficulty: 2
+    tags:
+    - film
+  - id: w44
+    prompt: Name a social media platform
+    lowLabel: delete it today
+    highLabel: genuinely useful
+    difficulty: 2
+    tags:
+    - internet
+  - id: w45
+    prompt: Name a fashion trend
+    lowLabel: deeply regrettable
+    highLabel: timeless
+    difficulty: 2
+    tags:
+    - fashion
+  - id: w46
+    prompt: Name a type of music
+    lowLabel: switch it off
+    highLabel: put it louder
+    difficulty: 2
+    tags:
+    - music
+  - id: w47
+    prompt: Name a British institution
+    lowLabel: past its best
+    highLabel: a national treasure
+    difficulty: 2
+    tags:
+    - culture
+  - id: w48
+    prompt: Name a way to cook an egg
+    lowLabel: ruined
+    highLabel: perfect
+    difficulty: 2
+    tags:
+    - food
+  - id: w49
+    prompt: Name a type of weather
+    lowLabel: miserable
+    highLabel: glorious
+    difficulty: 2
+    tags:
+    - nature
+  - id: w50
+    prompt: Name a season of the year
+    lowLabel: endure it
+    highLabel: live for it
+    difficulty: 2
+    tags:
+    - nature
+  - id: w51
+    prompt: Name a video game
+    lowLabel: uninstall immediately
+    highLabel: a hundred hours well spent
+    difficulty: 2
+    tags:
+    - gaming
+  - id: w52
+    prompt: Name a cheese
+    lowLabel: keep it away from me
+    highLabel: worth the smell
+    difficulty: 2
+    tags:
+    - food
+  - id: w53
+    prompt: Name a famous painting
+    lowLabel: overrated
+    highLabel: genuinely moving
+    difficulty: 3
+    tags:
+    - art
+  - id: w54
+    prompt: Name a cover version
+    lowLabel: an insult to the original
+    highLabel: better than the original
+    difficulty: 3
+    tags:
+    - music
+  - id: w55
+    prompt: Name a film ending
+    lowLabel: completely ruined it
+    highLabel: perfect
+    difficulty: 3
+    tags:
+    - film

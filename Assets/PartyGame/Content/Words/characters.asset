@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: characters
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: characters
+  displayName: Fictional characters
+  description: People who never existed but everyone knows
+  glyph: FC
+  accentIndex: 6
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Batman
+    imposterWord: Spider-Man
+    hint: A superhero with a mask
+    difficulty: 1
+  - crewWord: Superman
+    imposterWord: Wonder Woman
+    hint: They can do things you cannot
+    difficulty: 1
+  - crewWord: Harry Potter
+    imposterWord: Hermione Granger
+    hint: A student at a magic school
+    difficulty: 1
+  - crewWord: Sherlock Holmes
+    imposterWord: Hercule Poirot
+    hint: A detective who notices everything
+    difficulty: 1
+  - crewWord: James Bond
+    imposterWord: Jason Bourne
+    hint: A spy with a licence and a problem
+    difficulty: 1
+  - crewWord: Mickey Mouse
+    imposterWord: Donald Duck
+    hint: A cartoon character with white gloves
+    difficulty: 1
+  - crewWord: Homer Simpson
+    imposterWord: Peter Griffin
+    hint: A cartoon dad
+    difficulty: 1
+  - crewWord: Shrek
+    imposterWord: Donkey
+    hint: They are in the same swamp
+    difficulty: 1
+  - crewWord: Woody
+    imposterWord: Buzz Lightyear
+    hint: A toy that comes alive
+    difficulty: 1
+  - crewWord: Elsa
+    imposterWord: Cinderella
+    hint: An animated princess
+    difficulty: 1
+  - crewWord: Mario
+    imposterWord: Luigi
+    hint: A plumber in a video game
+    difficulty: 1
+  - crewWord: Sonic
+    imposterWord: Pikachu
+    hint: A video game mascot
+    difficulty: 1
+  - crewWord: Santa Claus
+    imposterWord: Father Christmas
+    hint: He delivers presents
+    difficulty: 1
+  - crewWord: Dracula
+    imposterWord: Frankenstein's monster
+    hint: A classic horror figure
+    difficulty: 1
+  - crewWord: Robin Hood
+    imposterWord: King Arthur
+    hint: A British legend
+    difficulty: 1
+  - crewWord: Iron Man
+    imposterWord: Captain America
+    hint: An Avenger
+    difficulty: 2
+  - crewWord: Thor
+    imposterWord: Hulk
+    hint: A superhero with a temper
+    difficulty: 2
+  - crewWord: Black Widow
+    imposterWord: Hawkeye
+    hint: An Avenger without superpowers
+    difficulty: 2
+  - crewWord: Joker
+    imposterWord: Riddler
+    hint: A Batman villain
+    difficulty: 2
+  - crewWord: Lex Luthor
+    imposterWord: Green Goblin
+    hint: A superhero's nemesis
+    difficulty: 2
+  - crewWord: Wolverine
+    imposterWord: Deadpool
+    hint: He heals and complains
+    difficulty: 2
+  - crewWord: Professor X
+    imposterWord: Magneto
+    hint: An X-Men leader
+    difficulty: 2
+  - crewWord: Darth Vader
+    imposterWord: Kylo Ren
+    hint: A masked villain in black
+    difficulty: 2
+  - crewWord: Luke Skywalker
+    imposterWord: Rey
+    hint: A hero who learns the Force
+    difficulty: 2
+  - crewWord: Han Solo
+    imposterWord: Chewbacca
+    hint: They fly the same ship
+    difficulty: 2
+  - crewWord: Yoda
+    imposterWord: Obi-Wan Kenobi
+    hint: A Jedi mentor
+    difficulty: 2
+  - crewWord: R2-D2
+    imposterWord: C-3PO
+    hint: A Star Wars droid
+    difficulty: 2
+  - crewWord: Frodo
+    imposterWord: Sam
+    hint: A hobbit on a very long walk
+    difficulty: 2
+  - crewWord: Gandalf
+    imposterWord: Dumbledore
+    hint: An old wizard with good advice
+    difficulty: 2
+  - crewWord: Gollum
+    imposterWord: Smeagol
+    hint: He is having an argument with himself
+    difficulty: 2
+  - crewWord: Aragorn
+    imposterWord: Legolas
+    hint: A member of the Fellowship
+    difficulty: 2
+  - crewWord: Voldemort
+    imposterWord: Sauron
+    hint: A dark lord
+    difficulty: 2
+  - crewWord: Ron Weasley
+    imposterWord: Neville Longbottom
+    hint: A Hogwarts student
+    difficulty: 2
+  - crewWord: Snape
+    imposterWord: McGonagall
+    hint: A Hogwarts teacher
+    difficulty: 2
+  - crewWord: Katniss Everdeen
+    imposterWord: Tris Prior
+    hint: A young adult heroine
+    difficulty: 2
+  - crewWord: Bilbo Baggins
+    imposterWord: Frodo Baggins
+    hint: A hobbit who left the Shire
+    difficulty: 2
+  - crewWord: Willy Wonka
+    imposterWord: Matilda
+    hint: A Roald Dahl creation
+    difficulty: 2
+  - crewWord: The BFG
+    imposterWord: Mr Fox
+    hint: A Roald Dahl character
+    difficulty: 2
+  - crewWord: Paddington
+    imposterWord: Winnie the Pooh
+    hint: A bear who loves food
+    difficulty: 2
+  - crewWord: Peter Pan
+    imposterWord: Tinker Bell
+    hint: They can fly to Neverland
+    difficulty: 2
+  - crewWord: Alice
+    imposterWord: The Mad Hatter
+    hint: They are in Wonderland
+    difficulty: 2
+  - crewWord: The Gruffalo
+    imposterWord: The Snowman
+    hint: A children's book classic
+    difficulty: 2
+  - crewWord: Scooby-Doo
+    imposterWord: Shaggy
+    hint: They solve mysteries badly
+    difficulty: 2
+  - crewWord: Bugs Bunny
+    imposterWord: Daffy Duck
+    hint: A Looney Tunes character
+    difficulty: 2
+  - crewWord: Tom
+    imposterWord: Jerry
+    hint: A cat and mouse problem
+    difficulty: 2
+  - crewWord: SpongeBob
+    imposterWord: Patrick
+    hint: They live under the sea
+    difficulty: 2
+  - crewWord: Bart Simpson
+    imposterWord: Lisa Simpson
+    hint: A Simpsons child
+    difficulty: 2
+  - crewWord: Stewie Griffin
+    imposterWord: Eric Cartman
+    hint: An animated child with a plan
+    difficulty: 2
+  - crewWord: Rick
+    imposterWord: Morty
+    hint: An animated science duo
+    difficulty: 2
+  - crewWord: Gru
+    imposterWord: Minions
+    hint: A supervillain and his staff
+    difficulty: 2
+  - crewWord: Po
+    imposterWord: Master Shifu
+    hint: A kung fu panda character
+    difficulty: 2
+  - crewWord: Simba
+    imposterWord: Mufasa
+    hint: A lion in a famous film
+    difficulty: 2
+  - crewWord: Nemo
+    imposterWord: Dory
+    hint: A fish with a problem
+    difficulty: 2
+  - crewWord: Remy
+    imposterWord: Linguini
+    hint: A rat and a chef
+    difficulty: 2
+  - crewWord: Wall-E
+    imposterWord: Eve
+    hint: A robot with feelings
+    difficulty: 2
+  - crewWord: Sully
+    imposterWord: Mike Wazowski
+    hint: A monster who works in an office
+    difficulty: 2
+  - crewWord: Anna
+    imposterWord: Olaf
+    hint: They are from Arendelle
+    difficulty: 2
+  - crewWord: Moana
+    imposterWord: Maui
+    hint: A Pacific adventure
+    difficulty: 2
+  - crewWord: Belle
+    imposterWord: Beast
+    hint: A fairy tale pairing
+    difficulty: 2
+  - crewWord: Ariel
+    imposterWord: Ursula
+    hint: Under the sea, on opposite sides
+    difficulty: 2
+  - crewWord: Aladdin
+    imposterWord: Genie
+    hint: A lamp is involved
+    difficulty: 2
+  - crewWord: Link
+    imposterWord: Zelda
+    hint: A Nintendo adventure
+    difficulty: 2
+  - crewWord: Lara Croft
+    imposterWord: Nathan Drake
+    hint: A treasure hunter with a gun
+    difficulty: 2
+  - crewWord: Master Chief
+    imposterWord: Doom Slayer
+    hint: A space marine in a helmet
+    difficulty: 2
+  - crewWord: Kratos
+    imposterWord: Geralt
+    hint: A gruff man with a blade
+    difficulty: 2
+  - crewWord: Pac-Man
+    imposterWord: Tetris block
+    hint: An arcade icon
+    difficulty: 2
+  - crewWord: Steve
+    imposterWord: Creeper
+    hint: Minecraft, in two moods
+    difficulty: 2
+  - crewWord: Ellie
+    imposterWord: Joel
+    hint: A pair in a grim adventure
+    difficulty: 2
+  - crewWord: Sherlock
+    imposterWord: Watson
+    hint: A detective and his chronicler
+    difficulty: 2
+  - crewWord: Poirot
+    imposterWord: Miss Marple
+    hint: An Agatha Christie detective
+    difficulty: 2
+  - crewWord: Jay Gatsby
+    imposterWord: Mr Darcy
+    hint: A literary romantic lead
+    difficulty: 2
+  - crewWord: Elizabeth Bennet
+    imposterWord: Jane Eyre
+    hint: A heroine of a classic novel
+    difficulty: 2
+  - crewWord: Scrooge
+    imposterWord: Tiny Tim
+    hint: A Christmas Carol character
+    difficulty: 2
+  - crewWord: Oliver Twist
+    imposterWord: David Copperfield
+    hint: A Dickens orphan
+    difficulty: 2
+  - crewWord: Atticus Finch
+    imposterWord: Boo Radley
+    hint: A Mockingbird character
+    difficulty: 2
+  - crewWord: Winston Smith
+    imposterWord: Big Brother
+    hint: From a very bleak novel
+    difficulty: 2
+  - crewWord: Holden Caulfield
+    imposterWord: Huckleberry Finn
+    hint: A literary teenager
+    difficulty: 2
+  - crewWord: Don Quixote
+    imposterWord: Sancho Panza
+    hint: A deluded knight and his friend
+    difficulty: 2
+  - crewWord: Captain Ahab
+    imposterWord: Long John Silver
+    hint: A man of the sea with an obsession
+    difficulty: 2
+  - crewWord: Doctor Who
+    imposterWord: The Master
+    hint: A Time Lord
+    difficulty: 2
+  - crewWord: Tyrion Lannister
+    imposterWord: Jon Snow
+    hint: A character from Westeros
+    difficulty: 3
+  - crewWord: Walter White
+    imposterWord: Saul Goodman
+    hint: A man making bad decisions
+    difficulty: 3
+  - crewWord: Tony Soprano
+    imposterWord: Don Draper
+    hint: A prestige drama antihero
+    difficulty: 3
+  - crewWord: Eleven
+    imposterWord: Mike Wheeler
+    hint: A Stranger Things kid
+    difficulty: 3
+  - crewWord: Michael Scott
+    imposterWord: David Brent
+    hint: A cringeworthy boss
+    difficulty: 3
+  - crewWord: Del Boy
+    imposterWord: Rodney
+    hint: A Peckham business venture
+    difficulty: 3
+  - crewWord: Basil Fawlty
+    imposterWord: Manuel
+    hint: A hotel going badly wrong
+    difficulty: 3
+  - crewWord: Blackadder
+    imposterWord: Baldrick
+    hint: A cunning plan
+    difficulty: 3
+  - crewWord: Alan Partridge
+    imposterWord: Ron Burgundy
+    hint: A broadcaster with delusions
+    difficulty: 3
+  - crewWord: Mr Bean
+    imposterWord: Frank Spencer
+    hint: A British comedy disaster
+    difficulty: 3
+  - crewWord: Miss Havisham
+    imposterWord: Lady Macbeth
+    hint: A woman with a grudge
+    difficulty: 3
+  - crewWord: Iago
+    imposterWord: Edmund
+    hint: A Shakespearean schemer
+    difficulty: 3
+  - crewWord: Puck
+    imposterWord: Ariel
+    hint: A Shakespearean sprite
+    difficulty: 3
+  - crewWord: Hamlet
+    imposterWord: Macbeth
+    hint: A Shakespeare tragedy lead
+    difficulty: 3
+  - crewWord: Odysseus
+    imposterWord: Aeneas
+    hint: An epic hero on a long voyage
+    difficulty: 3
+  - crewWord: Achilles
+    imposterWord: Hector
+    hint: A hero at Troy
+    difficulty: 3
+  - crewWord: Icarus
+    imposterWord: Prometheus
+    hint: A Greek myth about going too far
+    difficulty: 3
+  - crewWord: Medusa
+    imposterWord: Minotaur
+    hint: A Greek monster
+    difficulty: 3
+  - crewWord: Loki
+    imposterWord: Anansi
+    hint: A trickster from mythology
+    difficulty: 3
+  - crewWord: Baba Yaga
+    imposterWord: The Wicked Witch
+    hint: A frightening woman in a folk tale
+    difficulty: 3
+  - crewWord: Totoro
+    imposterWord: No-Face
+    hint: A Studio Ghibli creation
+    difficulty: 3
+  - crewWord: Spike Spiegel
+    imposterWord: Vash the Stampede
+    hint: An anime bounty hunter
+    difficulty: 3

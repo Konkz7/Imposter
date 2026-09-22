@@ -88,16 +88,44 @@ namespace PartyGame.EditorTools
             Action<TAsset, List<TEntry>> assign) where TAsset : ContentPack
         {
             var result = new List<TAsset>();
+            var expected = new HashSet<string>();
+
             foreach (var seed in seeds)
             {
                 var path = ContentRoot + "/" + folder + "/" + seed.Id + ".asset";
+                expected.Add(seed.Id);
+
                 var asset = LoadOrCreate<TAsset>(path);
-                asset.Configure(seed.Id, seed.Name, seed.Description, seed.Glyph, seed.Accent);
+                asset.Configure(seed.Id, seed.Name, seed.Description, seed.Glyph, seed.Accent,
+                    seed.Freshness, seed.ReviewBy);
                 assign(asset, seed.Entries);
                 EditorUtility.SetDirty(asset);
                 result.Add(asset);
             }
+
+            RemoveRetiredPacks(folder, expected);
             return result;
+        }
+
+        /// <summary>
+        /// Deletes generated packs that the seed data no longer describes, so renaming or
+        /// splitting a category does not silently leave the old asset behind for the library to
+        /// keep serving.
+        /// </summary>
+        private static void RemoveRetiredPacks(string folder, HashSet<string> expected)
+        {
+            var directory = ContentRoot + "/" + folder;
+            if (!AssetDatabase.IsValidFolder(directory)) return;
+
+            foreach (var guid in AssetDatabase.FindAssets("t:ContentPack", new[] { directory }))
+            {
+                var path = AssetDatabase.GUIDToAssetPath(guid);
+                var id = Path.GetFileNameWithoutExtension(path);
+                if (expected.Contains(id)) continue;
+
+                Debug.Log("[Party Game] Removing retired content pack: " + path);
+                AssetDatabase.DeleteAsset(path);
+            }
         }
 
         private static List<GameModeDefinition> BuildGameModes()

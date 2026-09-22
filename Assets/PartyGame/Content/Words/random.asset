@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: random
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: random
+  displayName: Random
+  description: A bit of everything, with no warning
+  glyph: RD
+  accentIndex: 7
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Birthday
+    imposterWord: Christmas
+    hint: A day you look forward to
+    difficulty: 1
+  - crewWord: Morning
+    imposterWord: Evening
+    hint: A part of the day
+    difficulty: 1
+  - crewWord: Weekend
+    imposterWord: Holiday
+    hint: Time you do not have to work
+    difficulty: 1
+  - crewWord: Money
+    imposterWord: Gold
+    hint: People want more of it
+    difficulty: 1
+  - crewWord: Dream
+    imposterWord: Nightmare
+    hint: It happens while you sleep
+    difficulty: 1
+  - crewWord: Laughter
+    imposterWord: Applause
+    hint: A noise a happy crowd makes
+    difficulty: 1
+  - crewWord: Secret
+    imposterWord: Surprise
+    hint: Somebody is not telling you
+    difficulty: 1
+  - crewWord: Promise
+    imposterWord: Deal
+    hint: Two people have agreed something
+    difficulty: 1
+  - crewWord: Rumour
+    imposterWord: Gossip
+    hint: It spreads and might not be true
+    difficulty: 1
+  - crewWord: Winner
+    imposterWord: Champion
+    hint: They came first
+    difficulty: 1
+  - crewWord: Beginning
+    imposterWord: Ending
+    hint: One end of the story
+    difficulty: 1
+  - crewWord: Question
+    imposterWord: Answer
+    hint: One follows the other
+    difficulty: 1
+  - crewWord: Friend
+    imposterWord: Neighbour
+    hint: Somebody you see often
+    difficulty: 1
+  - crewWord: Party
+    imposterWord: Wedding
+    hint: Everybody dressed up
+    difficulty: 1
+  - crewWord: Song
+    imposterWord: Poem
+    hint: Words arranged carefully
+    difficulty: 1
+  - crewWord: Anniversary
+    imposterWord: Reunion
+    hint: You mark the passing of time
+    difficulty: 2
+  - crewWord: Funeral
+    imposterWord: Memorial
+    hint: A sad occasion
+    difficulty: 2
+  - crewWord: Graduation
+    imposterWord: Retirement
+    hint: The end of a chapter
+    difficulty: 2
+  - crewWord: Interview
+    imposterWord: Audition
+    hint: You are being judged
+    difficulty: 2
+  - crewWord: Deadline
+    imposterWord: Curfew
+    hint: A time you must not miss
+    difficulty: 2
+  - crewWord: Queue
+    imposterWord: Waiting list
+    hint: You are not first
+    difficulty: 2
+  - crewWord: Argument
+    imposterWord: Debate
+    hint: Two people disagreeing
+    difficulty: 2
+  - crewWord: Apology
+    imposterWord: Excuse
+    hint: Something said after a mistake
+    difficulty: 2
+  - crewWord: Compliment
+    imposterWord: Flattery
+    hint: Something nice, sincerely or not
+    difficulty: 2
+  - crewWord: Advice
+    imposterWord: Warning
+    hint: Somebody is trying to help
+    difficulty: 2
+  - crewWord: Habit
+    imposterWord: Routine
+    hint: You do it without thinking
+    difficulty: 2
+  - crewWord: Superstition
+    imposterWord: Tradition
+    hint: You do it because you always have
+    difficulty: 2
+  - crewWord: Luck
+    imposterWord: Coincidence
+    hint: It just happened that way
+    difficulty: 2
+  - crewWord: Risk
+    imposterWord: Gamble
+    hint: It might go wrong
+    difficulty: 2
+  - crewWord: Mistake
+    imposterWord: Accident
+    hint: Nobody meant it
+    difficulty: 2
+  - crewWord: Regret
+    imposterWord: Guilt
+    hint: You wish you had not
+    difficulty: 2
+  - crewWord: Nostalgia
+    imposterWord: Memory
+    hint: You are thinking about the past
+    difficulty: 2
+  - crewWord: Boredom
+    imposterWord: Patience
+    hint: Time is moving slowly
+    difficulty: 2
+  - crewWord: Excitement
+    imposterWord: Nerves
+    hint: Your stomach is doing something
+    difficulty: 2
+  - crewWord: Confidence
+    imposterWord: Arrogance
+    hint: The same thing, described by different people
+    difficulty: 2
+  - crewWord: Ambition
+    imposterWord: Greed
+    hint: Wanting more
+    difficulty: 2
+  - crewWord: Kindness
+    imposterWord: Politeness
+    hint: Being pleasant to people
+    difficulty: 2
+  - crewWord: Silence
+    imposterWord: Peace
+    hint: Nothing is making a noise
+    difficulty: 2
+  - crewWord: Chaos
+    imposterWord: Mess
+    hint: Nothing is where it should be
+    difficulty: 2
+  - crewWord: Adventure
+    imposterWord: Detour
+    hint: You did not go the direct way
+    difficulty: 2
+  - crewWord: Journey
+    imposterWord: Commute
+    hint: Getting from here to there
+    difficulty: 2
+  - crewWord: Hobby
+    imposterWord: Obsession
+    hint: How you spend your free time
+    difficulty: 2
+  - crewWord: Collection
+    imposterWord: Clutter
+    hint: You have a lot of them
+    difficulty: 2
+  - crewWord: Bargain
+    imposterWord: Waste of money
+    hint: It depends who you ask
+    difficulty: 2
+  - crewWord: Instruction manual
+    imposterWord: Recipe
+    hint: Steps to follow
+    difficulty: 2
+  - crewWord: Shopping list
+    imposterWord: To do list
+    hint: Things written down to remember
+    difficulty: 2
+  - crewWord: Alarm
+    imposterWord: Reminder
+    hint: It tells you to do something
+    difficulty: 2
+  - crewWord: Password
+    imposterWord: Combination
+    hint: You have forgotten it
+    difficulty: 2
+  - crewWord: Ticket
+    imposterWord: Receipt
+    hint: Proof of a transaction
+    difficulty: 2
+  - crewWord: Uniform
+    imposterWord: Costume
+    hint: Clothes you wear for a role
+    difficulty: 2
+  - crewWord: Rain check
+    imposterWord: Postponement
+    hint: It will happen later
+    difficulty: 2
+  - crewWord: Shortcut
+    imposterWord: Detour
+    hint: A different route
+    difficulty: 2
+  - crewWord: Sunrise
+    imposterWord: Alarm clock
+    hint: The start of the day, kindly or not
+    difficulty: 2
+  - crewWord: Nap
+    imposterWord: Lie in
+    hint: Extra sleep
+    difficulty: 2
+  - crewWord: Snack
+    imposterWord: Treat
+    hint: Food between meals
+    difficulty: 2
+  - crewWord: Small talk
+    imposterWord: Catch up
+    hint: Conversation with a purpose or without
+    difficulty: 2
+  - crewWord: First impression
+    imposterWord: Reputation
+    hint: What people think of you
+    difficulty: 2
+  - crewWord: Rival
+    imposterWord: Opponent
+    hint: You are competing with them
+    difficulty: 2
+  - crewWord: Team
+    imposterWord: Crowd
+    hint: A lot of people together
+    difficulty: 2
+  - crewWord: Leader
+    imposterWord: Volunteer
+    hint: Somebody stepped forward
+    difficulty: 2
+  - crewWord: Rule
+    imposterWord: Guideline
+    hint: You are supposed to follow it
+    difficulty: 2
+  - crewWord: Fine
+    imposterWord: Penalty
+    hint: It costs you for breaking a rule
+    difficulty: 2
+  - crewWord: Contract
+    imposterWord: Agreement
+    hint: It is written down
+    difficulty: 2
+  - crewWord: Invitation
+    imposterWord: Summons
+    hint: You have been asked to come
+    difficulty: 2
+  - crewWord: Speech
+    imposterWord: Toast
+    hint: Somebody is standing up to talk
+    difficulty: 2
+  - crewWord: Gift
+    imposterWord: Souvenir
+    hint: Somebody thought of you
+    difficulty: 2
+  - crewWord: Card
+    imposterWord: Letter
+    hint: Somebody wrote to you
+    difficulty: 2
+  - crewWord: Photograph
+    imposterWord: Portrait
+    hint: A picture of a person
+    difficulty: 2
+  - crewWord: Selfie stick
+    imposterWord: Tripod
+    hint: It holds the camera
+    difficulty: 2
+  - crewWord: Milestone
+    imposterWord: Achievement
+    hint: Something worth marking
+    difficulty: 2
+  - crewWord: Resolution
+    imposterWord: Goal
+    hint: Something you intend to do
+    difficulty: 2
+  - crewWord: Procrastination
+    imposterWord: Distraction
+    hint: You are not doing the thing
+    difficulty: 2
+  - crewWord: Motivation
+    imposterWord: Discipline
+    hint: How things actually get done
+    difficulty: 2
+  - crewWord: Weekend plans
+    imposterWord: Last minute cancellation
+    hint: Saturday, in two directions
+    difficulty: 2
+  - crewWord: Group chat
+    imposterWord: Family dinner
+    hint: Everybody talking at once
+    difficulty: 2
+  - crewWord: Inside joke
+    imposterWord: Nickname
+    hint: It only makes sense to a few people
+    difficulty: 2
+  - crewWord: Catchphrase
+    imposterWord: Slogan
+    hint: A short line people repeat
+    difficulty: 2
+  - crewWord: Coincidence
+    imposterWord: Deja vu
+    hint: Something feels strange
+    difficulty: 2
+  - crewWord: Instinct
+    imposterWord: Hunch
+    hint: You just know
+    difficulty: 2
+  - crewWord: Common sense
+    imposterWord: Hindsight
+    hint: Obvious, at some point
+    difficulty: 2
+  - crewWord: Serendipity
+    imposterWord: Fluke
+    hint: A happy accident
+    difficulty: 3
+  - crewWord: Nostalgia trip
+    imposterWord: Time capsule
+    hint: Deliberately revisiting the past
+    difficulty: 3
+  - crewWord: Placebo
+    imposterWord: Superstition
+    hint: It works because you believe it
+    difficulty: 3
+  - crewWord: Etiquette
+    imposterWord: Protocol
+    hint: The unwritten rules
+    difficulty: 3
+  - crewWord: Bureaucracy
+    imposterWord: Red tape
+    hint: Forms standing between you and the thing
+    difficulty: 3
+  - crewWord: Loophole
+    imposterWord: Technicality
+    hint: Correct but not really fair
+    difficulty: 3
+  - crewWord: Ultimatum
+    imposterWord: Deadline
+    hint: Do it or else
+    difficulty: 3
+  - crewWord: Compromise
+    imposterWord: Concession
+    hint: Somebody gave something up
+    difficulty: 3
+  - crewWord: Stalemate
+    imposterWord: Impasse
+    hint: Nobody can move
+    difficulty: 3
+  - crewWord: Precedent
+    imposterWord: Tradition
+    hint: It happened before so it happens again
+    difficulty: 3
+  - crewWord: Paradox
+    imposterWord: Dilemma
+    hint: There is no good answer
+    difficulty: 3
+  - crewWord: Irony
+    imposterWord: Sarcasm
+    hint: The words do not match the meaning
+    difficulty: 3
+  - crewWord: Euphemism
+    imposterWord: Understatement
+    hint: Saying it softly on purpose
+    difficulty: 3
+  - crewWord: Anecdote
+    imposterWord: Parable
+    hint: A short story with a point
+    difficulty: 3
+  - crewWord: Metaphor
+    imposterWord: Analogy
+    hint: Explaining by comparing
+    difficulty: 3
+  - crewWord: Consensus
+    imposterWord: Majority
+    hint: How a group decides
+    difficulty: 3
+  - crewWord: Quorum
+    imposterWord: Turnout
+    hint: How many people showed up
+    difficulty: 3
+  - crewWord: Deadlock
+    imposterWord: Filibuster
+    hint: Deliberately stopping progress
+    difficulty: 3
+  - crewWord: Contingency
+    imposterWord: Backup plan
+    hint: For when it goes wrong
+    difficulty: 3
+  - crewWord: Threshold
+    imposterWord: Tipping point
+    hint: The moment it changes
+    difficulty: 3
+  - crewWord: Momentum
+    imposterWord: Inertia
+    hint: It keeps going, or refuses to start
+    difficulty: 3
+  - crewWord: Diminishing returns
+    imposterWord: Sunk cost
+    hint: Why you should probably stop
+    difficulty: 3

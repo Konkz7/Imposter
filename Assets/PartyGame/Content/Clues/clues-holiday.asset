@@ -19,25 +19,57 @@ MonoBehaviour:
   accentIndex: 4
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   clues:
-  - id: c21
+  - id: c35
     kind: 0
     text: The hire car came back with a scratch that was not there on Monday.
-  - id: c22
+  - id: c36
     kind: 0
     text: Somebody moved everyone's beach towels and rearranged the sun loungers.
-  - id: c23
+  - id: c37
     kind: 0
     text: The group kitty is forty euros short and everyone says they paid in.
-  - id: c24
+  - id: c38
     kind: 0
     text: The villa wifi password was changed overnight.
-  - id: c25
+  - id: c39
+    kind: 0
+    text: Someone booked a table for six when there are eight of us.
+  - id: c40
+    kind: 0
+    text: The good sunglasses have vanished and everyone is being very casual about it.
+  - id: c41
+    kind: 0
+    text: The air conditioning has been set to sixteen degrees and locked.
+  - id: c42
+    kind: 0
+    text: There is sand in the bed of somebody who claims not to have gone to the beach.
+  - id: c43
     kind: 1
     text: You were awake late. Exactly one of {a} and {b} was not in bed.
-  - id: c26
+  - id: c44
+    kind: 1
+    text: You heard two people on the stairs. One of {a} and {b} is involved.
+  - id: c45
+    kind: 1
+    text: 'The receipts narrow it down: exactly one of {a} and {b} paid for something odd.'
+  - id: c46
     kind: 2
     text: You saw someone on the balcony after midnight. {fact}
-  - id: c27
+  - id: c47
+    kind: 2
+    text: You were at the pool and noticed something. {fact}
+  - id: c48
+    kind: 2
+    text: You woke up early and caught a glimpse. {fact}
+  - id: c49
     kind: 3
     text: A photo on the group chat gives one thing away. {fact}
+  - id: c50
+    kind: 3
+    text: The villa owner left a note about it. {fact}
+  - id: c51
+    kind: 3
+    text: Somebody said it out loud at breakfast and then went quiet. {fact}

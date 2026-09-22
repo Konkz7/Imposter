@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
   id: clues-house
   displayName: The house party
-  description: Something went missing at a party
+  description: Something went missing while the music was loud
   glyph: HP
   accentIndex: 5
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   clues:
   - id: c1
     kind: 0
@@ -33,20 +35,41 @@ MonoBehaviour:
     kind: 0
     text: Every glass in the kitchen had been moved, and one was missing.
   - id: c5
+    kind: 0
+    text: The neighbours complained about a noise that nobody in the house remembers making.
+  - id: c6
+    kind: 0
+    text: A coat that belongs to nobody here is hanging in the hallway.
+  - id: c7
+    kind: 0
+    text: There is a handprint on the ceiling and no agreed explanation.
+  - id: c8
+    kind: 0
+    text: The playlist was changed six times in one hour from an unknown device.
+  - id: c9
     kind: 1
     text: You were watching the hallway all evening. Exactly one of {a} and {b} is involved.
-  - id: c6
+  - id: c10
     kind: 1
     text: 'Your notes narrow it down: one of {a} and {b} is in on it, the other is not.'
-  - id: c7
+  - id: c11
+    kind: 1
+    text: You compared stories afterwards. Precisely one of {a} and {b} was lying.
+  - id: c12
     kind: 2
     text: You only caught a glimpse of them. {fact}
-  - id: c8
+  - id: c13
     kind: 2
     text: You were coming down the stairs when you saw them. {fact}
-  - id: c9
+  - id: c14
+    kind: 2
+    text: You were outside getting some air and noticed something. {fact}
+  - id: c15
     kind: 3
     text: A note was left on the table. {fact}
-  - id: c10
+  - id: c16
     kind: 3
     text: The neighbour phoned with one detail. {fact}
+  - id: c17
+    kind: 3
+    text: Someone shouted it across the room and everyone heard. {fact}

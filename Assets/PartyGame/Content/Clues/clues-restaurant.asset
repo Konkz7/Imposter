@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e39b65b2141040b7cf429bd456060, type: 3}
+  m_Name: clues-restaurant
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
+  id: clues-restaurant
+  displayName: The restaurant
+  description: One table, one bill, one problem
+  glyph: RS
+  accentIndex: 3
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  clues:
+  - id: c103
+    kind: 0
+    text: The bill is thirty pounds more than the sum of what everyone ordered.
+  - id: c104
+    kind: 0
+    text: A bottle of wine appeared on the table that nobody admits to ordering.
+  - id: c105
+    kind: 0
+    text: Somebody sent a dish back and then ate most of the replacement.
+  - id: c106
+    kind: 0
+    text: The reservation was under a name none of us recognises.
+  - id: c107
+    kind: 0
+    text: A dessert spoon has gone missing and one coat pocket is heavier.
+  - id: c108
+    kind: 0
+    text: Someone told the waiter it was a birthday and now there is a candle.
+  - id: c109
+    kind: 0
+    text: The tip was quietly changed after everyone agreed on it.
+  - id: c110
+    kind: 0
+    text: Two people have ordered the same dish and both claim they did it first.
+  - id: c111
+    kind: 1
+    text: You watched the table all evening. Exactly one of {a} and {b} left their seat.
+  - id: c112
+    kind: 1
+    text: 'The card machine tells a story: one of {a} and {b} is involved.'
+  - id: c113
+    kind: 1
+    text: Two people spoke to the waiter privately. Exactly one of {a} and {b} did.
+  - id: c114
+    kind: 2
+    text: You came back from the toilets and noticed something. {fact}
+  - id: c115
+    kind: 2
+    text: You were looking at the specials board and caught it in the mirror. {fact}
+  - id: c116
+    kind: 2
+    text: You were sat facing the door and saw them. {fact}
+  - id: c117
+    kind: 3
+    text: The waiter mentioned it while clearing plates. {fact}
+  - id: c118
+    kind: 3
+    text: It was on the itemised receipt all along. {fact}
+  - id: c119
+    kind: 3
+    text: Somebody said it while paying and immediately regretted it. {fact}

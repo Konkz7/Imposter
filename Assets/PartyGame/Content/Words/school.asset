@@ -13,46 +13,416 @@ MonoBehaviour:
   m_Name: school
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
   id: school
-  displayName: School and work
-  description: Lessons, offices and deadlines
+  displayName: School
+  description: Lessons, exams and the smell of the corridor
   glyph: SC
   accentIndex: 0
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
   - crewWord: Homework
     imposterWord: Revision
     hint: It happens in the evening
+    difficulty: 1
   - crewWord: Exam
-    imposterWord: Interview
+    imposterWord: Test
     hint: Nervous people in a quiet room
+    difficulty: 1
   - crewWord: Teacher
-    imposterWord: Manager
+    imposterWord: Headteacher
     hint: They tell you what to do
+    difficulty: 1
   - crewWord: Assembly
-    imposterWord: Meeting
+    imposterWord: Registration
     hint: Everyone sits and listens
+    difficulty: 1
   - crewWord: Detention
-    imposterWord: Overtime
-    hint: Stuck there longer than planned
+    imposterWord: Lines
+    hint: A punishment after school
+    difficulty: 1
   - crewWord: Playtime
     imposterWord: Lunch break
     hint: The best part of the day
+    difficulty: 1
   - crewWord: Report card
-    imposterWord: Appraisal
+    imposterWord: Parents evening
     hint: Somebody grades you
+    difficulty: 1
   - crewWord: Textbook
-    imposterWord: Handbook
-    hint: Nobody reads all of it
+    imposterWord: Workbook
+    hint: It lives in your bag
+    difficulty: 1
   - crewWord: Register
-    imposterWord: Timesheet
+    imposterWord: Attendance
     hint: It records who was there
+    difficulty: 1
   - crewWord: Whiteboard
     imposterWord: Projector
     hint: Everyone looks at it
+    difficulty: 1
   - crewWord: Uniform
-    imposterWord: Dress code
-    hint: Rules about what you wear
-  - crewWord: Head teacher
-    imposterWord: Chief executive
-    hint: The person at the top
+    imposterWord: PE kit
+    hint: What you have to wear
+    difficulty: 1
+  - crewWord: Pencil case
+    imposterWord: Rucksack
+    hint: You carry it everywhere
+    difficulty: 1
+  - crewWord: Classroom
+    imposterWord: Lecture hall
+    hint: Rows facing the front
+    difficulty: 1
+  - crewWord: Maths
+    imposterWord: Science
+    hint: A subject on the timetable
+    difficulty: 1
+  - crewWord: Bell
+    imposterWord: Buzzer
+    hint: It tells you the lesson is over
+    difficulty: 1
+  - crewWord: Coursework
+    imposterWord: Dissertation
+    hint: It is due in weeks
+    difficulty: 2
+  - crewWord: Essay
+    imposterWord: Report
+    hint: You wrote it the night before
+    difficulty: 2
+  - crewWord: Multiple choice
+    imposterWord: Short answer
+    hint: A type of exam question
+    difficulty: 2
+  - crewWord: Mock exam
+    imposterWord: Final exam
+    hint: One of them counts
+    difficulty: 2
+  - crewWord: GCSE
+    imposterWord: A level
+    hint: A qualification with a grade
+    difficulty: 2
+  - crewWord: Degree
+    imposterWord: Diploma
+    hint: What you leave with
+    difficulty: 2
+  - crewWord: Graduation
+    imposterWord: Prize giving
+    hint: Everyone claps and wears a gown
+    difficulty: 2
+  - crewWord: Timetable
+    imposterWord: Syllabus
+    hint: It says what happens when
+    difficulty: 2
+  - crewWord: Curriculum
+    imposterWord: Lesson plan
+    hint: What is supposed to be taught
+    difficulty: 2
+  - crewWord: Form tutor
+    imposterWord: Year head
+    hint: A teacher with extra responsibility
+    difficulty: 2
+  - crewWord: Supply teacher
+    imposterWord: Teaching assistant
+    hint: Not the usual teacher
+    difficulty: 2
+  - crewWord: Prefect
+    imposterWord: Head boy
+    hint: A pupil with a badge
+    difficulty: 2
+  - crewWord: School trip
+    imposterWord: Field trip
+    hint: A day out with a worksheet
+    difficulty: 2
+  - crewWord: Sports day
+    imposterWord: Swimming gala
+    hint: Competitive and slightly humiliating
+    difficulty: 2
+  - crewWord: School play
+    imposterWord: Talent show
+    hint: Parents in a hot hall
+    difficulty: 2
+  - crewWord: Choir practice
+    imposterWord: Band rehearsal
+    hint: An after school club
+    difficulty: 2
+  - crewWord: Library card
+    imposterWord: Book fine
+    hint: The library is involved
+    difficulty: 2
+  - crewWord: Canteen
+    imposterWord: Packed lunch
+    hint: Where lunch comes from
+    difficulty: 2
+  - crewWord: Tuck shop
+    imposterWord: Vending machine
+    hint: Where the sweets are
+    difficulty: 2
+  - crewWord: Playground
+    imposterWord: Field
+    hint: Outside at break
+    difficulty: 2
+  - crewWord: Corridor
+    imposterWord: Stairwell
+    hint: Where you are told not to run
+    difficulty: 2
+  - crewWord: Locker
+    imposterWord: Cloakroom
+    hint: Where your coat goes
+    difficulty: 2
+  - crewWord: Lost property
+    imposterWord: Confiscated box
+    hint: Where your things end up
+    difficulty: 2
+  - crewWord: Whiteboard pen
+    imposterWord: Chalk
+    hint: The teacher writes with it
+    difficulty: 2
+  - crewWord: Interactive whiteboard
+    imposterWord: Overhead projector
+    hint: Old and new teaching tech
+    difficulty: 2
+  - crewWord: Calculator
+    imposterWord: Protractor
+    hint: Maths equipment
+    difficulty: 2
+  - crewWord: Ruler
+    imposterWord: Compass
+    hint: It draws a straight line or a circle
+    difficulty: 2
+  - crewWord: Bunsen burner
+    imposterWord: Test tube
+    hint: Science lab equipment
+    difficulty: 2
+  - crewWord: Safety goggles
+    imposterWord: Lab coat
+    hint: Worn in the science lab
+    difficulty: 2
+  - crewWord: Periodic table
+    imposterWord: Formula sheet
+    hint: A poster on the wall
+    difficulty: 2
+  - crewWord: Microscope
+    imposterWord: Magnifying glass
+    hint: You look closely at something
+    difficulty: 2
+  - crewWord: Sketchbook
+    imposterWord: Easel
+    hint: Art lesson equipment
+    difficulty: 2
+  - crewWord: Kiln
+    imposterWord: Pottery wheel
+    hint: Art department, clay division
+    difficulty: 2
+  - crewWord: Sewing machine
+    imposterWord: Glue gun
+    hint: Design technology equipment
+    difficulty: 2
+  - crewWord: Workbench
+    imposterWord: Vice
+    hint: The woodwork room
+    difficulty: 2
+  - crewWord: Recorder
+    imposterWord: Keyboard
+    hint: The instrument the school owns
+    difficulty: 2
+  - crewWord: Gym rope
+    imposterWord: Climbing frame
+    hint: Torture disguised as PE
+    difficulty: 2
+  - crewWord: Cross country
+    imposterWord: Bleep test
+    hint: PE at its least popular
+    difficulty: 2
+  - crewWord: Changing rooms
+    imposterWord: Showers
+    hint: Where nobody wants to be
+    difficulty: 2
+  - crewWord: Football pitch
+    imposterWord: Netball court
+    hint: Marked out on the ground
+    difficulty: 2
+  - crewWord: School bus
+    imposterWord: Walking bus
+    hint: How you get there
+    difficulty: 2
+  - crewWord: School gate
+    imposterWord: Reception
+    hint: Where parents wait
+    difficulty: 2
+  - crewWord: Noticeboard
+    imposterWord: Newsletter
+    hint: How the school tells you things
+    difficulty: 2
+  - crewWord: Fire drill
+    imposterWord: Lockdown drill
+    hint: Everyone files outside
+    difficulty: 2
+  - crewWord: Non uniform day
+    imposterWord: Fancy dress
+    hint: You wear your own clothes
+    difficulty: 2
+  - crewWord: Bake sale
+    imposterWord: Raffle
+    hint: Fundraising at school
+    difficulty: 2
+  - crewWord: Sports captain
+    imposterWord: Team trials
+    hint: Being picked for the team
+    difficulty: 2
+  - crewWord: Study leave
+    imposterWord: Half term
+    hint: Time off during term
+    difficulty: 2
+  - crewWord: Summer holidays
+    imposterWord: Christmas break
+    hint: A long break
+    difficulty: 2
+  - crewWord: Back to school
+    imposterWord: First day
+    hint: A new year starts
+    difficulty: 2
+  - crewWord: School photo
+    imposterWord: Class photo
+    hint: You look terrible in it
+    difficulty: 2
+  - crewWord: Yearbook
+    imposterWord: Leavers hoodie
+    hint: A souvenir of leaving
+    difficulty: 2
+  - crewWord: Reference
+    imposterWord: Predicted grades
+    hint: What the teacher writes about you
+    difficulty: 2
+  - crewWord: Open evening
+    imposterWord: Taster day
+    hint: Deciding where to go next
+    difficulty: 2
+  - crewWord: University application
+    imposterWord: Personal statement
+    hint: Selling yourself on paper
+    difficulty: 2
+  - crewWord: Student loan
+    imposterWord: Maintenance grant
+    hint: How you pay for it
+    difficulty: 2
+  - crewWord: Freshers week
+    imposterWord: Halls
+    hint: The start of university
+    difficulty: 2
+  - crewWord: Seminar
+    imposterWord: Tutorial
+    hint: A small teaching group
+    difficulty: 2
+  - crewWord: Lecture notes
+    imposterWord: Reading list
+    hint: What you are supposed to have done
+    difficulty: 2
+  - crewWord: Deadline
+    imposterWord: Extension
+    hint: When it is due
+    difficulty: 2
+  - crewWord: Plagiarism
+    imposterWord: Referencing
+    hint: Where the words came from
+    difficulty: 2
+  - crewWord: Exam hall
+    imposterWord: Invigilator
+    hint: Silence and a clock
+    difficulty: 2
+  - crewWord: Results day
+    imposterWord: Clearing
+    hint: It did not go to plan
+    difficulty: 2
+  - crewWord: Grade boundary
+    imposterWord: Mark scheme
+    hint: How a score becomes a grade
+    difficulty: 2
+  - crewWord: School council
+    imposterWord: Student union
+    hint: Pupils with a voice
+    difficulty: 2
+  - crewWord: Pastoral care
+    imposterWord: Safeguarding
+    hint: Looking after pupils, formally
+    difficulty: 3
+  - crewWord: Ofsted
+    imposterWord: Inspection
+    hint: The week everyone panics
+    difficulty: 3
+  - crewWord: Key stage
+    imposterWord: Year group
+    hint: How ages are grouped
+    difficulty: 3
+  - crewWord: Setting
+    imposterWord: Streaming
+    hint: Splitting a year by ability
+    difficulty: 3
+  - crewWord: Catchment area
+    imposterWord: Admissions
+    hint: How you got a place
+    difficulty: 3
+  - crewWord: Academy
+    imposterWord: Comprehensive
+    hint: A type of school
+    difficulty: 3
+  - crewWord: Governors
+    imposterWord: Trustees
+    hint: They oversee the school
+    difficulty: 3
+  - crewWord: INSET day
+    imposterWord: Training day
+    hint: The day off nobody expected
+    difficulty: 3
+  - crewWord: Pupil premium
+    imposterWord: Bursary
+    hint: Extra funding for a pupil
+    difficulty: 3
+  - crewWord: EHCP
+    imposterWord: Learning support
+    hint: Formal help for a pupil
+    difficulty: 3
+  - crewWord: Moderation
+    imposterWord: Standardisation
+    hint: Making marking fair
+    difficulty: 3
+  - crewWord: Coursework moderation
+    imposterWord: External examiner
+    hint: Somebody checks the marking
+    difficulty: 3
+  - crewWord: Viva
+    imposterWord: Oral exam
+    hint: You have to answer out loud
+    difficulty: 3
+  - crewWord: Thesis
+    imposterWord: Monograph
+    hint: A very long piece of writing
+    difficulty: 3
+  - crewWord: Undergraduate
+    imposterWord: Postgraduate
+    hint: How far through you are
+    difficulty: 3
+  - crewWord: Faculty
+    imposterWord: Department
+    hint: How a university is divided
+    difficulty: 3
+  - crewWord: Bursar
+    imposterWord: Registrar
+    hint: A university job nobody can describe
+    difficulty: 3
+  - crewWord: Matriculation
+    imposterWord: Enrolment
+    hint: Officially becoming a student
+    difficulty: 3
+  - crewWord: Sabbatical
+    imposterWord: Study leave
+    hint: Time away from teaching
+    difficulty: 3
+  - crewWord: Peer review
+    imposterWord: Marking criteria
+    hint: How work is judged
+    difficulty: 3
+  - crewWord: Formative assessment
+    imposterWord: Summative assessment
+    hint: Testing to learn or to grade
+    difficulty: 3

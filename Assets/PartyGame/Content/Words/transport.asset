@@ -1,0 +1,424 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: transport
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: transport
+  displayName: Transport
+  description: Getting from one place to another
+  glyph: TP
+  accentIndex: 5
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Car
+    imposterWord: Van
+    hint: Four wheels and a steering wheel
+    difficulty: 1
+  - crewWord: Bus
+    imposterWord: Coach
+    hint: Lots of seats, one driver
+    difficulty: 1
+  - crewWord: Train
+    imposterWord: Tram
+    hint: It runs on rails
+    difficulty: 1
+  - crewWord: Bicycle
+    imposterWord: Scooter
+    hint: Two wheels and your own legs
+    difficulty: 1
+  - crewWord: Aeroplane
+    imposterWord: Helicopter
+    hint: It leaves the ground
+    difficulty: 1
+  - crewWord: Boat
+    imposterWord: Ship
+    hint: It floats
+    difficulty: 1
+  - crewWord: Taxi
+    imposterWord: Minicab
+    hint: You pay someone to drive you
+    difficulty: 1
+  - crewWord: Motorbike
+    imposterWord: Moped
+    hint: Two wheels and an engine
+    difficulty: 1
+  - crewWord: Lorry
+    imposterWord: Truck
+    hint: It carries goods
+    difficulty: 1
+  - crewWord: Ferry
+    imposterWord: Cruise ship
+    hint: A boat with a timetable or a bar
+    difficulty: 1
+  - crewWord: Underground
+    imposterWord: Metro
+    hint: It runs below the city
+    difficulty: 2
+  - crewWord: Skateboard
+    imposterWord: Rollerblades
+    hint: You will fall off it
+    difficulty: 2
+  - crewWord: Ambulance
+    imposterWord: Fire engine
+    hint: It has flashing lights
+    difficulty: 2
+  - crewWord: Police car
+    imposterWord: Patrol van
+    hint: You slow down when you see it
+    difficulty: 2
+  - crewWord: Tractor
+    imposterWord: Combine harvester
+    hint: It holds up traffic
+    difficulty: 2
+  - crewWord: Forklift
+    imposterWord: Crane
+    hint: It lifts things at work
+    difficulty: 2
+  - crewWord: Digger
+    imposterWord: Bulldozer
+    hint: It moves earth about
+    difficulty: 2
+  - crewWord: Bin lorry
+    imposterWord: Street sweeper
+    hint: It comes past very early
+    difficulty: 2
+  - crewWord: Milk float
+    imposterWord: Delivery van
+    hint: It stops at every house
+    difficulty: 2
+  - crewWord: Ice cream van
+    imposterWord: Food truck
+    hint: It plays music or smells of chips
+    difficulty: 2
+  - crewWord: Double decker
+    imposterWord: Single decker
+    hint: A bus, with or without stairs
+    difficulty: 2
+  - crewWord: School bus
+    imposterWord: Shuttle bus
+    hint: It does the same route every day
+    difficulty: 2
+  - crewWord: Sleeper carriage
+    imposterWord: Dining car
+    hint: Part of a long train
+    difficulty: 2
+  - crewWord: Freight train
+    imposterWord: Passenger train
+    hint: What it carries is the difference
+    difficulty: 2
+  - crewWord: Monorail
+    imposterWord: Cable car
+    hint: A novelty way to travel
+    difficulty: 2
+  - crewWord: Funicular
+    imposterWord: Chairlift
+    hint: It takes you up a hill
+    difficulty: 2
+  - crewWord: Escalator
+    imposterWord: Lift
+    hint: It moves you between floors
+    difficulty: 2
+  - crewWord: Travelator
+    imposterWord: Moving walkway
+    hint: It hurries you through an airport
+    difficulty: 2
+  - crewWord: Gondola
+    imposterWord: Punt
+    hint: Someone pushes it along with a pole
+    difficulty: 2
+  - crewWord: Canoe
+    imposterWord: Kayak
+    hint: You sit in it and paddle
+    difficulty: 2
+  - crewWord: Rowing boat
+    imposterWord: Pedalo
+    hint: You power it yourself on a lake
+    difficulty: 2
+  - crewWord: Yacht
+    imposterWord: Speedboat
+    hint: Expensive and moored somewhere sunny
+    difficulty: 2
+  - crewWord: Submarine
+    imposterWord: Diving bell
+    hint: It goes underwater on purpose
+    difficulty: 2
+  - crewWord: Hovercraft
+    imposterWord: Jet ski
+    hint: It skims across the water
+    difficulty: 2
+  - crewWord: Tugboat
+    imposterWord: Barge
+    hint: It works on the water
+    difficulty: 2
+  - crewWord: Trawler
+    imposterWord: Fishing boat
+    hint: It comes back smelling of fish
+    difficulty: 2
+  - crewWord: Glider
+    imposterWord: Paraglider
+    hint: No engine, a lot of nerve
+    difficulty: 2
+  - crewWord: Hot air balloon
+    imposterWord: Airship
+    hint: It drifts rather than flies
+    difficulty: 2
+  - crewWord: Seaplane
+    imposterWord: Float plane
+    hint: It lands on water
+    difficulty: 2
+  - crewWord: Jet
+    imposterWord: Propeller plane
+    hint: How the plane is powered
+    difficulty: 2
+  - crewWord: Rocket
+    imposterWord: Space shuttle
+    hint: It leaves the atmosphere
+    difficulty: 2
+  - crewWord: Cargo plane
+    imposterWord: Airliner
+    hint: A big aircraft with a job
+    difficulty: 2
+  - crewWord: Drone
+    imposterWord: Model aeroplane
+    hint: You fly it from the ground
+    difficulty: 2
+  - crewWord: Electric car
+    imposterWord: Hybrid
+    hint: It plugs in, sort of
+    difficulty: 2
+  - crewWord: Sports car
+    imposterWord: Convertible
+    hint: Impractical and loud
+    difficulty: 2
+  - crewWord: Hatchback
+    imposterWord: Estate
+    hint: A family car with a boot argument
+    difficulty: 2
+  - crewWord: Saloon
+    imposterWord: SUV
+    hint: A car shape with opinions attached
+    difficulty: 2
+  - crewWord: Campervan
+    imposterWord: Horsebox
+    hint: You could sleep in it at a push
+    difficulty: 2
+  - crewWord: Trailer
+    imposterWord: Caravan
+    hint: You tow it behind
+    difficulty: 2
+  - crewWord: Roof rack
+    imposterWord: Tow bar
+    hint: Something bolted onto the car
+    difficulty: 2
+  - crewWord: Seatbelt
+    imposterWord: Airbag
+    hint: It keeps you safe in a crash
+    difficulty: 2
+  - crewWord: Steering wheel
+    imposterWord: Handlebars
+    hint: You hold it to go round corners
+    difficulty: 2
+  - crewWord: Brake
+    imposterWord: Clutch
+    hint: A pedal you press
+    difficulty: 2
+  - crewWord: Indicator
+    imposterWord: Headlight
+    hint: A light on a vehicle
+    difficulty: 2
+  - crewWord: Windscreen
+    imposterWord: Wing mirror
+    hint: You look through or at it
+    difficulty: 2
+  - crewWord: Number plate
+    imposterWord: Tax disc
+    hint: Official identification on a car
+    difficulty: 2
+  - crewWord: Speed camera
+    imposterWord: Traffic light
+    hint: It makes you slow down
+    difficulty: 2
+  - crewWord: Zebra crossing
+    imposterWord: Pelican crossing
+    hint: Where you walk across
+    difficulty: 2
+  - crewWord: Speed bump
+    imposterWord: Chicane
+    hint: Deliberately annoying road design
+    difficulty: 2
+  - crewWord: Motorway
+    imposterWord: Dual carriageway
+    hint: A big fast road
+    difficulty: 2
+  - crewWord: Country lane
+    imposterWord: Cul-de-sac
+    hint: A small road going nowhere much
+    difficulty: 2
+  - crewWord: Roadworks
+    imposterWord: Diversion
+    hint: Your journey just got longer
+    difficulty: 2
+  - crewWord: Traffic jam
+    imposterWord: Rush hour
+    hint: Nothing is moving
+    difficulty: 2
+  - crewWord: Bus lane
+    imposterWord: Cycle lane
+    hint: A lane you should not drive in
+    difficulty: 2
+  - crewWord: Ticket barrier
+    imposterWord: Turnstile
+    hint: It lets one person through at a time
+    difficulty: 2
+  - crewWord: Oyster card
+    imposterWord: Travelcard
+    hint: You tap it to get on
+    difficulty: 2
+  - crewWord: Platform
+    imposterWord: Concourse
+    hint: Part of a station
+    difficulty: 2
+  - crewWord: Timetable
+    imposterWord: Live departures
+    hint: It says when the next one is
+    difficulty: 2
+  - crewWord: Season ticket
+    imposterWord: Single fare
+    hint: How you pay for the journey
+    difficulty: 2
+  - crewWord: Conductor
+    imposterWord: Ticket inspector
+    hint: They want to see your ticket
+    difficulty: 2
+  - crewWord: Driver
+    imposterWord: Pilot
+    hint: They are in charge of the vehicle
+    difficulty: 2
+  - crewWord: Cabin crew
+    imposterWord: Steward
+    hint: They look after passengers
+    difficulty: 2
+  - crewWord: Breakdown truck
+    imposterWord: Recovery vehicle
+    hint: It arrives when you have stopped
+    difficulty: 2
+  - crewWord: Spare tyre
+    imposterWord: Jack
+    hint: It lives in the boot for emergencies
+    difficulty: 2
+  - crewWord: Petrol
+    imposterWord: Diesel
+    hint: You put it in the tank
+    difficulty: 2
+  - crewWord: Charging point
+    imposterWord: Petrol pump
+    hint: Where you refuel
+    difficulty: 2
+  - crewWord: MOT
+    imposterWord: Service
+    hint: The car has to be checked
+    difficulty: 2
+  - crewWord: Learner driver
+    imposterWord: Driving instructor
+    hint: One of them is very calm
+    difficulty: 2
+  - crewWord: Rush hour train
+    imposterWord: Night bus
+    hint: Public transport at an extreme hour
+    difficulty: 2
+  - crewWord: Park and ride
+    imposterWord: Bus station
+    hint: You change from one thing to another
+    difficulty: 2
+  - crewWord: Articulated lorry
+    imposterWord: Tanker
+    hint: Very long and hard to overtake
+    difficulty: 3
+  - crewWord: Pantograph
+    imposterWord: Third rail
+    hint: How a train gets its electricity
+    difficulty: 3
+  - crewWord: Sidings
+    imposterWord: Depot
+    hint: Where trains go to be left alone
+    difficulty: 3
+  - crewWord: Level crossing
+    imposterWord: Signal box
+    hint: Railway infrastructure by a road
+    difficulty: 3
+  - crewWord: Catamaran
+    imposterWord: Trimaran
+    hint: It has more than one hull
+    difficulty: 3
+  - crewWord: Outboard motor
+    imposterWord: Inboard engine
+    hint: Where the boat engine sits
+    difficulty: 3
+  - crewWord: Rickshaw
+    imposterWord: Tuk tuk
+    hint: Three wheels and a lot of confidence
+    difficulty: 3
+  - crewWord: Trolleybus
+    imposterWord: Streetcar
+    hint: A bus or tram with overhead wires
+    difficulty: 3
+  - crewWord: Maglev
+    imposterWord: Bullet train
+    hint: A train that goes alarmingly fast
+    difficulty: 3
+  - crewWord: Cargo ship
+    imposterWord: Container ship
+    hint: It carries almost everything you own
+    difficulty: 3
+  - crewWord: Icebreaker
+    imposterWord: Research vessel
+    hint: A ship for somewhere hostile
+    difficulty: 3
+  - crewWord: Dinghy
+    imposterWord: Skiff
+    hint: A very small boat
+    difficulty: 3
+  - crewWord: Sidecar
+    imposterWord: Trike
+    hint: A motorbike with an extra bit
+    difficulty: 3
+  - crewWord: Penny farthing
+    imposterWord: Unicycle
+    hint: A bicycle that went wrong
+    difficulty: 3
+  - crewWord: Cable ferry
+    imposterWord: Chain ferry
+    hint: It crosses on a wire
+    difficulty: 3
+  - crewWord: Airbridge
+    imposterWord: Stand
+    hint: Where an aircraft parks
+    difficulty: 3
+  - crewWord: Taxiway
+    imposterWord: Apron
+    hint: Part of an airport that is not the runway
+    difficulty: 3
+  - crewWord: Blimp
+    imposterWord: Zeppelin
+    hint: A rigid or soft flying balloon
+    difficulty: 3
+  - crewWord: Funicular railway
+    imposterWord: Rack railway
+    hint: A train built for a steep hill
+    difficulty: 3
+  - crewWord: Tram stop
+    imposterWord: Halt
+    hint: A very small place to get on
+    difficulty: 3

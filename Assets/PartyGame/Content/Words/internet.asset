@@ -1,0 +1,428 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: internet
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: internet
+  displayName: Internet culture
+  description: Memes, feeds and online behaviour
+  glyph: IN
+  accentIndex: 0
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Meme
+    imposterWord: Joke
+    hint: It spreads because it is funny
+    difficulty: 1
+  - crewWord: Selfie
+    imposterWord: Photo
+    hint: You took it of yourself
+    difficulty: 1
+  - crewWord: Like
+    imposterWord: Comment
+    hint: You reacted to a post
+    difficulty: 1
+  - crewWord: Follower
+    imposterWord: Subscriber
+    hint: They see what you post
+    difficulty: 1
+  - crewWord: Post
+    imposterWord: Story
+    hint: It goes on your profile
+    difficulty: 1
+  - crewWord: Hashtag
+    imposterWord: Caption
+    hint: Text under a picture
+    difficulty: 1
+  - crewWord: Group chat
+    imposterWord: DM
+    hint: A private conversation
+    difficulty: 1
+  - crewWord: Livestream
+    imposterWord: Video
+    hint: Watching someone online
+    difficulty: 1
+  - crewWord: Influencer
+    imposterWord: Creator
+    hint: They post for a living
+    difficulty: 1
+  - crewWord: Scrolling
+    imposterWord: Browsing
+    hint: You have been on your phone an hour
+    difficulty: 1
+  - crewWord: Profile picture
+    imposterWord: Username
+    hint: How people recognise you online
+    difficulty: 1
+  - crewWord: Emoji
+    imposterWord: Sticker
+    hint: A small picture in a message
+    difficulty: 1
+  - crewWord: Viral
+    imposterWord: Trending
+    hint: Everyone has seen it
+    difficulty: 1
+  - crewWord: Notification
+    imposterWord: Ping
+    hint: Your phone buzzed
+    difficulty: 1
+  - crewWord: Screenshot
+    imposterWord: Repost
+    hint: Sharing something somebody else made
+    difficulty: 1
+  - crewWord: Doomscrolling
+    imposterWord: Binge watching
+    hint: You cannot stop
+    difficulty: 2
+  - crewWord: Clickbait
+    imposterWord: Thumbnail
+    hint: It made you click
+    difficulty: 2
+  - crewWord: Algorithm
+    imposterWord: For you page
+    hint: It decides what you see
+    difficulty: 2
+  - crewWord: Echo chamber
+    imposterWord: Filter bubble
+    hint: You only see one side
+    difficulty: 2
+  - crewWord: Troll
+    imposterWord: Hater
+    hint: Online and deliberately unpleasant
+    difficulty: 2
+  - crewWord: Ghosting
+    imposterWord: Being left on read
+    hint: They stopped replying
+    difficulty: 2
+  - crewWord: Cancel
+    imposterWord: Ratio
+    hint: The internet has turned on you
+    difficulty: 2
+  - crewWord: Subtweet
+    imposterWord: Vaguepost
+    hint: You are talking about someone without naming them
+    difficulty: 2
+  - crewWord: Humblebrag
+    imposterWord: Flex
+    hint: Showing off with a disguise
+    difficulty: 2
+  - crewWord: FOMO
+    imposterWord: Regret
+    hint: Everyone went without you
+    difficulty: 2
+  - crewWord: Unboxing
+    imposterWord: Haul
+    hint: Showing what you bought
+    difficulty: 2
+  - crewWord: Get ready with me
+    imposterWord: Day in the life
+    hint: A video format about routine
+    difficulty: 2
+  - crewWord: Reaction video
+    imposterWord: Commentary
+    hint: Watching someone watch something
+    difficulty: 2
+  - crewWord: Tutorial
+    imposterWord: Explainer
+    hint: Someone teaching you online
+    difficulty: 2
+  - crewWord: Sponsored post
+    imposterWord: Advert
+    hint: They were paid for it
+    difficulty: 2
+  - crewWord: Affiliate link
+    imposterWord: Discount code
+    hint: They earn if you buy
+    difficulty: 2
+  - crewWord: Collab
+    imposterWord: Guest appearance
+    hint: Two creators together
+    difficulty: 2
+  - crewWord: Sub count
+    imposterWord: View count
+    hint: A number creators obsess over
+    difficulty: 2
+  - crewWord: Monetisation
+    imposterWord: Demonetised
+    hint: Whether they get paid
+    difficulty: 2
+  - crewWord: Comment section
+    imposterWord: Reply guy
+    hint: Where the arguments live
+    difficulty: 2
+  - crewWord: Moderator
+    imposterWord: Admin
+    hint: They run the community
+    difficulty: 2
+  - crewWord: Ban
+    imposterWord: Timeout
+    hint: You have been removed
+    difficulty: 2
+  - crewWord: Shadow ban
+    imposterWord: Reach
+    hint: Nobody is seeing your posts
+    difficulty: 2
+  - crewWord: Rickroll
+    imposterWord: Bait and switch
+    hint: You clicked and regretted it
+    difficulty: 2
+  - crewWord: Copypasta
+    imposterWord: Chain message
+    hint: Text that spreads unchanged
+    difficulty: 2
+  - crewWord: Wholesome post
+    imposterWord: Cursed image
+    hint: The internet at both extremes
+    difficulty: 2
+  - crewWord: Deep fried meme
+    imposterWord: Reaction image
+    hint: A picture used as a punchline
+    difficulty: 2
+  - crewWord: Catchphrase
+    imposterWord: Inside joke
+    hint: You had to be there
+    difficulty: 2
+  - crewWord: Fandom
+    imposterWord: Stan
+    hint: Very enthusiastic fans
+    difficulty: 2
+  - crewWord: Shipping
+    imposterWord: Headcanon
+    hint: Fans deciding what is true
+    difficulty: 2
+  - crewWord: Spoiler warning
+    imposterWord: Trigger warning
+    hint: A heads up before content
+    difficulty: 2
+  - crewWord: Thread
+    imposterWord: Carousel
+    hint: A post with several parts
+    difficulty: 2
+  - crewWord: Pinned post
+    imposterWord: Bio
+    hint: The first thing on a profile
+    difficulty: 2
+  - crewWord: Verified tick
+    imposterWord: Badge
+    hint: Proof you are who you say
+    difficulty: 2
+  - crewWord: Burner account
+    imposterWord: Alt
+    hint: A second account nobody knows about
+    difficulty: 2
+  - crewWord: Finsta
+    imposterWord: Close friends
+    hint: A smaller, honest audience
+    difficulty: 2
+  - crewWord: Lurker
+    imposterWord: Regular
+    hint: How much you actually post
+    difficulty: 2
+  - crewWord: Forum
+    imposterWord: Subreddit
+    hint: A community with a topic
+    difficulty: 2
+  - crewWord: Wiki
+    imposterWord: FAQ
+    hint: Where the answers are written down
+    difficulty: 2
+  - crewWord: Podcast clip
+    imposterWord: Short
+    hint: A minute cut from something longer
+    difficulty: 2
+  - crewWord: Duet
+    imposterWord: Stitch
+    hint: Building on somebody else's video
+    difficulty: 2
+  - crewWord: Sound
+    imposterWord: Audio trend
+    hint: Thousands of videos using the same clip
+    difficulty: 2
+  - crewWord: Challenge
+    imposterWord: Trend
+    hint: Everybody is doing the same thing
+    difficulty: 2
+  - crewWord: Filter
+    imposterWord: Face swap
+    hint: It changes how you look on camera
+    difficulty: 2
+  - crewWord: Green screen
+    imposterWord: Virtual background
+    hint: You are not where you appear to be
+    difficulty: 2
+  - crewWord: Zoom call
+    imposterWord: Video meeting
+    hint: Somebody is still on mute
+    difficulty: 2
+  - crewWord: Out of office
+    imposterWord: Away message
+    hint: An automatic reply
+    difficulty: 2
+  - crewWord: Read receipt
+    imposterWord: Typing indicator
+    hint: It tells them too much
+    difficulty: 2
+  - crewWord: Group admin
+    imposterWord: Muted chat
+    hint: Managing a busy conversation
+    difficulty: 2
+  - crewWord: Forwarded message
+    imposterWord: Screenshot
+    hint: How gossip actually travels
+    difficulty: 2
+  - crewWord: Unfollow
+    imposterWord: Mute
+    hint: Quietly reducing what you see
+    difficulty: 2
+  - crewWord: Block
+    imposterWord: Report
+    hint: Dealing with someone unpleasant
+    difficulty: 2
+  - crewWord: Privacy settings
+    imposterWord: Two factor
+    hint: Protecting your account
+    difficulty: 2
+  - crewWord: Data breach
+    imposterWord: Leak
+    hint: Your information got out
+    difficulty: 2
+  - crewWord: Phishing
+    imposterWord: Scam DM
+    hint: Somebody wants your details
+    difficulty: 2
+  - crewWord: Bot
+    imposterWord: Spam account
+    hint: Not a real person
+    difficulty: 2
+  - crewWord: Catfish
+    imposterWord: Fake profile
+    hint: They are not who they claim
+    difficulty: 2
+  - crewWord: Deepfake
+    imposterWord: Edited video
+    hint: It did not really happen
+    difficulty: 2
+  - crewWord: Misinformation
+    imposterWord: Rumour
+    hint: It is not true and it is spreading
+    difficulty: 2
+  - crewWord: Fact check
+    imposterWord: Community note
+    hint: Somebody corrected it
+    difficulty: 2
+  - crewWord: Doxxing
+    imposterWord: Oversharing
+    hint: Too much personal information online
+    difficulty: 2
+  - crewWord: Digital detox
+    imposterWord: Screen time limit
+    hint: Trying to use it less
+    difficulty: 2
+  - crewWord: Notification fatigue
+    imposterWord: Inbox zero
+    hint: A relationship with your phone
+    difficulty: 2
+  - crewWord: Terms and conditions
+    imposterWord: Cookie banner
+    hint: You clicked accept without reading
+    difficulty: 2
+  - crewWord: Engagement bait
+    imposterWord: Rage bait
+    hint: Designed to make you react
+    difficulty: 3
+  - crewWord: Parasocial
+    imposterWord: One sided
+    hint: You feel like you know them
+    difficulty: 3
+  - crewWord: Content farm
+    imposterWord: Aggregator
+    hint: It reposts other people's work
+    difficulty: 3
+  - crewWord: SEO
+    imposterWord: Keyword stuffing
+    hint: Gaming the search results
+    difficulty: 3
+  - crewWord: A/B test
+    imposterWord: Growth hack
+    hint: You are the experiment
+    difficulty: 3
+  - crewWord: Dark pattern
+    imposterWord: Nudge
+    hint: The interface is manipulating you
+    difficulty: 3
+  - crewWord: Infinite scroll
+    imposterWord: Autoplay
+    hint: Designed so you never stop
+    difficulty: 3
+  - crewWord: Attention economy
+    imposterWord: Ad revenue
+    hint: Why any of this is free
+    difficulty: 3
+  - crewWord: Astroturfing
+    imposterWord: Sock puppet
+    hint: Fake grassroots support
+    difficulty: 3
+  - crewWord: Brigading
+    imposterWord: Pile on
+    hint: A crowd arriving at once
+    difficulty: 3
+  - crewWord: Streisand effect
+    imposterWord: Backfire
+    hint: Hiding it made it bigger
+    difficulty: 3
+  - crewWord: Normie
+    imposterWord: Terminally online
+    hint: How much time you spend there
+    difficulty: 3
+  - crewWord: Lore
+    imposterWord: Drama
+    hint: The backstory a community argues about
+    difficulty: 3
+  - crewWord: Milkshake duck
+    imposterWord: Fallen influencer
+    hint: Beloved, then not
+    difficulty: 3
+  - crewWord: Enshittification
+    imposterWord: Feature creep
+    hint: The platform got worse
+    difficulty: 3
+  - crewWord: Federated
+    imposterWord: Decentralised
+    hint: No single owner
+    difficulty: 3
+  - crewWord: Open web
+    imposterWord: Walled garden
+    hint: How closed the platform is
+    difficulty: 3
+  - crewWord: Archive
+    imposterWord: Link rot
+    hint: The page has gone
+    difficulty: 3
+  - crewWord: Creative commons
+    imposterWord: Public domain
+    hint: You are allowed to use it
+    difficulty: 3
+  - crewWord: Attribution
+    imposterWord: Credit
+    hint: Naming who made it
+    difficulty: 3
+  - crewWord: Reach
+    imposterWord: Impressions
+    hint: Metrics nobody agrees on
+    difficulty: 3
+  - crewWord: Shadow profile
+    imposterWord: Tracking pixel
+    hint: They know more than you told them
+    difficulty: 3

@@ -1,0 +1,138 @@
+using PartyGame.Core.Content;
+
+namespace PartyGame.EditorTools
+{
+    public static partial class ContentSeedData
+    {
+        /// <summary>
+        /// When this pack should be re-checked. Everything in it is anchored to a named year so
+        /// the answers stay true, but the pack stops feeling current long before it stops being
+        /// correct - the review date is what forces somebody to look at it again.
+        /// </summary>
+        private const string CurrentReviewBy = "2027-09-22";
+
+        /// <summary>
+        /// Recent culture, researched against live sources rather than written from memory.
+        /// Every entry here carries a real source URL and the date it was checked.
+        /// </summary>
+        private static PackSeed<TriviaQuestion> CurrentTriviaPack()
+        {
+            return new PackSeed<TriviaQuestion>("current", "Recent history",
+                "Sport, film and music from the last couple of years", "NW", 5, new[]
+            {
+                Q("c1", "Which country won the 2026 FIFA World Cup?", "Spain",
+                    Difficulty.Easy, "Football", "worldcup,2026,football",
+                    Src("NPR", "https://www.npr.org/2026/07/19/nx-s1-5899071/2026-world-cup-fifa-argentina-spain-final-championship",
+                        CurrentReviewBy)),
+                Q("c2", "Which country did Spain beat in the 2026 World Cup final?", "Argentina",
+                    Difficulty.Medium, "Football", "worldcup,2026,football",
+                    Src("CBS News", "https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/",
+                        CurrentReviewBy)),
+                Q("c3", "Which Spain forward scored the only goal of the 2026 World Cup final?", "Ferran Torres",
+                    Difficulty.Hard, "Football", "worldcup,2026,football",
+                    Src("CBS News", "https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/",
+                        CurrentReviewBy)),
+                Q("c4", "Which three countries jointly hosted the 2026 FIFA World Cup?",
+                    "Canada, Mexico and the United States", Difficulty.Medium, "Football", "worldcup,2026,hosts",
+                    Src("Wikipedia", "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_final", CurrentReviewBy)),
+                Q("c5", "Which country topped the gold medal table at the 2026 Winter Olympics?", "Norway",
+                    Difficulty.Medium, "Olympics", "winter olympics,2026,norway",
+                    Src("NBC Olympics", "https://www.nbcolympics.com/news/final-medal-count-2026-milan-cortina-winter-olympics-and-paralympics",
+                        CurrentReviewBy)),
+                Q("c6", "Which two Italian towns hosted the 2026 Winter Olympics?", "Milan and Cortina",
+                    Difficulty.Medium, "Olympics", "winter olympics,2026,italy",
+                    Src("Olympics.com", "https://www.olympics.com/en/milano-cortina-2026/medals", CurrentReviewBy)),
+                Q("c7", "How many gold medals did Norway win at the 2026 Winter Olympics?", "18",
+                    Difficulty.Hard, "Olympics", "winter olympics,2026,medals",
+                    Src("NBC Olympics", "https://www.nbcolympics.com/news/final-medal-count-2026-milan-cortina-winter-olympics-and-paralympics",
+                        CurrentReviewBy)),
+                Q("c8", "Which film won Best Picture at the 2026 Academy Awards?", "One Battle After Another",
+                    Difficulty.Medium, "Film", "oscars,2026,film",
+                    Src("NPR", "https://www.npr.org/2026/03/15/nx-s1-5739287/oscars-2026-winners-list-best-picture-actor-actress",
+                        CurrentReviewBy)),
+                Q("c9", "Who won Best Director at the 2026 Academy Awards?", "Paul Thomas Anderson",
+                    Difficulty.Medium, "Film", "oscars,2026,directors",
+                    Src("NPR", "https://www.npr.org/2026/03/15/nx-s1-5739287/oscars-2026-winners-list-best-picture-actor-actress",
+                        CurrentReviewBy)),
+                Q("c10", "Which actor won Best Actor at the 2026 Oscars for the film Sinners?", "Michael B. Jordan",
+                    Difficulty.Medium, "Film", "oscars,2026,acting",
+                    Src("ABC News", "https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299",
+                        CurrentReviewBy)),
+                Q("c11", "Which actress won Best Actress at the 2026 Oscars for the film Hamnet?", "Jessie Buckley",
+                    Difficulty.Medium, "Film", "oscars,2026,acting",
+                    Src("ABC News", "https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299",
+                        CurrentReviewBy)),
+                Q("c12", "Which veteran actor won Best Supporting Actor at the 2026 Oscars?", "Sean Penn",
+                    Difficulty.Hard, "Film", "oscars,2026,acting",
+                    Src("ABC News", "https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299",
+                        CurrentReviewBy)),
+                Q("c13", "Which brand new category was awarded for the first time at the 2026 Oscars?", "Casting",
+                    Difficulty.Hard, "Film", "oscars,2026,categories",
+                    Src("ABC News", "https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299",
+                        CurrentReviewBy)),
+                Q("c14", "Which artist won Album of the Year at the 2026 Grammy Awards?", "Bad Bunny",
+                    Difficulty.Medium, "Music", "grammys,2026,music",
+                    Src("NPR", "https://www.npr.org/2026/02/01/nx-s1-5693046/2026-grammy-awards-full-list-winners-nominees",
+                        CurrentReviewBy)),
+                Q("c15", "The 2026 Album of the Year Grammy was the first win for an album mainly in which language?",
+                    "Spanish", Difficulty.Hard, "Music", "grammys,2026,language",
+                    Src("NPR", "https://www.npr.org/2026/02/01/nx-s1-5693046/2026-grammy-awards-full-list-winners-nominees",
+                        CurrentReviewBy)),
+                Q("c16", "Which rapper won Record of the Year at the 2026 Grammys for the track luther?",
+                    "Kendrick Lamar", Difficulty.Medium, "Music", "grammys,2026,music",
+                    Src("CBS News", "https://www.cbsnews.com/live-updates/grammy-awards-winners-2026-list/",
+                        CurrentReviewBy)),
+                Q("c17", "Which singer featured on luther, the 2026 Grammy Record of the Year?", "SZA",
+                    Difficulty.Hard, "Music", "grammys,2026,music",
+                    Src("CBS News", "https://www.cbsnews.com/live-updates/grammy-awards-winners-2026-list/",
+                        CurrentReviewBy)),
+                Q("c18", "Which country won the Eurovision Song Contest for the first time in 2026?", "Bulgaria",
+                    Difficulty.Medium, "Music", "eurovision,2026,music",
+                    Src("NPR", "https://www.npr.org/2026/05/16/nx-s1-5824393/eurovision-winner-dara-bangaranga-bulgaria-vienna-austria",
+                        CurrentReviewBy)),
+                Q("c19", "Which city hosted the 2026 Eurovision Song Contest?", "Vienna",
+                    Difficulty.Medium, "Music", "eurovision,2026,austria",
+                    Src("NPR", "https://www.npr.org/2026/05/16/nx-s1-5824393/eurovision-winner-dara-bangaranga-bulgaria-vienna-austria",
+                        CurrentReviewBy)),
+                Q("c20", "What was the name of the song that won Eurovision in 2026?", "Bangaranga",
+                    Difficulty.Hard, "Music", "eurovision,2026,songs",
+                    Src("Billboard", "https://www.billboard.com/music/music-news/eurovision-2026-winner-bulgaria-dara-1236250096/",
+                        CurrentReviewBy)),
+                Q("c21", "Which NASA mission flew a crew around the Moon in April 2026?", "Artemis II",
+                    Difficulty.Medium, "Space", "nasa,2026,moon",
+                    Src("NASA", "https://www.nasa.gov/mission/artemis-ii/", CurrentReviewBy)),
+                Q("c22", "How many astronauts were on board Artemis II?", "Four",
+                    Difficulty.Medium, "Space", "nasa,2026,moon",
+                    Src("NASA", "https://www.nasa.gov/mission/artemis-ii/", CurrentReviewBy)),
+                Q("c23", "Who commanded the Artemis II mission around the Moon?", "Reid Wiseman",
+                    Difficulty.Hard, "Space", "nasa,2026,astronauts",
+                    Src("NASA", "https://www.nasa.gov/mission/artemis-ii/", CurrentReviewBy)),
+                Q("c24", "Artemis II was the first crewed flight beyond low Earth orbit since which year?", "1972",
+                    Difficulty.Hard, "Space", "nasa,2026,apollo",
+                    Src("Wikipedia", "https://en.wikipedia.org/wiki/Artemis_II", CurrentReviewBy)),
+                Q("c25", "Which space agency did Artemis II crew member Jeremy Hansen fly for?",
+                    "The Canadian Space Agency", Difficulty.Hard, "Space", "nasa,2026,canada",
+                    Src("NASA", "https://www.nasa.gov/mission/artemis-ii/", CurrentReviewBy)),
+                Q("c26", "Roughly how many days did the Artemis II mission last?", "Ten",
+                    Difficulty.Medium, "Space", "nasa,2026,moon",
+                    Src("NASA", "https://www.nasa.gov/mission/artemis-ii/", CurrentReviewBy)),
+                Q("c27", "Which role-playing game won Game of the Year at The Game Awards 2025?",
+                    "Clair Obscur: Expedition 33", Difficulty.Medium, "Gaming", "gaming,2025,awards",
+                    Src("Variety", "https://variety.com/2025/film/news/game-awards-winners-2025-list-1236606885/",
+                        CurrentReviewBy)),
+                Q("c28", "Clair Obscur: Expedition 33 was the first game of what kind to win Game of the Year?",
+                    "A studio's debut game", Difficulty.Hard, "Gaming", "gaming,2025,awards",
+                    Src("GameSpot", "https://www.gamespot.com/gallery/all-the-game-awards-2025-winners-nominees/2900-7258/",
+                        CurrentReviewBy)),
+                Q("c29", "How many awards did Clair Obscur: Expedition 33 win at The Game Awards 2025?", "Eight",
+                    Difficulty.Hard, "Gaming", "gaming,2025,records",
+                    Src("GameSpot", "https://www.gamespot.com/gallery/all-the-game-awards-2025-winners-nominees/2900-7258/",
+                        CurrentReviewBy)),
+                Q("c30", "Which stadium hosted the 2026 World Cup final?", "MetLife Stadium",
+                    Difficulty.Hard, "Football", "worldcup,2026,venues",
+                    Src("CBS News", "https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/",
+                        CurrentReviewBy))
+            }, Freshness.Current, CurrentReviewBy);
+        }
+    }
+}

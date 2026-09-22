@@ -19,18 +19,106 @@ MonoBehaviour:
   accentIndex: 1
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   statements:
-  - id: d32
+  - id: d83
     statement: Social media has done more harm than good.
-  - id: d33
+    subcategory: Internet
+    tags:
+    - social
+  - id: d84
     statement: Group chats are better than phone calls.
-  - id: d34
+    subcategory: Communication
+    tags:
+    - messaging
+  - id: d85
     statement: Phones should be banned from the dinner table.
-  - id: d35
+    subcategory: Etiquette
+    tags:
+    - phones
+  - id: d86
     statement: Paper books beat e-readers.
-  - id: d36
+    subcategory: Reading
+    tags:
+    - ereaders
+  - id: d87
     statement: Smart home gadgets are more trouble than they are worth.
-  - id: d37
+    subcategory: Gadgets
+    tags:
+    - smarthome
+  - id: d88
     statement: Voice notes are rude.
-  - id: d38
+    subcategory: Communication
+    tags:
+    - messaging
+  - id: d89
     statement: Everyone should switch their phone off one day a week.
+    subcategory: Habits
+    tags:
+    - detox
+  - id: d90
+    statement: Autocorrect has made everyone worse at spelling.
+    subcategory: Language
+    tags:
+    - phones
+  - id: d91
+    statement: Video calls are worse than meeting in person in every way.
+    subcategory: Communication
+    tags:
+    - video
+  - id: d92
+    statement: You should never read the comments.
+    subcategory: Internet
+    tags:
+    - comments
+  - id: d93
+    statement: Notifications should be off by default.
+    subcategory: Gadgets
+    tags:
+    - phones
+  - id: d94
+    statement: Owning fewer gadgets makes life better.
+    subcategory: Gadgets
+    tags:
+    - minimalism
+  - id: d95
+    statement: Email is a worse invention than the fax machine.
+    subcategory: Communication
+    tags:
+    - email
+  - id: d96
+    statement: Wireless headphones were a mistake.
+    subcategory: Gadgets
+    tags:
+    - audio
+  - id: d97
+    statement: Everyone should know a little bit about how computers work.
+    subcategory: Skills
+    tags:
+    - literacy
+  - id: d98
+    statement: Streaming has ruined how we listen to albums.
+    subcategory: Music
+    tags:
+    - streaming
+  - id: d99
+    statement: Reading news on a phone is worse than reading a newspaper.
+    subcategory: News
+    tags:
+    - reading
+  - id: d100
+    statement: Passwords should have been replaced by now.
+    subcategory: Security
+    tags:
+    - passwords
+  - id: d101
+    statement: Screens before bed are not actually that bad.
+    subcategory: Health
+    tags:
+    - sleep
+  - id: d102
+    statement: Online shopping has made high streets better, not worse.
+    subcategory: Shopping
+    tags:
+    - retail

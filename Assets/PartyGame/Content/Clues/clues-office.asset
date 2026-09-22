@@ -14,39 +14,62 @@ MonoBehaviour:
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
   id: clues-office
   displayName: The office
-  description: Something is wrong at work
+  description: Something is quietly wrong at work
   glyph: OF
   accentIndex: 0
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   clues:
-  - id: c11
+  - id: c18
     kind: 0
     text: The entire team's lunch disappeared from the fridge before midday.
-  - id: c12
+  - id: c19
     kind: 0
     text: A meeting room was booked all week under a name nobody recognises.
-  - id: c13
+  - id: c20
     kind: 0
     text: The printer jammed at nine and somebody quietly walked away from it.
-  - id: c14
+  - id: c21
     kind: 0
     text: Someone replied all to the wrong email and then deleted the evidence.
-  - id: c15
+  - id: c22
+    kind: 0
+    text: The office plant has been watered three times today and is not happy about it.
+  - id: c23
+    kind: 0
+    text: A confidential document was found in the recycling, face up.
+  - id: c24
+    kind: 0
+    text: Every chair on the third floor has been raised to its maximum height.
+  - id: c25
+    kind: 0
+    text: The shared calendar now contains an event called Do Not Delete.
+  - id: c26
     kind: 1
     text: Security footage is grainy, but exactly one of {a} and {b} was there.
-  - id: c16
+  - id: c27
     kind: 1
     text: 'The door log narrows it to two people: one of {a} and {b} is involved.'
-  - id: c17
+  - id: c28
+    kind: 1
+    text: You checked the sign in sheet. One of {a} and {b} is not telling the truth.
+  - id: c29
     kind: 2
     text: You looked up from your desk at the wrong moment. {fact}
-  - id: c18
+  - id: c30
     kind: 2
     text: You passed them in the corridor. {fact}
-  - id: c19
+  - id: c31
+    kind: 2
+    text: You were waiting for the lift and saw something. {fact}
+  - id: c32
     kind: 3
     text: An anonymous message went round the team. {fact}
-  - id: c20
+  - id: c33
     kind: 3
     text: The cleaner mentioned one thing on the way out. {fact}
+  - id: c34
+    kind: 3
+    text: It was written on the whiteboard and nobody rubbed it off. {fact}

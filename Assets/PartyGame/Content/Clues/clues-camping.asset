@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e39b65b2141040b7cf429bd456060, type: 3}
+  m_Name: clues-camping
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
+  id: clues-camping
+  displayName: The camping trip
+  description: Wet, cold and somebody is lying
+  glyph: CT
+  accentIndex: 2
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  clues:
+  - id: c86
+    kind: 0
+    text: The last of the firewood vanished while everyone was supposedly asleep.
+  - id: c87
+    kind: 0
+    text: One tent has been moved three metres to the left overnight.
+  - id: c88
+    kind: 0
+    text: The only working torch has been found with the batteries removed.
+  - id: c89
+    kind: 0
+    text: Somebody finished the marshmallows and put the empty bag back.
+  - id: c90
+    kind: 0
+    text: There are footprints leading to the river and none leading back.
+  - id: c91
+    kind: 0
+    text: The car keys were in a different pocket to the one they were left in.
+  - id: c92
+    kind: 0
+    text: Somebody let the fire go out and then loudly blamed the wood.
+  - id: c93
+    kind: 0
+    text: A tent peg has been used to open a tin and is now unusable.
+  - id: c94
+    kind: 1
+    text: You were up in the night. Exactly one of {a} and {b} was outside their tent.
+  - id: c95
+    kind: 1
+    text: Two head torches were on at 3am. One of {a} and {b} is involved.
+  - id: c96
+    kind: 1
+    text: You counted boots by the fire. Exactly one of {a} and {b} had wet ones.
+  - id: c97
+    kind: 2
+    text: You were awake and heard the zip. {fact}
+  - id: c98
+    kind: 2
+    text: You went to find the toilet block and saw somebody. {fact}
+  - id: c99
+    kind: 2
+    text: You were poking the fire and glanced up. {fact}
+  - id: c100
+    kind: 3
+    text: Somebody found it written in the campsite log book. {fact}
+  - id: c101
+    kind: 3
+    text: The family in the next tent mentioned one thing. {fact}
+  - id: c102
+    kind: 3
+    text: It came out around the fire and everyone went quiet. {fact}

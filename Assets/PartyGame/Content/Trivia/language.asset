@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d4df53465d53f428d11b3d4c5ef24f, type: 3}
+  m_Name: language
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.TriviaPackData
+  id: language
+  displayName: Words and language
+  description: Where words come from and what they do
+  glyph: WL
+  accentIndex: 7
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  questions:
+  - id: w1
+    question: How many letters are there in the English alphabet?
+    correctAnswer: 26
+    difficulty: 1
+    subcategory: Alphabet
+    tags:
+    - english
+    - letters
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/English_alphabet
+      verifiedDate: 
+      reviewBy: 
+  - id: w2
+    question: What is a word that reads the same forwards and backwards called?
+    correctAnswer: A palindrome
+    difficulty: 1
+    subcategory: Wordplay
+    tags:
+    - words
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Palindrome
+      verifiedDate: 
+      reviewBy: 
+  - id: w3
+    question: Which language has the most native speakers in the world?
+    correctAnswer: Mandarin Chinese
+    difficulty: 2
+    subcategory: Languages
+    tags:
+    - china
+    - speakers
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers
+      verifiedDate: 
+      reviewBy: 
+  - id: w4
+    question: What does the abbreviation RSVP stand for?
+    correctAnswer: Repondez s'il vous plait
+    difficulty: 2
+    subcategory: Abbreviations
+    tags:
+    - french
+    - etiquette
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/RSVP
+      verifiedDate: 
+      reviewBy: 
+  - id: w5
+    question: What is the study of the origin of words called?
+    correctAnswer: Etymology
+    difficulty: 2
+    subcategory: Linguistics
+    tags:
+    - words
+    - study
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Etymology
+      verifiedDate: 
+      reviewBy: 
+  - id: w6
+    question: What is the term for a word that imitates the sound it describes?
+    correctAnswer: Onomatopoeia
+    difficulty: 2
+    subcategory: Wordplay
+    tags:
+    - sound
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Onomatopoeia
+      verifiedDate: 
+      reviewBy: 
+  - id: w7
+    question: Which alphabet is Russian written in?
+    correctAnswer: Cyrillic
+    difficulty: 2
+    subcategory: Writing systems
+    tags:
+    - russia
+    - alphabet
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Cyrillic_script
+      verifiedDate: 
+      reviewBy: 
+  - id: w8
+    question: What does AM stand for in clock times?
+    correctAnswer: Ante meridiem
+    difficulty: 3
+    subcategory: Abbreviations
+    tags:
+    - latin
+    - time
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/12-hour_clock
+      verifiedDate: 
+      reviewBy: 
+  - id: w9
+    question: Which language did the word kindergarten come into English from?
+    correctAnswer: German
+    difficulty: 2
+    subcategory: Loanwords
+    tags:
+    - german
+    - school
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Kindergarten
+      verifiedDate: 
+      reviewBy: 
+  - id: w10
+    question: What is the term for a phrase that contradicts itself, like deafening silence?
+    correctAnswer: An oxymoron
+    difficulty: 2
+    subcategory: Figures of speech
+    tags:
+    - words
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Oxymoron
+      verifiedDate: 
+      reviewBy: 
+  - id: w11
+    question: What is a comparison using the words like or as called?
+    correctAnswer: A simile
+    difficulty: 1
+    subcategory: Figures of speech
+    tags:
+    - english
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Simile
+      verifiedDate: 
+      reviewBy: 
+  - id: w12
+    question: What does PS stand for at the end of a letter?
+    correctAnswer: Postscript
+    difficulty: 2
+    subcategory: Abbreviations
+    tags:
+    - letters
+    - latin
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Postscript
+      verifiedDate: 
+      reviewBy: 
+  - id: w13
+    question: Which two letters are worth ten points each in English Scrabble?
+    correctAnswer: Q and Z
+    difficulty: 2
+    subcategory: Games
+    tags:
+    - scrabble
+    - letters
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Scrabble_letter_distributions
+      verifiedDate: 
+      reviewBy: 
+  - id: w14
+    question: What is the dot above a lower case letter i called?
+    correctAnswer: A tittle
+    difficulty: 3
+    subcategory: Typography
+    tags:
+    - letters
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Tittle
+      verifiedDate: 
+      reviewBy: 
+  - id: w15
+    question: What does the phrase vice versa mean?
+    correctAnswer: The other way round
+    difficulty: 1
+    subcategory: Phrases
+    tags:
+    - latin
+    - meaning
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/List_of_Latin_phrases
+      verifiedDate: 
+      reviewBy: 
+  - id: w16
+    question: What is a word with the same spelling but a different meaning called?
+    correctAnswer: A homonym
+    difficulty: 2
+    subcategory: Wordplay
+    tags:
+    - english
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Homonym
+      verifiedDate: 
+      reviewBy: 
+  - id: w17
+    question: How many letters are in the Hawaiian alphabet?
+    correctAnswer: Thirteen
+    difficulty: 3
+    subcategory: Alphabets
+    tags:
+    - hawaii
+    - letters
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Hawaiian_alphabet
+      verifiedDate: 
+      reviewBy: 
+  - id: w18
+    question: What is the name for a shortened form made of initial letters, like NATO?
+    correctAnswer: An acronym
+    difficulty: 1
+    subcategory: Wordplay
+    tags:
+    - abbreviations
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Acronym
+      verifiedDate: 
+      reviewBy: 
+  - id: w19
+    question: Which language contributes the most words to English vocabulary overall?
+    correctAnswer: Latin
+    difficulty: 3
+    subcategory: Linguistics
+    tags:
+    - latin
+    - origins
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Foreign_language_influences_in_English
+      verifiedDate: 
+      reviewBy: 
+  - id: w20
+    question: What is the only English word commonly cited as having three consecutive double letters?
+    correctAnswer: Bookkeeper
+    difficulty: 3
+    subcategory: Wordplay
+    tags:
+    - english
+    - trivia
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Bookkeeping
+      verifiedDate: 
+      reviewBy: 
+  - id: w21
+    question: What is the term for a name that is also a description, like Mr Baker the baker?
+    correctAnswer: An aptronym
+    difficulty: 3
+    subcategory: Wordplay
+    tags:
+    - names
+    - terms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Aptronym
+      verifiedDate: 
+      reviewBy: 
+  - id: w22
+    question: In the NATO phonetic alphabet, which word represents the letter B?
+    correctAnswer: Bravo
+    difficulty: 2
+    subcategory: Alphabets
+    tags:
+    - phonetic
+    - radio
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/NATO_phonetic_alphabet
+      verifiedDate: 
+      reviewBy: 
+  - id: w23
+    question: What is the plural of the word cactus most commonly given as?
+    correctAnswer: Cacti
+    difficulty: 2
+    subcategory: Grammar
+    tags:
+    - plurals
+    - latin
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Cactus
+      verifiedDate: 
+      reviewBy: 
+  - id: w24
+    question: What punctuation mark ends a question?
+    correctAnswer: A question mark
+    difficulty: 1
+    subcategory: Punctuation
+    tags:
+    - grammar
+    - basics
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Question_mark
+      verifiedDate: 
+      reviewBy: 

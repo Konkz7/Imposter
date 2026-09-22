@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e39b65b2141040b7cf429bd456060, type: 3}
+  m_Name: clues-school
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
+  id: clues-school
+  displayName: The school trip
+  description: Thirty children, four adults, one incident
+  glyph: ST
+  accentIndex: 1
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  clues:
+  - id: c69
+    kind: 0
+    text: The coach left fifteen minutes early and nobody will say who told the driver.
+  - id: c70
+    kind: 0
+    text: All the packed lunches were swapped between bags.
+  - id: c71
+    kind: 0
+    text: Someone pressed every button in the lift at the museum.
+  - id: c72
+    kind: 0
+    text: The gift shop reports one missing pencil and a great deal of guilt.
+  - id: c73
+    kind: 0
+    text: A worksheet has been filled in with answers from a completely different trip.
+  - id: c74
+    kind: 0
+    text: The fire alarm went off during the guided tour and nobody was cooking.
+  - id: c75
+    kind: 0
+    text: Someone has drawn a moustache on the laminated map.
+  - id: c76
+    kind: 0
+    text: The head count came back one too many, twice.
+  - id: c77
+    kind: 1
+    text: You did the register twice. Exactly one of {a} and {b} answered late.
+  - id: c78
+    kind: 1
+    text: Two people were last onto the coach. One of {a} and {b} is involved.
+  - id: c79
+    kind: 1
+    text: You checked the buddy pairs. Exactly one of {a} and {b} broke theirs.
+  - id: c80
+    kind: 2
+    text: You were at the back of the group and saw it happen. {fact}
+  - id: c81
+    kind: 2
+    text: You were counting heads and something did not add up. {fact}
+  - id: c82
+    kind: 2
+    text: You turned round in the gift shop at the wrong moment. {fact}
+  - id: c83
+    kind: 3
+    text: It was reported by a very confident nine year old. {fact}
+  - id: c84
+    kind: 3
+    text: The museum guide mentioned it on the way out. {fact}
+  - id: c85
+    kind: 3
+    text: Somebody wrote it in the back of the trip diary. {fact}

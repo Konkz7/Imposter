@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e39b65b2141040b7cf429bd456060, type: 3}
+  m_Name: clues-wedding
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
+  id: clues-wedding
+  displayName: The wedding
+  description: A big day with a small disaster
+  glyph: WD
+  accentIndex: 6
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  clues:
+  - id: c52
+    kind: 0
+    text: The top tier of the cake is missing and the photographer has gone very quiet.
+  - id: c53
+    kind: 0
+    text: Somebody rewrote the seating plan an hour before the guests arrived.
+  - id: c54
+    kind: 0
+    text: The best man's speech notes were found in the car park.
+  - id: c55
+    kind: 0
+    text: Three people have claimed the same plus one.
+  - id: c56
+    kind: 0
+    text: The first dance playlist was swapped for something nobody chose.
+  - id: c57
+    kind: 0
+    text: A gift envelope was opened and sealed again badly.
+  - id: c58
+    kind: 0
+    text: Somebody has been quietly drinking the top table champagne all afternoon.
+  - id: c59
+    kind: 0
+    text: The confetti was thrown twenty minutes before the couple came out.
+  - id: c60
+    kind: 1
+    text: You were at the door greeting guests. Exactly one of {a} and {b} slipped away.
+  - id: c61
+    kind: 1
+    text: 'The seating plan narrows it: one of {a} and {b} was not where they should be.'
+  - id: c62
+    kind: 1
+    text: Two people left during the speeches. Exactly one of {a} and {b} is involved.
+  - id: c63
+    kind: 2
+    text: You were fixing your hat in the mirror and saw them behind you. {fact}
+  - id: c64
+    kind: 2
+    text: You stepped out for the speeches and noticed something. {fact}
+  - id: c65
+    kind: 2
+    text: You were near the cake table at exactly the wrong moment. {fact}
+  - id: c66
+    kind: 3
+    text: It turned up in the wedding photos. {fact}
+  - id: c67
+    kind: 3
+    text: A guest mentioned it to the venue staff. {fact}
+  - id: c68
+    kind: 3
+    text: The DJ announced it by mistake over the microphone. {fact}

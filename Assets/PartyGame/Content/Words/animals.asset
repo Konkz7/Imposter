@@ -19,40 +19,426 @@ MonoBehaviour:
   accentIndex: 2
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
   - crewWord: Dog
     imposterWord: Wolf
     hint: Four legs and a very good nose
+    difficulty: 1
   - crewWord: Cat
     imposterWord: Lion
     hint: It lands on its feet
+    difficulty: 1
   - crewWord: Horse
     imposterWord: Donkey
     hint: You can put a saddle on it
+    difficulty: 1
   - crewWord: Shark
     imposterWord: Dolphin
     hint: It never stops swimming
-  - crewWord: Eagle
-    imposterWord: Owl
-    hint: Sharp eyes and sharper claws
-  - crewWord: Snake
-    imposterWord: Lizard
-    hint: Cold blooded and scaly
+    difficulty: 1
   - crewWord: Rabbit
     imposterWord: Hamster
     hint: Small, fluffy and fast
+    difficulty: 1
   - crewWord: Elephant
     imposterWord: Rhino
     hint: Enormous and grey
+    difficulty: 1
   - crewWord: Penguin
     imposterWord: Seal
     hint: Happier in cold water
+    difficulty: 1
   - crewWord: Bee
     imposterWord: Wasp
     hint: Small, striped and not to be annoyed
+    difficulty: 1
   - crewWord: Frog
     imposterWord: Toad
     hint: It starts life in the water
+    difficulty: 1
   - crewWord: Monkey
     imposterWord: Squirrel
     hint: Excellent at climbing
+    difficulty: 1
+  - crewWord: Cow
+    imposterWord: Sheep
+    hint: It stands in a field
+    difficulty: 1
+  - crewWord: Pig
+    imposterWord: Goat
+    hint: It lives on a farm
+    difficulty: 1
+  - crewWord: Chicken
+    imposterWord: Duck
+    hint: It has feathers and a farmyard job
+    difficulty: 1
+  - crewWord: Mouse
+    imposterWord: Rat
+    hint: Small, grey and unwelcome indoors
+    difficulty: 1
+  - crewWord: Fish
+    imposterWord: Turtle
+    hint: It lives in water
+    difficulty: 1
+  - crewWord: Eagle
+    imposterWord: Owl
+    hint: Sharp eyes and sharper claws
+    difficulty: 2
+  - crewWord: Snake
+    imposterWord: Lizard
+    hint: Cold blooded and scaly
+    difficulty: 2
+  - crewWord: Tiger
+    imposterWord: Leopard
+    hint: Big cat with markings
+    difficulty: 2
+  - crewWord: Crocodile
+    imposterWord: Alligator
+    hint: All teeth and patience
+    difficulty: 2
+  - crewWord: Whale
+    imposterWord: Manatee
+    hint: Huge and entirely harmless
+    difficulty: 2
+  - crewWord: Octopus
+    imposterWord: Squid
+    hint: Too many arms
+    difficulty: 2
+  - crewWord: Jellyfish
+    imposterWord: Starfish
+    hint: Drifts or clings, never rushes
+    difficulty: 2
+  - crewWord: Crab
+    imposterWord: Lobster
+    hint: It walks sideways or backwards
+    difficulty: 2
+  - crewWord: Butterfly
+    imposterWord: Moth
+    hint: It was a caterpillar once
+    difficulty: 2
+  - crewWord: Spider
+    imposterWord: Scorpion
+    hint: Eight legs and no friends
+    difficulty: 2
+  - crewWord: Ant
+    imposterWord: Termite
+    hint: Tiny, organised and everywhere
+    difficulty: 2
+  - crewWord: Beetle
+    imposterWord: Cockroach
+    hint: Hard shell and unloved
+    difficulty: 2
+  - crewWord: Worm
+    imposterWord: Slug
+    hint: No legs and no hurry
+    difficulty: 2
+  - crewWord: Snail
+    imposterWord: Tortoise
+    hint: It carries its house
+    difficulty: 2
+  - crewWord: Bat
+    imposterWord: Flying squirrel
+    hint: It moves through the air at night
+    difficulty: 2
+  - crewWord: Fox
+    imposterWord: Coyote
+    hint: Clever and after your bins
+    difficulty: 2
+  - crewWord: Bear
+    imposterWord: Gorilla
+    hint: Huge, strong and best avoided
+    difficulty: 2
+  - crewWord: Deer
+    imposterWord: Antelope
+    hint: It runs at the first sound
+    difficulty: 2
+  - crewWord: Giraffe
+    imposterWord: Ostrich
+    hint: Absurdly long neck
+    difficulty: 2
+  - crewWord: Zebra
+    imposterWord: Wildebeest
+    hint: It moves in a big herd
+    difficulty: 2
+  - crewWord: Hippo
+    imposterWord: Buffalo
+    hint: Heavy and in a bad mood
+    difficulty: 2
+  - crewWord: Camel
+    imposterWord: Llama
+    hint: It spits and does not apologise
+    difficulty: 2
+  - crewWord: Kangaroo
+    imposterWord: Wallaby
+    hint: It hops and has a pocket
+    difficulty: 2
+  - crewWord: Koala
+    imposterWord: Sloth
+    hint: It sleeps most of the day
+    difficulty: 2
+  - crewWord: Panda
+    imposterWord: Polar bear
+    hint: Black and white and famous
+    difficulty: 2
+  - crewWord: Wolf
+    imposterWord: Hyena
+    hint: It hunts in a group
+    difficulty: 2
+  - crewWord: Badger
+    imposterWord: Raccoon
+    hint: Stripes and night-time mischief
+    difficulty: 2
+  - crewWord: Hedgehog
+    imposterWord: Porcupine
+    hint: Covered in spines
+    difficulty: 2
+  - crewWord: Otter
+    imposterWord: Beaver
+    hint: It lives by the river
+    difficulty: 2
+  - crewWord: Mole
+    imposterWord: Vole
+    hint: Small and mostly underground
+    difficulty: 2
+  - crewWord: Ferret
+    imposterWord: Weasel
+    hint: Long, thin and quick
+    difficulty: 2
+  - crewWord: Parrot
+    imposterWord: Cockatoo
+    hint: Colourful and far too loud
+    difficulty: 2
+  - crewWord: Pigeon
+    imposterWord: Seagull
+    hint: It will steal your chips
+    difficulty: 2
+  - crewWord: Crow
+    imposterWord: Raven
+    hint: Black, clever and a bit ominous
+    difficulty: 2
+  - crewWord: Robin
+    imposterWord: Sparrow
+    hint: Small garden bird
+    difficulty: 2
+  - crewWord: Swan
+    imposterWord: Goose
+    hint: White, elegant and aggressive
+    difficulty: 2
+  - crewWord: Flamingo
+    imposterWord: Stork
+    hint: Long legs, standing in water
+    difficulty: 2
+  - crewWord: Peacock
+    imposterWord: Pheasant
+    hint: Showing off in feathers
+    difficulty: 2
+  - crewWord: Woodpecker
+    imposterWord: Kingfisher
+    hint: A bird with one very specific skill
+    difficulty: 2
+  - crewWord: Hummingbird
+    imposterWord: Dragonfly
+    hint: It hovers
+    difficulty: 2
+  - crewWord: Falcon
+    imposterWord: Hawk
+    hint: It dives at things
+    difficulty: 2
+  - crewWord: Vulture
+    imposterWord: Condor
+    hint: It circles and waits
+    difficulty: 2
+  - crewWord: Seahorse
+    imposterWord: Pufferfish
+    hint: Odd-shaped and slow
+    difficulty: 2
+  - crewWord: Eel
+    imposterWord: Catfish
+    hint: Long fish in murky water
+    difficulty: 2
+  - crewWord: Salmon
+    imposterWord: Trout
+    hint: It swims upstream
+    difficulty: 2
+  - crewWord: Clownfish
+    imposterWord: Angelfish
+    hint: Bright fish on a reef
+    difficulty: 2
+  - crewWord: Stingray
+    imposterWord: Skate
+    hint: Flat and gliding along the seabed
+    difficulty: 2
+  - crewWord: Walrus
+    imposterWord: Sea lion
+    hint: Blubber and whiskers
+    difficulty: 2
+  - crewWord: Orca
+    imposterWord: Narwhal
+    hint: A whale with a party trick
+    difficulty: 2
+  - crewWord: Puffin
+    imposterWord: Penguin chick
+    hint: Small, black and white, extremely photogenic
+    difficulty: 2
+  - crewWord: Chameleon
+    imposterWord: Gecko
+    hint: A lizard with a trick
+    difficulty: 2
+  - crewWord: Iguana
+    imposterWord: Komodo dragon
+    hint: A very large lizard
+    difficulty: 2
+  - crewWord: Python
+    imposterWord: Cobra
+    hint: A snake with a reputation
+    difficulty: 2
+  - crewWord: Tarantula
+    imposterWord: Black widow
+    hint: A spider people name-drop
+    difficulty: 2
+  - crewWord: Centipede
+    imposterWord: Millipede
+    hint: Far too many legs
+    difficulty: 2
+  - crewWord: Ladybird
+    imposterWord: Firefly
+    hint: A small beetle people like
+    difficulty: 2
+  - crewWord: Grasshopper
+    imposterWord: Cricket
+    hint: It chirps in summer
+    difficulty: 2
+  - crewWord: Wasp nest
+    imposterWord: Beehive
+    hint: You should not poke it
+    difficulty: 2
+  - crewWord: Puppy
+    imposterWord: Kitten
+    hint: Young, small and ruins furniture
+    difficulty: 2
+  - crewWord: Guinea pig
+    imposterWord: Chinchilla
+    hint: A pet that lives in a cage
+    difficulty: 2
+  - crewWord: Budgie
+    imposterWord: Canary
+    hint: A small bird in a cage
+    difficulty: 2
+  - crewWord: Goldfish
+    imposterWord: Koi
+    hint: It swims in circles
+    difficulty: 2
+  - crewWord: Pony
+    imposterWord: Foal
+    hint: A small horse
+    difficulty: 2
+  - crewWord: Lamb
+    imposterWord: Calf
+    hint: A baby farm animal
+    difficulty: 2
+  - crewWord: Sheepdog
+    imposterWord: Guide dog
+    hint: A dog with a job
+    difficulty: 2
+  - crewWord: Greyhound
+    imposterWord: Whippet
+    hint: Built entirely for running
+    difficulty: 2
+  - crewWord: Bulldog
+    imposterWord: Pug
+    hint: It snores
+    difficulty: 2
+  - crewWord: Labrador
+    imposterWord: Golden retriever
+    hint: Friendly and sheds everywhere
+    difficulty: 2
+  - crewWord: Poodle
+    imposterWord: Spaniel
+    hint: A dog with a haircut
+    difficulty: 2
+  - crewWord: Siamese
+    imposterWord: Persian
+    hint: A cat with a pedigree
+    difficulty: 2
+  - crewWord: Tabby
+    imposterWord: Tortoiseshell
+    hint: A cat described by its markings
+    difficulty: 2
+  - crewWord: Lemur
+    imposterWord: Meerkat
+    hint: Small, social and always standing up
+    difficulty: 3
+  - crewWord: Tapir
+    imposterWord: Anteater
+    hint: An odd nose and a quiet life
+    difficulty: 3
+  - crewWord: Armadillo
+    imposterWord: Pangolin
+    hint: Armour-plated and rolls into a ball
+    difficulty: 3
+  - crewWord: Capybara
+    imposterWord: Wombat
+    hint: Large, calm rodent-shaped thing
+    difficulty: 3
+  - crewWord: Axolotl
+    imposterWord: Newt
+    hint: An amphibian that refuses to grow up
+    difficulty: 3
+  - crewWord: Okapi
+    imposterWord: Bongo
+    hint: Stripes and a forest nobody visits
+    difficulty: 3
+  - crewWord: Marmoset
+    imposterWord: Tamarin
+    hint: A very small primate
+    difficulty: 3
+  - crewWord: Ibex
+    imposterWord: Chamois
+    hint: It stands on a cliff for fun
+    difficulty: 3
+  - crewWord: Puffer
+    imposterWord: Lionfish
+    hint: Pretty and best not touched
+    difficulty: 3
+  - crewWord: Albatross
+    imposterWord: Petrel
+    hint: It spends its life over the sea
+    difficulty: 3
+  - crewWord: Heron
+    imposterWord: Egret
+    hint: It stands still in shallow water
+    difficulty: 3
+  - crewWord: Stoat
+    imposterWord: Marten
+    hint: Small predator nobody can identify
+    difficulty: 3
+  - crewWord: Caiman
+    imposterWord: Gharial
+    hint: A crocodile relative with a face
+    difficulty: 3
+  - crewWord: Bison
+    imposterWord: Yak
+    hint: Shaggy and enormous
+    difficulty: 3
+  - crewWord: Jackal
+    imposterWord: Dingo
+    hint: A wild dog with a bad name
+    difficulty: 3
+  - crewWord: Mongoose
+    imposterWord: Civet
+    hint: Small, quick and unfamiliar
+    difficulty: 3
+  - crewWord: Cuttlefish
+    imposterWord: Nautilus
+    hint: A sea creature with a strange shell or skin
+    difficulty: 3
+  - crewWord: Manta ray
+    imposterWord: Basking shark
+    hint: Enormous and completely harmless
+    difficulty: 3
+  - crewWord: Tardigrade
+    imposterWord: Amoeba
+    hint: Far too small to see and far too tough
+    difficulty: 3

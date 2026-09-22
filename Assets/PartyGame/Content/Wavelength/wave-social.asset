@@ -14,41 +14,186 @@ MonoBehaviour:
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
   id: wave-social
   displayName: Around the table
-  description: Party-friendly prompts
+  description: People, manners and awkward moments
   glyph: PT
   accentIndex: 6
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   questions:
-  - id: w31
-    prompt: Describe a party
+  - id: w86
+    prompt: Name a party
     lowLabel: everyone left early
     highLabel: talked about for years
-  - id: w32
-    prompt: Describe a first date idea
+    difficulty: 1
+    tags:
+    - social
+  - id: w87
+    prompt: Name a first date idea
     lowLabel: a disaster
     highLabel: a brilliant idea
-  - id: w33
-    prompt: Describe a group holiday activity
+    difficulty: 1
+    tags:
+    - social
+  - id: w88
+    prompt: Name a group holiday activity
     lowLabel: nobody wants to do it
     highLabel: everyone is in
-  - id: w34
-    prompt: Describe a house rule
+    difficulty: 1
+    tags:
+    - social
+  - id: w89
+    prompt: Name a house rule
     lowLabel: unreasonable
     highLabel: completely fair
-  - id: w35
-    prompt: Describe a way to say sorry
+    difficulty: 1
+    tags:
+    - home
+  - id: w90
+    prompt: Name a way to say sorry
     lowLabel: makes it worse
     highLabel: completely forgiven
-  - id: w36
-    prompt: Describe a small act of kindness
+    difficulty: 1
+    tags:
+    - social
+  - id: w91
+    prompt: Name a small act of kindness
     lowLabel: barely noticed
     highLabel: made someone's week
-  - id: w37
-    prompt: Describe a group chat message
+    difficulty: 1
+    tags:
+    - social
+  - id: w92
+    prompt: Name a group chat message
     lowLabel: instantly ignored
     highLabel: gets forty replies
-  - id: w38
-    prompt: Describe a way to wake someone up
+    difficulty: 1
+    tags:
+    - internet
+  - id: w93
+    prompt: Name a way to wake someone up
     lowLabel: cruel
     highLabel: lovely
+    difficulty: 1
+    tags:
+    - social
+  - id: w94
+    prompt: Name a thing to say in a job interview
+    lowLabel: instantly disqualifying
+    highLabel: gets you hired
+    difficulty: 2
+    tags:
+    - work
+  - id: w95
+    prompt: Name a housemate habit
+    lowLabel: mildly irritating
+    highLabel: grounds for moving out
+    difficulty: 2
+    tags:
+    - home
+  - id: w96
+    prompt: Name a way to end a phone call
+    lowLabel: rude
+    highLabel: charming
+    difficulty: 2
+    tags:
+    - social
+  - id: w97
+    prompt: Name a thing to bring to a dinner party
+    lowLabel: an insult to the host
+    highLabel: the perfect contribution
+    difficulty: 2
+    tags:
+    - social
+  - id: w98
+    prompt: Name a conversation starter
+    lowLabel: kills the conversation
+    highLabel: gets everyone talking
+    difficulty: 2
+    tags:
+    - social
+  - id: w99
+    prompt: Name a thing to do at a wedding
+    lowLabel: a serious faux pas
+    highLabel: exactly right
+    difficulty: 2
+    tags:
+    - social
+  - id: w100
+    prompt: Name a way to give bad news
+    lowLabel: brutal
+    highLabel: as kind as possible
+    difficulty: 2
+    tags:
+    - social
+  - id: w101
+    prompt: Name an excuse for being late
+    lowLabel: nobody believes it
+    highLabel: completely reasonable
+    difficulty: 2
+    tags:
+    - social
+  - id: w102
+    prompt: Name a thing to do on public transport
+    lowLabel: wildly antisocial
+    highLabel: considerate
+    difficulty: 2
+    tags:
+    - travel
+  - id: w103
+    prompt: Name a way to split a restaurant bill
+    lowLabel: causes an argument
+    highLabel: entirely fair
+    difficulty: 2
+    tags:
+    - money
+  - id: w104
+    prompt: Name a nickname
+    lowLabel: genuinely offensive
+    highLabel: affectionate
+    difficulty: 2
+    tags:
+    - social
+  - id: w105
+    prompt: Name a thing to do when a guest stays over
+    lowLabel: makes them uncomfortable
+    highLabel: makes them feel at home
+    difficulty: 2
+    tags:
+    - social
+  - id: w106
+    prompt: Name a text you could send at midnight
+    lowLabel: unacceptable
+    highLabel: completely fine
+    difficulty: 2
+    tags:
+    - social
+  - id: w107
+    prompt: Name a way to leave a party
+    lowLabel: memorably bad
+    highLabel: perfectly judged
+    difficulty: 3
+    tags:
+    - social
+  - id: w108
+    prompt: Name a thing to say to a neighbour
+    lowLabel: starts a feud
+    highLabel: starts a friendship
+    difficulty: 3
+    tags:
+    - social
+  - id: w109
+    prompt: Name a favour to ask a friend
+    lowLabel: asking far too much
+    highLabel: completely reasonable
+    difficulty: 3
+    tags:
+    - social
+  - id: w110
+    prompt: Name a family tradition
+    lowLabel: a chore everyone dreads
+    highLabel: the highlight of the year
+    difficulty: 3
+    tags:
+    - family

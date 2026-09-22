@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: history
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: history
+  displayName: History
+  description: Empires, inventions and things that happened
+  glyph: HS
+  accentIndex: 4
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: King
+    imposterWord: Queen
+    hint: They sit on a throne
+    difficulty: 1
+  - crewWord: Castle
+    imposterWord: Fort
+    hint: Built to keep people out
+    difficulty: 1
+  - crewWord: Knight
+    imposterWord: Soldier
+    hint: Armour and a weapon
+    difficulty: 1
+  - crewWord: Sword
+    imposterWord: Shield
+    hint: Used in a battle long ago
+    difficulty: 1
+  - crewWord: Pyramid
+    imposterWord: Temple
+    hint: Ancient, enormous and made of stone
+    difficulty: 1
+  - crewWord: Mummy
+    imposterWord: Tomb
+    hint: Ancient Egypt, and the dead
+    difficulty: 1
+  - crewWord: Viking
+    imposterWord: Pirate
+    hint: They arrived by boat and took things
+    difficulty: 1
+  - crewWord: Explorer
+    imposterWord: Sailor
+    hint: They crossed an ocean
+    difficulty: 1
+  - crewWord: Crown
+    imposterWord: Sceptre
+    hint: Royal and made of gold
+    difficulty: 1
+  - crewWord: Museum
+    imposterWord: Ruins
+    hint: Where you see old things
+    difficulty: 1
+  - crewWord: Cave painting
+    imposterWord: Hieroglyph
+    hint: Very old writing or drawing
+    difficulty: 1
+  - crewWord: Empire
+    imposterWord: Kingdom
+    hint: A large territory with a ruler
+    difficulty: 1
+  - crewWord: Battle
+    imposterWord: War
+    hint: Fighting, at different scales
+    difficulty: 1
+  - crewWord: Invention
+    imposterWord: Discovery
+    hint: Somebody worked something out
+    difficulty: 1
+  - crewWord: Revolution
+    imposterWord: Uprising
+    hint: The people have had enough
+    difficulty: 1
+  - crewWord: Roman Empire
+    imposterWord: Greek Empire
+    hint: Ancient, Mediterranean and influential
+    difficulty: 2
+  - crewWord: Colosseum
+    imposterWord: Pantheon
+    hint: A Roman building still standing
+    difficulty: 2
+  - crewWord: Gladiator
+    imposterWord: Centurion
+    hint: A Roman with a job
+    difficulty: 2
+  - crewWord: Aqueduct
+    imposterWord: Road network
+    hint: Roman engineering
+    difficulty: 2
+  - crewWord: Pharaoh
+    imposterWord: Emperor
+    hint: An ancient ruler
+    difficulty: 2
+  - crewWord: Sphinx
+    imposterWord: Obelisk
+    hint: An ancient monument
+    difficulty: 2
+  - crewWord: Papyrus
+    imposterWord: Parchment
+    hint: What they wrote on
+    difficulty: 2
+  - crewWord: Silk Road
+    imposterWord: Spice trade
+    hint: Goods moving a very long way
+    difficulty: 2
+  - crewWord: Medieval
+    imposterWord: Renaissance
+    hint: A period in European history
+    difficulty: 2
+  - crewWord: Plague
+    imposterWord: Famine
+    hint: A catastrophe for ordinary people
+    difficulty: 2
+  - crewWord: Monastery
+    imposterWord: Abbey
+    hint: Monks lived there
+    difficulty: 2
+  - crewWord: Longbow
+    imposterWord: Crossbow
+    hint: A ranged medieval weapon
+    difficulty: 2
+  - crewWord: Catapult
+    imposterWord: Battering ram
+    hint: For getting into a castle
+    difficulty: 2
+  - crewWord: Moat
+    imposterWord: Drawbridge
+    hint: Castle defence
+    difficulty: 2
+  - crewWord: Feudalism
+    imposterWord: Serfdom
+    hint: Who owed what to whom
+    difficulty: 2
+  - crewWord: Magna Carta
+    imposterWord: Constitution
+    hint: A document that limited power
+    difficulty: 2
+  - crewWord: Printing press
+    imposterWord: Movable type
+    hint: It made books cheap
+    difficulty: 2
+  - crewWord: Compass
+    imposterWord: Astrolabe
+    hint: Navigation before satellites
+    difficulty: 2
+  - crewWord: Galleon
+    imposterWord: Caravel
+    hint: An old sailing ship
+    difficulty: 2
+  - crewWord: Colony
+    imposterWord: Settlement
+    hint: People arriving and staying
+    difficulty: 2
+  - crewWord: Industrial Revolution
+    imposterWord: Steam age
+    hint: Factories and coal smoke
+    difficulty: 2
+  - crewWord: Steam engine
+    imposterWord: Spinning jenny
+    hint: A machine that changed work
+    difficulty: 2
+  - crewWord: Factory
+    imposterWord: Mill
+    hint: Where the industrial work happened
+    difficulty: 2
+  - crewWord: Railway
+    imposterWord: Canal
+    hint: How goods moved in the 1800s
+    difficulty: 2
+  - crewWord: Telegraph
+    imposterWord: Morse code
+    hint: Messages down a wire
+    difficulty: 2
+  - crewWord: Lightbulb
+    imposterWord: Phonograph
+    hint: A famous nineteenth century invention
+    difficulty: 2
+  - crewWord: Suffragette
+    imposterWord: Campaigner
+    hint: They fought for the vote
+    difficulty: 2
+  - crewWord: Trench
+    imposterWord: No mans land
+    hint: The First World War
+    difficulty: 2
+  - crewWord: Rationing
+    imposterWord: Blackout
+    hint: Life on the home front
+    difficulty: 2
+  - crewWord: Evacuee
+    imposterWord: Land girl
+    hint: A wartime role
+    difficulty: 2
+  - crewWord: Spitfire
+    imposterWord: Lancaster
+    hint: A British aircraft in the war
+    difficulty: 2
+  - crewWord: Code breaking
+    imposterWord: Enigma
+    hint: The secret war
+    difficulty: 2
+  - crewWord: D Day
+    imposterWord: Blitz
+    hint: A well known wartime event
+    difficulty: 2
+  - crewWord: Cold War
+    imposterWord: Space Race
+    hint: Two superpowers competing
+    difficulty: 2
+  - crewWord: Berlin Wall
+    imposterWord: Iron Curtain
+    hint: A division across Europe
+    difficulty: 2
+  - crewWord: Moon landing
+    imposterWord: Sputnik
+    hint: A milestone in space
+    difficulty: 2
+  - crewWord: Concorde
+    imposterWord: Jumbo jet
+    hint: Aviation history
+    difficulty: 2
+  - crewWord: Titanic
+    imposterWord: Lusitania
+    hint: A famous ship that sank
+    difficulty: 2
+  - crewWord: Great Fire
+    imposterWord: Great Exhibition
+    hint: A London event with a name
+    difficulty: 2
+  - crewWord: Stonehenge
+    imposterWord: Hadrian's Wall
+    hint: Ancient Britain in stone
+    difficulty: 2
+  - crewWord: Archaeology
+    imposterWord: Excavation
+    hint: Digging things up carefully
+    difficulty: 2
+  - crewWord: Artefact
+    imposterWord: Relic
+    hint: An old object in a case
+    difficulty: 2
+  - crewWord: Manuscript
+    imposterWord: Scroll
+    hint: Handwritten and very old
+    difficulty: 2
+  - crewWord: Coin hoard
+    imposterWord: Shipwreck
+    hint: A treasure find
+    difficulty: 2
+  - crewWord: Carbon dating
+    imposterWord: Tree rings
+    hint: How old things are dated
+    difficulty: 2
+  - crewWord: Dynasty
+    imposterWord: Monarchy
+    hint: Power passed down a family
+    difficulty: 2
+  - crewWord: Parliament
+    imposterWord: Senate
+    hint: Where laws get argued about
+    difficulty: 2
+  - crewWord: Treaty
+    imposterWord: Armistice
+    hint: The fighting stops on paper
+    difficulty: 2
+  - crewWord: Abolition
+    imposterWord: Emancipation
+    hint: Freedom granted in law
+    difficulty: 2
+  - crewWord: Civil rights
+    imposterWord: Protest march
+    hint: Demanding to be treated equally
+    difficulty: 2
+  - crewWord: Independence
+    imposterWord: Partition
+    hint: A country changes shape
+    difficulty: 2
+  - crewWord: Census
+    imposterWord: Parish record
+    hint: How we know who lived where
+    difficulty: 2
+  - crewWord: Guild
+    imposterWord: Apprenticeship
+    hint: How a trade was organised
+    difficulty: 2
+  - crewWord: Plague doctor
+    imposterWord: Apothecary
+    hint: Historic medicine, badly
+    difficulty: 2
+  - crewWord: Workhouse
+    imposterWord: Poorhouse
+    hint: Where the destitute ended up
+    difficulty: 2
+  - crewWord: Highwayman
+    imposterWord: Smuggler
+    hint: A criminal with a romantic reputation
+    difficulty: 2
+  - crewWord: Penny farthing
+    imposterWord: Horse and cart
+    hint: Getting about before cars
+    difficulty: 2
+  - crewWord: Gas lamp
+    imposterWord: Candlelight
+    hint: Light before electricity
+    difficulty: 2
+  - crewWord: Typewriter
+    imposterWord: Fountain pen
+    hint: How people wrote at work
+    difficulty: 2
+  - crewWord: Gramophone
+    imposterWord: Wireless
+    hint: Listening at home, historically
+    difficulty: 2
+  - crewWord: Newsreel
+    imposterWord: Broadsheet
+    hint: How people got the news
+    difficulty: 2
+  - crewWord: Ration book
+    imposterWord: Identity card
+    hint: Wartime paperwork
+    difficulty: 2
+  - crewWord: Bomb shelter
+    imposterWord: Anderson shelter
+    hint: Where you hid
+    difficulty: 2
+  - crewWord: Empire
+    imposterWord: Commonwealth
+    hint: Before and after
+    difficulty: 2
+  - crewWord: Monument
+    imposterWord: Memorial
+    hint: Built to remember something
+    difficulty: 2
+  - crewWord: Mesopotamia
+    imposterWord: Indus Valley
+    hint: A very early civilisation
+    difficulty: 3
+  - crewWord: Byzantine
+    imposterWord: Ottoman
+    hint: An empire centred on Constantinople
+    difficulty: 3
+  - crewWord: Enlightenment
+    imposterWord: Reformation
+    hint: A change in how Europe thought
+    difficulty: 3
+  - crewWord: Bronze Age
+    imposterWord: Iron Age
+    hint: Named after a metal
+    difficulty: 3
+  - crewWord: Neolithic
+    imposterWord: Palaeolithic
+    hint: Stone age, early or late
+    difficulty: 3
+  - crewWord: Vellum
+    imposterWord: Papyrus
+    hint: A writing surface before paper
+    difficulty: 3
+  - crewWord: Illuminated manuscript
+    imposterWord: Codex
+    hint: A handmade book
+    difficulty: 3
+  - crewWord: Domesday Book
+    imposterWord: Rolls
+    hint: An early official record
+    difficulty: 3
+  - crewWord: Chartist
+    imposterWord: Luddite
+    hint: A nineteenth century movement
+    difficulty: 3
+  - crewWord: Enclosure
+    imposterWord: Clearances
+    hint: People removed from the land
+    difficulty: 3
+  - crewWord: Poor Law
+    imposterWord: Corn Laws
+    hint: Legislation that shaped daily life
+    difficulty: 3
+  - crewWord: Zeppelin
+    imposterWord: Dreadnought
+    hint: Military technology of its moment
+    difficulty: 3
+  - crewWord: Armada
+    imposterWord: Blockade
+    hint: Naval strategy
+    difficulty: 3
+  - crewWord: Regicide
+    imposterWord: Abdication
+    hint: A monarch leaves, one way or another
+    difficulty: 3
+  - crewWord: Interregnum
+    imposterWord: Restoration
+    hint: The monarchy paused and returned
+    difficulty: 3
+  - crewWord: Jacobite
+    imposterWord: Roundhead
+    hint: A side in a British conflict
+    difficulty: 3
+  - crewWord: Hanseatic League
+    imposterWord: East India Company
+    hint: Trade with enormous power
+    difficulty: 3
+  - crewWord: Triangular trade
+    imposterWord: Mercantilism
+    hint: How empires made money
+    difficulty: 3
+  - crewWord: Cuneiform
+    imposterWord: Linear B
+    hint: An ancient script
+    difficulty: 3
+  - crewWord: Rosetta Stone
+    imposterWord: Dead Sea Scrolls
+    hint: A find that unlocked a language or a text
+    difficulty: 3
+  - crewWord: Antikythera mechanism
+    imposterWord: Astrolabe
+    hint: An ancient device far ahead of its time
+    difficulty: 3
+  - crewWord: Terracotta Army
+    imposterWord: Sutton Hoo
+    hint: A burial site full of treasure
+    difficulty: 3

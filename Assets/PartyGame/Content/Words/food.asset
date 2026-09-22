@@ -19,43 +19,434 @@ MonoBehaviour:
   accentIndex: 3
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
   - crewWord: Pizza
     imposterWord: Burger
     hint: You usually eat it with your hands
-  - crewWord: Sushi
-    imposterWord: Sandwich
-    hint: It comes in neat little pieces
-  - crewWord: Pancake
-    imposterWord: Waffle
-    hint: Breakfast, often with syrup
-  - crewWord: Curry
-    imposterWord: Stew
-    hint: Slow cooked and served hot
-  - crewWord: Ice cream
-    imposterWord: Milkshake
-    hint: Cold, sweet and dairy
+    difficulty: 1
   - crewWord: Chips
     imposterWord: Crisps
     hint: Potato, salt and regret
+    difficulty: 1
+  - crewWord: Ice cream
+    imposterWord: Milkshake
+    hint: Cold, sweet and dairy
+    difficulty: 1
+  - crewWord: Pancake
+    imposterWord: Waffle
+    hint: Breakfast, often with syrup
+    difficulty: 1
   - crewWord: Spaghetti
     imposterWord: Noodles
     hint: Long and best twirled
-  - crewWord: Cheese
-    imposterWord: Butter
-    hint: It lives in the fridge door
+    difficulty: 1
   - crewWord: Chocolate
     imposterWord: Toffee
     hint: Sweet and best shared
+    difficulty: 1
   - crewWord: Salad
     imposterWord: Soup
     hint: Somebody always calls it healthy
-  - crewWord: Roast dinner
-    imposterWord: Barbecue
-    hint: A whole afternoon of cooking
-  - crewWord: Doughnut
-    imposterWord: Croissant
-    hint: Best bought fresh in the morning
+    difficulty: 1
   - crewWord: Popcorn
     imposterWord: Peanuts
-    hint: Snack food eaten by the handful
+    hint: Eaten by the handful
+    difficulty: 1
+  - crewWord: Toast
+    imposterWord: Bagel
+    hint: Goes in the toaster
+    difficulty: 1
+  - crewWord: Tea
+    imposterWord: Coffee
+    hint: The first thing you offer a guest
+    difficulty: 1
+  - crewWord: Apple
+    imposterWord: Pear
+    hint: Fits in one hand
+    difficulty: 1
+  - crewWord: Banana
+    imposterWord: Orange
+    hint: You peel it
+    difficulty: 1
+  - crewWord: Cheese
+    imposterWord: Butter
+    hint: Lives in the fridge door
+    difficulty: 1
+  - crewWord: Biscuit
+    imposterWord: Cookie
+    hint: Goes with a hot drink
+    difficulty: 1
+  - crewWord: Sausage
+    imposterWord: Bacon
+    hint: Part of a fry-up
+    difficulty: 1
+  - crewWord: Sushi
+    imposterWord: Sandwich
+    hint: Comes in neat little pieces
+    difficulty: 2
+  - crewWord: Curry
+    imposterWord: Stew
+    hint: Slow cooked and served hot
+    difficulty: 2
+  - crewWord: Taco
+    imposterWord: Burrito
+    hint: Folded and usually messy
+    difficulty: 2
+  - crewWord: Lasagne
+    imposterWord: Moussaka
+    hint: Layered and baked in a dish
+    difficulty: 2
+  - crewWord: Risotto
+    imposterWord: Paella
+    hint: Rice cooked slowly in one pan
+    difficulty: 2
+  - crewWord: Ramen
+    imposterWord: Pho
+    hint: A bowl of broth and noodles
+    difficulty: 2
+  - crewWord: Hot dog
+    imposterWord: Sausage roll
+    hint: Meat wrapped in something
+    difficulty: 2
+  - crewWord: Omelette
+    imposterWord: Scrambled eggs
+    hint: Eggs and a hot pan
+    difficulty: 2
+  - crewWord: Porridge
+    imposterWord: Cereal
+    hint: Breakfast in a bowl
+    difficulty: 2
+  - crewWord: Croissant
+    imposterWord: Doughnut
+    hint: Best bought fresh in the morning
+    difficulty: 2
+  - crewWord: Cupcake
+    imposterWord: Muffin
+    hint: One portion, baked in paper
+    difficulty: 2
+  - crewWord: Brownie
+    imposterWord: Flapjack
+    hint: A tray bake cut into squares
+    difficulty: 2
+  - crewWord: Cheesecake
+    imposterWord: Tiramisu
+    hint: Dessert served in a slice
+    difficulty: 2
+  - crewWord: Trifle
+    imposterWord: Sundae
+    hint: Layers in a glass bowl
+    difficulty: 2
+  - crewWord: Custard
+    imposterWord: Cream
+    hint: Poured over pudding
+    difficulty: 2
+  - crewWord: Yoghurt
+    imposterWord: Mousse
+    hint: Spooned from a small pot
+    difficulty: 2
+  - crewWord: Jelly
+    imposterWord: Sorbet
+    hint: Wobbly or icy and very sweet
+    difficulty: 2
+  - crewWord: Jam
+    imposterWord: Honey
+    hint: Spread on toast
+    difficulty: 2
+  - crewWord: Ketchup
+    imposterWord: Brown sauce
+    hint: It lives on the table
+    difficulty: 2
+  - crewWord: Mustard
+    imposterWord: Mayonnaise
+    hint: A condiment in a squeezy bottle
+    difficulty: 2
+  - crewWord: Pickle
+    imposterWord: Olive
+    hint: Salty and divisive
+    difficulty: 2
+  - crewWord: Cucumber
+    imposterWord: Courgette
+    hint: Long, green and mostly water
+    difficulty: 2
+  - crewWord: Broccoli
+    imposterWord: Cauliflower
+    hint: A vegetable with a head
+    difficulty: 2
+  - crewWord: Carrot
+    imposterWord: Parsnip
+    hint: Pulled out of the ground
+    difficulty: 2
+  - crewWord: Potato
+    imposterWord: Sweet potato
+    hint: Roasted, mashed or fried
+    difficulty: 2
+  - crewWord: Pumpkin
+    imposterWord: Butternut squash
+    hint: Big, orange and seasonal
+    difficulty: 2
+  - crewWord: Rice
+    imposterWord: Couscous
+    hint: Grains that soak up sauce
+    difficulty: 2
+  - crewWord: Bread
+    imposterWord: Naan
+    hint: Torn and dipped
+    difficulty: 2
+  - crewWord: Baguette
+    imposterWord: Ciabatta
+    hint: A loaf with a crust
+    difficulty: 2
+  - crewWord: Pretzel
+    imposterWord: Breadstick
+    hint: Salty and crunchy
+    difficulty: 2
+  - crewWord: Lemon
+    imposterWord: Lime
+    hint: Sharp and citrus
+    difficulty: 2
+  - crewWord: Strawberry
+    imposterWord: Raspberry
+    hint: Small, red and soft
+    difficulty: 2
+  - crewWord: Blueberry
+    imposterWord: Blackberry
+    hint: A handful of tiny fruit
+    difficulty: 2
+  - crewWord: Grape
+    imposterWord: Cherry
+    hint: Comes in a bunch or a bag
+    difficulty: 2
+  - crewWord: Melon
+    imposterWord: Mango
+    hint: Sweet, juicy and messy
+    difficulty: 2
+  - crewWord: Pineapple
+    imposterWord: Coconut
+    hint: Tough on the outside
+    difficulty: 2
+  - crewWord: Peach
+    imposterWord: Nectarine
+    hint: Stone fruit in summer
+    difficulty: 2
+  - crewWord: Walnut
+    imposterWord: Pecan
+    hint: A nut in a shell
+    difficulty: 2
+  - crewWord: Cashew
+    imposterWord: Pistachio
+    hint: Sold in a bag at the bar
+    difficulty: 2
+  - crewWord: Latte
+    imposterWord: Cappuccino
+    hint: Coffee with milk foam
+    difficulty: 2
+  - crewWord: Espresso
+    imposterWord: Americano
+    hint: Small, strong and black
+    difficulty: 2
+  - crewWord: Smoothie
+    imposterWord: Juice
+    hint: Fruit in a glass
+    difficulty: 2
+  - crewWord: Lemonade
+    imposterWord: Iced tea
+    hint: Cold, sweet and bottled
+    difficulty: 2
+  - crewWord: Cola
+    imposterWord: Ginger beer
+    hint: Fizzy and served with ice
+    difficulty: 2
+  - crewWord: Beer
+    imposterWord: Cider
+    hint: Cold and served in a pint
+    difficulty: 2
+  - crewWord: Wine
+    imposterWord: Champagne
+    hint: Poured at a celebration
+    difficulty: 2
+  - crewWord: Whisky
+    imposterWord: Brandy
+    hint: Brown, strong and sipped
+    difficulty: 2
+  - crewWord: Vodka
+    imposterWord: Gin
+    hint: Clear and mixed with something
+    difficulty: 2
+  - crewWord: Cocktail
+    imposterWord: Mocktail
+    hint: Comes with a garnish
+    difficulty: 2
+  - crewWord: Steak
+    imposterWord: Roast beef
+    hint: A big piece of red meat
+    difficulty: 2
+  - crewWord: Chicken
+    imposterWord: Turkey
+    hint: A whole bird in the oven
+    difficulty: 2
+  - crewWord: Duck
+    imposterWord: Goose
+    hint: A bird you rarely cook
+    difficulty: 2
+  - crewWord: Lamb
+    imposterWord: Pork
+    hint: Sunday dinner meat
+    difficulty: 2
+  - crewWord: Salmon
+    imposterWord: Tuna
+    hint: Pink fish, often tinned or raw
+    difficulty: 2
+  - crewWord: Cod
+    imposterWord: Haddock
+    hint: White fish in batter
+    difficulty: 2
+  - crewWord: Prawn
+    imposterWord: Crab
+    hint: Shellfish you have to work at
+    difficulty: 2
+  - crewWord: Lobster
+    imposterWord: Oyster
+    hint: Expensive and served with a fuss
+    difficulty: 2
+  - crewWord: Calamari
+    imposterWord: Scampi
+    hint: Fried seafood starter
+    difficulty: 2
+  - crewWord: Kebab
+    imposterWord: Gyros
+    hint: Meat carved off a spinning stack
+    difficulty: 2
+  - crewWord: Falafel
+    imposterWord: Hummus
+    hint: Chickpeas, one way or another
+    difficulty: 2
+  - crewWord: Nachos
+    imposterWord: Quesadilla
+    hint: Cheese, tortilla and sharing
+    difficulty: 2
+  - crewWord: Guacamole
+    imposterWord: Salsa
+    hint: Scooped up with a crisp
+    difficulty: 2
+  - crewWord: Dumpling
+    imposterWord: Spring roll
+    hint: Filled, folded and steamed or fried
+    difficulty: 2
+  - crewWord: Stir fry
+    imposterWord: Chow mein
+    hint: Cooked fast in a wok
+    difficulty: 2
+  - crewWord: Tofu
+    imposterWord: Halloumi
+    hint: Holds its shape when fried
+    difficulty: 2
+  - crewWord: Cheddar
+    imposterWord: Brie
+    hint: Sliced onto a cracker
+    difficulty: 2
+  - crewWord: Mozzarella
+    imposterWord: Feta
+    hint: White cheese, often crumbled or torn
+    difficulty: 2
+  - crewWord: Scone
+    imposterWord: Crumpet
+    hint: Toasted and buttered
+    difficulty: 2
+  - crewWord: Pie
+    imposterWord: Tart
+    hint: Pastry with a filling
+    difficulty: 2
+  - crewWord: Quiche
+    imposterWord: Frittata
+    hint: Eggs baked with bits in
+    difficulty: 2
+  - crewWord: Pasty
+    imposterWord: Empanada
+    hint: A meal folded into pastry
+    difficulty: 2
+  - crewWord: Gravy
+    imposterWord: Cheese sauce
+    hint: Poured over the top
+    difficulty: 2
+  - crewWord: Stuffing
+    imposterWord: Yorkshire pudding
+    hint: Only appears at Christmas dinner
+    difficulty: 2
+  - crewWord: Mashed potato
+    imposterWord: Roast potato
+    hint: Potato on a dinner plate
+    difficulty: 2
+  - crewWord: Coleslaw
+    imposterWord: Potato salad
+    hint: Cold, creamy and at every barbecue
+    difficulty: 2
+  - crewWord: Corn on the cob
+    imposterWord: Garlic bread
+    hint: A side you eat with your hands
+    difficulty: 2
+  - crewWord: Panini
+    imposterWord: Toastie
+    hint: Pressed, hot and melty
+    difficulty: 2
+  - crewWord: Buffet
+    imposterWord: Picnic
+    hint: Food laid out for everyone
+    difficulty: 2
+  - crewWord: Parmesan
+    imposterWord: Pecorino
+    hint: Hard cheese, grated finely
+    difficulty: 3
+  - crewWord: Chowder
+    imposterWord: Bisque
+    hint: A thick, rich soup
+    difficulty: 3
+  - crewWord: Shortbread
+    imposterWord: Gingerbread
+    hint: A biscuit with a strong identity
+    difficulty: 3
+  - crewWord: Wonton
+    imposterWord: Gyoza
+    hint: A small parcel in a steamer
+    difficulty: 3
+  - crewWord: Satay
+    imposterWord: Sweet and sour
+    hint: A sauce with a strong flavour
+    difficulty: 3
+  - crewWord: Fondue
+    imposterWord: Raclette
+    hint: Melted cheese as an event
+    difficulty: 3
+  - crewWord: Charcuterie
+    imposterWord: Cheeseboard
+    hint: A plate of things to pick at
+    difficulty: 3
+  - crewWord: Mutton
+    imposterWord: Venison
+    hint: Meat you rarely see in a supermarket
+    difficulty: 3
+  - crewWord: Crayfish
+    imposterWord: Mussel
+    hint: Shellfish with a shell to crack or open
+    difficulty: 3
+  - crewWord: Plantain
+    imposterWord: Yam
+    hint: Looks like something more familiar
+    difficulty: 3
+  - crewWord: Papaya
+    imposterWord: Guava
+    hint: Tropical, sweet and rarely in a lunchbox
+    difficulty: 3
+  - crewWord: Tahini
+    imposterWord: Miso
+    hint: A paste that flavours everything it touches
+    difficulty: 3
+  - crewWord: Espresso martini
+    imposterWord: Negroni
+    hint: Ordered by someone being particular
+    difficulty: 3
+  - crewWord: Sourdough
+    imposterWord: Rye bread
+    hint: Dense bread with an opinion attached
+    difficulty: 3

@@ -1,0 +1,436 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: science
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: science
+  displayName: Science
+  description: Space, the body and how things work
+  glyph: SI
+  accentIndex: 1
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Sunlight
+    imposterWord: Starlight
+    hint: It travels a very long way to reach you
+    difficulty: 1
+  - crewWord: Earth
+    imposterWord: Mars
+    hint: A planet
+    difficulty: 1
+  - crewWord: Rocket
+    imposterWord: Satellite
+    hint: It goes into space
+    difficulty: 1
+  - crewWord: Astronaut
+    imposterWord: Cosmonaut
+    hint: They have been off the planet
+    difficulty: 1
+  - crewWord: Telescope
+    imposterWord: Microscope
+    hint: You look through it
+    difficulty: 1
+  - crewWord: Magnet
+    imposterWord: Battery
+    hint: It has two ends and does something
+    difficulty: 1
+  - crewWord: Heart
+    imposterWord: Lung
+    hint: It keeps you alive
+    difficulty: 1
+  - crewWord: Brain
+    imposterWord: Spine
+    hint: It runs your nervous system
+    difficulty: 1
+  - crewWord: Bone
+    imposterWord: Muscle
+    hint: It is inside you
+    difficulty: 1
+  - crewWord: Blood
+    imposterWord: Oxygen
+    hint: It moves round your body
+    difficulty: 1
+  - crewWord: Germ
+    imposterWord: Virus
+    hint: It makes you ill
+    difficulty: 1
+  - crewWord: Vaccine
+    imposterWord: Medicine
+    hint: It helps you get better
+    difficulty: 1
+  - crewWord: Experiment
+    imposterWord: Test
+    hint: You try it and see
+    difficulty: 1
+  - crewWord: Gravity
+    imposterWord: Weight
+    hint: It pulls things down
+    difficulty: 1
+  - crewWord: Electricity
+    imposterWord: Power
+    hint: It comes out of the wall
+    difficulty: 1
+  - crewWord: Planet
+    imposterWord: Moon
+    hint: It orbits something
+    difficulty: 2
+  - crewWord: Star
+    imposterWord: Sun
+    hint: It burns a long way away
+    difficulty: 2
+  - crewWord: Comet
+    imposterWord: Asteroid
+    hint: A lump of rock and ice in space
+    difficulty: 2
+  - crewWord: Black hole
+    imposterWord: Neutron star
+    hint: Extremely dense and slightly terrifying
+    difficulty: 2
+  - crewWord: Galaxy
+    imposterWord: Solar system
+    hint: A collection of things in space
+    difficulty: 2
+  - crewWord: Orbit
+    imposterWord: Trajectory
+    hint: The path something takes
+    difficulty: 2
+  - crewWord: Space station
+    imposterWord: Space probe
+    hint: Built by humans, out there now
+    difficulty: 2
+  - crewWord: Rover
+    imposterWord: Lander
+    hint: It arrived on another world
+    difficulty: 2
+  - crewWord: Telescope array
+    imposterWord: Radio telescope
+    hint: Listening to the sky
+    difficulty: 2
+  - crewWord: Light year
+    imposterWord: Parsec
+    hint: A distance far too big to picture
+    difficulty: 2
+  - crewWord: Big Bang
+    imposterWord: Expansion
+    hint: How the universe started or continues
+    difficulty: 2
+  - crewWord: Atom
+    imposterWord: Molecule
+    hint: Very small and everything is made of it
+    difficulty: 2
+  - crewWord: Proton
+    imposterWord: Neutron
+    hint: It sits in the nucleus
+    difficulty: 2
+  - crewWord: Electron
+    imposterWord: Photon
+    hint: Tiny and moving fast
+    difficulty: 2
+  - crewWord: Element
+    imposterWord: Compound
+    hint: It is on the periodic table, or made from it
+    difficulty: 2
+  - crewWord: Oxygen
+    imposterWord: Nitrogen
+    hint: It is in the air you breathe
+    difficulty: 2
+  - crewWord: Carbon
+    imposterWord: Hydrogen
+    hint: An element in almost everything
+    difficulty: 2
+  - crewWord: Acid
+    imposterWord: Alkali
+    hint: It is at one end of the pH scale
+    difficulty: 2
+  - crewWord: Solid
+    imposterWord: Liquid
+    hint: A state of matter
+    difficulty: 2
+  - crewWord: Evaporation
+    imposterWord: Condensation
+    hint: Water changing state
+    difficulty: 2
+  - crewWord: Melting
+    imposterWord: Freezing
+    hint: Temperature changes it
+    difficulty: 2
+  - crewWord: Chemical reaction
+    imposterWord: Combustion
+    hint: Something has changed permanently
+    difficulty: 2
+  - crewWord: Catalyst
+    imposterWord: Enzyme
+    hint: It speeds things up
+    difficulty: 2
+  - crewWord: Crystal
+    imposterWord: Mineral
+    hint: It forms naturally in a shape
+    difficulty: 2
+  - crewWord: Alloy
+    imposterWord: Mixture
+    hint: More than one thing combined
+    difficulty: 2
+  - crewWord: Force
+    imposterWord: Energy
+    hint: Physics in one word
+    difficulty: 2
+  - crewWord: Friction
+    imposterWord: Drag
+    hint: It slows things down
+    difficulty: 2
+  - crewWord: Velocity
+    imposterWord: Acceleration
+    hint: How fast, or how fast that changes
+    difficulty: 2
+  - crewWord: Mass
+    imposterWord: Density
+    hint: How much there is, or how tightly packed
+    difficulty: 2
+  - crewWord: Pressure
+    imposterWord: Vacuum
+    hint: About what the air is doing
+    difficulty: 2
+  - crewWord: Sound wave
+    imposterWord: Light wave
+    hint: It travels and carries information
+    difficulty: 2
+  - crewWord: Frequency
+    imposterWord: Wavelength
+    hint: A property of a wave
+    difficulty: 2
+  - crewWord: Reflection
+    imposterWord: Refraction
+    hint: Light changing direction
+    difficulty: 2
+  - crewWord: Spectrum
+    imposterWord: Prism
+    hint: Light split into colours
+    difficulty: 2
+  - crewWord: Laser
+    imposterWord: LED
+    hint: A very controlled bit of light
+    difficulty: 2
+  - crewWord: Circuit
+    imposterWord: Current
+    hint: Electricity doing its job
+    difficulty: 2
+  - crewWord: Voltage
+    imposterWord: Resistance
+    hint: An electrical measurement
+    difficulty: 2
+  - crewWord: Conductor
+    imposterWord: Insulator
+    hint: Electricity goes through it, or does not
+    difficulty: 2
+  - crewWord: Generator
+    imposterWord: Turbine
+    hint: It makes electricity
+    difficulty: 2
+  - crewWord: Solar panel
+    imposterWord: Wind turbine
+    hint: Renewable energy equipment
+    difficulty: 2
+  - crewWord: Nuclear power
+    imposterWord: Fusion
+    hint: Energy from atoms
+    difficulty: 2
+  - crewWord: Fossil fuel
+    imposterWord: Biofuel
+    hint: You burn it for energy
+    difficulty: 2
+  - crewWord: Greenhouse gas
+    imposterWord: Carbon footprint
+    hint: Climate change vocabulary
+    difficulty: 2
+  - crewWord: Ecosystem
+    imposterWord: Food chain
+    hint: How living things connect
+    difficulty: 2
+  - crewWord: Species
+    imposterWord: Habitat
+    hint: What it is, or where it lives
+    difficulty: 2
+  - crewWord: Evolution
+    imposterWord: Natural selection
+    hint: How species change
+    difficulty: 2
+  - crewWord: Fossil
+    imposterWord: Dinosaur
+    hint: Very old and dug up
+    difficulty: 2
+  - crewWord: DNA
+    imposterWord: Gene
+    hint: The instructions inside you
+    difficulty: 2
+  - crewWord: Cell
+    imposterWord: Tissue
+    hint: A building block of the body
+    difficulty: 2
+  - crewWord: Bacteria
+    imposterWord: Fungus
+    hint: Alive, tiny and not an animal
+    difficulty: 2
+  - crewWord: Antibiotic
+    imposterWord: Antiviral
+    hint: It fights an infection
+    difficulty: 2
+  - crewWord: Immune system
+    imposterWord: Antibody
+    hint: How your body defends itself
+    difficulty: 2
+  - crewWord: Nerve
+    imposterWord: Neuron
+    hint: It carries a signal
+    difficulty: 2
+  - crewWord: Hormone
+    imposterWord: Enzyme
+    hint: A chemical messenger in the body
+    difficulty: 2
+  - crewWord: Digestion
+    imposterWord: Metabolism
+    hint: What your body does with food
+    difficulty: 2
+  - crewWord: Skeleton
+    imposterWord: Ribcage
+    hint: Bones, all or in part
+    difficulty: 2
+  - crewWord: Lungs
+    imposterWord: Diaphragm
+    hint: Breathing equipment
+    difficulty: 2
+  - crewWord: Kidney
+    imposterWord: Liver
+    hint: An organ that filters
+    difficulty: 2
+  - crewWord: Vitamin
+    imposterWord: Mineral
+    hint: You are supposed to eat more of it
+    difficulty: 2
+  - crewWord: Protein
+    imposterWord: Carbohydrate
+    hint: A food group
+    difficulty: 2
+  - crewWord: X ray
+    imposterWord: MRI scan
+    hint: A picture of your insides
+    difficulty: 2
+  - crewWord: Stethoscope
+    imposterWord: Thermometer
+    hint: A doctor uses it
+    difficulty: 2
+  - crewWord: Thermostat
+    imposterWord: Barometer
+    hint: It measures something in the air
+    difficulty: 2
+  - crewWord: Compass
+    imposterWord: Gyroscope
+    hint: It knows which way is which
+    difficulty: 2
+  - crewWord: Lever
+    imposterWord: Pulley
+    hint: A simple machine
+    difficulty: 2
+  - crewWord: Gear
+    imposterWord: Cog
+    hint: It turns and makes something else turn
+    difficulty: 2
+  - crewWord: Quantum
+    imposterWord: Relativity
+    hint: Physics that hurts to think about
+    difficulty: 3
+  - crewWord: Entropy
+    imposterWord: Thermodynamics
+    hint: Why you cannot unscramble an egg
+    difficulty: 3
+  - crewWord: Isotope
+    imposterWord: Ion
+    hint: An atom that is not standard
+    difficulty: 3
+  - crewWord: Half life
+    imposterWord: Decay
+    hint: It gets weaker over time
+    difficulty: 3
+  - crewWord: Polymer
+    imposterWord: Monomer
+    hint: One unit, or many joined up
+    difficulty: 3
+  - crewWord: Oxidation
+    imposterWord: Reduction
+    hint: Electrons changing hands
+    difficulty: 3
+  - crewWord: Solvent
+    imposterWord: Solute
+    hint: One dissolves in the other
+    difficulty: 3
+  - crewWord: Viscosity
+    imposterWord: Surface tension
+    hint: A property of a liquid
+    difficulty: 3
+  - crewWord: Centrifuge
+    imposterWord: Spectrometer
+    hint: Lab equipment with a specific job
+    difficulty: 3
+  - crewWord: Mitosis
+    imposterWord: Meiosis
+    hint: A cell dividing, one way or another
+    difficulty: 3
+  - crewWord: Chromosome
+    imposterWord: Genome
+    hint: Genetic material, at different scales
+    difficulty: 3
+  - crewWord: Mutation
+    imposterWord: Adaptation
+    hint: Change in a living thing
+    difficulty: 3
+  - crewWord: Symbiosis
+    imposterWord: Parasitism
+    hint: Two species living together
+    difficulty: 3
+  - crewWord: Biodiversity
+    imposterWord: Biomass
+    hint: Measuring life in an area
+    difficulty: 3
+  - crewWord: Photosynthesis
+    imposterWord: Chlorophyll
+    hint: How a plant uses light
+    difficulty: 3
+  - crewWord: Tectonic plate
+    imposterWord: Fault line
+    hint: Why the ground moves
+    difficulty: 3
+  - crewWord: Magnetic field
+    imposterWord: Electromagnetism
+    hint: Invisible and extremely useful
+    difficulty: 3
+  - crewWord: Superconductor
+    imposterWord: Semiconductor
+    hint: A material that behaves oddly
+    difficulty: 3
+  - crewWord: Nanotechnology
+    imposterWord: Microfabrication
+    hint: Engineering at a tiny scale
+    difficulty: 3
+  - crewWord: Placebo
+    imposterWord: Control group
+    hint: How a trial stays honest
+    difficulty: 3
+  - crewWord: Hypothesis
+    imposterWord: Theory
+    hint: An idea at a stage of testing
+    difficulty: 3
+  - crewWord: Peer review
+    imposterWord: Replication
+    hint: How science checks itself
+    difficulty: 3

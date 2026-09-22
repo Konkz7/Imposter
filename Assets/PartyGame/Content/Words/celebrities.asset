@@ -1,0 +1,428 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: celebrities
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: celebrities
+  displayName: Famous people
+  description: Names everyone at the table will know
+  glyph: FP
+  accentIndex: 5
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Cristiano Ronaldo
+    imposterWord: Lionel Messi
+    hint: A footballer people argue about
+    difficulty: 1
+  - crewWord: Serena Williams
+    imposterWord: Roger Federer
+    hint: A tennis legend
+    difficulty: 1
+  - crewWord: Usain Bolt
+    imposterWord: Mo Farah
+    hint: An Olympic runner
+    difficulty: 1
+  - crewWord: Lewis Hamilton
+    imposterWord: Max Verstappen
+    hint: A Formula One driver
+    difficulty: 1
+  - crewWord: David Beckham
+    imposterWord: Wayne Rooney
+    hint: An England footballer turned household name
+    difficulty: 1
+  - crewWord: Taylor Swift
+    imposterWord: Adele
+    hint: A singer who fills stadiums
+    difficulty: 1
+  - crewWord: Beyonce
+    imposterWord: Rihanna
+    hint: A pop star and a business empire
+    difficulty: 1
+  - crewWord: Ed Sheeran
+    imposterWord: Lewis Capaldi
+    hint: A singer with a guitar
+    difficulty: 1
+  - crewWord: Elton John
+    imposterWord: Paul McCartney
+    hint: A British music knight
+    difficulty: 1
+  - crewWord: Tom Cruise
+    imposterWord: Brad Pitt
+    hint: A Hollywood leading man
+    difficulty: 1
+  - crewWord: Meryl Streep
+    imposterWord: Judi Dench
+    hint: An actress with a shelf of awards
+    difficulty: 1
+  - crewWord: Tom Hanks
+    imposterWord: Denzel Washington
+    hint: An actor everybody trusts
+    difficulty: 1
+  - crewWord: Emma Watson
+    imposterWord: Daniel Radcliffe
+    hint: They grew up on screen
+    difficulty: 1
+  - crewWord: Morgan Freeman
+    imposterWord: David Attenborough
+    hint: A voice you would recognise anywhere
+    difficulty: 1
+  - crewWord: Gordon Ramsay
+    imposterWord: Jamie Oliver
+    hint: A TV chef
+    difficulty: 1
+  - crewWord: Michael Jordan
+    imposterWord: LeBron James
+    hint: A basketball icon
+    difficulty: 2
+  - crewWord: Tiger Woods
+    imposterWord: Rory McIlroy
+    hint: A golfer
+    difficulty: 2
+  - crewWord: Muhammad Ali
+    imposterWord: Mike Tyson
+    hint: A boxer people still talk about
+    difficulty: 2
+  - crewWord: Simone Biles
+    imposterWord: Nadia Comaneci
+    hint: A gymnast who changed the sport
+    difficulty: 2
+  - crewWord: Andy Murray
+    imposterWord: Novak Djokovic
+    hint: A tennis player with a rivalry
+    difficulty: 2
+  - crewWord: Marcus Rashford
+    imposterWord: Harry Kane
+    hint: An England striker
+    difficulty: 2
+  - crewWord: Jurgen Klopp
+    imposterWord: Pep Guardiola
+    hint: A football manager
+    difficulty: 2
+  - crewWord: Anthony Joshua
+    imposterWord: Tyson Fury
+    hint: A British heavyweight
+    difficulty: 2
+  - crewWord: Jessica Ennis-Hill
+    imposterWord: Denise Lewis
+    hint: A British heptathlete
+    difficulty: 2
+  - crewWord: Chris Hoy
+    imposterWord: Bradley Wiggins
+    hint: A British cyclist
+    difficulty: 2
+  - crewWord: Madonna
+    imposterWord: Cher
+    hint: A pop star who kept reinventing
+    difficulty: 2
+  - crewWord: Freddie Mercury
+    imposterWord: David Bowie
+    hint: A British rock icon
+    difficulty: 2
+  - crewWord: Dolly Parton
+    imposterWord: Shania Twain
+    hint: A country music star
+    difficulty: 2
+  - crewWord: Stormzy
+    imposterWord: Dave
+    hint: A British rapper
+    difficulty: 2
+  - crewWord: Dua Lipa
+    imposterWord: Charli XCX
+    hint: A British pop star
+    difficulty: 2
+  - crewWord: Bob Marley
+    imposterWord: Stevie Wonder
+    hint: A musician with a message
+    difficulty: 2
+  - crewWord: Amy Winehouse
+    imposterWord: Lana Del Rey
+    hint: A singer with a distinctive voice
+    difficulty: 2
+  - crewWord: Harry Styles
+    imposterWord: Zayn Malik
+    hint: They were in the same boy band
+    difficulty: 2
+  - crewWord: Billie Eilish
+    imposterWord: Olivia Rodrigo
+    hint: A young pop star
+    difficulty: 2
+  - crewWord: Idris Elba
+    imposterWord: Daniel Craig
+    hint: A British leading man
+    difficulty: 2
+  - crewWord: Olivia Colman
+    imposterWord: Helena Bonham Carter
+    hint: A British actress
+    difficulty: 2
+  - crewWord: Ryan Reynolds
+    imposterWord: Ryan Gosling
+    hint: An actor called Ryan
+    difficulty: 2
+  - crewWord: Margot Robbie
+    imposterWord: Florence Pugh
+    hint: An actress in everything lately
+    difficulty: 2
+  - crewWord: Samuel L Jackson
+    imposterWord: Laurence Fishburne
+    hint: A very recognisable actor
+    difficulty: 2
+  - crewWord: Dwayne Johnson
+    imposterWord: Jason Statham
+    hint: An action star
+    difficulty: 2
+  - crewWord: Steven Spielberg
+    imposterWord: Christopher Nolan
+    hint: A director whose films are events
+    difficulty: 2
+  - crewWord: Quentin Tarantino
+    imposterWord: Martin Scorsese
+    hint: A director with a style
+    difficulty: 2
+  - crewWord: Greta Gerwig
+    imposterWord: Sofia Coppola
+    hint: A director with a distinctive voice
+    difficulty: 2
+  - crewWord: Michael Caine
+    imposterWord: Ian McKellen
+    hint: A knighted British actor
+    difficulty: 2
+  - crewWord: Ricky Gervais
+    imposterWord: Steve Coogan
+    hint: A British comedian and actor
+    difficulty: 2
+  - crewWord: Michael McIntyre
+    imposterWord: Peter Kay
+    hint: A British stand up comedian
+    difficulty: 2
+  - crewWord: Graham Norton
+    imposterWord: Jonathan Ross
+    hint: A British chat show host
+    difficulty: 2
+  - crewWord: Ant and Dec
+    imposterWord: Holly and Phil
+    hint: A British television double act
+    difficulty: 2
+  - crewWord: Clare Balding
+    imposterWord: Gary Lineker
+    hint: A British sports presenter
+    difficulty: 2
+  - crewWord: Mary Berry
+    imposterWord: Prue Leith
+    hint: A baking judge
+    difficulty: 2
+  - crewWord: Nigella Lawson
+    imposterWord: Delia Smith
+    hint: A British cookery writer
+    difficulty: 2
+  - crewWord: Heston Blumenthal
+    imposterWord: Marco Pierre White
+    hint: A chef with a reputation
+    difficulty: 2
+  - crewWord: Stephen Fry
+    imposterWord: Sandi Toksvig
+    hint: A very well spoken quiz host
+    difficulty: 2
+  - crewWord: Brian Cox
+    imposterWord: Neil deGrasse Tyson
+    hint: A scientist who does television
+    difficulty: 2
+  - crewWord: David Attenborough
+    imposterWord: Jane Goodall
+    hint: A naturalist people revere
+    difficulty: 2
+  - crewWord: Stephen Hawking
+    imposterWord: Albert Einstein
+    hint: A physicist everyone has heard of
+    difficulty: 2
+  - crewWord: Marie Curie
+    imposterWord: Rosalind Franklin
+    hint: A scientist who changed her field
+    difficulty: 2
+  - crewWord: Isaac Newton
+    imposterWord: Charles Darwin
+    hint: A British scientist on a banknote
+    difficulty: 2
+  - crewWord: Ada Lovelace
+    imposterWord: Alan Turing
+    hint: A pioneer of computing
+    difficulty: 2
+  - crewWord: Tim Berners-Lee
+    imposterWord: Bill Gates
+    hint: They shaped how you use a computer
+    difficulty: 2
+  - crewWord: Steve Jobs
+    imposterWord: Elon Musk
+    hint: A technology figure people have opinions about
+    difficulty: 2
+  - crewWord: Walt Disney
+    imposterWord: Jim Henson
+    hint: They built a world for children
+    difficulty: 2
+  - crewWord: J K Rowling
+    imposterWord: Philip Pullman
+    hint: A British author of a huge series
+    difficulty: 2
+  - crewWord: Roald Dahl
+    imposterWord: David Walliams
+    hint: A children's author
+    difficulty: 2
+  - crewWord: Agatha Christie
+    imposterWord: Arthur Conan Doyle
+    hint: They wrote detectives
+    difficulty: 2
+  - crewWord: Charles Dickens
+    imposterWord: Jane Austen
+    hint: A novelist on the school syllabus
+    difficulty: 2
+  - crewWord: William Shakespeare
+    imposterWord: Christopher Marlowe
+    hint: An Elizabethan playwright
+    difficulty: 2
+  - crewWord: Banksy
+    imposterWord: Damien Hirst
+    hint: A British artist who causes arguments
+    difficulty: 2
+  - crewWord: Vincent van Gogh
+    imposterWord: Claude Monet
+    hint: A painter on a fridge magnet
+    difficulty: 2
+  - crewWord: Pablo Picasso
+    imposterWord: Salvador Dali
+    hint: A painter who broke the rules
+    difficulty: 2
+  - crewWord: Leonardo da Vinci
+    imposterWord: Michelangelo
+    hint: A Renaissance genius
+    difficulty: 2
+  - crewWord: Frida Kahlo
+    imposterWord: Georgia O'Keeffe
+    hint: A painter with a recognisable style
+    difficulty: 2
+  - crewWord: Nelson Mandela
+    imposterWord: Martin Luther King
+    hint: A leader of a civil rights struggle
+    difficulty: 2
+  - crewWord: Winston Churchill
+    imposterWord: Margaret Thatcher
+    hint: A British prime minister
+    difficulty: 2
+  - crewWord: Mahatma Gandhi
+    imposterWord: Malala Yousafzai
+    hint: A campaigner known worldwide
+    difficulty: 2
+  - crewWord: Queen Elizabeth II
+    imposterWord: Queen Victoria
+    hint: A long reigning British monarch
+    difficulty: 2
+  - crewWord: Greta Thunberg
+    imposterWord: David Suzuki
+    hint: An environmental campaigner
+    difficulty: 2
+  - crewWord: Oprah Winfrey
+    imposterWord: Ellen DeGeneres
+    hint: An American talk show host
+    difficulty: 2
+  - crewWord: Simon Cowell
+    imposterWord: Louis Walsh
+    hint: A talent show judge
+    difficulty: 2
+  - crewWord: Tim Henman
+    imposterWord: Greg Rusedski
+    hint: A British tennis player of the nineties
+    difficulty: 3
+  - crewWord: Jonny Wilkinson
+    imposterWord: Martin Johnson
+    hint: An England rugby World Cup winner
+    difficulty: 3
+  - crewWord: Nigel Mansell
+    imposterWord: Jackie Stewart
+    hint: A British world champion driver
+    difficulty: 3
+  - crewWord: Kelly Holmes
+    imposterWord: Sally Gunnell
+    hint: A British Olympic gold medallist
+    difficulty: 3
+  - crewWord: Ian Botham
+    imposterWord: Andrew Flintoff
+    hint: An England cricket all rounder
+    difficulty: 3
+  - crewWord: Torvill and Dean
+    imposterWord: Robin Cousins
+    hint: British ice skating royalty
+    difficulty: 3
+  - crewWord: Kate Bush
+    imposterWord: Annie Lennox
+    hint: A British singer with a singular voice
+    difficulty: 3
+  - crewWord: Jarvis Cocker
+    imposterWord: Damon Albarn
+    hint: A Britpop frontman
+    difficulty: 3
+  - crewWord: Vivienne Westwood
+    imposterWord: Alexander McQueen
+    hint: A British fashion designer
+    difficulty: 3
+  - crewWord: Zaha Hadid
+    imposterWord: Norman Foster
+    hint: A famous architect
+    difficulty: 3
+  - crewWord: Brunel
+    imposterWord: Stephenson
+    hint: A Victorian engineer
+    difficulty: 3
+  - crewWord: Emmeline Pankhurst
+    imposterWord: Millicent Fawcett
+    hint: A suffrage campaigner
+    difficulty: 3
+  - crewWord: Mary Seacole
+    imposterWord: Florence Nightingale
+    hint: A nursing pioneer
+    difficulty: 3
+  - crewWord: Alan Bennett
+    imposterWord: Tom Stoppard
+    hint: A British playwright
+    difficulty: 3
+  - crewWord: Maggie Smith
+    imposterWord: Eileen Atkins
+    hint: A grande dame of British acting
+    difficulty: 3
+  - crewWord: Peter Sellers
+    imposterWord: Rowan Atkinson
+    hint: A British comic actor
+    difficulty: 3
+  - crewWord: Victoria Wood
+    imposterWord: French and Saunders
+    hint: British comedy of the eighties
+    difficulty: 3
+  - crewWord: Terry Pratchett
+    imposterWord: Douglas Adams
+    hint: A British comic fantasy author
+    difficulty: 3
+  - crewWord: Mary Anning
+    imposterWord: Dorothy Hodgkin
+    hint: A British scientist finally getting credit
+    difficulty: 3
+  - crewWord: Lucian Freud
+    imposterWord: Francis Bacon
+    hint: A twentieth century British painter
+    difficulty: 3
+  - crewWord: Barbara Hepworth
+    imposterWord: Henry Moore
+    hint: A British sculptor
+    difficulty: 3
+  - crewWord: Alfred Hitchcock
+    imposterWord: David Lean
+    hint: A British director of the golden age
+    difficulty: 3

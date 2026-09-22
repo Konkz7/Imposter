@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: tv
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: tv
+  displayName: Television
+  description: Box sets, soaps and the things you half-watch
+  glyph: TV
+  accentIndex: 1
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Soap opera
+    imposterWord: Sitcom
+    hint: It runs for years
+    difficulty: 1
+  - crewWord: News
+    imposterWord: Weather
+    hint: It tells you what is happening
+    difficulty: 1
+  - crewWord: Talent show
+    imposterWord: Quiz show
+    hint: There is a panel of judges
+    difficulty: 1
+  - crewWord: Cartoon series
+    imposterWord: Kids show
+    hint: Made for children
+    difficulty: 1
+  - crewWord: Box set
+    imposterWord: Series finale
+    hint: You lose a whole weekend to it
+    difficulty: 1
+  - crewWord: Remote control
+    imposterWord: TV guide
+    hint: You need it to choose
+    difficulty: 1
+  - crewWord: Netflix
+    imposterWord: Disney Plus
+    hint: A subscription you forgot about
+    difficulty: 1
+  - crewWord: Episode
+    imposterWord: Season
+    hint: A chunk of a show
+    difficulty: 1
+  - crewWord: Advert break
+    imposterWord: Interval
+    hint: The bit you skip
+    difficulty: 1
+  - crewWord: Live TV
+    imposterWord: Catch up
+    hint: When you actually watch it
+    difficulty: 1
+  - crewWord: Reality TV
+    imposterWord: Documentary series
+    hint: Real people, allegedly
+    difficulty: 2
+  - crewWord: Game show
+    imposterWord: Panel show
+    hint: People compete or joke
+    difficulty: 2
+  - crewWord: Chat show
+    imposterWord: Podcast
+    hint: Someone asks someone else questions
+    difficulty: 2
+  - crewWord: Drama series
+    imposterWord: Miniseries
+    hint: How long the story lasts
+    difficulty: 2
+  - crewWord: Crime drama
+    imposterWord: Detective show
+    hint: Somebody has died in episode one
+    difficulty: 2
+  - crewWord: Period drama
+    imposterWord: Costume drama
+    hint: Everyone is in a corset
+    difficulty: 2
+  - crewWord: Medical drama
+    imposterWord: Legal drama
+    hint: Professionals shouting in corridors
+    difficulty: 2
+  - crewWord: Sci fi series
+    imposterWord: Fantasy series
+    hint: A world with rules of its own
+    difficulty: 2
+  - crewWord: Anthology
+    imposterWord: Serial
+    hint: How the episodes connect
+    difficulty: 2
+  - crewWord: Pilot episode
+    imposterWord: Finale
+    hint: The first or the last
+    difficulty: 2
+  - crewWord: Season cliffhanger
+    imposterWord: Mid season break
+    hint: It leaves you waiting
+    difficulty: 2
+  - crewWord: Binge watching
+    imposterWord: Weekly release
+    hint: How you consume it
+    difficulty: 2
+  - crewWord: Streaming service
+    imposterWord: Broadcast channel
+    hint: Where the show lives
+    difficulty: 2
+  - crewWord: Subscription
+    imposterWord: Licence fee
+    hint: How you pay for television
+    difficulty: 2
+  - crewWord: Boxset drop
+    imposterWord: Season premiere
+    hint: When it becomes available
+    difficulty: 2
+  - crewWord: Spin off
+    imposterWord: Reboot
+    hint: The show has been reused
+    difficulty: 2
+  - crewWord: Recap
+    imposterWord: Previously on
+    hint: Reminding you what happened
+    difficulty: 2
+  - crewWord: Theme tune
+    imposterWord: Title sequence
+    hint: The bit you sing along to
+    difficulty: 2
+  - crewWord: Catchphrase
+    imposterWord: Running joke
+    hint: It comes back every episode
+    difficulty: 2
+  - crewWord: Studio audience
+    imposterWord: Laugh track
+    hint: Somebody is laughing
+    difficulty: 2
+  - crewWord: Presenter
+    imposterWord: Host
+    hint: They talk to the camera
+    difficulty: 2
+  - crewWord: Contestant
+    imposterWord: Panellist
+    hint: They are on the show to take part
+    difficulty: 2
+  - crewWord: Judge
+    imposterWord: Mentor
+    hint: They give feedback
+    difficulty: 2
+  - crewWord: Voiceover
+    imposterWord: Narrator
+    hint: A voice you never see
+    difficulty: 2
+  - crewWord: Producer
+    imposterWord: Showrunner
+    hint: They are in charge
+    difficulty: 2
+  - crewWord: Writers room
+    imposterWord: Script
+    hint: Where the words come from
+    difficulty: 2
+  - crewWord: Guest star
+    imposterWord: Recurring character
+    hint: How often they appear
+    difficulty: 2
+  - crewWord: Main cast
+    imposterWord: Extras
+    hint: Whose name is in the credits
+    difficulty: 2
+  - crewWord: Season pass
+    imposterWord: Free trial
+    hint: How you got access
+    difficulty: 2
+  - crewWord: Cancelled
+    imposterWord: Renewed
+    hint: The news fans dread or celebrate
+    difficulty: 2
+  - crewWord: Ratings
+    imposterWord: Viewing figures
+    hint: How many people watched
+    difficulty: 2
+  - crewWord: Prime time
+    imposterWord: Daytime TV
+    hint: When it is broadcast
+    difficulty: 2
+  - crewWord: Repeat
+    imposterWord: Rerun
+    hint: You have seen this one
+    difficulty: 2
+  - crewWord: Omnibus
+    imposterWord: Double episode
+    hint: More than one in a sitting
+    difficulty: 2
+  - crewWord: Watershed
+    imposterWord: Age rating
+    hint: When it is suitable to show
+    difficulty: 2
+  - crewWord: Spoiler
+    imposterWord: Trailer
+    hint: It tells you too much
+    difficulty: 2
+  - crewWord: Fan theory
+    imposterWord: Plot hole
+    hint: The internet is discussing it
+    difficulty: 2
+  - crewWord: Sitcom flat
+    imposterWord: Soap street
+    hint: The set everyone recognises
+    difficulty: 2
+  - crewWord: Talent judge
+    imposterWord: Public vote
+    hint: Who decides who wins
+    difficulty: 2
+  - crewWord: Reality villain
+    imposterWord: Fan favourite
+    hint: The edit decided this
+    difficulty: 2
+  - crewWord: Bake off
+    imposterWord: Cook off
+    hint: Competitive cooking
+    difficulty: 2
+  - crewWord: Makeover show
+    imposterWord: Property show
+    hint: Something gets improved
+    difficulty: 2
+  - crewWord: Nature documentary
+    imposterWord: Travel show
+    hint: Beautiful footage and a calm voice
+    difficulty: 2
+  - crewWord: Sports coverage
+    imposterWord: Highlights
+    hint: All of it or the good bits
+    difficulty: 2
+  - crewWord: Commentary
+    imposterWord: Punditry
+    hint: Someone explaining the sport
+    difficulty: 2
+  - crewWord: Children's TV
+    imposterWord: Teen drama
+    hint: Aimed at an age group
+    difficulty: 2
+  - crewWord: Sketch show
+    imposterWord: Stand up special
+    hint: Comedy on television
+    difficulty: 2
+  - crewWord: Late night show
+    imposterWord: Breakfast TV
+    hint: Broadcast at an extreme hour
+    difficulty: 2
+  - crewWord: Soap wedding
+    imposterWord: Soap funeral
+    hint: A dramatic episode at Christmas
+    difficulty: 2
+  - crewWord: Christmas special
+    imposterWord: Anniversary episode
+    hint: An event episode
+    difficulty: 2
+  - crewWord: Crossover episode
+    imposterWord: Backdoor pilot
+    hint: Two shows meeting
+    difficulty: 2
+  - crewWord: Streaming original
+    imposterWord: Network show
+    hint: Who made it
+    difficulty: 2
+  - crewWord: Subtitles
+    imposterWord: Audio description
+    hint: Accessibility on screen
+    difficulty: 2
+  - crewWord: Smart TV
+    imposterWord: Set top box
+    hint: How you get the picture
+    difficulty: 2
+  - crewWord: Aerial
+    imposterWord: Satellite dish
+    hint: It sits on the roof
+    difficulty: 2
+  - crewWord: Screen time
+    imposterWord: Watch history
+    hint: A number you avoid looking at
+    difficulty: 2
+  - crewWord: Autoplay
+    imposterWord: Next episode
+    hint: Why you are still awake
+    difficulty: 2
+  - crewWord: Watch party
+    imposterWord: Live tweet
+    hint: Watching together apart
+    difficulty: 2
+  - crewWord: Fandom
+    imposterWord: Fanfiction
+    hint: People who care very much
+    difficulty: 2
+  - crewWord: Merchandise
+    imposterWord: Tie in book
+    hint: Selling the show as objects
+    difficulty: 2
+  - crewWord: Continuity error
+    imposterWord: Goof
+    hint: Somebody noticed the mug moved
+    difficulty: 2
+  - crewWord: Soap villain
+    imposterWord: Sitcom neighbour
+    hint: A character type you know instantly
+    difficulty: 2
+  - crewWord: Season arc
+    imposterWord: Monster of the week
+    hint: How the episodes are structured
+    difficulty: 2
+  - crewWord: Season pass holder
+    imposterWord: Casual viewer
+    hint: How invested you are
+    difficulty: 2
+  - crewWord: Syndication
+    imposterWord: Licensing deal
+    hint: How an old show keeps earning
+    difficulty: 2
+  - crewWord: Pay per view
+    imposterWord: On demand
+    hint: You choose when to watch
+    difficulty: 2
+  - crewWord: Catch up service
+    imposterWord: Live stream
+    hint: Delayed or right now
+    difficulty: 2
+  - crewWord: Recap podcast
+    imposterWord: Aftershow
+    hint: Discussing the episode afterwards
+    difficulty: 2
+  - crewWord: Showrunner exit
+    imposterWord: Cast departure
+    hint: Somebody important has left
+    difficulty: 2
+  - crewWord: Cold open
+    imposterWord: Teaser
+    hint: The bit before the titles
+    difficulty: 3
+  - crewWord: Bottle episode
+    imposterWord: Clip show
+    hint: They saved money on that one
+    difficulty: 3
+  - crewWord: Two hander
+    imposterWord: Ensemble episode
+    hint: How many people are in it
+    difficulty: 3
+  - crewWord: Season bible
+    imposterWord: Story arc
+    hint: The long term plan
+    difficulty: 3
+  - crewWord: Pick up
+    imposterWord: Straight to series
+    hint: How a show got commissioned
+    difficulty: 3
+  - crewWord: Pilot season
+    imposterWord: Upfronts
+    hint: Industry events nobody watches
+    difficulty: 3
+  - crewWord: Blocking
+    imposterWord: Staging
+    hint: Where the actors stand
+    difficulty: 3
+  - crewWord: Multi camera
+    imposterWord: Single camera
+    hint: How a comedy was shot
+    difficulty: 3
+  - crewWord: Laugh sweetening
+    imposterWord: Post dub
+    hint: Audio added afterwards
+    difficulty: 3
+  - crewWord: Format rights
+    imposterWord: Remake licence
+    hint: Selling the idea abroad
+    difficulty: 3
+  - crewWord: Sizzle reel
+    imposterWord: Promo
+    hint: A short advert for the show
+    difficulty: 3
+  - crewWord: Talking head
+    imposterWord: Piece to camera
+    hint: Somebody speaking directly
+    difficulty: 3
+  - crewWord: B roll
+    imposterWord: Cutaway
+    hint: Footage used to cover an edit
+    difficulty: 3
+  - crewWord: Chyron
+    imposterWord: Lower third
+    hint: The text along the bottom
+    difficulty: 3
+  - crewWord: Green room
+    imposterWord: Hospitality
+    hint: Where guests wait
+    difficulty: 3
+  - crewWord: Gallery
+    imposterWord: Control room
+    hint: Where the broadcast is run from
+    difficulty: 3
+  - crewWord: Autocue
+    imposterWord: Teleprompter
+    hint: How they remember the words
+    difficulty: 3
+  - crewWord: Transmission
+    imposterWord: Broadcast slot
+    hint: When it actually goes out
+    difficulty: 3
+  - crewWord: Simulcast
+    imposterWord: Day and date
+    hint: Shown everywhere at once
+    difficulty: 3
+  - crewWord: Rights window
+    imposterWord: Exclusivity
+    hint: Why it left your streaming service
+    difficulty: 3
+  - crewWord: Subtitle track
+    imposterWord: Closed captions
+    hint: Text on screen for a reason
+    difficulty: 2
+  - crewWord: Watchlist
+    imposterWord: Continue watching
+    hint: A row on the streaming home page
+    difficulty: 2
+  - crewWord: Series link
+    imposterWord: Season pass
+    hint: It records every episode for you
+    difficulty: 2

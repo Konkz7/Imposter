@@ -1,0 +1,388 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d4df53465d53f428d11b3d4c5ef24f, type: 3}
+  m_Name: animaltrivia
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.TriviaPackData
+  id: animaltrivia
+  displayName: Animals
+  description: Creatures and their strange habits
+  glyph: AN
+  accentIndex: 2
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  questions:
+  - id: a1
+    question: What is a baby kangaroo called?
+    correctAnswer: A joey
+    difficulty: 1
+    subcategory: Young animals
+    tags:
+    - australia
+    - marsupials
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Kangaroo
+      verifiedDate: 
+      reviewBy: 
+  - id: a2
+    question: Which bird is the fastest animal in a dive?
+    correctAnswer: The peregrine falcon
+    difficulty: 2
+    subcategory: Records
+    tags:
+    - birds
+    - speed
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Peregrine_falcon
+      verifiedDate: 
+      reviewBy: 
+  - id: a3
+    question: How many legs does a spider have?
+    correctAnswer: Eight
+    difficulty: 1
+    subcategory: Anatomy
+    tags:
+    - spiders
+    - legs
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Spider
+      verifiedDate: 
+      reviewBy: 
+  - id: a4
+    question: What is a group of lions called?
+    correctAnswer: A pride
+    difficulty: 1
+    subcategory: Collective nouns
+    tags:
+    - lions
+    - africa
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Lion
+      verifiedDate: 
+      reviewBy: 
+  - id: a5
+    question: Which is the only big cat that cannot roar?
+    correctAnswer: The cheetah
+    difficulty: 3
+    subcategory: Big cats
+    tags:
+    - cheetah
+    - sound
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Cheetah
+      verifiedDate: 
+      reviewBy: 
+  - id: a6
+    question: What is the largest species of penguin?
+    correctAnswer: The emperor penguin
+    difficulty: 2
+    subcategory: Birds
+    tags:
+    - antarctic
+    - penguins
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Emperor_penguin
+      verifiedDate: 
+      reviewBy: 
+  - id: a7
+    question: Which animal has the longest gestation period of any mammal?
+    correctAnswer: The elephant
+    difficulty: 2
+    subcategory: Reproduction
+    tags:
+    - elephants
+    - records
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Elephant
+      verifiedDate: 
+      reviewBy: 
+  - id: a8
+    question: What is a group of geese in flight called?
+    correctAnswer: A skein
+    difficulty: 3
+    subcategory: Collective nouns
+    tags:
+    - birds
+    - flight
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Goose
+      verifiedDate: 
+      reviewBy: 
+  - id: a9
+    question: Which mammal lays eggs and has a duck-like bill?
+    correctAnswer: The platypus
+    difficulty: 1
+    subcategory: Unusual animals
+    tags:
+    - australia
+    - monotreme
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Platypus
+      verifiedDate: 
+      reviewBy: 
+  - id: a10
+    question: How many legs does a butterfly have?
+    correctAnswer: Six
+    difficulty: 2
+    subcategory: Anatomy
+    tags:
+    - insects
+    - legs
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Butterfly
+      verifiedDate: 
+      reviewBy: 
+  - id: a11
+    question: What is the largest species of shark?
+    correctAnswer: The whale shark
+    difficulty: 2
+    subcategory: Sea life
+    tags:
+    - sharks
+    - records
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Whale_shark
+      verifiedDate: 
+      reviewBy: 
+  - id: a12
+    question: Which animal is known for regurgitating and chewing cud?
+    correctAnswer: The cow
+    difficulty: 2
+    subcategory: Farm animals
+    tags:
+    - cows
+    - digestion
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Ruminant
+      verifiedDate: 
+      reviewBy: 
+  - id: a13
+    question: What is a male swan called?
+    correctAnswer: A cob
+    difficulty: 3
+    subcategory: Names
+    tags:
+    - birds
+    - swans
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Swan
+      verifiedDate: 
+      reviewBy: 
+  - id: a14
+    question: Which bird lays the largest egg of any living species?
+    correctAnswer: The ostrich
+    difficulty: 2
+    subcategory: Records
+    tags:
+    - birds
+    - eggs
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Ostrich
+      verifiedDate: 
+      reviewBy: 
+  - id: a15
+    question: How long is the average lifespan of a mayfly in its adult form?
+    correctAnswer: About one day
+    difficulty: 3
+    subcategory: Insects
+    tags:
+    - mayfly
+    - lifespan
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Mayfly
+      verifiedDate: 
+      reviewBy: 
+  - id: a16
+    question: What is a baby swan called?
+    correctAnswer: A cygnet
+    difficulty: 2
+    subcategory: Young animals
+    tags:
+    - birds
+    - swans
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Swan
+      verifiedDate: 
+      reviewBy: 
+  - id: a17
+    question: Which animal has a tongue that can be longer than its own body?
+    correctAnswer: The chameleon
+    difficulty: 3
+    subcategory: Unusual animals
+    tags:
+    - reptiles
+    - tongue
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Chameleon
+      verifiedDate: 
+      reviewBy: 
+  - id: a18
+    question: What is the fastest bird in level flight?
+    correctAnswer: The common swift
+    difficulty: 3
+    subcategory: Records
+    tags:
+    - birds
+    - speed
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Common_swift
+      verifiedDate: 
+      reviewBy: 
+  - id: a19
+    question: Which animal sleeps standing up and only briefly lies down?
+    correctAnswer: The horse
+    difficulty: 2
+    subcategory: Behaviour
+    tags:
+    - horses
+    - sleep
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Horse
+      verifiedDate: 
+      reviewBy: 
+  - id: a20
+    question: What is a group of hedgehogs called?
+    correctAnswer: An array
+    difficulty: 3
+    subcategory: Collective nouns
+    tags:
+    - hedgehogs
+    - words
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Hedgehog
+      verifiedDate: 
+      reviewBy: 
+  - id: a21
+    question: Which sea creature can regrow a lost arm?
+    correctAnswer: The starfish
+    difficulty: 2
+    subcategory: Sea life
+    tags:
+    - starfish
+    - regeneration
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Starfish
+      verifiedDate: 
+      reviewBy: 
+  - id: a22
+    question: What is the only marsupial native to the Americas?
+    correctAnswer: The opossum
+    difficulty: 3
+    subcategory: Mammals
+    tags:
+    - americas
+    - marsupials
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Opossum
+      verifiedDate: 
+      reviewBy: 
+  - id: a23
+    question: Which insect is responsible for pollinating most food crops?
+    correctAnswer: The bee
+    difficulty: 1
+    subcategory: Insects
+    tags:
+    - bees
+    - pollination
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Pollinator
+      verifiedDate: 
+      reviewBy: 
+  - id: a24
+    question: What is a female fox called?
+    correctAnswer: A vixen
+    difficulty: 2
+    subcategory: Names
+    tags:
+    - foxes
+    - words
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Fox
+      verifiedDate: 
+      reviewBy: 
+  - id: a25
+    question: Which animal produces the loudest sound of any creature?
+    correctAnswer: The sperm whale
+    difficulty: 3
+    subcategory: Records
+    tags:
+    - whales
+    - sound
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Sperm_whale
+      verifiedDate: 
+      reviewBy: 
+  - id: a26
+    question: How many eyes does a typical honey bee have?
+    correctAnswer: Five
+    difficulty: 3
+    subcategory: Anatomy
+    tags:
+    - bees
+    - eyes
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Honey_bee
+      verifiedDate: 
+      reviewBy: 
+  - id: a27
+    question: What is a group of frogs called?
+    correctAnswer: An army
+    difficulty: 3
+    subcategory: Collective nouns
+    tags:
+    - frogs
+    - words
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Frog
+      verifiedDate: 
+      reviewBy: 
+  - id: a28
+    question: Which animal has fingerprints almost indistinguishable from a human's?
+    correctAnswer: The koala
+    difficulty: 3
+    subcategory: Unusual animals
+    tags:
+    - koala
+    - australia
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Koala
+      verifiedDate: 
+      reviewBy: 

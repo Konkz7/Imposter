@@ -1,0 +1,436 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: gaming
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: gaming
+  displayName: Gaming
+  description: Consoles, board games and controller rage
+  glyph: GM
+  accentIndex: 6
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Chess
+    imposterWord: Draughts
+    hint: A board with squares
+    difficulty: 1
+  - crewWord: Jigsaw
+    imposterWord: Crossword
+    hint: You do it quietly at a table
+    difficulty: 1
+  - crewWord: Poker
+    imposterWord: Blackjack
+    hint: Cards and a poker face
+    difficulty: 1
+  - crewWord: Hide and seek
+    imposterWord: Tag
+    hint: Children running around
+    difficulty: 1
+  - crewWord: Lego
+    imposterWord: Building blocks
+    hint: You build things and stand on them
+    difficulty: 1
+  - crewWord: Video game
+    imposterWord: Board game
+    hint: Everyone argues about the rules
+    difficulty: 1
+  - crewWord: Karaoke
+    imposterWord: Charades
+    hint: Someone will embarrass themselves
+    difficulty: 1
+  - crewWord: Dominoes
+    imposterWord: Jenga
+    hint: Everything collapses eventually
+    difficulty: 1
+  - crewWord: Dice
+    imposterWord: Spinner
+    hint: It decides what happens next
+    difficulty: 1
+  - crewWord: Quiz night
+    imposterWord: Bingo
+    hint: Held in a pub or a hall
+    difficulty: 1
+  - crewWord: Controller
+    imposterWord: Keyboard
+    hint: You play with it in your hands
+    difficulty: 1
+  - crewWord: Console
+    imposterWord: Gaming PC
+    hint: Where the game runs
+    difficulty: 1
+  - crewWord: Playing cards
+    imposterWord: Tarot cards
+    hint: A deck you shuffle
+    difficulty: 1
+  - crewWord: Darts
+    imposterWord: Snooker
+    hint: Played in a pub, badly
+    difficulty: 1
+  - crewWord: Arcade cabinet
+    imposterWord: Pinball table
+    hint: You feed it coins
+    difficulty: 1
+  - crewWord: Monopoly
+    imposterWord: Risk
+    hint: A board game that ends friendships
+    difficulty: 2
+  - crewWord: Scrabble
+    imposterWord: Bananagrams
+    hint: Letters and smugness
+    difficulty: 2
+  - crewWord: Cluedo
+    imposterWord: Guess Who
+    hint: You work out who it was
+    difficulty: 2
+  - crewWord: Trivial Pursuit
+    imposterWord: Articulate
+    hint: A game about knowing things
+    difficulty: 2
+  - crewWord: Uno
+    imposterWord: Snap
+    hint: Cards and shouting
+    difficulty: 2
+  - crewWord: Catan
+    imposterWord: Ticket to Ride
+    hint: A board game with wooden pieces
+    difficulty: 2
+  - crewWord: Pandemic
+    imposterWord: Forbidden Island
+    hint: Everyone loses together
+    difficulty: 2
+  - crewWord: Werewolf
+    imposterWord: Mafia
+    hint: Somebody at the table is lying
+    difficulty: 2
+  - crewWord: Dungeons and Dragons
+    imposterWord: Tabletop RPG
+    hint: Dice and a very long evening
+    difficulty: 2
+  - crewWord: Warhammer
+    imposterWord: Miniatures
+    hint: You painted it for months
+    difficulty: 2
+  - crewWord: Puzzle book
+    imposterWord: Sudoku
+    hint: Quiet and slightly smug
+    difficulty: 2
+  - crewWord: Escape room
+    imposterWord: Murder mystery
+    hint: A puzzle you book in advance
+    difficulty: 2
+  - crewWord: Pinball
+    imposterWord: Air hockey
+    hint: A machine you feed coins
+    difficulty: 2
+  - crewWord: Claw machine
+    imposterWord: Coin pusher
+    hint: It is designed to beat you
+    difficulty: 2
+  - crewWord: Racing game
+    imposterWord: Driving sim
+    hint: Wheels and lap times
+    difficulty: 2
+  - crewWord: Platformer
+    imposterWord: Side scroller
+    hint: You jump from thing to thing
+    difficulty: 2
+  - crewWord: Shooter
+    imposterWord: Battle royale
+    hint: Everyone is armed
+    difficulty: 2
+  - crewWord: Strategy game
+    imposterWord: City builder
+    hint: You look at a map a lot
+    difficulty: 2
+  - crewWord: RPG
+    imposterWord: Open world
+    hint: You have not done the main quest
+    difficulty: 2
+  - crewWord: Puzzle game
+    imposterWord: Match three
+    hint: Simple and completely addictive
+    difficulty: 2
+  - crewWord: Horror game
+    imposterWord: Survival game
+    hint: You have three bullets left
+    difficulty: 2
+  - crewWord: Fighting game
+    imposterWord: Beat em up
+    hint: Combos and a health bar
+    difficulty: 2
+  - crewWord: Sports game
+    imposterWord: Management sim
+    hint: You play or you organise
+    difficulty: 2
+  - crewWord: Rhythm game
+    imposterWord: Music game
+    hint: You press in time
+    difficulty: 2
+  - crewWord: Sandbox
+    imposterWord: Creative mode
+    hint: No rules, just building
+    difficulty: 2
+  - crewWord: MMO
+    imposterWord: Co op
+    hint: You play with other people
+    difficulty: 2
+  - crewWord: Speedrun
+    imposterWord: Completionist run
+    hint: Fast or thorough
+    difficulty: 2
+  - crewWord: Boss fight
+    imposterWord: Final level
+    hint: The hard bit at the end
+    difficulty: 2
+  - crewWord: Checkpoint
+    imposterWord: Save file
+    hint: Where you start again
+    difficulty: 2
+  - crewWord: Respawn
+    imposterWord: Game over
+    hint: You have died
+    difficulty: 2
+  - crewWord: Lives
+    imposterWord: Health bar
+    hint: How close you are to failing
+    difficulty: 2
+  - crewWord: Power up
+    imposterWord: Loot drop
+    hint: Something helpful appeared
+    difficulty: 2
+  - crewWord: Achievement
+    imposterWord: Trophy
+    hint: Proof you did something pointless
+    difficulty: 2
+  - crewWord: Leaderboard
+    imposterWord: High score
+    hint: Somebody is better than you
+    difficulty: 2
+  - crewWord: Multiplayer
+    imposterWord: Split screen
+    hint: Two people, one sofa
+    difficulty: 2
+  - crewWord: Online lobby
+    imposterWord: Matchmaking
+    hint: Waiting to be put in a game
+    difficulty: 2
+  - crewWord: Lag
+    imposterWord: Frame rate
+    hint: Why you lost
+    difficulty: 2
+  - crewWord: Patch
+    imposterWord: Update
+    hint: It downloaded for an hour
+    difficulty: 2
+  - crewWord: DLC
+    imposterWord: Expansion
+    hint: More game, more money
+    difficulty: 2
+  - crewWord: Microtransaction
+    imposterWord: Loot box
+    hint: You paid extra, somehow
+    difficulty: 2
+  - crewWord: Beta
+    imposterWord: Early access
+    hint: It is not finished
+    difficulty: 2
+  - crewWord: Cutscene
+    imposterWord: Cinematic
+    hint: The bit you cannot skip
+    difficulty: 2
+  - crewWord: Tutorial
+    imposterWord: Loading screen
+    hint: Before the game actually starts
+    difficulty: 2
+  - crewWord: Easter egg
+    imposterWord: Secret level
+    hint: Hidden on purpose
+    difficulty: 2
+  - crewWord: Cheat code
+    imposterWord: Mod
+    hint: Changing the game yourself
+    difficulty: 2
+  - crewWord: Speedrunner
+    imposterWord: Streamer
+    hint: They play games for an audience
+    difficulty: 2
+  - crewWord: Esports
+    imposterWord: Tournament
+    hint: Competitive gaming
+    difficulty: 2
+  - crewWord: Handheld
+    imposterWord: Portable console
+    hint: You play it on a train
+    difficulty: 2
+  - crewWord: VR headset
+    imposterWord: Motion controller
+    hint: You look ridiculous using it
+    difficulty: 2
+  - crewWord: Joystick
+    imposterWord: D pad
+    hint: How you steer
+    difficulty: 2
+  - crewWord: Trigger
+    imposterWord: Bumper
+    hint: A button on the shoulder
+    difficulty: 2
+  - crewWord: Thumbstick
+    imposterWord: Touchpad
+    hint: Your thumb lives there
+    difficulty: 2
+  - crewWord: Headset
+    imposterWord: Chat
+    hint: How you talk to teammates
+    difficulty: 2
+  - crewWord: Rage quit
+    imposterWord: AFK
+    hint: They have left the game
+    difficulty: 2
+  - crewWord: Noob
+    imposterWord: Veteran
+    hint: How long they have played
+    difficulty: 2
+  - crewWord: Grind
+    imposterWord: Farming
+    hint: Doing the same thing repeatedly
+    difficulty: 2
+  - crewWord: XP
+    imposterWord: Levelling up
+    hint: Getting better by playing
+    difficulty: 2
+  - crewWord: Skill tree
+    imposterWord: Perk
+    hint: Choosing how you improve
+    difficulty: 2
+  - crewWord: Inventory
+    imposterWord: Backpack
+    hint: Where you keep your stuff
+    difficulty: 2
+  - crewWord: Crafting
+    imposterWord: Building
+    hint: Making things from bits
+    difficulty: 2
+  - crewWord: Quest
+    imposterWord: Mission
+    hint: The thing you are supposed to do
+    difficulty: 2
+  - crewWord: Side quest
+    imposterWord: Main story
+    hint: Two ways to spend your evening
+    difficulty: 2
+  - crewWord: NPC
+    imposterWord: Enemy
+    hint: Not controlled by a player
+    difficulty: 2
+  - crewWord: Spawn point
+    imposterWord: Base
+    hint: Where you start
+    difficulty: 2
+  - crewWord: Map
+    imposterWord: Minimap
+    hint: It tells you where you are
+    difficulty: 2
+  - crewWord: Sandbox game
+    imposterWord: Simulation
+    hint: There is no way to win
+    difficulty: 2
+  - crewWord: Roguelike
+    imposterWord: Roguelite
+    hint: You start over, with or without keeping things
+    difficulty: 3
+  - crewWord: Metroidvania
+    imposterWord: Souls like
+    hint: A genre named after other games
+    difficulty: 3
+  - crewWord: Tick rate
+    imposterWord: Latency
+    hint: Why the shot did not register
+    difficulty: 3
+  - crewWord: Hitbox
+    imposterWord: Collision
+    hint: Where the game thinks things are
+    difficulty: 3
+  - crewWord: Procedural generation
+    imposterWord: Level design
+    hint: Made by an algorithm or a person
+    difficulty: 3
+  - crewWord: Game engine
+    imposterWord: Middleware
+    hint: The software underneath
+    difficulty: 3
+  - crewWord: Render distance
+    imposterWord: Draw distance
+    hint: How far you can see
+    difficulty: 3
+  - crewWord: Aim assist
+    imposterWord: Auto lock
+    hint: Help you did not ask for
+    difficulty: 3
+  - crewWord: Meta
+    imposterWord: Tier list
+    hint: What everyone thinks is best right now
+    difficulty: 3
+  - crewWord: Nerf
+    imposterWord: Buff
+    hint: Something got worse or better
+    difficulty: 3
+  - crewWord: Respec
+    imposterWord: Rebuild
+    hint: Changing your character after the fact
+    difficulty: 3
+  - crewWord: Permadeath
+    imposterWord: Iron man mode
+    hint: One life and no takebacks
+    difficulty: 3
+  - crewWord: Season pass
+    imposterWord: Battle pass
+    hint: Paying for the next few months
+    difficulty: 3
+  - crewWord: Cosmetic
+    imposterWord: Skin
+    hint: It changes nothing but the look
+    difficulty: 3
+  - crewWord: Emote
+    imposterWord: Taunt
+    hint: Showing off after winning
+    difficulty: 3
+  - crewWord: Lobby leader
+    imposterWord: Host
+    hint: Somebody has to run it
+    difficulty: 3
+  - crewWord: Port
+    imposterWord: Remaster
+    hint: The old game, on a new machine
+    difficulty: 3
+  - crewWord: Demake
+    imposterWord: Remake
+    hint: Rebuilt, in one direction or the other
+    difficulty: 3
+  - crewWord: Playtest
+    imposterWord: Focus group
+    hint: Strangers told them it was too hard
+    difficulty: 3
+  - crewWord: Crunch
+    imposterWord: Release window
+    hint: The unglamorous side of making games
+    difficulty: 3
+  - crewWord: Worker placement
+    imposterWord: Deck building
+    hint: A board game mechanic
+    difficulty: 3
+  - crewWord: Legacy game
+    imposterWord: Campaign game
+    hint: The board game changes as you play
+    difficulty: 3
