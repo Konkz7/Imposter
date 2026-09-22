@@ -36,14 +36,20 @@ namespace PartyGame.UI.Screens
             {
                 var mode = definition;
                 var implemented = GameModeFactory.IsImplemented(mode.ModeId);
-                var fits = playerCount >= mode.MinPlayers && playerCount <= mode.MaxPlayers;
+                var fits = mode.SupportsPlayerCount(playerCount);
 
+                // Below the recommended size is a nudge, not a wall: the card says so and the
+                // game still starts. Only a count the rules genuinely cannot handle blocks.
                 var meta = mode.PlayerRangeLabel + "   -   " + mode.DurationLabel;
                 if (!fits)
                 {
                     meta = playerCount < mode.MinPlayers
                         ? "Needs " + mode.MinPlayers + " players - you have " + playerCount
                         : "Supports up to " + mode.MaxPlayers + " players";
+                }
+                else if (mode.IsBelowRecommended(playerCount))
+                {
+                    meta = "Plays with " + playerCount + ", " + mode.RecommendationLabel;
                 }
 
                 var card = SelectionCard.Create(content, mode.DisplayName, mode.Tagline, meta, mode.Glyph,

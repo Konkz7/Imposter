@@ -85,6 +85,30 @@ namespace PartyGame.Tests.PlayMode
             yield return CaptureGameplay();
         }
 
+        /// <summary>
+        /// The copy shown to a table that is below a game's suggested size, and the wavelength
+        /// gap setting at its lowest value. Both are strings worth actually looking at.
+        /// </summary>
+        [UnityTest]
+        public IEnumerator CaptureSmallTableAndGapSetting()
+        {
+            ScreenshotCapture.BeginSession(_app.UI.Canvas);
+
+            _app.Services.Roster.Clear();
+            foreach (var name in new[] { "Alex", "Bea", "Chris" }) _app.Services.Roster.Add(name);
+
+            _app.Screens.Reset<UI.Screens.MainMenuScreen>();
+            yield return Settle();
+
+            _app.ShowGameSelect();
+            yield return Settle();
+            Shot("20-three-players-select");
+
+            _app.ShowGameSetup(_app.Services.Content.GetMode(GameModeId.Wavelength));
+            yield return Settle();
+            Shot("21-wavelength-setup");
+        }
+
         private IEnumerator CaptureGameplay()
         {
             var definition = _app.Services.Content.GetMode(GameModeId.DifferentWord);

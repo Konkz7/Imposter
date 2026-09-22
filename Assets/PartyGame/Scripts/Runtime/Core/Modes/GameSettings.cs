@@ -46,6 +46,12 @@ namespace PartyGame.Core.Modes
 
         public List<SettingOption> Options { get; } = new List<SettingOption>();
 
+        /// <summary>
+        /// Overrides how particular stepper values read, so an edge of the range can mean
+        /// something ("Any") rather than showing a bare number.
+        /// </summary>
+        public Dictionary<int, string> ValueLabels { get; } = new Dictionary<int, string>();
+
         public string DefaultValue { get; set; } = string.Empty;
 
         /// <summary>Lets a maximum depend on the live player count (e.g. imposters).</summary>
@@ -66,6 +72,12 @@ namespace PartyGame.Core.Modes
                 Type = SettingType.Toggle,
                 DefaultValue = defaultValue ? "1" : "0"
             };
+        }
+
+        /// <summary>Formats a value for display, honouring any <see cref="ValueLabels"/> override.</summary>
+        public string FormatValue(int value)
+        {
+            return ValueLabels.TryGetValue(value, out var label) ? label : value + Suffix;
         }
 
         public static SettingDefinition Stepper(string key, string label, int defaultValue, int min, int max, int step = 1, string suffix = "", string description = "")

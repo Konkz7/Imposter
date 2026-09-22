@@ -18,7 +18,8 @@ MonoBehaviour:
   description: Everybody is given the same secret word except the imposter, who gets something close but not quite right. Take turns describing your word without ever saying it, then vote on who sounded slightly off. The imposter wins by surviving the vote.
   glyph: WD
   accentIndex: 0
-  minPlayers: 4
+  minPlayers: 3
+  recommendedPlayers: 4
   maxPlayers: 12
   minutesPerRound: 5
   available: 1

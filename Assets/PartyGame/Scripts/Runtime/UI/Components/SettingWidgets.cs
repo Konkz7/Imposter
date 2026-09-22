@@ -18,28 +18,32 @@ namespace PartyGame.UI.Components
         private int _min;
         private int _max;
         private int _step = 1;
-        private string _suffix = string.Empty;
+        private Func<int, string> _format = value => value.ToString();
 
         public event Action<int> ValueChanged;
 
         public int Value => _current;
 
+        /// <summary>
+        /// <paramref name="format"/> turns a value into its label, so a setting can give an edge
+        /// of its range a meaning rather than showing a bare number.
+        /// </summary>
         public static StepperControl Create(Transform parent, string label, string description,
-            int value, int min, int max, int step, string suffix, Action<int> onChanged)
+            int value, int min, int max, int step, Func<int, string> format, Action<int> onChanged)
         {
             var card = UIFactory.CreateCard("Stepper-" + label, parent);
             var control = card.gameObject.AddComponent<StepperControl>();
-            control.Construct(card, label, description, value, min, max, step, suffix, onChanged);
+            control.Construct(card, label, description, value, min, max, step, format, onChanged);
             return control;
         }
 
         private void Construct(RectTransform card, string label, string description, int value,
-            int min, int max, int step, string suffix, Action<int> onChanged)
+            int min, int max, int step, Func<int, string> format, Action<int> onChanged)
         {
             _min = min;
             _max = Mathf.Max(min, max);
             _step = Mathf.Max(1, step);
-            _suffix = suffix ?? string.Empty;
+            _format = format ?? (v => v.ToString());
             _current = Mathf.Clamp(value, _min, _max);
             if (onChanged != null) ValueChanged += onChanged;
 
@@ -107,7 +111,7 @@ namespace PartyGame.UI.Components
 
         private void Refresh()
         {
-            if (_value != null) _value.text = _current + _suffix;
+            if (_value != null) _value.text = _format(_current);
             if (_minus != null) _minus.Interactable = _current > _min;
             if (_plus != null) _plus.Interactable = _current < _max;
         }

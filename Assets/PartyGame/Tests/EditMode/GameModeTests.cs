@@ -317,6 +317,35 @@ namespace PartyGame.Tests
         }
 
         [Test]
+        public void TheAnyGapSettingAllowsAnyOtherNumberIncludingAdjacent()
+        {
+            var seenGaps = new System.Collections.Generic.HashSet<int>();
+
+            for (var seed = 1; seed <= 40; seed++)
+            {
+                var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 5, out var mode,
+                    s =>
+                    {
+                        s.SetInt(Games.Wavelength.WavelengthMode.SettingDeviation,
+                            Games.Wavelength.WavelengthMode.MinimumGapForAny);
+                        s.SetInt(CommonSettingKeys.Rounds, 1);
+                    }, seed);
+                ModeTestHarness.PlayRound(session, mode);
+
+                var crew = session.Players.First(p => p.RoleId != PlayerRoles.Imposter)
+                    .GetRoundDataInt(RoundDataKeys.Number);
+                var odd = session.Players.First(p => p.RoleId == PlayerRoles.Imposter)
+                    .GetRoundDataInt(RoundDataKeys.Number);
+
+                Assert.AreNotEqual(crew, odd, "The odd number must still differ from everyone else.");
+                seenGaps.Add(System.Math.Abs(crew - odd));
+            }
+
+            Assert.Contains(1, seenGaps.ToList(),
+                "With no minimum gap the odd number should sometimes land right next door.");
+        }
+
+        [Test]
         public void TheOddPlayerIsNotToldUnlessTheSettingSaysSo()
         {
             var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 6, out var mode,
@@ -531,6 +560,43 @@ namespace PartyGame.Tests
             GameModeId.DifferentWord, GameModeId.Fib, GameModeId.Wavelength,
             GameModeId.DevilsAdvocate, GameModeId.SocialDeduction
         };
+
+        [Test]
+        public void EveryModeExceptTheSuspectsPlaysWithThreePeople(
+            [ValueSource(nameof(AllModes))] GameModeId modeId)
+        {
+            var content = ModeTestHarness.LoadContent();
+            var definition = content.GetMode(modeId);
+
+            if (modeId == GameModeId.SocialDeduction)
+            {
+                Assert.Greater(definition.MinPlayers, 3,
+                    "The Suspects needs room to hide special roles, so it keeps a higher minimum.");
+                return;
+            }
+
+            Assert.AreEqual(3, definition.MinPlayers, modeId + " should be playable with three.");
+
+            var session = ModeTestHarness.CreateSession(modeId, 3, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            Assert.IsTrue(log.Steps.Any(s => s.Kind == StepKind.Reveal),
+                modeId + " did not finish a round with three players.");
+        }
+
+        [Test]
+        public void ASuggestedSizeNeverBlocksASmallerTable(
+            [ValueSource(nameof(AllModes))] GameModeId modeId)
+        {
+            var definition = ModeTestHarness.LoadContent().GetMode(modeId);
+
+            Assert.GreaterOrEqual(definition.RecommendedPlayers, definition.MinPlayers);
+            Assert.IsTrue(definition.SupportsPlayerCount(definition.MinPlayers),
+                modeId + " refuses its own minimum.");
+            Assert.IsTrue(definition.IsBelowRecommended(definition.MinPlayers) || !definition.HasRecommendation,
+                modeId + " should flag its minimum as below the suggested size.");
+        }
 
         [Test]
         public void EveryModeHasContentAndADefinition([ValueSource(nameof(AllModes))] GameModeId modeId)

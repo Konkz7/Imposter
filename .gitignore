@@ -118,3 +118,11 @@ InitTestScene*.unity*
 /Screenshots/
 /*.log
 /*-results.xml
+
+# Signing material - never commit these
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+*.cer
+keystore.properties

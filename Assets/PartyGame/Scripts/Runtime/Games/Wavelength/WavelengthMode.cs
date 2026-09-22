@@ -23,6 +23,11 @@ namespace PartyGame.Games.Wavelength
         private const int ScaleMin = 1;
         private const int ScaleMax = 10;
 
+        /// <summary>The lowest gap: the odd number only has to differ, not to differ by much.</summary>
+        public const int MinimumGapForAny = 1;
+
+        private const int DefaultGap = 4;
+
         private readonly ContentRotation<WavelengthQuestion> _rotation = new ContentRotation<WavelengthQuestion>(q => q.Id, 20);
 
         private WavelengthQuestion _question;
@@ -52,8 +57,7 @@ namespace PartyGame.Games.Wavelength
                 SettingDefinition.CategoryPicker(CommonSettingKeys.Categories, "Question packs",
                     "Pick one, several, or leave empty for all"),
                 imposterCount,
-                SettingDefinition.Stepper(SettingDeviation, "Minimum gap", 4, 2, 7,
-                    description: "How far the odd number sits from everyone else"),
+                BuildGapSetting(),
                 SettingDefinition.Toggle(SettingImposterKnows, "Tell them they are odd", false,
                     "On: the odd player knows. Off: they have no idea - far funnier"),
                 SettingDefinition.Stepper(CommonSettingKeys.Rounds, "Rounds", 3, 1, 10),
@@ -61,6 +65,19 @@ namespace PartyGame.Games.Wavelength
                 SettingDefinition.Toggle(CommonSettingKeys.VotingEnabled, "Voting", true),
                 SettingDefinition.Choice(CommonSettingKeys.TieBehaviour, "If the vote ties", "noResult", TieOptions())
             };
+        }
+
+        /// <summary>
+        /// How far the odd number must sit from everyone else. A gap of one means "any other
+        /// number", which leaks nothing: knowing the setting tells you nothing about the range
+        /// the odd number could be in. Anything higher trades that secrecy for a clearer signal.
+        /// </summary>
+        private static SettingDefinition BuildGapSetting()
+        {
+            var gap = SettingDefinition.Stepper(SettingDeviation, "Minimum gap", DefaultGap, MinimumGapForAny, 7,
+                description: "Any means the odd number can be next door, so the gap gives nothing away");
+            gap.ValueLabels[MinimumGapForAny] = "Any";
+            return gap;
         }
 
         public override ValidationResult Validate(GameSession session)
@@ -85,7 +102,10 @@ namespace PartyGame.Games.Wavelength
                 "Spot whose answer sits at the wrong point on the scale.",
                 settings.GetBool(SettingImposterKnows, false)
                     ? "The odd player knows they are off-scale."
-                    : "The odd player has no idea they are off-scale."
+                    : "The odd player has no idea they are off-scale.",
+                settings.GetInt(SettingDeviation, DefaultGap) <= MinimumGapForAny
+                    ? "The odd number can be anything, even next door - no clue from the gap."
+                    : "The odd number is at least " + settings.GetInt(SettingDeviation, DefaultGap) + " away from everyone else."
             };
         }
 
@@ -109,7 +129,7 @@ namespace PartyGame.Games.Wavelength
 
             _question = _rotation.Next(questions, Session.Random);
 
-            var gap = Math.Max(2, Session.Settings.GetInt(SettingDeviation, 4));
+            var gap = Math.Max(MinimumGapForAny, Session.Settings.GetInt(SettingDeviation, DefaultGap));
             AssignNumbers(gap);
 
             var imposters = AssignImposters(Session.Settings.GetInt(CommonSettingKeys.ImposterCount, 1));
@@ -188,6 +208,10 @@ namespace PartyGame.Games.Wavelength
             BuildVotingPhase("Whose answer did not fit the scale?");
         }
 
+        /// <summary>
+        /// Picks the shared number, then the odd one. At the lowest gap every other number on the
+        /// scale is a candidate, so the odd number carries no information about where it sits.
+        /// </summary>
         private void AssignNumbers(int minimumGap)
         {
             _crewNumber = Session.Random.Range(ScaleMin, ScaleMax + 1);

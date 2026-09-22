@@ -469,6 +469,23 @@ namespace PartyGame.Tests
         }
 
         [Test]
+        public void LabelledStepperValuesReadAsWordsNotNumbers()
+        {
+            var gap = SettingDefinition.Stepper("gap", "Minimum gap", 4, 1, 7);
+            gap.ValueLabels[1] = "Any";
+
+            Assert.AreEqual("Any", gap.FormatValue(1), "The lowest value should read as a word.");
+            Assert.AreEqual("4", gap.FormatValue(4));
+        }
+
+        [Test]
+        public void StepperSuffixesStillApplyToUnlabelledValues()
+        {
+            var seconds = SettingDefinition.Stepper("time", "Discussion time", 90, 30, 300, 15, "s");
+            Assert.AreEqual("90s", seconds.FormatValue(90));
+        }
+
+        [Test]
         public void SettingsSurviveAStoreRoundTrip()
         {
             var store = new InMemoryStore();
