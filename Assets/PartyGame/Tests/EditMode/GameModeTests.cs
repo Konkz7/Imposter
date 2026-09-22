@@ -518,6 +518,25 @@ namespace PartyGame.Tests
         }
 
         [Test]
+        public void NobodyScoresAndNoLeaderboardIsShown()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.SocialDeduction, 7, out var mode,
+                s =>
+                {
+                    s.SetString(CommonSettingKeys.TieBehaviour, "random");
+                    s.SetInt(CommonSettingKeys.Rounds, 3);
+                });
+            var log = ModeTestHarness.PlayWholeGame(session, mode);
+
+            Assert.IsFalse(mode.UsesScoring, "The Suspects is won or lost, not scored.");
+            Assert.IsEmpty(log.StepsOfType<ScoreboardStep>(),
+                "A scoreboard would show a surviving suspect collecting points.");
+            foreach (var player in session.Players)
+                Assert.AreEqual(0, session.Scores.GetScore(player.Id),
+                    player.DisplayName + " scored in a mode that has no points.");
+        }
+
+        [Test]
         public void TheGameEndsWhenOneSideWins()
         {
             var session = ModeTestHarness.CreateSession(GameModeId.SocialDeduction, 5, out var mode,

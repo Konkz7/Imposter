@@ -199,7 +199,8 @@ namespace PartyGame.UI.Framework
 
         public void ShowResults(GameSession session, RoundSummary summary)
         {
-            Screens.Replace<ResultsScreen>(screen => screen.Configure(session, summary));
+            var scored = ActiveMode == null || ActiveMode.UsesScoring;
+            Screens.Replace<ResultsScreen>(screen => screen.Configure(session, summary, scored));
             Services.AdPolicy.NotifyGameCompleted();
         }
 

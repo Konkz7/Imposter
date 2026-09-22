@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using PartyGame.Core.Modes;
@@ -137,6 +138,54 @@ namespace PartyGame.Tests.PlayMode
         public IEnumerator SocialDeductionPlaysThroughTheUi()
         {
             yield return PlayThrough(GameModeId.SocialDeduction);
+        }
+
+        /// <summary>
+        /// The chrome around a covered card must not vary with what the card says. A header
+        /// tinted by the step accent used to turn red for the imposter, announcing the role
+        /// before anybody had revealed anything - and while the previous player was still
+        /// holding the phone.
+        /// </summary>
+        [UnityTest]
+        public IEnumerator CoveredCardsLookIdenticalWhateverTheSecretSays()
+        {
+            yield return null;
+            yield return StartGame(GameModeId.DifferentWord, 1);
+
+            var coveredColours = new HashSet<Color>();
+            var handoffColours = new HashSet<Color>();
+            var cardsSeen = 0;
+
+            for (var i = 0; i < 400; i++)
+            {
+                if (_app.Screens.Current is ResultsScreen) break;
+
+                var handoff = Object.FindAnyObjectByType<HandoffView>();
+                if (handoff != null) Collect(handoff, handoffColours);
+
+                var secret = Object.FindAnyObjectByType<PrivateInfoStepView>();
+                if (secret != null && !secret.HasBeenRevealed)
+                {
+                    Collect(secret, coveredColours);
+                    cardsSeen++;
+                }
+
+                yield return Tap();
+            }
+
+            Assert.GreaterOrEqual(cardsSeen, 6, "Expected one covered card per player.");
+            Assert.AreEqual(1, coveredColours.Count,
+                "Covered cards are not all the same colour, so the header gives the role away.");
+            Assert.AreEqual(1, handoffColours.Count,
+                "Hand-over screens are not all the same colour, so the role leaks before the pass.");
+        }
+
+        /// <summary>Records the header colour of whichever step view is on screen.</summary>
+        private static void Collect(StepView view, HashSet<Color> into)
+        {
+            var label = view.GetComponentsInChildren<TMPro.TextMeshProUGUI>(true)
+                .FirstOrDefault(t => t.name == "Phase");
+            if (label != null) into.Add(label.color);
         }
 
         [UnityTest]

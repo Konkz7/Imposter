@@ -172,9 +172,21 @@ namespace PartyGame.Core.Modes
             }
 
             _revealBuilt = true;
-            ApplyScoring();
+
+            // Elimination is part of the rules and always runs. Scoring and the leaderboard are
+            // presentation, and an unscored mode must not show either.
+            OnVoteResolved();
+            if (UsesScoring) ApplyScoring();
             BuildReveal();
-            Enqueue(BuildScoreboard(Session.IsFinalRound));
+            if (UsesScoring) Enqueue(BuildScoreboard(Session.IsFinalRound));
+        }
+
+        /// <summary>
+        /// Called once the ballot has been decided, before anything is scored or shown. Modes
+        /// that remove players do it here so it still happens when scoring is switched off.
+        /// </summary>
+        protected virtual void OnVoteResolved()
+        {
         }
 
         /// <summary>Default hidden-role scoring. Modes may override for their own twist.</summary>
