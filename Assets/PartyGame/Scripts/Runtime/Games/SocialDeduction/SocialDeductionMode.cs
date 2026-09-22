@@ -22,8 +22,11 @@ namespace PartyGame.Games.SocialDeduction
         private readonly Dictionary<int, string> _roles = new Dictionary<int, string>();
         private readonly ContentRotation<ClueTemplate> _sceneRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
         private readonly ContentRotation<ClueTemplate> _hintRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
+        private readonly ContentRotation<ClueTemplate> _pairRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
+        private readonly ContentRotation<ClueTemplate> _detailRotation = new ContentRotation<ClueTemplate>(c => c.Id, 10);
 
         private SocialClueFactory _clues;
+        private readonly VoteMemory _memory = new VoteMemory();
         private bool _rolesDealt;
         private bool _gameOver;
         private string _gameOverReason = string.Empty;
@@ -41,6 +44,7 @@ namespace PartyGame.Games.SocialDeduction
         protected override void OnInitialise()
         {
             _clues = new SocialClueFactory(Session.Random);
+            _memory.Clear();
             _roles.Clear();
             _rolesDealt = false;
             _gameOver = false;
@@ -158,7 +162,7 @@ namespace PartyGame.Games.SocialDeduction
             if (Session.Settings.GetBool(SettingInvestigator, true))
             {
                 var investigator = alive.FirstOrDefault(p => p.RoleId == PlayerRoles.Investigator);
-                var text = _clues.BuildInvestigatorPair(Shuffler.Pick(pairs, Session.Random), suspects, innocents);
+                var text = _clues.BuildInvestigatorPair(_pairRotation.Next(pairs, Session.Random), suspects, innocents);
                 if (investigator != null && !string.IsNullOrEmpty(text))
                     Enqueue(BuildPrivateClue(investigator, "Investigator", text,
                         "This is always true. Use it without giving yourself away."));
@@ -167,10 +171,11 @@ namespace PartyGame.Games.SocialDeduction
             if (Session.Settings.GetBool(SettingWitness, true))
             {
                 var witness = alive.FirstOrDefault(p => p.RoleId == PlayerRoles.Witness);
-                var text = _clues.BuildWitnessDetail(Shuffler.Pick(details, Session.Random), suspects, alive);
+                var text = _clues.BuildWitnessDetail(_detailRotation.Next(details, Session.Random), suspects, alive,
+                    Session.Players.ToList(), _memory);
                 if (witness != null && !string.IsNullOrEmpty(text))
                     Enqueue(BuildPrivateClue(witness, "Witness", text,
-                        "Everything you saw is true, but it may fit more than one person."));
+                        "What you noticed is true, and it always fits more than one person."));
             }
 
             var publicHint = _clues.BuildAnonymousHint(_hintRotation.Next(hints, Session.Random), suspects, alive);
@@ -263,8 +268,8 @@ namespace PartyGame.Games.SocialDeduction
                 case PlayerRoles.Witness:
                     step.Headline = "WITNESS";
                     step.Accent = StepAccent.Success;
-                    step.Lines.Add(new InfoLine("Each round", "You saw something true about a suspect", true));
-                    step.Footnote = "What you saw is true but it may fit several people.";
+                    step.Lines.Add(new InfoLine("Each round", "You notice something true about a suspect", true));
+                    step.Footnote = "Round one aside, you are watching how people vote.";
                     break;
                 default:
                     step.Headline = "YOU ARE CLEAN";
@@ -295,6 +300,11 @@ namespace PartyGame.Games.SocialDeduction
 
         protected override void OnVoteResolved()
         {
+            // Remembered before anyone is removed, because next round's witness clue is built
+            // from this ballot and the reveal screen is about to show the table the same thing.
+            if (Voting != null && Outcome != null)
+                _memory.Record(Voting.Voters, Voting.VoteOf, Outcome.WinnerId);
+
             if (Outcome == null || !Outcome.HasWinner) return;
             var accused = Session.PlayerOf(Outcome.WinnerId);
             if (accused == null) return;

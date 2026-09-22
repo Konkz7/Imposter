@@ -57,13 +57,13 @@ MonoBehaviour:
     text: Two people were in the kitchen at midnight. Exactly one of {a} and {b} was.
   - id: c131
     kind: 2
-    text: You were on the landing and caught a glimpse. {fact}
+    text: You were on the landing where you can hear everything. {fact}
   - id: c132
     kind: 2
-    text: You were waiting for the kettle and noticed something. {fact}
+    text: You noticed who took whose side in the kitchen. {fact}
   - id: c133
     kind: 2
-    text: You looked out of your bedroom door at the wrong moment. {fact}
+    text: You have been keeping track of who agrees with whom. {fact}
   - id: c134
     kind: 3
     text: It was posted in the house group chat and then deleted. {fact}

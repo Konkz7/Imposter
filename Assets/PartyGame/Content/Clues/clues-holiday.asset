@@ -57,13 +57,13 @@ MonoBehaviour:
     text: 'The receipts narrow it down: exactly one of {a} and {b} paid for something odd.'
   - id: c46
     kind: 2
-    text: You saw someone on the balcony after midnight. {fact}
+    text: You have been watching the group from behind your sunglasses. {fact}
   - id: c47
     kind: 2
-    text: You were at the pool and noticed something. {fact}
+    text: You noticed who took whose side at dinner. {fact}
   - id: c48
     kind: 2
-    text: You woke up early and caught a glimpse. {fact}
+    text: You were up early and paying attention. {fact}
   - id: c49
     kind: 3
     text: A photo on the group chat gives one thing away. {fact}

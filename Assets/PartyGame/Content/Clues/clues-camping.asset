@@ -57,13 +57,13 @@ MonoBehaviour:
     text: You counted boots by the fire. Exactly one of {a} and {b} had wet ones.
   - id: c97
     kind: 2
-    text: You were awake and heard the zip. {fact}
+    text: You were awake by the fire, watching. {fact}
   - id: c98
     kind: 2
-    text: You went to find the toilet block and saw somebody. {fact}
+    text: You noticed who sided with whom around the fire. {fact}
   - id: c99
     kind: 2
-    text: You were poking the fire and glanced up. {fact}
+    text: You have been keeping track of who goes along with what. {fact}
   - id: c100
     kind: 3
     text: Somebody found it written in the campsite log book. {fact}

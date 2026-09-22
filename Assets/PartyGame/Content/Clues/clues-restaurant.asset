@@ -57,13 +57,13 @@ MonoBehaviour:
     text: Two people spoke to the waiter privately. Exactly one of {a} and {b} did.
   - id: c114
     kind: 2
-    text: You came back from the toilets and noticed something. {fact}
+    text: You were sat where you could see the whole table. {fact}
   - id: c115
     kind: 2
-    text: You were looking at the specials board and caught it in the mirror. {fact}
+    text: You caught the room reflected in the specials board. {fact}
   - id: c116
     kind: 2
-    text: You were sat facing the door and saw them. {fact}
+    text: You noticed who agreed with whom over dinner. {fact}
   - id: c117
     kind: 3
     text: The waiter mentioned it while clearing plates. {fact}
