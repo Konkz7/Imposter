@@ -104,51 +104,54 @@ namespace PartyGame.EditorTools
         {
             var definitions = new List<GameModeDefinition>();
 
+            // Most of these work fine at three players and simply get better with more, so the
+            // cards suggest a size rather than enforce one. The Suspects is the exception: it
+            // needs enough people to hide the special roles among.
             definitions.Add(Mode(GameModeId.DifferentWord, "Different Word",
                 "One of you has a different word. Find them.",
                 "Everybody is given the same secret word except the imposter, who gets something close but " +
                 "not quite right. Take turns describing your word without ever saying it, then vote on who " +
                 "sounded slightly off. The imposter wins by surviving the vote.",
-                "WD", 0, 4, 12, 5));
+                "WD", 0, minPlayers: 3, recommended: 4, maxPlayers: 12, minutes: 5));
 
             definitions.Add(Mode(GameModeId.Fib, "Fib",
                 "Invent a believable lie and spot the truth.",
                 "A real question appears with an answer nobody has seen. Everybody secretly writes a fake " +
                 "answer, then the whole list is shuffled together with the real one. Score for finding the " +
                 "truth, and score again every time somebody falls for your lie.",
-                "FB", 1, 4, 10, 6));
+                "FB", 1, minPlayers: 3, recommended: 4, maxPlayers: 10, minutes: 6));
 
             definitions.Add(Mode(GameModeId.Wavelength, "Number Wavelength",
                 "Everyone has the same number. Almost everyone.",
                 "Everybody secretly receives the same number from one to ten, except one player. A question " +
                 "appears with a scale, and each answer has to match the strength of your number. Work out " +
                 "whose answer sits at the wrong end of the scale.",
-                "1-10", 4, 4, 12, 5));
+                "1-10", 4, minPlayers: 3, recommended: 4, maxPlayers: 12, minutes: 5));
 
             definitions.Add(Mode(GameModeId.DevilsAdvocate, "Devil's Advocate",
                 "Someone is arguing against their own opinion.",
                 "A statement appears and everybody privately picks a side. One player is secretly told to " +
                 "argue the opposite of whatever they chose. Everybody makes their case out loud, then the " +
                 "group votes on who is arguing for a side they do not believe.",
-                "DA", 5, 4, 10, 7));
+                "DA", 5, minPlayers: 3, recommended: 4, maxPlayers: 10, minutes: 7));
 
             definitions.Add(Mode(GameModeId.SocialDeduction, "The Suspects",
                 "Secret roles, true clues and one accusation a round.",
                 "Everybody gets a secret role for the whole game. Each round the table hears a scene and a " +
                 "public clue, while the investigator and the witness privately receive a narrow, always-true " +
                 "clue. Debate, accuse, and remove one player a round.",
-                "SD", 2, 5, 12, 10));
+                "SD", 2, minPlayers: 5, recommended: 6, maxPlayers: 12, minutes: 10));
 
             return definitions;
         }
 
         private static GameModeDefinition Mode(GameModeId id, string name, string tagline, string description,
-            string glyph, int accent, int minPlayers, int maxPlayers, int minutes)
+            string glyph, int accent, int minPlayers, int recommended, int maxPlayers, int minutes)
         {
             var path = ContentRoot + "/Modes/" + id + ".asset";
             var asset = LoadOrCreate<GameModeDefinition>(path);
-            asset.Configure(id, name, tagline, description, glyph, accent, minPlayers, maxPlayers, minutes,
-                new List<string>());
+            asset.Configure(id, name, tagline, description, glyph, accent, minPlayers, recommended,
+                maxPlayers, minutes, new List<string>());
             EditorUtility.SetDirty(asset);
             return asset;
         }

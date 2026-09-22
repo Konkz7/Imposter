@@ -18,7 +18,8 @@ MonoBehaviour:
   description: Everybody secretly receives the same number from one to ten, except one player. A question appears with a scale, and each answer has to match the strength of your number. Work out whose answer sits at the wrong end of the scale.
   glyph: 1-10
   accentIndex: 4
-  minPlayers: 4
+  minPlayers: 3
+  recommendedPlayers: 4
   maxPlayers: 12
   minutesPerRound: 5
   available: 1

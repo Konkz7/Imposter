@@ -48,6 +48,17 @@ namespace PartyGame.UI.Screens
 
             var content = CreateScrollBody();
 
+            if (_definition.IsBelowRecommended(App.Services.Roster.Count))
+            {
+                var note = UIFactory.CreatePaddedCard(content, "SizeNote",
+                    Theme.WithAlpha(Theme.Warning, 0.14f), Theme.SpaceM);
+                var noteText = UIFactory.CreateText(note,
+                    "This works with " + App.Services.Roster.Count + " players - it is just " +
+                    _definition.RecommendationLabel + ".",
+                    Theme.FontLabel, Theme.TextSecondary, TextAlignmentOptions.TopLeft, FontStyles.Normal, "Note");
+                UIFactory.FitHeight(noteText.gameObject);
+            }
+
             // Category pickers are long lists, so the game options come first and the packs
             // go underneath - otherwise the settings that matter are buried.
             foreach (var definition in _settings.Definitions.Where(d => d.Type != SettingType.Categories))
@@ -86,7 +97,7 @@ namespace PartyGame.UI.Screens
             var max = definition.ResolveMax(App.Services.Roster.Count);
             var stepper = StepperControl.Create(parent, definition.Label, definition.Description,
                 _settings.GetInt(definition.Key, definition.Min), definition.Min, max, definition.Step,
-                definition.Suffix, value => _settings.SetInt(definition.Key, value));
+                definition.FormatValue, value => _settings.SetInt(definition.Key, value));
             _steppers.Add(new BoundStepper { Definition = definition, Control = stepper });
         }
 

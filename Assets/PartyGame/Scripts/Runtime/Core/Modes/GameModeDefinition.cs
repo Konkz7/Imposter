@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using PartyGame.Core.Session;
 using UnityEngine;
 
 namespace PartyGame.Core.Modes
@@ -26,7 +27,8 @@ namespace PartyGame.Core.Modes
         [SerializeField, TextArea(2, 5)] private string description = string.Empty;
         [SerializeField] private string glyph = "?";
         [SerializeField, Range(0, 7)] private int accentIndex;
-        [SerializeField] private int minPlayers = 4;
+        [SerializeField] private int minPlayers = 3;
+        [SerializeField] private int recommendedPlayers = 4;
         [SerializeField] private int maxPlayers = 12;
         [SerializeField] private int minutesPerRound = 5;
         [SerializeField] private bool available = true;
@@ -38,17 +40,40 @@ namespace PartyGame.Core.Modes
         public string Description => description;
         public string Glyph => string.IsNullOrEmpty(glyph) ? "?" : glyph;
         public int AccentIndex => accentIndex;
-        public int MinPlayers => Mathf.Max(3, minPlayers);
+        /// <summary>Fewest players the rules still work with. Never below the roster minimum.</summary>
+        public int MinPlayers => Mathf.Max(PlayerRoster.AbsoluteMinPlayers, minPlayers);
+
         public int MaxPlayers => Mathf.Max(MinPlayers, maxPlayers);
+
+        /// <summary>
+        /// Where the game starts being good, as opposed to merely playable. This is a suggestion
+        /// only: a table at or above <see cref="MinPlayers"/> is never blocked from playing.
+        /// </summary>
+        public int RecommendedPlayers => Mathf.Clamp(recommendedPlayers, MinPlayers, MaxPlayers);
+
+        public bool HasRecommendation => RecommendedPlayers > MinPlayers;
+
         public int MinutesPerRound => Mathf.Max(1, minutesPerRound);
         public bool Available => available;
         public IReadOnlyList<string> HowToPlay => howToPlay;
 
         public string PlayerRangeLabel => MinPlayers + "-" + MaxPlayers + " players";
+        public string RecommendationLabel => "best with " + RecommendedPlayers + " or more";
         public string DurationLabel => "~" + MinutesPerRound + " min per round";
 
+        /// <summary>True when the table can play, even if it is below the recommended size.</summary>
+        public bool SupportsPlayerCount(int playerCount)
+        {
+            return playerCount >= MinPlayers && playerCount <= MaxPlayers;
+        }
+
+        public bool IsBelowRecommended(int playerCount)
+        {
+            return HasRecommendation && playerCount < RecommendedPlayers;
+        }
+
         public void Configure(GameModeId id, string name, string modeTagline, string modeDescription,
-            string modeGlyph, int accent, int min, int max, int minutes, IEnumerable<string> steps)
+            string modeGlyph, int accent, int min, int recommended, int max, int minutes, IEnumerable<string> steps)
         {
             modeId = id;
             displayName = name;
@@ -57,6 +82,7 @@ namespace PartyGame.Core.Modes
             glyph = modeGlyph;
             accentIndex = accent;
             minPlayers = min;
+            recommendedPlayers = recommended;
             maxPlayers = max;
             minutesPerRound = minutes;
             available = true;

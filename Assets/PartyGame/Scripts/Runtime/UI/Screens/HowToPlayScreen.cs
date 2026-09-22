@@ -50,7 +50,9 @@ namespace PartyGame.UI.Screens
             if (_definition != null)
             {
                 var meta = UIFactory.CreateText(content,
-                    _definition.PlayerRangeLabel + "   -   " + _definition.DurationLabel,
+                    _definition.PlayerRangeLabel +
+                    (_definition.HasRecommendation ? " (" + _definition.RecommendationLabel + ")" : string.Empty) +
+                    "   -   " + _definition.DurationLabel,
                     Theme.FontCaption, Theme.TextMuted, TextAlignmentOptions.Center, FontStyles.Normal, "Meta");
                 UIFactory.FitHeight(meta.gameObject);
             }

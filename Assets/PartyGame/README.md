@@ -74,6 +74,17 @@ consecutive steps belong to the same player, so the phone is never passed twice 
 `AppController` keeps `AdPolicy.PrivateInformationVisible` in sync, which hard-blocks every ad
 while a secret is on screen.
 
+## Player counts
+
+Four of the five games run from three players upward. `GameModeDefinition` carries a separate
+`RecommendedPlayers`, which the cards and the setup screen surface as a suggestion - "Plays with
+3, best with 4 or more" - and which never blocks a table from starting. The Suspects is the one
+exception: it keeps a minimum of five, because the investigator and witness have to hide among
+enough people to be worth hiding.
+
+`PlayerRoster.AbsoluteMinPlayers` is the floor for the whole app, and `MinPlayers` can never
+drop below it.
+
 ## Content
 
 Content lives in ScriptableObjects under `Assets/PartyGame/Content` and is indexed by

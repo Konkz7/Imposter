@@ -18,7 +18,8 @@ MonoBehaviour:
   description: A statement appears and everybody privately picks a side. One player is secretly told to argue the opposite of whatever they chose. Everybody makes their case out loud, then the group votes on who is arguing for a side they do not believe.
   glyph: DA
   accentIndex: 5
-  minPlayers: 4
+  minPlayers: 3
+  recommendedPlayers: 4
   maxPlayers: 10
   minutesPerRound: 7
   available: 1

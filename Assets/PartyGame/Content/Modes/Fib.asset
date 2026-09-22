@@ -18,7 +18,8 @@ MonoBehaviour:
   description: A real question appears with an answer nobody has seen. Everybody secretly writes a fake answer, then the whole list is shuffled together with the real one. Score for finding the truth, and score again every time somebody falls for your lie.
   glyph: FB
   accentIndex: 1
-  minPlayers: 4
+  minPlayers: 3
+  recommendedPlayers: 4
   maxPlayers: 10
   minutesPerRound: 6
   available: 1
