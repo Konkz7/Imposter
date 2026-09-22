@@ -19,40 +19,418 @@ MonoBehaviour:
   accentIndex: 6
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
   - crewWord: Football
     imposterWord: Rugby
     hint: Two teams and a pitch
+    difficulty: 1
   - crewWord: Tennis
     imposterWord: Badminton
     hint: There is a net in the middle
+    difficulty: 1
   - crewWord: Swimming
     imposterWord: Diving
     hint: You need a pool
+    difficulty: 1
   - crewWord: Marathon
     imposterWord: Sprint
     hint: Running until it hurts
+    difficulty: 1
   - crewWord: Boxing
     imposterWord: Wrestling
     hint: Two people, one ring
+    difficulty: 1
   - crewWord: Cycling
     imposterWord: Skateboarding
     hint: It has wheels
+    difficulty: 1
   - crewWord: Golf
     imposterWord: Snooker
     hint: Aim carefully and stay quiet
+    difficulty: 1
   - crewWord: Basketball
     imposterWord: Netball
     hint: The ball goes through a hoop
+    difficulty: 1
   - crewWord: Skiing
     imposterWord: Ice skating
     hint: Cold and slippery
+    difficulty: 1
   - crewWord: Cricket
     imposterWord: Baseball
     hint: Someone throws, someone swings
+    difficulty: 1
   - crewWord: Gymnastics
     imposterWord: Dance
     hint: Very fit people making it look easy
-  - crewWord: Darts
-    imposterWord: Archery
+    difficulty: 1
+  - crewWord: Archery
+    imposterWord: Shooting
     hint: Hit the target
+    difficulty: 1
+  - crewWord: Hockey
+    imposterWord: Lacrosse
+    hint: A stick and a lot of running
+    difficulty: 1
+  - crewWord: Volleyball
+    imposterWord: Beach volleyball
+    hint: Over the net with your hands
+    difficulty: 1
+  - crewWord: Running
+    imposterWord: Jogging
+    hint: One foot in front of the other
+    difficulty: 1
+  - crewWord: Table tennis
+    imposterWord: Squash
+    hint: A small room and a fast ball
+    difficulty: 2
+  - crewWord: Rowing
+    imposterWord: Canoeing
+    hint: You go backwards or forwards on water
+    difficulty: 2
+  - crewWord: Sailing
+    imposterWord: Windsurfing
+    hint: The wind does the work
+    difficulty: 2
+  - crewWord: Surfing
+    imposterWord: Bodyboarding
+    hint: You need a wave
+    difficulty: 2
+  - crewWord: Climbing
+    imposterWord: Bouldering
+    hint: Going up without falling off
+    difficulty: 2
+  - crewWord: Judo
+    imposterWord: Karate
+    hint: A martial art with belts
+    difficulty: 2
+  - crewWord: Taekwondo
+    imposterWord: Kickboxing
+    hint: Kicking, competitively
+    difficulty: 2
+  - crewWord: Fencing
+    imposterWord: Sabre
+    hint: Swords and a white jacket
+    difficulty: 2
+  - crewWord: Weightlifting
+    imposterWord: Powerlifting
+    hint: Picking up something very heavy
+    difficulty: 2
+  - crewWord: Triathlon
+    imposterWord: Duathlon
+    hint: More than one sport in a row
+    difficulty: 2
+  - crewWord: Hurdles
+    imposterWord: Steeplechase
+    hint: Running and jumping over things
+    difficulty: 2
+  - crewWord: Long jump
+    imposterWord: Triple jump
+    hint: You run then leap into sand
+    difficulty: 2
+  - crewWord: High jump
+    imposterWord: Pole vault
+    hint: Getting over a bar
+    difficulty: 2
+  - crewWord: Shot put
+    imposterWord: Discus
+    hint: Throwing something heavy
+    difficulty: 2
+  - crewWord: Javelin
+    imposterWord: Hammer throw
+    hint: Throwing something far
+    difficulty: 2
+  - crewWord: Decathlon
+    imposterWord: Heptathlon
+    hint: Ten or seven events
+    difficulty: 2
+  - crewWord: Relay
+    imposterWord: Team pursuit
+    hint: You pass it on
+    difficulty: 2
+  - crewWord: Formula One
+    imposterWord: Rally
+    hint: Cars going very fast
+    difficulty: 2
+  - crewWord: MotoGP
+    imposterWord: Motocross
+    hint: Motorbikes and a race
+    difficulty: 2
+  - crewWord: Horse racing
+    imposterWord: Show jumping
+    hint: A horse and a rider
+    difficulty: 2
+  - crewWord: Polo
+    imposterWord: Dressage
+    hint: Horses and very smart clothes
+    difficulty: 2
+  - crewWord: Darts
+    imposterWord: Bowls
+    hint: Precision and a pint
+    difficulty: 2
+  - crewWord: Curling
+    imposterWord: Ice hockey
+    hint: On ice, with different levels of violence
+    difficulty: 2
+  - crewWord: Snowboarding
+    imposterWord: Ski jumping
+    hint: Downhill and airborne
+    difficulty: 2
+  - crewWord: Bobsleigh
+    imposterWord: Luge
+    hint: Downhill on ice, lying or sitting
+    difficulty: 2
+  - crewWord: Figure skating
+    imposterWord: Speed skating
+    hint: Skating for beauty or for time
+    difficulty: 2
+  - crewWord: Water polo
+    imposterWord: Synchronised swimming
+    hint: A sport in a pool that looks exhausting
+    difficulty: 2
+  - crewWord: Handball
+    imposterWord: Futsal
+    hint: Indoor, fast and underrated
+    difficulty: 2
+  - crewWord: Badminton smash
+    imposterWord: Tennis serve
+    hint: The shot that ends the point
+    difficulty: 2
+  - crewWord: Penalty
+    imposterWord: Free kick
+    hint: A restart after a foul
+    difficulty: 2
+  - crewWord: Offside
+    imposterWord: Foul
+    hint: The referee has stopped play
+    difficulty: 2
+  - crewWord: Referee
+    imposterWord: Umpire
+    hint: They make the decisions
+    difficulty: 2
+  - crewWord: Linesman
+    imposterWord: Video referee
+    hint: They check what happened
+    difficulty: 2
+  - crewWord: Red card
+    imposterWord: Yellow card
+    hint: You are in trouble
+    difficulty: 2
+  - crewWord: Half time
+    imposterWord: Full time
+    hint: A break or the end
+    difficulty: 2
+  - crewWord: Extra time
+    imposterWord: Penalty shootout
+    hint: It was still level
+    difficulty: 2
+  - crewWord: League
+    imposterWord: Cup
+    hint: Two ways to win a trophy
+    difficulty: 2
+  - crewWord: Season
+    imposterWord: Fixture
+    hint: The calendar of a sport
+    difficulty: 2
+  - crewWord: Transfer
+    imposterWord: Loan
+    hint: A player has moved
+    difficulty: 2
+  - crewWord: Manager
+    imposterWord: Coach
+    hint: They pick the team
+    difficulty: 2
+  - crewWord: Captain
+    imposterWord: Substitute
+    hint: A role in a team
+    difficulty: 2
+  - crewWord: Squad
+    imposterWord: Starting eleven
+    hint: Who is playing
+    difficulty: 2
+  - crewWord: Home game
+    imposterWord: Away game
+    hint: Where it is played
+    difficulty: 2
+  - crewWord: Derby
+    imposterWord: Final
+    hint: A match that matters more
+    difficulty: 2
+  - crewWord: Stadium
+    imposterWord: Training ground
+    hint: Where the team is
+    difficulty: 2
+  - crewWord: Terrace
+    imposterWord: Stand
+    hint: Where the fans are
+    difficulty: 2
+  - crewWord: Season ticket
+    imposterWord: Match day ticket
+    hint: How you got in
+    difficulty: 2
+  - crewWord: Kit
+    imposterWord: Strip
+    hint: What the team wears
+    difficulty: 2
+  - crewWord: Boots
+    imposterWord: Trainers
+    hint: Footwear for a sport
+    difficulty: 2
+  - crewWord: Shin pads
+    imposterWord: Gum shield
+    hint: Protective and uncomfortable
+    difficulty: 2
+  - crewWord: Helmet
+    imposterWord: Headguard
+    hint: It protects your head
+    difficulty: 2
+  - crewWord: Racket
+    imposterWord: Bat
+    hint: You hit the ball with it
+    difficulty: 2
+  - crewWord: Club
+    imposterWord: Putter
+    hint: Used in golf
+    difficulty: 2
+  - crewWord: Goalpost
+    imposterWord: Crossbar
+    hint: Part of the goal
+    difficulty: 2
+  - crewWord: Whistle
+    imposterWord: Stopwatch
+    hint: The official uses it
+    difficulty: 2
+  - crewWord: Scoreboard
+    imposterWord: League table
+    hint: Where you check the numbers
+    difficulty: 2
+  - crewWord: Personal best
+    imposterWord: World record
+    hint: A time worth remembering
+    difficulty: 2
+  - crewWord: Medal
+    imposterWord: Trophy
+    hint: You lift it above your head
+    difficulty: 2
+  - crewWord: Podium
+    imposterWord: Winners circle
+    hint: Where the celebration happens
+    difficulty: 2
+  - crewWord: Olympics
+    imposterWord: Commonwealth Games
+    hint: A multi sport event
+    difficulty: 2
+  - crewWord: World Cup
+    imposterWord: Euros
+    hint: A tournament between countries
+    difficulty: 2
+  - crewWord: Warm up
+    imposterWord: Cool down
+    hint: Before or after the exercise
+    difficulty: 2
+  - crewWord: Training
+    imposterWord: Pre season
+    hint: Getting ready to compete
+    difficulty: 2
+  - crewWord: Injury
+    imposterWord: Comeback
+    hint: They were out and now they are back
+    difficulty: 2
+  - crewWord: Physio
+    imposterWord: Sports massage
+    hint: Somebody is fixing the athlete
+    difficulty: 2
+  - crewWord: Fitness test
+    imposterWord: Time trial
+    hint: Measuring how good you are
+    difficulty: 2
+  - crewWord: Fan chant
+    imposterWord: Mexican wave
+    hint: What the crowd does
+    difficulty: 2
+  - crewWord: Scrum
+    imposterWord: Ruck
+    hint: A rugby restart nobody understands
+    difficulty: 3
+  - crewWord: Lineout
+    imposterWord: Maul
+    hint: Rugby, and a lot of shoving
+    difficulty: 3
+  - crewWord: Conversion
+    imposterWord: Drop goal
+    hint: Points after the try
+    difficulty: 3
+  - crewWord: Googly
+    imposterWord: Leg spin
+    hint: A cricket delivery with a trick
+    difficulty: 3
+  - crewWord: Silly mid on
+    imposterWord: Gully
+    hint: A cricket fielding position
+    difficulty: 3
+  - crewWord: Duck
+    imposterWord: Century
+    hint: A batting score at either extreme
+    difficulty: 3
+  - crewWord: Birdie
+    imposterWord: Bogey
+    hint: One under or one over
+    difficulty: 3
+  - crewWord: Albatross
+    imposterWord: Eagle
+    hint: A very good golf score
+    difficulty: 3
+  - crewWord: Peloton
+    imposterWord: Breakaway
+    hint: Cyclists together or apart
+    difficulty: 3
+  - crewWord: Time trial
+    imposterWord: Prologue
+    hint: Cycling against the clock
+    difficulty: 3
+  - crewWord: Domestique
+    imposterWord: Sprinter
+    hint: A cyclist with a job
+    difficulty: 3
+  - crewWord: Tiebreak
+    imposterWord: Deuce
+    hint: Tennis refusing to end
+    difficulty: 3
+  - crewWord: Love
+    imposterWord: Advantage
+    hint: A tennis score
+    difficulty: 3
+  - crewWord: Slam dunk
+    imposterWord: Layup
+    hint: Two ways to score in basketball
+    difficulty: 3
+  - crewWord: Nutmeg
+    imposterWord: Rabona
+    hint: A show off move with a football
+    difficulty: 3
+  - crewWord: Clean sheet
+    imposterWord: Hat trick
+    hint: An achievement in a match
+    difficulty: 3
+  - crewWord: Par
+    imposterWord: Handicap
+    hint: Golf maths
+    difficulty: 3
+  - crewWord: Freestyle
+    imposterWord: Butterfly
+    hint: A swimming stroke
+    difficulty: 3
+  - crewWord: Tumble turn
+    imposterWord: False start
+    hint: A swimming detail that decides races
+    difficulty: 3
+  - crewWord: Snatch
+    imposterWord: Clean and jerk
+    hint: An olympic lift
+    difficulty: 3
+  - crewWord: Points decision
+    imposterWord: Technical knockout
+    hint: How a fight ended
+    difficulty: 3

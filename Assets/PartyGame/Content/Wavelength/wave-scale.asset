@@ -14,49 +14,221 @@ MonoBehaviour:
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
   id: wave-scale
   displayName: How much?
-  description: Size, difficulty and effort
+  description: Size, difficulty, cost and effort
   glyph: SC
   accentIndex: 3
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   questions:
-  - id: w21
+  - id: w56
     prompt: Name something scary
     lowLabel: not scary at all
     highLabel: terrifying
-  - id: w22
+    difficulty: 1
+    tags:
+    - feelings
+  - id: w57
     prompt: Name something expensive
     lowLabel: practically free
     highLabel: eye-wateringly costly
-  - id: w23
+    difficulty: 1
+    tags:
+    - money
+  - id: w58
     prompt: Name something difficult to learn
     lowLabel: learned in an afternoon
     highLabel: takes a lifetime
-  - id: w24
+    difficulty: 1
+    tags:
+    - skills
+  - id: w59
     prompt: Name something useful
     lowLabel: completely pointless
     highLabel: could not live without it
-  - id: w25
+    difficulty: 1
+    tags:
+    - objects
+  - id: w60
     prompt: Name something noisy
     lowLabel: silent
     highLabel: deafening
-  - id: w26
+    difficulty: 1
+    tags:
+    - sound
+  - id: w61
     prompt: Name something fast
     lowLabel: painfully slow
     highLabel: blindingly fast
-  - id: w27
-    prompt: Name a household chore
-    lowLabel: barely counts as a chore
-    highLabel: the worst job in the house
-  - id: w28
+    difficulty: 1
+    tags:
+    - speed
+  - id: w62
     prompt: Name something tiring
     lowLabel: restful
     highLabel: completely exhausting
-  - id: w29
+    difficulty: 1
+    tags:
+    - energy
+  - id: w63
     prompt: Name something impressive
     lowLabel: nobody would notice
     highLabel: everyone would be amazed
-  - id: w30
+    difficulty: 1
+    tags:
+    - skills
+  - id: w64
     prompt: Name something risky
     lowLabel: perfectly safe
     highLabel: genuinely dangerous
+    difficulty: 1
+    tags:
+    - risk
+  - id: w65
+    prompt: Name something embarrassing
+    lowLabel: nobody would care
+    highLabel: you would never live it down
+    difficulty: 2
+    tags:
+    - feelings
+  - id: w66
+    prompt: Name something luxurious
+    lowLabel: extremely basic
+    highLabel: absurd extravagance
+    difficulty: 2
+    tags:
+    - money
+  - id: w67
+    prompt: Name something chaotic
+    lowLabel: perfectly ordered
+    highLabel: total chaos
+    difficulty: 2
+    tags:
+    - feelings
+  - id: w68
+    prompt: Name something popular
+    lowLabel: nobody has heard of it
+    highLabel: everybody knows it
+    difficulty: 2
+    tags:
+    - culture
+  - id: w69
+    prompt: Name something healthy
+    lowLabel: actively bad for you
+    highLabel: genuinely good for you
+    difficulty: 2
+    tags:
+    - health
+  - id: w70
+    prompt: Name something heavy
+    lowLabel: you could lift it with one finger
+    highLabel: you could not move it
+    difficulty: 2
+    tags:
+    - objects
+  - id: w71
+    prompt: Name something old
+    lowLabel: brand new
+    highLabel: ancient
+    difficulty: 2
+    tags:
+    - time
+  - id: w72
+    prompt: Name something complicated
+    lowLabel: a child could do it
+    highLabel: requires years of training
+    difficulty: 2
+    tags:
+    - skills
+  - id: w73
+    prompt: Name something messy
+    lowLabel: spotless
+    highLabel: an absolute state
+    difficulty: 2
+    tags:
+    - home
+  - id: w74
+    prompt: Name something addictive
+    lowLabel: easy to put down
+    highLabel: impossible to stop
+    difficulty: 2
+    tags:
+    - habits
+  - id: w75
+    prompt: Name something overrated
+    lowLabel: underrated
+    highLabel: wildly overrated
+    difficulty: 2
+    tags:
+    - opinions
+  - id: w76
+    prompt: Name something formal
+    lowLabel: completely casual
+    highLabel: black tie
+    difficulty: 2
+    tags:
+    - social
+  - id: w77
+    prompt: Name something fragile
+    lowLabel: indestructible
+    highLabel: breaks if you look at it
+    difficulty: 2
+    tags:
+    - objects
+  - id: w78
+    prompt: Name something time consuming
+    lowLabel: over in a second
+    highLabel: swallows a whole weekend
+    difficulty: 2
+    tags:
+    - time
+  - id: w79
+    prompt: Name a smell
+    lowLabel: revolting
+    highLabel: wonderful
+    difficulty: 2
+    tags:
+    - senses
+  - id: w80
+    prompt: Name something spicy
+    lowLabel: no heat at all
+    highLabel: genuinely painful
+    difficulty: 2
+    tags:
+    - food
+  - id: w81
+    prompt: Name something worth queuing for
+    lowLabel: not worth two minutes
+    highLabel: worth an hour
+    difficulty: 3
+    tags:
+    - patience
+  - id: w82
+    prompt: Name something sustainable
+    lowLabel: terrible for the planet
+    highLabel: genuinely green
+    difficulty: 3
+    tags:
+    - environment
+  - id: w83
+    prompt: Name something nostalgic
+    lowLabel: no feeling at all
+    highLabel: instantly takes you back
+    difficulty: 3
+    tags:
+    - feelings
+  - id: w84
+    prompt: Name something intimidating
+    lowLabel: completely approachable
+    highLabel: genuinely daunting
+    difficulty: 3
+    tags:
+    - feelings
+  - id: w85
+    prompt: Name something that ages well
+    lowLabel: ruined within a year
+    highLabel: better after twenty years
+    difficulty: 3
+    tags:
+    - time

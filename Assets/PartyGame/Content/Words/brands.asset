@@ -1,0 +1,428 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f16cdb05515914ab6a2ad2e550d25f, type: 3}
+  m_Name: brands
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WordCategoryData
+  id: brands
+  displayName: Brands
+  description: Logos everybody recognises
+  glyph: BR
+  accentIndex: 3
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  pairs:
+  - crewWord: Coca-Cola
+    imposterWord: Pepsi
+    hint: Fizzy and very competitive
+    difficulty: 1
+  - crewWord: McDonald's
+    imposterWord: Burger King
+    hint: Fast food with a drive through
+    difficulty: 1
+  - crewWord: Nike
+    imposterWord: Adidas
+    hint: Trainers and a slogan
+    difficulty: 1
+  - crewWord: Prime Video
+    imposterWord: Apple TV Plus
+    hint: A monthly subscription nobody cancels
+    difficulty: 1
+  - crewWord: Apple
+    imposterWord: Samsung
+    hint: They make the phone in your pocket
+    difficulty: 1
+  - crewWord: Google
+    imposterWord: Bing
+    hint: You search with it
+    difficulty: 1
+  - crewWord: YouTube
+    imposterWord: TikTok
+    hint: Videos, endlessly
+    difficulty: 1
+  - crewWord: Spotify
+    imposterWord: Apple Music
+    hint: Music by subscription
+    difficulty: 1
+  - crewWord: Amazon
+    imposterWord: eBay
+    hint: It arrives in a box
+    difficulty: 1
+  - crewWord: Lego
+    imposterWord: Playmobil
+    hint: Small plastic pieces
+    difficulty: 1
+  - crewWord: Ikea
+    imposterWord: Argos
+    hint: Flat pack and a catalogue
+    difficulty: 1
+  - crewWord: Tesco
+    imposterWord: Sainsbury's
+    hint: You do the weekly shop there
+    difficulty: 1
+  - crewWord: Starbucks
+    imposterWord: Costa
+    hint: Coffee in a paper cup
+    difficulty: 1
+  - crewWord: Uber
+    imposterWord: Bolt
+    hint: A car arrives on your phone
+    difficulty: 1
+  - crewWord: PlayStation
+    imposterWord: Xbox
+    hint: A console under the telly
+    difficulty: 1
+  - crewWord: Instagram
+    imposterWord: Snapchat
+    hint: Photos that disappear or do not
+    difficulty: 2
+  - crewWord: WhatsApp
+    imposterWord: Telegram
+    hint: Messaging with groups
+    difficulty: 2
+  - crewWord: Facebook
+    imposterWord: LinkedIn
+    hint: A social network with a purpose
+    difficulty: 2
+  - crewWord: Twitter
+    imposterWord: Threads
+    hint: Short posts and arguments
+    difficulty: 2
+  - crewWord: Reddit
+    imposterWord: Discord
+    hint: Communities with their own rules
+    difficulty: 2
+  - crewWord: Zoom
+    imposterWord: Teams
+    hint: You are on mute
+    difficulty: 2
+  - crewWord: Nintendo
+    imposterWord: Sega
+    hint: Consoles and nostalgia
+    difficulty: 2
+  - crewWord: Nvidia
+    imposterWord: AMD
+    hint: The chip inside the computer
+    difficulty: 2
+  - crewWord: Intel
+    imposterWord: ARM
+    hint: Processors, quietly everywhere
+    difficulty: 2
+  - crewWord: Tesla
+    imposterWord: Rivian
+    hint: Electric cars with opinions
+    difficulty: 2
+  - crewWord: BMW
+    imposterWord: Audi
+    hint: German and indicating late
+    difficulty: 2
+  - crewWord: Ford
+    imposterWord: Vauxhall
+    hint: The car on every street
+    difficulty: 2
+  - crewWord: Toyota
+    imposterWord: Honda
+    hint: It will never break down
+    difficulty: 2
+  - crewWord: Ferrari
+    imposterWord: Lamborghini
+    hint: Loud, red and impractical
+    difficulty: 2
+  - crewWord: Ryanair
+    imposterWord: easyJet
+    hint: Cheap flights and extra charges
+    difficulty: 2
+  - crewWord: British Airways
+    imposterWord: Virgin Atlantic
+    hint: A long haul flight
+    difficulty: 2
+  - crewWord: Airbnb
+    imposterWord: Booking.com
+    hint: Somewhere to stay
+    difficulty: 2
+  - crewWord: TripAdvisor
+    imposterWord: Yelp
+    hint: Strangers reviewing restaurants
+    difficulty: 2
+  - crewWord: Deliveroo
+    imposterWord: Just Eat
+    hint: Food arrives on a bike
+    difficulty: 2
+  - crewWord: Domino's
+    imposterWord: Pizza Hut
+    hint: Pizza delivered
+    difficulty: 2
+  - crewWord: KFC
+    imposterWord: Nando's
+    hint: Chicken with a queue
+    difficulty: 2
+  - crewWord: Subway
+    imposterWord: Greggs
+    hint: Lunch on the high street
+    difficulty: 2
+  - crewWord: Pret
+    imposterWord: Caffe Nero
+    hint: A sandwich and a coffee
+    difficulty: 2
+  - crewWord: Heinz
+    imposterWord: Hellmann's
+    hint: It lives in the fridge door
+    difficulty: 2
+  - crewWord: Cadbury
+    imposterWord: Galaxy
+    hint: Chocolate in purple or not
+    difficulty: 2
+  - crewWord: Nestle
+    imposterWord: Mars
+    hint: They make the thing in the vending machine
+    difficulty: 2
+  - crewWord: Walkers
+    imposterWord: Pringles
+    hint: Crisps in a bag or a tube
+    difficulty: 2
+  - crewWord: Haribo
+    imposterWord: Skittles
+    hint: Sweets in a share bag
+    difficulty: 2
+  - crewWord: Ben and Jerry's
+    imposterWord: Haagen-Dazs
+    hint: Expensive ice cream
+    difficulty: 2
+  - crewWord: Innocent
+    imposterWord: Tropicana
+    hint: Juice with a personality
+    difficulty: 2
+  - crewWord: Red Bull
+    imposterWord: Monster
+    hint: An energy drink
+    difficulty: 2
+  - crewWord: Guinness
+    imposterWord: Heineken
+    hint: Beer with a famous glass
+    difficulty: 2
+  - crewWord: Jack Daniel's
+    imposterWord: Jameson
+    hint: Whiskey with a label
+    difficulty: 2
+  - crewWord: Gordon's
+    imposterWord: Bombay Sapphire
+    hint: Gin and tonic
+    difficulty: 2
+  - crewWord: Colgate
+    imposterWord: Sensodyne
+    hint: Toothpaste
+    difficulty: 2
+  - crewWord: Dove
+    imposterWord: Nivea
+    hint: It lives in the bathroom
+    difficulty: 2
+  - crewWord: Gillette
+    imposterWord: Wilkinson Sword
+    hint: Razors
+    difficulty: 2
+  - crewWord: Dyson
+    imposterWord: Shark
+    hint: An expensive vacuum cleaner
+    difficulty: 2
+  - crewWord: Bosch
+    imposterWord: Siemens
+    hint: The dishwasher in the kitchen
+    difficulty: 2
+  - crewWord: Philips
+    imposterWord: Braun
+    hint: Small electrical goods
+    difficulty: 2
+  - crewWord: Sony
+    imposterWord: Panasonic
+    hint: Electronics from Japan
+    difficulty: 2
+  - crewWord: LG
+    imposterWord: Hisense
+    hint: The television in the corner
+    difficulty: 2
+  - crewWord: Bose
+    imposterWord: Sonos
+    hint: Speakers that cost too much
+    difficulty: 2
+  - crewWord: Beats
+    imposterWord: AirPods
+    hint: Headphones as a fashion item
+    difficulty: 2
+  - crewWord: GoPro
+    imposterWord: DJI
+    hint: Cameras for people who fall off things
+    difficulty: 2
+  - crewWord: Canon
+    imposterWord: Nikon
+    hint: Proper cameras
+    difficulty: 2
+  - crewWord: Fitbit
+    imposterWord: Garmin
+    hint: It counts your steps
+    difficulty: 2
+  - crewWord: Levi's
+    imposterWord: Wrangler
+    hint: Jeans
+    difficulty: 2
+  - crewWord: H and M
+    imposterWord: Zara
+    hint: High street fashion
+    difficulty: 2
+  - crewWord: Primark
+    imposterWord: Matalan
+    hint: Cheap clothes in bulk
+    difficulty: 2
+  - crewWord: North Face
+    imposterWord: Patagonia
+    hint: A coat for people who do not go outside
+    difficulty: 2
+  - crewWord: Converse
+    imposterWord: Vans
+    hint: Canvas trainers
+    difficulty: 2
+  - crewWord: Dr Martens
+    imposterWord: Timberland
+    hint: Boots with a scene attached
+    difficulty: 2
+  - crewWord: Rolex
+    imposterWord: Omega
+    hint: A watch that costs more than a car
+    difficulty: 2
+  - crewWord: Casio
+    imposterWord: Swatch
+    hint: A watch that does not
+    difficulty: 2
+  - crewWord: Chanel
+    imposterWord: Dior
+    hint: Perfume and handbags
+    difficulty: 2
+  - crewWord: Gucci
+    imposterWord: Prada
+    hint: A logo you pay extra for
+    difficulty: 2
+  - crewWord: Visa
+    imposterWord: Mastercard
+    hint: It is in your wallet
+    difficulty: 2
+  - crewWord: PayPal
+    imposterWord: Klarna
+    hint: Paying online
+    difficulty: 2
+  - crewWord: Monzo
+    imposterWord: Starling
+    hint: A bank that started on a phone
+    difficulty: 2
+  - crewWord: Barclays
+    imposterWord: HSBC
+    hint: A bank with a branch that closed
+    difficulty: 2
+  - crewWord: Shell
+    imposterWord: BP
+    hint: You fill up there
+    difficulty: 2
+  - crewWord: Boots
+    imposterWord: Superdrug
+    hint: Chemist on the high street
+    difficulty: 2
+  - crewWord: B and Q
+    imposterWord: Homebase
+    hint: You go for one screw and spend forty pounds
+    difficulty: 2
+  - crewWord: Screwfix
+    imposterWord: Toolstation
+    hint: Tradespeople queue there at 7am
+    difficulty: 2
+  - crewWord: Patagonia
+    imposterWord: Arc'teryx
+    hint: Outdoor clothing with a cult following
+    difficulty: 3
+  - crewWord: Muji
+    imposterWord: Uniqlo
+    hint: Japanese and deliberately plain
+    difficulty: 3
+  - crewWord: Aesop
+    imposterWord: Le Labo
+    hint: Expensive hand wash in a nice bottle
+    difficulty: 3
+  - crewWord: Dualit
+    imposterWord: Smeg
+    hint: A kitchen appliance as a statement
+    difficulty: 3
+  - crewWord: Le Creuset
+    imposterWord: Staub
+    hint: A very heavy casserole dish
+    difficulty: 3
+  - crewWord: Moleskine
+    imposterWord: Leuchtturm
+    hint: A notebook people are serious about
+    difficulty: 3
+  - crewWord: Lamy
+    imposterWord: Kaweco
+    hint: A fountain pen with a following
+    difficulty: 3
+  - crewWord: Brompton
+    imposterWord: Bianchi
+    hint: A bicycle with strong opinions attached
+    difficulty: 3
+  - crewWord: Peloton
+    imposterWord: Wahoo
+    hint: Exercise equipment with a screen
+    difficulty: 3
+  - crewWord: Oatly
+    imposterWord: Alpro
+    hint: Milk that is not milk
+    difficulty: 3
+  - crewWord: Deliveroo Editions
+    imposterWord: Dark kitchen
+    hint: A restaurant with no restaurant
+    difficulty: 3
+  - crewWord: Shopify
+    imposterWord: Etsy
+    hint: Where small businesses sell online
+    difficulty: 3
+  - crewWord: Stripe
+    imposterWord: Square
+    hint: How a small business takes payment
+    difficulty: 3
+  - crewWord: Slack
+    imposterWord: Notion
+    hint: Work software people have feelings about
+    difficulty: 3
+  - crewWord: Figma
+    imposterWord: Canva
+    hint: Design software for different skill levels
+    difficulty: 3
+  - crewWord: Raspberry Pi
+    imposterWord: Arduino
+    hint: A tiny computer for tinkering
+    difficulty: 3
+  - crewWord: Logitech
+    imposterWord: Razer
+    hint: Computer accessories that glow
+    difficulty: 3
+  - crewWord: Anker
+    imposterWord: Belkin
+    hint: The charger that actually works
+    difficulty: 3
+  - crewWord: Trustpilot
+    imposterWord: Which
+    hint: Reviews you are supposed to trust
+    difficulty: 3
+  - crewWord: Ocado
+    imposterWord: Gousto
+    hint: Food that arrives planned
+    difficulty: 3
+  - crewWord: Wetherspoons
+    imposterWord: Harvester
+    hint: A chain pub with a carpet
+    difficulty: 3

@@ -11,6 +11,8 @@ namespace PartyGame.Core.Content
         [SerializeField, TextArea(1, 3)] private string prompt = string.Empty;
         [SerializeField] private string lowLabel = "terrible";
         [SerializeField] private string highLabel = "amazing";
+        [SerializeField] private Difficulty difficulty = Difficulty.Medium;
+        [SerializeField] private List<string> tags = new List<string>();
 
         public string Id => string.IsNullOrEmpty(id) ? prompt : id;
         public string Prompt => prompt;
@@ -21,16 +23,24 @@ namespace PartyGame.Core.Content
         /// <summary>What a 10 means on this scale.</summary>
         public string HighLabel => highLabel;
 
-        public bool IsValid => !string.IsNullOrWhiteSpace(prompt);
+        public Difficulty Difficulty => difficulty;
+        public IReadOnlyList<string> Tags => tags;
+
+        public bool IsValid => !string.IsNullOrWhiteSpace(prompt)
+                               && !string.IsNullOrWhiteSpace(lowLabel)
+                               && !string.IsNullOrWhiteSpace(highLabel);
 
         public WavelengthQuestion() { }
 
-        public WavelengthQuestion(string id, string prompt, string lowLabel, string highLabel)
+        public WavelengthQuestion(string id, string prompt, string lowLabel, string highLabel,
+            Difficulty difficulty = Difficulty.Medium, IEnumerable<string> tags = null)
         {
             this.id = id;
             this.prompt = prompt;
             this.lowLabel = lowLabel;
             this.highLabel = highLabel;
+            this.difficulty = difficulty;
+            this.tags = tags != null ? new List<string>(tags) : new List<string>();
         }
     }
 

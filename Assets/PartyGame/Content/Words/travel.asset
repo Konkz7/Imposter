@@ -19,40 +19,410 @@ MonoBehaviour:
   accentIndex: 4
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
-  - crewWord: Aeroplane
-    imposterWord: Helicopter
-    hint: It leaves the ground
   - crewWord: Passport
     imposterWord: Boarding pass
     hint: Do not lose it at the airport
-  - crewWord: Road trip
-    imposterWord: Cruise
-    hint: The journey is the holiday
-  - crewWord: Hotel room
-    imposterWord: Hostel
-    hint: You sleep there for a few nights
+    difficulty: 1
+  - crewWord: Suitcase
+    imposterWord: Backpack
+    hint: You live out of it for a week
+    difficulty: 1
   - crewWord: Souvenir
     imposterWord: Postcard
     hint: Proof you went
+    difficulty: 1
   - crewWord: Sunburn
     imposterWord: Jet lag
     hint: It ruins the first two days
+    difficulty: 1
+  - crewWord: Beach holiday
+    imposterWord: City break
+    hint: A week away
+    difficulty: 1
+  - crewWord: Hotel room
+    imposterWord: Hostel
+    hint: You sleep there for a few nights
+    difficulty: 1
+  - crewWord: Map
+    imposterWord: Guidebook
+    hint: You carry it and never open it
+    difficulty: 1
+  - crewWord: Camera
+    imposterWord: Phone
+    hint: You photograph everything with it
+    difficulty: 1
+  - crewWord: Sun cream
+    imposterWord: Insect repellent
+    hint: You forget it and regret it
+    difficulty: 1
+  - crewWord: Airport
+    imposterWord: Train station
+    hint: People arrive and leave all day
+    difficulty: 1
+  - crewWord: Road trip
+    imposterWord: Cruise
+    hint: The journey is the holiday
+    difficulty: 2
   - crewWord: Tour guide
     imposterWord: Travel agent
     hint: They know where you should go
+    difficulty: 2
   - crewWord: Sightseeing
     imposterWord: Hiking
     hint: A lot of walking
+    difficulty: 2
   - crewWord: Currency
     imposterWord: Exchange rate
     hint: You worry about it abroad
+    difficulty: 2
   - crewWord: Delay
     imposterWord: Cancellation
     hint: Bad news on the departure board
-  - crewWord: Ferry
-    imposterWord: Tram
-    hint: Public transport with a view
+    difficulty: 2
   - crewWord: Backpacking
     imposterWord: Camping
     hint: Cheap and slightly uncomfortable
+    difficulty: 2
+  - crewWord: Check-in
+    imposterWord: Boarding
+    hint: A queue with a deadline
+    difficulty: 2
+  - crewWord: Hand luggage
+    imposterWord: Hold luggage
+    hint: The bag rules ruin your morning
+    difficulty: 2
+  - crewWord: Duty free
+    imposterWord: Gift shop
+    hint: Expensive things near an exit
+    difficulty: 2
+  - crewWord: Window seat
+    imposterWord: Aisle seat
+    hint: People have strong feelings about it
+    difficulty: 2
+  - crewWord: Layover
+    imposterWord: Connection
+    hint: The awkward middle of a journey
+    difficulty: 2
+  - crewWord: Visa
+    imposterWord: Travel insurance
+    hint: Paperwork you do beforehand
+    difficulty: 2
+  - crewWord: Itinerary
+    imposterWord: Schedule
+    hint: A plan nobody sticks to
+    difficulty: 2
+  - crewWord: All inclusive
+    imposterWord: Half board
+    hint: How the food is arranged
+    difficulty: 2
+  - crewWord: Resort
+    imposterWord: Retreat
+    hint: You stay on site the whole time
+    difficulty: 2
+  - crewWord: Excursion
+    imposterWord: Day trip
+    hint: An organised outing
+    difficulty: 2
+  - crewWord: Package holiday
+    imposterWord: Last minute deal
+    hint: Booked as one lump
+    difficulty: 2
+  - crewWord: Peak season
+    imposterWord: Off season
+    hint: When you choose to go
+    difficulty: 2
+  - crewWord: Adventure holiday
+    imposterWord: Spa break
+    hint: Two very different weeks
+    difficulty: 2
+  - crewWord: Ski trip
+    imposterWord: Surf trip
+    hint: The holiday is the activity
+    difficulty: 2
+  - crewWord: Safari
+    imposterWord: Whale watching
+    hint: You go to look at animals
+    difficulty: 2
+  - crewWord: Road atlas
+    imposterWord: Satnav
+    hint: It tells you where to turn
+    difficulty: 2
+  - crewWord: Service station
+    imposterWord: Rest stop
+    hint: You stop because you have to
+    difficulty: 2
+  - crewWord: Toll road
+    imposterWord: Ferry crossing
+    hint: It costs extra to get through
+    difficulty: 2
+  - crewWord: Border control
+    imposterWord: Customs
+    hint: Somebody checks your things
+    difficulty: 2
+  - crewWord: Baggage claim
+    imposterWord: Lost property
+    hint: Standing around hoping
+    difficulty: 2
+  - crewWord: Departure lounge
+    imposterWord: Arrivals hall
+    hint: Two halves of the same building
+    difficulty: 2
+  - crewWord: Runway
+    imposterWord: Platform
+    hint: Where the journey physically starts
+    difficulty: 2
+  - crewWord: Timetable
+    imposterWord: Departure board
+    hint: It tells you when to panic
+    difficulty: 2
+  - crewWord: Season ticket
+    imposterWord: Day pass
+    hint: You buy travel in bulk
+    difficulty: 2
+  - crewWord: Sleeper train
+    imposterWord: Overnight coach
+    hint: You will not sleep
+    difficulty: 2
+  - crewWord: First class
+    imposterWord: Economy
+    hint: The same journey, different money
+    difficulty: 2
+  - crewWord: Upgrade
+    imposterWord: Downgrade
+    hint: Your seat has changed
+    difficulty: 2
+  - crewWord: Turbulence
+    imposterWord: Choppy seas
+    hint: The journey has become uncomfortable
+    difficulty: 2
+  - crewWord: Seasickness
+    imposterWord: Travel sickness
+    hint: You regret the sandwich
+    difficulty: 2
+  - crewWord: Time zone
+    imposterWord: Daylight saving
+    hint: The clock has moved without asking
+    difficulty: 2
+  - crewWord: Travel adapter
+    imposterWord: Phone charger
+    hint: You forgot it and the shop charges double
+    difficulty: 2
+  - crewWord: Neck pillow
+    imposterWord: Eye mask
+    hint: It makes you look ridiculous and you use it anyway
+    difficulty: 2
+  - crewWord: Tourist trap
+    imposterWord: Hidden gem
+    hint: A place with a reputation
+    difficulty: 2
+  - crewWord: Landmark
+    imposterWord: Viewpoint
+    hint: Everyone stops there for a photo
+    difficulty: 2
+  - crewWord: Beach towel
+    imposterWord: Sarong
+    hint: It comes back full of sand
+    difficulty: 2
+  - crewWord: Flip flops
+    imposterWord: Sandals
+    hint: Holiday footwear
+    difficulty: 2
+  - crewWord: Snorkel
+    imposterWord: Goggles
+    hint: You wear it in the water
+    difficulty: 2
+  - crewWord: Sun lounger
+    imposterWord: Deck chair
+    hint: You claim it at 7am
+    difficulty: 2
+  - crewWord: Parasol
+    imposterWord: Beach hut
+    hint: Shade on a hot day
+    difficulty: 2
+  - crewWord: Hire car
+    imposterWord: Rental bike
+    hint: You pay by the day and worry about scratches
+    difficulty: 2
+  - crewWord: Campervan
+    imposterWord: Tent
+    hint: Accommodation you drive to
+    difficulty: 2
+  - crewWord: Walking boots
+    imposterWord: Trainers
+    hint: What you regret wearing
+    difficulty: 2
+  - crewWord: Rucksack
+    imposterWord: Day bag
+    hint: It goes on your back
+    difficulty: 2
+  - crewWord: Water bottle
+    imposterWord: Hip flask
+    hint: You carry a drink with you
+    difficulty: 2
+  - crewWord: Phrasebook
+    imposterWord: Translation app
+    hint: You point at it and hope
+    difficulty: 2
+  - crewWord: Local currency
+    imposterWord: Card payment
+    hint: How you pay abroad
+    difficulty: 2
+  - crewWord: Tip
+    imposterWord: Service charge
+    hint: The awkward bit at the end of the meal
+    difficulty: 2
+  - crewWord: Street food
+    imposterWord: Market stall
+    hint: You eat standing up
+    difficulty: 2
+  - crewWord: Roadside cafe
+    imposterWord: Beach bar
+    hint: Somewhere to stop and drink
+    difficulty: 2
+  - crewWord: Hostel dorm
+    imposterWord: Shared bathroom
+    hint: You are sharing more than you hoped
+    difficulty: 2
+  - crewWord: Room service
+    imposterWord: Minibar
+    hint: Expensive and available at 2am
+    difficulty: 2
+  - crewWord: Checkout time
+    imposterWord: Late checkout
+    hint: You are being asked to leave
+    difficulty: 2
+  - crewWord: Reception desk
+    imposterWord: Concierge
+    hint: Somebody who can fix your problem
+    difficulty: 2
+  - crewWord: Travel journal
+    imposterWord: Photo album
+    hint: How you remember it afterwards
+    difficulty: 2
+  - crewWord: Fridge magnet
+    imposterWord: Keyring
+    hint: A tiny souvenir nobody needs
+    difficulty: 2
+  - crewWord: Boarding group
+    imposterWord: Priority queue
+    hint: Some people get on first
+    difficulty: 2
+  - crewWord: Excess baggage
+    imposterWord: Oversized item
+    hint: It costs extra at the desk
+    difficulty: 2
+  - crewWord: Motion sickness tablet
+    imposterWord: Earplugs
+    hint: It makes the journey bearable
+    difficulty: 2
+  - crewWord: Train conductor
+    imposterWord: Cabin crew
+    hint: They check something and smile
+    difficulty: 2
+  - crewWord: Walking tour
+    imposterWord: Bus tour
+    hint: Somebody talks and you follow
+    difficulty: 2
+  - crewWord: Hostel bar
+    imposterWord: Hotel lobby
+    hint: Where you meet other travellers
+    difficulty: 2
+  - crewWord: Summer holiday
+    imposterWord: Winter break
+    hint: Time off in a season
+    difficulty: 2
+  - crewWord: Weekend away
+    imposterWord: Fortnight abroad
+    hint: How long you are gone
+    difficulty: 2
+  - crewWord: Staycation
+    imposterWord: Long haul
+    hint: How far you are going
+    difficulty: 2
+  - crewWord: Transfer
+    imposterWord: Shuttle
+    hint: The bit between the airport and the hotel
+    difficulty: 3
+  - crewWord: Red eye
+    imposterWord: Dawn departure
+    hint: A flight at an unkind hour
+    difficulty: 3
+  - crewWord: Open jaw
+    imposterWord: Return leg
+    hint: Something about how the ticket is arranged
+    difficulty: 3
+  - crewWord: Hand baggage allowance
+    imposterWord: Weight limit
+    hint: Numbers that ruin the packing
+    difficulty: 3
+  - crewWord: Travel visa
+    imposterWord: Transit visa
+    hint: Paperwork for a country you barely enter
+    difficulty: 3
+  - crewWord: Hostel curfew
+    imposterWord: Quiet hours
+    hint: A rule you find out about at midnight
+    difficulty: 3
+  - crewWord: Couchsurfing
+    imposterWord: House swap
+    hint: Staying somewhere for free
+    difficulty: 3
+  - crewWord: Pilgrimage
+    imposterWord: Expedition
+    hint: A journey with a purpose
+    difficulty: 3
+  - crewWord: Gap year
+    imposterWord: Sabbatical
+    hint: A long time away on purpose
+    difficulty: 3
+  - crewWord: Digital nomad
+    imposterWord: Backpacker
+    hint: Travelling and not going home
+    difficulty: 3
+  - crewWord: Overlanding
+    imposterWord: Interrailing
+    hint: Crossing a lot of ground slowly
+    difficulty: 3
+  - crewWord: Layover lounge
+    imposterWord: Transit hotel
+    hint: Somewhere to wait in comfort
+    difficulty: 3
+  - crewWord: Boarding bridge
+    imposterWord: Airstairs
+    hint: How you actually get on the plane
+    difficulty: 3
+  - crewWord: Baggage carousel
+    imposterWord: Trolley
+    hint: Airport equipment nobody names
+    difficulty: 3
+  - crewWord: Departure tax
+    imposterWord: Airport levy
+    hint: A charge you only notice on the receipt
+    difficulty: 3
+  - crewWord: Shoulder season
+    imposterWord: Low season
+    hint: When it is cheaper and quieter
+    difficulty: 3
+  - crewWord: Cabin baggage
+    imposterWord: Personal item
+    hint: Two bags, one argument
+    difficulty: 3
+  - crewWord: Travel advisory
+    imposterWord: Health notice
+    hint: Official advice you skim
+    difficulty: 3
+  - crewWord: Excursion desk
+    imposterWord: Tour operator
+    hint: Somebody selling you a day out
+    difficulty: 3
+  - crewWord: Hostel locker
+    imposterWord: Safe
+    hint: Where you put the valuables
+    difficulty: 3
+  - crewWord: Ferry terminal
+    imposterWord: Cruise port
+    hint: You board something very large there
+    difficulty: 3

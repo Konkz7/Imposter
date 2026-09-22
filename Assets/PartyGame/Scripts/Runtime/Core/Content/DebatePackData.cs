@@ -9,17 +9,25 @@ namespace PartyGame.Core.Content
     {
         [SerializeField] private string id = string.Empty;
         [SerializeField, TextArea(1, 3)] private string statement = string.Empty;
+        [SerializeField] private string subcategory = string.Empty;
+        [SerializeField] private List<string> tags = new List<string>();
 
         public string Id => string.IsNullOrEmpty(id) ? statement : id;
         public string Statement => statement;
+        public string Subcategory => subcategory;
+        public IReadOnlyList<string> Tags => tags;
+
         public bool IsValid => !string.IsNullOrWhiteSpace(statement);
 
         public DebateStatement() { }
 
-        public DebateStatement(string id, string statement)
+        public DebateStatement(string id, string statement, string subcategory = "",
+            IEnumerable<string> tags = null)
         {
             this.id = id;
             this.statement = statement;
+            this.subcategory = subcategory;
+            this.tags = tags != null ? new List<string>(tags) : new List<string>();
         }
     }
 

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d34e39b65b2141040b7cf429bd456060, type: 3}
+  m_Name: clues-flatshare
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.CluePackData
+  id: clues-flatshare
+  displayName: The flat share
+  description: Shared kitchen, shared suspicion
+  glyph: FS
+  accentIndex: 7
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  clues:
+  - id: c120
+    kind: 0
+    text: The labelled milk has been used and the label carefully peeled off.
+  - id: c121
+    kind: 0
+    text: The heating was on all night and nobody will admit to touching the dial.
+  - id: c122
+    kind: 0
+    text: A single dirty pan has been in the sink for six days.
+  - id: c123
+    kind: 0
+    text: The bins were not put out and everyone insists it was not their week.
+  - id: c124
+    kind: 0
+    text: Somebody has been using the good shampoo.
+  - id: c125
+    kind: 0
+    text: The wifi router has been restarted eleven times this week.
+  - id: c126
+    kind: 0
+    text: There is a parcel addressed to a former tenant and it has been opened.
+  - id: c127
+    kind: 0
+    text: The kitchen rota has been rewritten in a different handwriting.
+  - id: c128
+    kind: 1
+    text: You heard the front door twice. Exactly one of {a} and {b} came in late.
+  - id: c129
+    kind: 1
+    text: 'The shared bill app shows it: one of {a} and {b} is not being straight.'
+  - id: c130
+    kind: 1
+    text: Two people were in the kitchen at midnight. Exactly one of {a} and {b} was.
+  - id: c131
+    kind: 2
+    text: You were on the landing and caught a glimpse. {fact}
+  - id: c132
+    kind: 2
+    text: You were waiting for the kettle and noticed something. {fact}
+  - id: c133
+    kind: 2
+    text: You looked out of your bedroom door at the wrong moment. {fact}
+  - id: c134
+    kind: 3
+    text: It was posted in the house group chat and then deleted. {fact}
+  - id: c135
+    kind: 3
+    text: The landlord mentioned it during the inspection. {fact}
+  - id: c136
+    kind: 3
+    text: Somebody left it written on a sticky note on the fridge. {fact}

@@ -19,40 +19,414 @@ MonoBehaviour:
   accentIndex: 1
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
   - crewWord: Phone
     imposterWord: Tablet
     hint: It has a touchscreen
+    difficulty: 1
   - crewWord: Laptop
-    imposterWord: Games console
-    hint: Plugged in and expensive
+    imposterWord: Desktop
+    hint: You type on it
+    difficulty: 1
   - crewWord: Headphones
     imposterWord: Speaker
     hint: It makes sound
+    difficulty: 1
   - crewWord: Wi-Fi
     imposterWord: Bluetooth
     hint: It connects things without wires
+    difficulty: 1
   - crewWord: Password
     imposterWord: Passcode
     hint: Do not tell anyone
+    difficulty: 1
   - crewWord: Email
     imposterWord: Text message
     hint: You send it and wait
+    difficulty: 1
   - crewWord: Camera
     imposterWord: Webcam
     hint: It points at you
+    difficulty: 1
   - crewWord: Charger
     imposterWord: Battery
     hint: Everything dies without it
+    difficulty: 1
   - crewWord: Smart watch
     imposterWord: Fitness tracker
     hint: Worn on the wrist
+    difficulty: 1
   - crewWord: Satnav
     imposterWord: Map app
     hint: It tells you where to turn
+    difficulty: 1
   - crewWord: Cloud storage
     imposterWord: Hard drive
     hint: Where your files live
+    difficulty: 1
   - crewWord: Video call
     imposterWord: Voice note
     hint: Talking through a screen
+    difficulty: 1
+  - crewWord: Printer
+    imposterWord: Scanner
+    hint: Paper goes in or comes out
+    difficulty: 1
+  - crewWord: Mouse
+    imposterWord: Trackpad
+    hint: You move the pointer with it
+    difficulty: 1
+  - crewWord: Screen
+    imposterWord: Monitor
+    hint: You look at it all day
+    difficulty: 1
+  - crewWord: Router
+    imposterWord: Modem
+    hint: The box that makes the internet work
+    difficulty: 2
+  - crewWord: USB stick
+    imposterWord: Memory card
+    hint: Small storage you lose
+    difficulty: 2
+  - crewWord: Cable
+    imposterWord: Adapter
+    hint: It never fits the thing you need
+    difficulty: 2
+  - crewWord: Keyboard
+    imposterWord: Numpad
+    hint: Keys you press
+    difficulty: 2
+  - crewWord: Microphone
+    imposterWord: Headset
+    hint: It picks up your voice
+    difficulty: 2
+  - crewWord: Smart speaker
+    imposterWord: Voice assistant
+    hint: You talk at it
+    difficulty: 2
+  - crewWord: Smart bulb
+    imposterWord: Smart plug
+    hint: You control it from your phone
+    difficulty: 2
+  - crewWord: Doorbell camera
+    imposterWord: Security camera
+    hint: It watches the house
+    difficulty: 2
+  - crewWord: Robot vacuum
+    imposterWord: Air purifier
+    hint: It quietly does a job
+    difficulty: 2
+  - crewWord: E reader
+    imposterWord: Tablet
+    hint: You read books on it
+    difficulty: 2
+  - crewWord: Games console
+    imposterWord: Streaming stick
+    hint: It plugs into the telly
+    difficulty: 2
+  - crewWord: Drone
+    imposterWord: Action camera
+    hint: It films from somewhere awkward
+    difficulty: 2
+  - crewWord: Projector
+    imposterWord: Smart TV
+    hint: A big picture on a wall
+    difficulty: 2
+  - crewWord: Power bank
+    imposterWord: Wireless charger
+    hint: It tops up your phone
+    difficulty: 2
+  - crewWord: SIM card
+    imposterWord: eSIM
+    hint: It connects you to a network
+    difficulty: 2
+  - crewWord: App
+    imposterWord: Website
+    hint: You use it on your phone
+    difficulty: 2
+  - crewWord: Browser
+    imposterWord: Search engine
+    hint: How you find things online
+    difficulty: 2
+  - crewWord: Download
+    imposterWord: Upload
+    hint: Data moving in a direction
+    difficulty: 2
+  - crewWord: Update
+    imposterWord: Upgrade
+    hint: It happens overnight
+    difficulty: 2
+  - crewWord: Backup
+    imposterWord: Sync
+    hint: Your files exist in two places
+    difficulty: 2
+  - crewWord: Firewall
+    imposterWord: Antivirus
+    hint: It stops bad things
+    difficulty: 2
+  - crewWord: Two factor
+    imposterWord: Fingerprint
+    hint: A second way to prove it is you
+    difficulty: 2
+  - crewWord: VPN
+    imposterWord: Private browsing
+    hint: You are hiding something, mildly
+    difficulty: 2
+  - crewWord: Spam
+    imposterWord: Phishing
+    hint: Email you should not open
+    difficulty: 2
+  - crewWord: Notification
+    imposterWord: Alert
+    hint: Your phone wants attention
+    difficulty: 2
+  - crewWord: Airplane mode
+    imposterWord: Do not disturb
+    hint: Making your phone be quiet
+    difficulty: 2
+  - crewWord: Screenshot
+    imposterWord: Screen recording
+    hint: Capturing what is on screen
+    difficulty: 2
+  - crewWord: Dark mode
+    imposterWord: Night shift
+    hint: Being kinder to your eyes
+    difficulty: 2
+  - crewWord: Autocorrect
+    imposterWord: Predictive text
+    hint: It changes what you meant
+    difficulty: 2
+  - crewWord: Emoji
+    imposterWord: GIF
+    hint: A small picture instead of words
+    difficulty: 2
+  - crewWord: Voice search
+    imposterWord: Typing
+    hint: Two ways to ask
+    difficulty: 2
+  - crewWord: Touchscreen
+    imposterWord: Stylus
+    hint: Finger or pen
+    difficulty: 2
+  - crewWord: Face unlock
+    imposterWord: PIN
+    hint: Getting into your phone
+    difficulty: 2
+  - crewWord: Data plan
+    imposterWord: Broadband
+    hint: How you pay for the internet
+    difficulty: 2
+  - crewWord: 5G
+    imposterWord: Fibre
+    hint: Fast internet, one way or another
+    difficulty: 2
+  - crewWord: Streaming
+    imposterWord: Downloading
+    hint: Watching now or later
+    difficulty: 2
+  - crewWord: Podcast
+    imposterWord: Audiobook
+    hint: Someone talking in your ears
+    difficulty: 2
+  - crewWord: Playlist
+    imposterWord: Algorithm
+    hint: It decides what you hear next
+    difficulty: 2
+  - crewWord: Subscription
+    imposterWord: Free trial
+    hint: It will charge you eventually
+    difficulty: 2
+  - crewWord: Software
+    imposterWord: Hardware
+    hint: One you can drop
+    difficulty: 2
+  - crewWord: Operating system
+    imposterWord: Firmware
+    hint: The software underneath
+    difficulty: 2
+  - crewWord: File
+    imposterWord: Folder
+    hint: How things are organised
+    difficulty: 2
+  - crewWord: Shortcut
+    imposterWord: Bookmark
+    hint: A quick way back
+    difficulty: 2
+  - crewWord: Recycle bin
+    imposterWord: Archive
+    hint: Where things go when you are done
+    difficulty: 2
+  - crewWord: Spreadsheet
+    imposterWord: Database
+    hint: Rows of data
+    difficulty: 2
+  - crewWord: Slideshow
+    imposterWord: Document
+    hint: You made it for work
+    difficulty: 2
+  - crewWord: Video editor
+    imposterWord: Photo editor
+    hint: Software that fixes your holiday
+    difficulty: 2
+  - crewWord: Filter
+    imposterWord: Preset
+    hint: It makes the photo look better
+    difficulty: 2
+  - crewWord: Chatbot
+    imposterWord: Search result
+    hint: Where you got the answer
+    difficulty: 2
+  - crewWord: Smart home
+    imposterWord: Home hub
+    hint: Everything talks to everything
+    difficulty: 2
+  - crewWord: Electric car charger
+    imposterWord: Solar panel
+    hint: Technology on the house
+    difficulty: 2
+  - crewWord: Fitness app
+    imposterWord: Sleep tracker
+    hint: It judges your lifestyle
+    difficulty: 2
+  - crewWord: Contactless
+    imposterWord: Chip and pin
+    hint: How you pay in a shop
+    difficulty: 2
+  - crewWord: QR code
+    imposterWord: Barcode
+    hint: You scan it
+    difficulty: 2
+  - crewWord: Digital wallet
+    imposterWord: Loyalty card
+    hint: It lives on your phone
+    difficulty: 2
+  - crewWord: Ring doorbell
+    imposterWord: Smart lock
+    hint: Your front door is online
+    difficulty: 2
+  - crewWord: Bug
+    imposterWord: Glitch
+    hint: Something is not working
+    difficulty: 2
+  - crewWord: Crash
+    imposterWord: Freeze
+    hint: It has stopped responding
+    difficulty: 2
+  - crewWord: Restart
+    imposterWord: Reset
+    hint: Turning it off and on again
+    difficulty: 2
+  - crewWord: Cache
+    imposterWord: Cookies
+    hint: Why the site remembers you
+    difficulty: 2
+  - crewWord: Storage full
+    imposterWord: Low battery
+    hint: The message you dread
+    difficulty: 2
+  - crewWord: Loading
+    imposterWord: Buffering
+    hint: You are waiting
+    difficulty: 2
+  - crewWord: Pop up
+    imposterWord: Banner ad
+    hint: Something you did not want to see
+    difficulty: 2
+  - crewWord: Auto save
+    imposterWord: Version history
+    hint: It kept your work
+    difficulty: 2
+  - crewWord: Dead pixel
+    imposterWord: Screen burn
+    hint: Your monitor has a mark
+    difficulty: 2
+  - crewWord: Algorithm
+    imposterWord: Heuristic
+    hint: A set of rules a computer follows
+    difficulty: 3
+  - crewWord: Bandwidth
+    imposterWord: Latency
+    hint: Speed, measured two ways
+    difficulty: 3
+  - crewWord: Encryption
+    imposterWord: Hashing
+    hint: Making data unreadable
+    difficulty: 3
+  - crewWord: Open source
+    imposterWord: Proprietary
+    hint: Who owns the code
+    difficulty: 3
+  - crewWord: Front end
+    imposterWord: Back end
+    hint: Which half of the software
+    difficulty: 3
+  - crewWord: API
+    imposterWord: SDK
+    hint: How software talks to other software
+    difficulty: 3
+  - crewWord: Compiler
+    imposterWord: Interpreter
+    hint: It turns code into something that runs
+    difficulty: 3
+  - crewWord: Repository
+    imposterWord: Branch
+    hint: Where code is kept
+    difficulty: 3
+  - crewWord: Server
+    imposterWord: Client
+    hint: Two ends of a connection
+    difficulty: 3
+  - crewWord: Data centre
+    imposterWord: Edge server
+    hint: Where the cloud actually is
+    difficulty: 3
+  - crewWord: Machine learning
+    imposterWord: Neural network
+    hint: It learns from examples
+    difficulty: 3
+  - crewWord: Training data
+    imposterWord: Model
+    hint: What went in and what came out
+    difficulty: 3
+  - crewWord: Quantum computing
+    imposterWord: Supercomputer
+    hint: Alarmingly powerful
+    difficulty: 3
+  - crewWord: Blockchain
+    imposterWord: Distributed ledger
+    hint: A list nobody can quietly edit
+    difficulty: 3
+  - crewWord: Metadata
+    imposterWord: Payload
+    hint: Information about information
+    difficulty: 3
+  - crewWord: Packet
+    imposterWord: Protocol
+    hint: How data travels
+    difficulty: 3
+  - crewWord: DNS
+    imposterWord: IP address
+    hint: How a name becomes a place
+    difficulty: 3
+  - crewWord: Kernel
+    imposterWord: Driver
+    hint: Deep inside the operating system
+    difficulty: 3
+  - crewWord: RAM
+    imposterWord: Storage
+    hint: Memory, of two different kinds
+    difficulty: 3
+  - crewWord: GPU
+    imposterWord: CPU
+    hint: The chip that does the work
+    difficulty: 3
+  - crewWord: Overclocking
+    imposterWord: Thermal throttling
+    hint: Pushing hardware too hard
+    difficulty: 3
+  - crewWord: Refresh rate
+    imposterWord: Resolution
+    hint: A screen specification people argue about
+    difficulty: 3

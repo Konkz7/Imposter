@@ -19,40 +19,410 @@ MonoBehaviour:
   accentIndex: 5
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
   - crewWord: Guitar
     imposterWord: Ukulele
     hint: It has strings
+    difficulty: 1
   - crewWord: Drums
     imposterWord: Piano
     hint: You hit it to make a sound
+    difficulty: 1
   - crewWord: Festival
     imposterWord: Concert
     hint: Loud, crowded and expensive
+    difficulty: 1
   - crewWord: Playlist
     imposterWord: Album
     hint: A collection of songs
+    difficulty: 1
   - crewWord: Choir
     imposterWord: Band
     hint: A group performing together
+    difficulty: 1
   - crewWord: Chorus
     imposterWord: Verse
     hint: Part of a song
-  - crewWord: Headliner
-    imposterWord: Support act
-    hint: They are on the poster
-  - crewWord: Vinyl
-    imposterWord: Cassette
-    hint: Older than streaming
-  - crewWord: Busker
-    imposterWord: DJ
-    hint: They play music in public
-  - crewWord: Opera
-    imposterWord: Musical
-    hint: Singing that tells a story
-  - crewWord: Earworm
-    imposterWord: Anthem
-    hint: It gets stuck in your head
+    difficulty: 1
   - crewWord: Microphone
     imposterWord: Amplifier
     hint: It makes things louder
+    difficulty: 1
+  - crewWord: Headphones
+    imposterWord: Speakers
+    hint: How you listen
+    difficulty: 1
+  - crewWord: Singer
+    imposterWord: Rapper
+    hint: They are at the front
+    difficulty: 1
+  - crewWord: Radio
+    imposterWord: Streaming app
+    hint: Music comes out of it
+    difficulty: 1
+  - crewWord: Vinyl
+    imposterWord: Cassette
+    hint: Older than streaming
+    difficulty: 2
+  - crewWord: CD
+    imposterWord: MiniDisc
+    hint: A shiny disc in a case
+    difficulty: 2
+  - crewWord: Busker
+    imposterWord: DJ
+    hint: They play music in public
+    difficulty: 2
+  - crewWord: Opera
+    imposterWord: Musical
+    hint: Singing that tells a story
+    difficulty: 2
+  - crewWord: Earworm
+    imposterWord: Anthem
+    hint: It gets stuck in your head
+    difficulty: 2
+  - crewWord: Headliner
+    imposterWord: Support act
+    hint: They are on the poster
+    difficulty: 2
+  - crewWord: Violin
+    imposterWord: Viola
+    hint: Played with a bow under the chin
+    difficulty: 2
+  - crewWord: Cello
+    imposterWord: Double bass
+    hint: Too big to carry comfortably
+    difficulty: 2
+  - crewWord: Trumpet
+    imposterWord: Trombone
+    hint: Brass and extremely loud
+    difficulty: 2
+  - crewWord: Saxophone
+    imposterWord: Clarinet
+    hint: Woodwind with a reed
+    difficulty: 2
+  - crewWord: Flute
+    imposterWord: Recorder
+    hint: You blow across or into it
+    difficulty: 2
+  - crewWord: Harp
+    imposterWord: Lyre
+    hint: Strings you pluck with both hands
+    difficulty: 2
+  - crewWord: Banjo
+    imposterWord: Mandolin
+    hint: Strings and a folk festival
+    difficulty: 2
+  - crewWord: Keyboard
+    imposterWord: Synthesiser
+    hint: Keys and electricity
+    difficulty: 2
+  - crewWord: Organ
+    imposterWord: Accordion
+    hint: It pushes air through pipes or bellows
+    difficulty: 2
+  - crewWord: Bass guitar
+    imposterWord: Electric guitar
+    hint: Plugged in and played standing up
+    difficulty: 2
+  - crewWord: Snare
+    imposterWord: Cymbal
+    hint: Part of a drum kit
+    difficulty: 2
+  - crewWord: Tambourine
+    imposterWord: Maracas
+    hint: You shake it badly
+    difficulty: 2
+  - crewWord: Triangle
+    imposterWord: Cowbell
+    hint: A joke instrument that is actually used
+    difficulty: 2
+  - crewWord: Bagpipes
+    imposterWord: Didgeridoo
+    hint: You hear it long before you see it
+    difficulty: 2
+  - crewWord: Rock
+    imposterWord: Metal
+    hint: Guitars and volume
+    difficulty: 2
+  - crewWord: Pop
+    imposterWord: Indie
+    hint: Chart music, or almost
+    difficulty: 2
+  - crewWord: Jazz
+    imposterWord: Blues
+    hint: Improvised and played late
+    difficulty: 2
+  - crewWord: Classical
+    imposterWord: Orchestral
+    hint: Written a long time ago
+    difficulty: 2
+  - crewWord: Hip hop
+    imposterWord: Grime
+    hint: Words over a beat
+    difficulty: 2
+  - crewWord: Techno
+    imposterWord: House
+    hint: Electronic and four to the floor
+    difficulty: 2
+  - crewWord: Drum and bass
+    imposterWord: Dubstep
+    hint: Bass you feel in your chest
+    difficulty: 2
+  - crewWord: Folk
+    imposterWord: Country
+    hint: Acoustic and telling a story
+    difficulty: 2
+  - crewWord: Reggae
+    imposterWord: Ska
+    hint: Off beat and from the Caribbean
+    difficulty: 2
+  - crewWord: Punk
+    imposterWord: Garage rock
+    hint: Fast, loud and badly recorded on purpose
+    difficulty: 2
+  - crewWord: Soul
+    imposterWord: Funk
+    hint: Groove and horns
+    difficulty: 2
+  - crewWord: Disco
+    imposterWord: Boogie
+    hint: Made for a dance floor
+    difficulty: 2
+  - crewWord: Ambient
+    imposterWord: Lo fi
+    hint: Music for concentrating
+    difficulty: 2
+  - crewWord: K pop
+    imposterWord: J pop
+    hint: Enormous and very well choreographed
+    difficulty: 2
+  - crewWord: Musical theatre
+    imposterWord: Cabaret
+    hint: Performed on a stage with a story
+    difficulty: 2
+  - crewWord: Single
+    imposterWord: EP
+    hint: Shorter than an album
+    difficulty: 2
+  - crewWord: B side
+    imposterWord: Bonus track
+    hint: The song nobody asked for
+    difficulty: 2
+  - crewWord: Cover version
+    imposterWord: Remix
+    hint: Somebody else's song, changed
+    difficulty: 2
+  - crewWord: Sample
+    imposterWord: Interpolation
+    hint: Borrowing a bit of another track
+    difficulty: 2
+  - crewWord: Mashup
+    imposterWord: Medley
+    hint: Two songs at once or in a row
+    difficulty: 2
+  - crewWord: Acoustic set
+    imposterWord: Unplugged
+    hint: The quiet version
+    difficulty: 2
+  - crewWord: Encore
+    imposterWord: Setlist
+    hint: The end of a gig
+    difficulty: 2
+  - crewWord: Support slot
+    imposterWord: Sold out show
+    hint: Where a band is in its career
+    difficulty: 2
+  - crewWord: Tour bus
+    imposterWord: Backstage
+    hint: Where the band is when you cannot see them
+    difficulty: 2
+  - crewWord: Soundcheck
+    imposterWord: Rehearsal
+    hint: Practising before people arrive
+    difficulty: 2
+  - crewWord: Mosh pit
+    imposterWord: Front row
+    hint: Where it gets physical
+    difficulty: 2
+  - crewWord: Wristband
+    imposterWord: Ticket stub
+    hint: Proof you were there
+    difficulty: 2
+  - crewWord: Stage diving
+    imposterWord: Crowd surfing
+    hint: A terrible idea, twice
+    difficulty: 2
+  - crewWord: Festival tent
+    imposterWord: Glamping pod
+    hint: Where you sleep at a festival
+    difficulty: 2
+  - crewWord: Silent disco
+    imposterWord: Rave
+    hint: Dancing with or without noise
+    difficulty: 2
+  - crewWord: Karaoke
+    imposterWord: Open mic
+    hint: You sing in front of strangers
+    difficulty: 2
+  - crewWord: Choirmaster
+    imposterWord: Conductor
+    hint: They wave at musicians
+    difficulty: 2
+  - crewWord: Songwriter
+    imposterWord: Producer
+    hint: They shape the song
+    difficulty: 2
+  - crewWord: Session musician
+    imposterWord: Backing singer
+    hint: Essential and uncredited
+    difficulty: 2
+  - crewWord: Record label
+    imposterWord: Management
+    hint: The business side
+    difficulty: 2
+  - crewWord: Demo
+    imposterWord: Master
+    hint: A recording at a stage
+    difficulty: 2
+  - crewWord: Studio
+    imposterWord: Live room
+    hint: Where it gets recorded
+    difficulty: 2
+  - crewWord: Mixing desk
+    imposterWord: Turntable
+    hint: Sliders, dials and a lot of cable
+    difficulty: 2
+  - crewWord: Chart position
+    imposterWord: Streaming count
+    hint: How well it is doing
+    difficulty: 2
+  - crewWord: Gold record
+    imposterWord: Platinum record
+    hint: An award on a wall
+    difficulty: 2
+  - crewWord: Grammy
+    imposterWord: Brit Award
+    hint: A music award show
+    difficulty: 2
+  - crewWord: Fan club
+    imposterWord: Street team
+    hint: Very committed listeners
+    difficulty: 2
+  - crewWord: Merch stand
+    imposterWord: Tour t shirt
+    hint: You paid too much for it
+    difficulty: 2
+  - crewWord: Music video
+    imposterWord: Lyric video
+    hint: Something to watch with the song
+    difficulty: 2
+  - crewWord: Riff
+    imposterWord: Hook
+    hint: The bit you remember
+    difficulty: 2
+  - crewWord: Solo
+    imposterWord: Breakdown
+    hint: The part where everyone goes quiet or mad
+    difficulty: 2
+  - crewWord: Bridge
+    imposterWord: Middle eight
+    hint: The unexpected bit of the song
+    difficulty: 2
+  - crewWord: Key change
+    imposterWord: Tempo change
+    hint: The song shifts under you
+    difficulty: 2
+  - crewWord: Harmony
+    imposterWord: Melody
+    hint: The notes doing different jobs
+    difficulty: 2
+  - crewWord: Rhythm
+    imposterWord: Beat
+    hint: What you tap your foot to
+    difficulty: 2
+  - crewWord: Crescendo
+    imposterWord: Diminuendo
+    hint: It is getting louder or quieter
+    difficulty: 3
+  - crewWord: Staccato
+    imposterWord: Legato
+    hint: How the notes are joined up
+    difficulty: 3
+  - crewWord: Octave
+    imposterWord: Semitone
+    hint: A distance between notes
+    difficulty: 3
+  - crewWord: Major key
+    imposterWord: Minor key
+    hint: Why it sounds happy or sad
+    difficulty: 3
+  - crewWord: Time signature
+    imposterWord: Bar
+    hint: How the music is counted
+    difficulty: 3
+  - crewWord: Counterpoint
+    imposterWord: Polyphony
+    hint: Several lines at once
+    difficulty: 3
+  - crewWord: Arrangement
+    imposterWord: Orchestration
+    hint: Deciding who plays what
+    difficulty: 3
+  - crewWord: Reverb
+    imposterWord: Delay
+    hint: Why it sounds like a big room
+    difficulty: 3
+  - crewWord: Compression
+    imposterWord: Equalisation
+    hint: Studio work you cannot hear
+    difficulty: 3
+  - crewWord: Mastering
+    imposterWord: Mixing
+    hint: The last stages of a record
+    difficulty: 3
+  - crewWord: Fretboard
+    imposterWord: Bridge
+    hint: Part of a guitar
+    difficulty: 3
+  - crewWord: Plectrum
+    imposterWord: Capo
+    hint: A small thing guitarists lose
+    difficulty: 3
+  - crewWord: Metronome
+    imposterWord: Click track
+    hint: It keeps you in time
+    difficulty: 3
+  - crewWord: A cappella
+    imposterWord: Barbershop
+    hint: Voices and nothing else
+    difficulty: 3
+  - crewWord: Libretto
+    imposterWord: Score
+    hint: The written part of a big work
+    difficulty: 3
+  - crewWord: Symphony
+    imposterWord: Concerto
+    hint: A large classical work
+    difficulty: 3
+  - crewWord: Sonata
+    imposterWord: Etude
+    hint: A classical piece with a form
+    difficulty: 3
+  - crewWord: Aria
+    imposterWord: Overture
+    hint: A named section of an opera
+    difficulty: 3
+  - crewWord: Fugue
+    imposterWord: Canon
+    hint: A tune chasing itself
+    difficulty: 3
+  - crewWord: Modulation
+    imposterWord: Transposition
+    hint: Moving the whole thing up or down
+    difficulty: 3
+  - crewWord: Residuals
+    imposterWord: Mechanical royalties
+    hint: How a songwriter gets paid
+    difficulty: 3

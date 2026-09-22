@@ -19,40 +19,434 @@ MonoBehaviour:
   accentIndex: 7
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
   - crewWord: Umbrella
     imposterWord: Raincoat
     hint: Only useful in bad weather
+    difficulty: 1
   - crewWord: Kettle
     imposterWord: Microwave
     hint: It heats things up
+    difficulty: 1
   - crewWord: Pillow
     imposterWord: Duvet
     hint: It belongs on a bed
+    difficulty: 1
   - crewWord: Mirror
     imposterWord: Window
     hint: You look at it, or through it
-  - crewWord: Broom
-    imposterWord: Vacuum cleaner
-    hint: It deals with the floor
-  - crewWord: Wallet
-    imposterWord: Keyring
-    hint: Do not leave the house without it
-  - crewWord: Candle
-    imposterWord: Torch
-    hint: It gives off light
-  - crewWord: Scissors
-    imposterWord: Stapler
-    hint: It lives in a drawer
+    difficulty: 1
   - crewWord: Toothbrush
     imposterWord: Comb
     hint: Used every morning
-  - crewWord: Ladder
-    imposterWord: Step stool
-    hint: It helps you reach
+    difficulty: 1
   - crewWord: Clock
     imposterWord: Calendar
     hint: It tells you you are late
+    difficulty: 1
   - crewWord: Suitcase
     imposterWord: Rucksack
     hint: You pack things into it
+    difficulty: 1
+  - crewWord: Chair
+    imposterWord: Sofa
+    hint: You sit on it
+    difficulty: 1
+  - crewWord: Cup
+    imposterWord: Glass
+    hint: You drink out of it
+    difficulty: 1
+  - crewWord: Fork
+    imposterWord: Spoon
+    hint: It goes next to the plate
+    difficulty: 1
+  - crewWord: Pen
+    imposterWord: Pencil
+    hint: You write with it
+    difficulty: 1
+  - crewWord: Soap
+    imposterWord: Shampoo
+    hint: It lives in the bathroom
+    difficulty: 1
+  - crewWord: Towel
+    imposterWord: Blanket
+    hint: Big, soft and folded
+    difficulty: 1
+  - crewWord: Key
+    imposterWord: Wallet
+    hint: Do not leave the house without it
+    difficulty: 1
+  - crewWord: Bin
+    imposterWord: Basket
+    hint: Things get put into it
+    difficulty: 1
+  - crewWord: Broom
+    imposterWord: Vacuum cleaner
+    hint: It deals with the floor
+    difficulty: 2
+  - crewWord: Candle
+    imposterWord: Torch
+    hint: It gives off light
+    difficulty: 2
+  - crewWord: Scissors
+    imposterWord: Stapler
+    hint: It lives in a drawer
+    difficulty: 2
+  - crewWord: Ladder
+    imposterWord: Step stool
+    hint: It helps you reach
+    difficulty: 2
+  - crewWord: Hammer
+    imposterWord: Screwdriver
+    hint: It lives in a toolbox
+    difficulty: 2
+  - crewWord: Drill
+    imposterWord: Saw
+    hint: Loud and borrowed from a neighbour
+    difficulty: 2
+  - crewWord: Tape
+    imposterWord: Glue
+    hint: It sticks things together
+    difficulty: 2
+  - crewWord: Notebook
+    imposterWord: Diary
+    hint: You write in it and lose it
+    difficulty: 2
+  - crewWord: Envelope
+    imposterWord: Postcard
+    hint: It goes in the post
+    difficulty: 2
+  - crewWord: Stamp
+    imposterWord: Sticker
+    hint: Small, sticky and collected
+    difficulty: 2
+  - crewWord: Battery
+    imposterWord: Plug
+    hint: Nothing works without it
+    difficulty: 2
+  - crewWord: Torch
+    imposterWord: Lamp
+    hint: You switch it on in the dark
+    difficulty: 2
+  - crewWord: Fan
+    imposterWord: Radiator
+    hint: It changes how a room feels
+    difficulty: 2
+  - crewWord: Curtain
+    imposterWord: Blind
+    hint: It covers a window
+    difficulty: 2
+  - crewWord: Rug
+    imposterWord: Doormat
+    hint: It sits on the floor
+    difficulty: 2
+  - crewWord: Cushion
+    imposterWord: Beanbag
+    hint: Soft and thrown around
+    difficulty: 2
+  - crewWord: Shelf
+    imposterWord: Cupboard
+    hint: Things get stored on or in it
+    difficulty: 2
+  - crewWord: Drawer
+    imposterWord: Box
+    hint: It holds things you forgot about
+    difficulty: 2
+  - crewWord: Bucket
+    imposterWord: Watering can
+    hint: It carries water
+    difficulty: 2
+  - crewWord: Sponge
+    imposterWord: Cloth
+    hint: You clean with it
+    difficulty: 2
+  - crewWord: Washing up liquid
+    imposterWord: Bleach
+    hint: It lives under the sink
+    difficulty: 2
+  - crewWord: Iron
+    imposterWord: Hairdryer
+    hint: Hot and plugged in
+    difficulty: 2
+  - crewWord: Razor
+    imposterWord: Nail clippers
+    hint: It lives in a washbag
+    difficulty: 2
+  - crewWord: Plaster
+    imposterWord: Bandage
+    hint: It goes on a cut
+    difficulty: 2
+  - crewWord: Thermometer
+    imposterWord: Scales
+    hint: It gives you a number you do not want
+    difficulty: 2
+  - crewWord: Umbrella stand
+    imposterWord: Coat rack
+    hint: It waits by the front door
+    difficulty: 2
+  - crewWord: Kettle lead
+    imposterWord: Extension cable
+    hint: Everyone owns four and can find none
+    difficulty: 2
+  - crewWord: Wardrobe
+    imposterWord: Chest of drawers
+    hint: Clothes live in it
+    difficulty: 2
+  - crewWord: Mattress
+    imposterWord: Sofa bed
+    hint: You sleep on it, reluctantly
+    difficulty: 2
+  - crewWord: Alarm clock
+    imposterWord: Egg timer
+    hint: It makes a noise when time is up
+    difficulty: 2
+  - crewWord: Chopping board
+    imposterWord: Tray
+    hint: Flat and carried into the kitchen
+    difficulty: 2
+  - crewWord: Saucepan
+    imposterWord: Frying pan
+    hint: It goes on the hob
+    difficulty: 2
+  - crewWord: Baking tray
+    imposterWord: Casserole dish
+    hint: It goes in the oven
+    difficulty: 2
+  - crewWord: Colander
+    imposterWord: Sieve
+    hint: Full of holes on purpose
+    difficulty: 2
+  - crewWord: Tin opener
+    imposterWord: Corkscrew
+    hint: You only need it once, urgently
+    difficulty: 2
+  - crewWord: Whisk
+    imposterWord: Rolling pin
+    hint: Used when baking
+    difficulty: 2
+  - crewWord: Freezer
+    imposterWord: Fridge
+    hint: Cold and always too full
+    difficulty: 2
+  - crewWord: Toaster
+    imposterWord: Grill
+    hint: It browns bread
+    difficulty: 2
+  - crewWord: Bin bag
+    imposterWord: Carrier bag
+    hint: Thin plastic that always splits
+    difficulty: 2
+  - crewWord: Hoover bag
+    imposterWord: Filter
+    hint: You should replace it more often
+    difficulty: 2
+  - crewWord: Coat hanger
+    imposterWord: Peg
+    hint: It holds clothes up
+    difficulty: 2
+  - crewWord: Washing line
+    imposterWord: Clothes horse
+    hint: Wet clothes go on it
+    difficulty: 2
+  - crewWord: Ironing board
+    imposterWord: Table
+    hint: Flat, folding and in the way
+    difficulty: 2
+  - crewWord: Remote control
+    imposterWord: Games controller
+    hint: It vanishes down the sofa
+    difficulty: 2
+  - crewWord: Charger
+    imposterWord: Power bank
+    hint: Everything dies without it
+    difficulty: 2
+  - crewWord: Headphones
+    imposterWord: Earplugs
+    hint: They go in or over your ears
+    difficulty: 2
+  - crewWord: Sunglasses
+    imposterWord: Reading glasses
+    hint: You own three pairs and lose them
+    difficulty: 2
+  - crewWord: Watch
+    imposterWord: Bracelet
+    hint: Worn on the wrist
+    difficulty: 2
+  - crewWord: Ring
+    imposterWord: Earring
+    hint: Small, precious and easily lost
+    difficulty: 2
+  - crewWord: Purse
+    imposterWord: Wallet
+    hint: Money used to go in it
+    difficulty: 2
+  - crewWord: Lunchbox
+    imposterWord: Flask
+    hint: It goes to work with you
+    difficulty: 2
+  - crewWord: Water bottle
+    imposterWord: Travel mug
+    hint: Reusable and left on a train
+    difficulty: 2
+  - crewWord: Notebook
+    imposterWord: Whiteboard
+    hint: You write on it and rub it out
+    difficulty: 2
+  - crewWord: Calculator
+    imposterWord: Tape measure
+    hint: It gives you a number
+    difficulty: 2
+  - crewWord: Spirit level
+    imposterWord: Set square
+    hint: It tells you something is wrong
+    difficulty: 2
+  - crewWord: Screw
+    imposterWord: Nail
+    hint: It holds two things together
+    difficulty: 2
+  - crewWord: Bolt
+    imposterWord: Hinge
+    hint: Part of a door
+    difficulty: 2
+  - crewWord: Lock
+    imposterWord: Latch
+    hint: It keeps a door shut
+    difficulty: 2
+  - crewWord: Letterbox
+    imposterWord: Doorbell
+    hint: It is on the front door
+    difficulty: 2
+  - crewWord: Welcome mat
+    imposterWord: Wreath
+    hint: It greets visitors
+    difficulty: 2
+  - crewWord: Bookshelf
+    imposterWord: Magazine rack
+    hint: Paper gets stacked on it
+    difficulty: 2
+  - crewWord: Photo frame
+    imposterWord: Poster
+    hint: It goes on a wall
+    difficulty: 2
+  - crewWord: Vase
+    imposterWord: Plant pot
+    hint: Something green goes in it
+    difficulty: 2
+  - crewWord: Fairy lights
+    imposterWord: Lamp shade
+    hint: It softens a room
+    difficulty: 2
+  - crewWord: Coaster
+    imposterWord: Placemat
+    hint: It protects the table
+    difficulty: 2
+  - crewWord: Napkin
+    imposterWord: Tea towel
+    hint: Cloth that ends up in the wash
+    difficulty: 2
+  - crewWord: Apron
+    imposterWord: Oven glove
+    hint: Worn in the kitchen
+    difficulty: 2
+  - crewWord: First aid kit
+    imposterWord: Sewing kit
+    hint: A small box for emergencies
+    difficulty: 2
+  - crewWord: Torch battery
+    imposterWord: Light bulb
+    hint: It runs out at the worst moment
+    difficulty: 2
+  - crewWord: Smoke alarm
+    imposterWord: Carbon monoxide alarm
+    hint: It beeps at three in the morning
+    difficulty: 2
+  - crewWord: Fire extinguisher
+    imposterWord: Fire blanket
+    hint: You hope never to use it
+    difficulty: 2
+  - crewWord: Step ladder
+    imposterWord: Stool
+    hint: You stand on it to reach
+    difficulty: 2
+  - crewWord: Hosepipe
+    imposterWord: Sprinkler
+    hint: It waters the garden
+    difficulty: 2
+  - crewWord: Lawnmower
+    imposterWord: Strimmer
+    hint: It makes the garden look tidy
+    difficulty: 2
+  - crewWord: Tool shed
+    imposterWord: Potting shed
+    hint: A small building full of clutter
+    difficulty: 2
+  - crewWord: Toolbox
+    imposterWord: Tackle box
+    hint: Compartments full of small items
+    difficulty: 2
+  - crewWord: Spanner
+    imposterWord: Pliers
+    hint: It grips or turns something
+    difficulty: 2
+  - crewWord: Sandpaper
+    imposterWord: Wire wool
+    hint: Rough and used for scrubbing
+    difficulty: 2
+  - crewWord: Paintbrush
+    imposterWord: Roller
+    hint: It puts colour on a wall
+    difficulty: 2
+  - crewWord: Dust sheet
+    imposterWord: Tarpaulin
+    hint: It stops mess spreading
+    difficulty: 2
+  - crewWord: Colander
+    imposterWord: Salad spinner
+    hint: It gets water off food
+    difficulty: 3
+  - crewWord: Trivet
+    imposterWord: Chopping board
+    hint: It stops heat marking the table
+    difficulty: 3
+  - crewWord: Spatula
+    imposterWord: Fish slice
+    hint: You lift food with it
+    difficulty: 3
+  - crewWord: Ramekin
+    imposterWord: Pudding basin
+    hint: A small dish for one portion
+    difficulty: 3
+  - crewWord: Tea strainer
+    imposterWord: Cafetiere
+    hint: It separates leaves or grounds
+    difficulty: 3
+  - crewWord: Draining board
+    imposterWord: Dish rack
+    hint: Wet things sit on it
+    difficulty: 3
+  - crewWord: Skirting board
+    imposterWord: Architrave
+    hint: You only notice it when painting
+    difficulty: 3
+  - crewWord: Rawl plug
+    imposterWord: Washer
+    hint: Tiny and essential once a year
+    difficulty: 3
+  - crewWord: Allen key
+    imposterWord: Ratchet
+    hint: It came free with the furniture
+    difficulty: 3
+  - crewWord: Dehumidifier
+    imposterWord: Air purifier
+    hint: It quietly improves a room
+    difficulty: 3
+  - crewWord: Immersion heater
+    imposterWord: Thermostat
+    hint: It controls how warm the house is
+    difficulty: 3
+  - crewWord: Stopcock
+    imposterWord: Fuse box
+    hint: You should know where it is and do not
+    difficulty: 3

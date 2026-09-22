@@ -19,24 +19,149 @@ MonoBehaviour:
   accentIndex: 3
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   statements:
   - id: d1
     statement: Pineapple belongs on pizza.
+    subcategory: Food
+    tags:
+    - pizza
+    - classic
   - id: d2
     statement: Breakfast is the best meal of the day.
+    subcategory: Food
+    tags:
+    - breakfast
   - id: d3
     statement: A cooked meal is always better than a takeaway.
+    subcategory: Food
+    tags:
+    - cooking
   - id: d4
     statement: Tea is better than coffee.
+    subcategory: Drink
+    tags:
+    - tea
+    - coffee
   - id: d5
     statement: Cereal counts as a dinner.
+    subcategory: Food
+    tags:
+    - meals
   - id: d6
     statement: Chocolate should be kept in the fridge.
+    subcategory: Food
+    tags:
+    - chocolate
   - id: d7
     statement: Eating the same lunch every day is a good idea.
+    subcategory: Food
+    tags:
+    - routine
   - id: d8
     statement: A sandwich cut into triangles tastes better.
+    subcategory: Food
+    tags:
+    - sandwiches
   - id: d9
     statement: Dessert is the only course that matters.
+    subcategory: Food
+    tags:
+    - dessert
   - id: d10
     statement: Cooking for other people is more fun than eating.
+    subcategory: Food
+    tags:
+    - cooking
+  - id: d11
+    statement: Ketchup does not belong on a cooked breakfast.
+    subcategory: Food
+    tags:
+    - breakfast
+    - sauce
+  - id: d12
+    statement: Fruit has no place in a savoury dish.
+    subcategory: Food
+    tags:
+    - cooking
+  - id: d13
+    statement: The crust is the worst part of the bread.
+    subcategory: Food
+    tags:
+    - bread
+  - id: d14
+    statement: Expensive restaurants are never worth the money.
+    subcategory: Food
+    tags:
+    - restaurants
+  - id: d15
+    statement: Everyone should be able to cook at least five meals from memory.
+    subcategory: Food
+    tags:
+    - skills
+  - id: d16
+    statement: Leftovers taste better the next day.
+    subcategory: Food
+    tags:
+    - leftovers
+  - id: d17
+    statement: There is no excuse for a badly made cup of tea.
+    subcategory: Drink
+    tags:
+    - tea
+  - id: d18
+    statement: Sparkling water is objectively worse than still.
+    subcategory: Drink
+    tags:
+    - water
+  - id: d19
+    statement: A roast dinner is overrated.
+    subcategory: Food
+    tags:
+    - british
+  - id: d20
+    statement: Sharing plates ruin a meal.
+    subcategory: Food
+    tags:
+    - restaurants
+  - id: d21
+    statement: Cheese is the best thing humans have ever made.
+    subcategory: Food
+    tags:
+    - cheese
+  - id: d22
+    statement: Breakfast food should be available all day.
+    subcategory: Food
+    tags:
+    - breakfast
+  - id: d23
+    statement: Microwaves are underrated.
+    subcategory: Food
+    tags:
+    - cooking
+  - id: d24
+    statement: A meal is not a meal without a vegetable.
+    subcategory: Food
+    tags:
+    - health
+  - id: d25
+    statement: Cold pizza is better than reheated pizza.
+    subcategory: Food
+    tags:
+    - pizza
+  - id: d26
+    statement: Nobody actually likes olives, they just say they do.
+    subcategory: Food
+    tags:
+    - taste
+  - id: d27
+    statement: Recipes should be followed exactly.
+    subcategory: Food
+    tags:
+    - cooking
+  - id: d28
+    statement: The best food in the world is simple food.
+    subcategory: Food
+    tags:
+    - cooking

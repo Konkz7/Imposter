@@ -1,0 +1,444 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d4df53465d53f428d11b3d4c5ef24f, type: 3}
+  m_Name: current
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.TriviaPackData
+  id: current
+  displayName: Recent history
+  description: Sport, film and music from the last couple of years
+  glyph: NW
+  accentIndex: 5
+  enabled: 1
+  premium: 0
+  freshness: 1
+  reviewBy: 2027-09-22
+  questions:
+  - id: c1
+    question: Which country won the 2026 FIFA World Cup?
+    correctAnswer: Spain
+    difficulty: 1
+    subcategory: Football
+    tags:
+    - worldcup
+    - 2026
+    - football
+    sourceInfo:
+      source: NPR
+      sourceUrl: https://www.npr.org/2026/07/19/nx-s1-5899071/2026-world-cup-fifa-argentina-spain-final-championship
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c2
+    question: Which country did Spain beat in the 2026 World Cup final?
+    correctAnswer: Argentina
+    difficulty: 2
+    subcategory: Football
+    tags:
+    - worldcup
+    - 2026
+    - football
+    sourceInfo:
+      source: CBS News
+      sourceUrl: https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c3
+    question: Which Spain forward scored the only goal of the 2026 World Cup final?
+    correctAnswer: Ferran Torres
+    difficulty: 3
+    subcategory: Football
+    tags:
+    - worldcup
+    - 2026
+    - football
+    sourceInfo:
+      source: CBS News
+      sourceUrl: https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c4
+    question: Which three countries jointly hosted the 2026 FIFA World Cup?
+    correctAnswer: Canada, Mexico and the United States
+    difficulty: 2
+    subcategory: Football
+    tags:
+    - worldcup
+    - 2026
+    - hosts
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_final
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c5
+    question: Which country topped the gold medal table at the 2026 Winter Olympics?
+    correctAnswer: Norway
+    difficulty: 2
+    subcategory: Olympics
+    tags:
+    - winter olympics
+    - 2026
+    - norway
+    sourceInfo:
+      source: NBC Olympics
+      sourceUrl: https://www.nbcolympics.com/news/final-medal-count-2026-milan-cortina-winter-olympics-and-paralympics
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c6
+    question: Which two Italian towns hosted the 2026 Winter Olympics?
+    correctAnswer: Milan and Cortina
+    difficulty: 2
+    subcategory: Olympics
+    tags:
+    - winter olympics
+    - 2026
+    - italy
+    sourceInfo:
+      source: Olympics.com
+      sourceUrl: https://www.olympics.com/en/milano-cortina-2026/medals
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c7
+    question: How many gold medals did Norway win at the 2026 Winter Olympics?
+    correctAnswer: 18
+    difficulty: 3
+    subcategory: Olympics
+    tags:
+    - winter olympics
+    - 2026
+    - medals
+    sourceInfo:
+      source: NBC Olympics
+      sourceUrl: https://www.nbcolympics.com/news/final-medal-count-2026-milan-cortina-winter-olympics-and-paralympics
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c8
+    question: Which film won Best Picture at the 2026 Academy Awards?
+    correctAnswer: One Battle After Another
+    difficulty: 2
+    subcategory: Film
+    tags:
+    - oscars
+    - 2026
+    - film
+    sourceInfo:
+      source: NPR
+      sourceUrl: https://www.npr.org/2026/03/15/nx-s1-5739287/oscars-2026-winners-list-best-picture-actor-actress
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c9
+    question: Who won Best Director at the 2026 Academy Awards?
+    correctAnswer: Paul Thomas Anderson
+    difficulty: 2
+    subcategory: Film
+    tags:
+    - oscars
+    - 2026
+    - directors
+    sourceInfo:
+      source: NPR
+      sourceUrl: https://www.npr.org/2026/03/15/nx-s1-5739287/oscars-2026-winners-list-best-picture-actor-actress
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c10
+    question: Which actor won Best Actor at the 2026 Oscars for the film Sinners?
+    correctAnswer: Michael B. Jordan
+    difficulty: 2
+    subcategory: Film
+    tags:
+    - oscars
+    - 2026
+    - acting
+    sourceInfo:
+      source: ABC News
+      sourceUrl: https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c11
+    question: Which actress won Best Actress at the 2026 Oscars for the film Hamnet?
+    correctAnswer: Jessie Buckley
+    difficulty: 2
+    subcategory: Film
+    tags:
+    - oscars
+    - 2026
+    - acting
+    sourceInfo:
+      source: ABC News
+      sourceUrl: https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c12
+    question: Which veteran actor won Best Supporting Actor at the 2026 Oscars?
+    correctAnswer: Sean Penn
+    difficulty: 3
+    subcategory: Film
+    tags:
+    - oscars
+    - 2026
+    - acting
+    sourceInfo:
+      source: ABC News
+      sourceUrl: https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c13
+    question: Which brand new category was awarded for the first time at the 2026 Oscars?
+    correctAnswer: Casting
+    difficulty: 3
+    subcategory: Film
+    tags:
+    - oscars
+    - 2026
+    - categories
+    sourceInfo:
+      source: ABC News
+      sourceUrl: https://abcnews.com/GMA/Culture/oscars-2026-full-winners-list/story?id=130769299
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c14
+    question: Which artist won Album of the Year at the 2026 Grammy Awards?
+    correctAnswer: Bad Bunny
+    difficulty: 2
+    subcategory: Music
+    tags:
+    - grammys
+    - 2026
+    - music
+    sourceInfo:
+      source: NPR
+      sourceUrl: https://www.npr.org/2026/02/01/nx-s1-5693046/2026-grammy-awards-full-list-winners-nominees
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c15
+    question: The 2026 Album of the Year Grammy was the first win for an album mainly in which language?
+    correctAnswer: Spanish
+    difficulty: 3
+    subcategory: Music
+    tags:
+    - grammys
+    - 2026
+    - language
+    sourceInfo:
+      source: NPR
+      sourceUrl: https://www.npr.org/2026/02/01/nx-s1-5693046/2026-grammy-awards-full-list-winners-nominees
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c16
+    question: Which rapper won Record of the Year at the 2026 Grammys for the track luther?
+    correctAnswer: Kendrick Lamar
+    difficulty: 2
+    subcategory: Music
+    tags:
+    - grammys
+    - 2026
+    - music
+    sourceInfo:
+      source: CBS News
+      sourceUrl: https://www.cbsnews.com/live-updates/grammy-awards-winners-2026-list/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c17
+    question: Which singer featured on luther, the 2026 Grammy Record of the Year?
+    correctAnswer: SZA
+    difficulty: 3
+    subcategory: Music
+    tags:
+    - grammys
+    - 2026
+    - music
+    sourceInfo:
+      source: CBS News
+      sourceUrl: https://www.cbsnews.com/live-updates/grammy-awards-winners-2026-list/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c18
+    question: Which country won the Eurovision Song Contest for the first time in 2026?
+    correctAnswer: Bulgaria
+    difficulty: 2
+    subcategory: Music
+    tags:
+    - eurovision
+    - 2026
+    - music
+    sourceInfo:
+      source: NPR
+      sourceUrl: https://www.npr.org/2026/05/16/nx-s1-5824393/eurovision-winner-dara-bangaranga-bulgaria-vienna-austria
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c19
+    question: Which city hosted the 2026 Eurovision Song Contest?
+    correctAnswer: Vienna
+    difficulty: 2
+    subcategory: Music
+    tags:
+    - eurovision
+    - 2026
+    - austria
+    sourceInfo:
+      source: NPR
+      sourceUrl: https://www.npr.org/2026/05/16/nx-s1-5824393/eurovision-winner-dara-bangaranga-bulgaria-vienna-austria
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c20
+    question: What was the name of the song that won Eurovision in 2026?
+    correctAnswer: Bangaranga
+    difficulty: 3
+    subcategory: Music
+    tags:
+    - eurovision
+    - 2026
+    - songs
+    sourceInfo:
+      source: Billboard
+      sourceUrl: https://www.billboard.com/music/music-news/eurovision-2026-winner-bulgaria-dara-1236250096/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c21
+    question: Which NASA mission flew a crew around the Moon in April 2026?
+    correctAnswer: Artemis II
+    difficulty: 2
+    subcategory: Space
+    tags:
+    - nasa
+    - 2026
+    - moon
+    sourceInfo:
+      source: NASA
+      sourceUrl: https://www.nasa.gov/mission/artemis-ii/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c22
+    question: How many astronauts were on board Artemis II?
+    correctAnswer: Four
+    difficulty: 2
+    subcategory: Space
+    tags:
+    - nasa
+    - 2026
+    - moon
+    sourceInfo:
+      source: NASA
+      sourceUrl: https://www.nasa.gov/mission/artemis-ii/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c23
+    question: Who commanded the Artemis II mission around the Moon?
+    correctAnswer: Reid Wiseman
+    difficulty: 3
+    subcategory: Space
+    tags:
+    - nasa
+    - 2026
+    - astronauts
+    sourceInfo:
+      source: NASA
+      sourceUrl: https://www.nasa.gov/mission/artemis-ii/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c24
+    question: Artemis II was the first crewed flight beyond low Earth orbit since which year?
+    correctAnswer: 1972
+    difficulty: 3
+    subcategory: Space
+    tags:
+    - nasa
+    - 2026
+    - apollo
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Artemis_II
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c25
+    question: Which space agency did Artemis II crew member Jeremy Hansen fly for?
+    correctAnswer: The Canadian Space Agency
+    difficulty: 3
+    subcategory: Space
+    tags:
+    - nasa
+    - 2026
+    - canada
+    sourceInfo:
+      source: NASA
+      sourceUrl: https://www.nasa.gov/mission/artemis-ii/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c26
+    question: Roughly how many days did the Artemis II mission last?
+    correctAnswer: Ten
+    difficulty: 2
+    subcategory: Space
+    tags:
+    - nasa
+    - 2026
+    - moon
+    sourceInfo:
+      source: NASA
+      sourceUrl: https://www.nasa.gov/mission/artemis-ii/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c27
+    question: Which role-playing game won Game of the Year at The Game Awards 2025?
+    correctAnswer: 'Clair Obscur: Expedition 33'
+    difficulty: 2
+    subcategory: Gaming
+    tags:
+    - gaming
+    - 2025
+    - awards
+    sourceInfo:
+      source: Variety
+      sourceUrl: https://variety.com/2025/film/news/game-awards-winners-2025-list-1236606885/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c28
+    question: 'Clair Obscur: Expedition 33 was the first game of what kind to win Game of the Year?'
+    correctAnswer: A studio's debut game
+    difficulty: 3
+    subcategory: Gaming
+    tags:
+    - gaming
+    - 2025
+    - awards
+    sourceInfo:
+      source: GameSpot
+      sourceUrl: https://www.gamespot.com/gallery/all-the-game-awards-2025-winners-nominees/2900-7258/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c29
+    question: 'How many awards did Clair Obscur: Expedition 33 win at The Game Awards 2025?'
+    correctAnswer: Eight
+    difficulty: 3
+    subcategory: Gaming
+    tags:
+    - gaming
+    - 2025
+    - records
+    sourceInfo:
+      source: GameSpot
+      sourceUrl: https://www.gamespot.com/gallery/all-the-game-awards-2025-winners-nominees/2900-7258/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22
+  - id: c30
+    question: Which stadium hosted the 2026 World Cup final?
+    correctAnswer: MetLife Stadium
+    difficulty: 3
+    subcategory: Football
+    tags:
+    - worldcup
+    - 2026
+    - venues
+    sourceInfo:
+      source: CBS News
+      sourceUrl: https://www.cbsnews.com/news/2026-fifa-world-cup-final-spain-argentina-sunday/
+      verifiedDate: 2026-09-22
+      reviewBy: 2027-09-22

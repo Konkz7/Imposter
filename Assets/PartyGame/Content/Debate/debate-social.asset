@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c54fee15c04df0747a243e93677b33c9, type: 3}
+  m_Name: debate-social
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.DebatePackData
+  id: debate-social
+  displayName: People and manners
+  description: Friendship, etiquette and awkwardness
+  glyph: PM
+  accentIndex: 6
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  statements:
+  - id: d103
+    statement: It is fine to cancel plans at the last minute.
+    subcategory: Friendship
+    tags:
+    - plans
+  - id: d104
+    statement: Turning up early to a party is worse than turning up late.
+    subcategory: Etiquette
+    tags:
+    - parties
+  - id: d105
+    statement: You should always split the bill evenly.
+    subcategory: Money
+    tags:
+    - restaurants
+  - id: d106
+    statement: Surprise parties are a bad idea.
+    subcategory: Parties
+    tags:
+    - surprises
+  - id: d107
+    statement: It is rude to arrive at someone's house empty handed.
+    subcategory: Etiquette
+    tags:
+    - visiting
+  - id: d108
+    statement: Small talk is a genuinely useful skill.
+    subcategory: Conversation
+    tags:
+    - smalltalk
+  - id: d109
+    statement: You should reply to a message within a day.
+    subcategory: Communication
+    tags:
+    - etiquette
+  - id: d110
+    statement: Giving money as a present is lazy.
+    subcategory: Gifts
+    tags:
+    - money
+  - id: d111
+    statement: It is acceptable to re-gift a present.
+    subcategory: Gifts
+    tags:
+    - etiquette
+  - id: d112
+    statement: Best friends are overrated.
+    subcategory: Friendship
+    tags:
+    - friends
+  - id: d113
+    statement: You should never lend money to a friend.
+    subcategory: Money
+    tags:
+    - friendship
+  - id: d114
+    statement: Group holidays ruin friendships.
+    subcategory: Travel
+    tags:
+    - friends
+  - id: d115
+    statement: Being fashionably late is just being rude.
+    subcategory: Etiquette
+    tags:
+    - punctuality
+  - id: d116
+    statement: It is fine to leave a party without saying goodbye.
+    subcategory: Etiquette
+    tags:
+    - parties
+  - id: d117
+    statement: Everyone should send thank you notes.
+    subcategory: Etiquette
+    tags:
+    - manners
+  - id: d118
+    statement: Talking about money with friends should be normal.
+    subcategory: Money
+    tags:
+    - honesty
+  - id: d119
+    statement: You should always tell a friend if they have food in their teeth.
+    subcategory: Honesty
+    tags:
+    - manners
+  - id: d120
+    statement: Hosting is more enjoyable than being a guest.
+    subcategory: Parties
+    tags:
+    - hosting
+  - id: d121
+    statement: Keeping in touch is the responsibility of both people equally.
+    subcategory: Friendship
+    tags:
+    - effort
+  - id: d122
+    statement: It is better to be honest than kind.
+    subcategory: Honesty
+    tags:
+    - philosophy
+  - id: d123
+    statement: Nobody should ever have to give a speech at a wedding.
+    subcategory: Weddings
+    tags:
+    - speeches
+  - id: d124
+    statement: Making friends gets harder with age.
+    subcategory: Friendship
+    tags:
+    - age

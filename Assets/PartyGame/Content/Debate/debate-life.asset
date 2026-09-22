@@ -14,31 +14,151 @@ MonoBehaviour:
   m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.DebatePackData
   id: debate-life
   displayName: Everyday life
-  description: Habits, homes and routines
+  description: Habits, homes and how to live
   glyph: LF
   accentIndex: 0
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   statements:
-  - id: d11
+  - id: d29
     statement: Working from home is better than working in an office.
-  - id: d12
+    subcategory: Work
+    tags:
+    - remote
+  - id: d30
     statement: Summer is better than winter.
-  - id: d13
+    subcategory: Seasons
+    tags:
+    - weather
+  - id: d31
     statement: Getting up early is worth it.
-  - id: d14
+    subcategory: Routine
+    tags:
+    - sleep
+  - id: d32
     statement: Living in a city beats living in the countryside.
-  - id: d15
+    subcategory: Home
+    tags:
+    - city
+  - id: d33
     statement: Money can buy happiness.
-  - id: d16
+    subcategory: Money
+    tags:
+    - philosophy
+  - id: d34
     statement: It is better to plan a holiday than to improvise one.
-  - id: d17
+    subcategory: Travel
+    tags:
+    - planning
+  - id: d35
     statement: Owning a pet is worth the hassle.
-  - id: d18
+    subcategory: Home
+    tags:
+    - pets
+  - id: d36
     statement: Driving is better than public transport.
-  - id: d19
+    subcategory: Travel
+    tags:
+    - transport
+  - id: d37
     statement: Tidying up as you go is the only way to live.
-  - id: d20
+    subcategory: Home
+    tags:
+    - cleaning
+  - id: d38
     statement: Birthdays stop being fun after a certain age.
-  - id: d21
+    subcategory: Life
+    tags:
+    - birthdays
+  - id: d39
     statement: A short holiday every month beats one long one a year.
+    subcategory: Travel
+    tags:
+    - holidays
+  - id: d40
+    statement: Renting is better than owning.
+    subcategory: Home
+    tags:
+    - money
+  - id: d41
+    statement: You should never go to bed on an argument.
+    subcategory: Life
+    tags:
+    - advice
+  - id: d42
+    statement: Naps are a sign of a well organised life.
+    subcategory: Routine
+    tags:
+    - sleep
+  - id: d43
+    statement: It is fine to wear the same outfit two days running.
+    subcategory: Life
+    tags:
+    - clothes
+  - id: d44
+    statement: Everyone should learn to drive.
+    subcategory: Skills
+    tags:
+    - driving
+  - id: d45
+    statement: Second hand is always better than new.
+    subcategory: Money
+    tags:
+    - shopping
+  - id: d46
+    statement: There is no such thing as bad weather, only bad clothing.
+    subcategory: Weather
+    tags:
+    - outdoors
+  - id: d47
+    statement: Open plan living is a mistake.
+    subcategory: Home
+    tags:
+    - design
+  - id: d48
+    statement: Alarm clocks should be banned at weekends.
+    subcategory: Routine
+    tags:
+    - sleep
+  - id: d49
+    statement: You should always take the stairs.
+    subcategory: Health
+    tags:
+    - exercise
+  - id: d50
+    statement: Keeping houseplants alive is harder than it looks.
+    subcategory: Home
+    tags:
+    - plants
+  - id: d51
+    statement: A long commute is worth it for a better house.
+    subcategory: Home
+    tags:
+    - travel
+  - id: d52
+    statement: It is better to be early than on time.
+    subcategory: Life
+    tags:
+    - punctuality
+  - id: d53
+    statement: Everyone should keep a diary.
+    subcategory: Life
+    tags:
+    - habits
+  - id: d54
+    statement: Sunday is the worst day of the week.
+    subcategory: Life
+    tags:
+    - weekends
+  - id: d55
+    statement: You should replace things before they break.
+    subcategory: Money
+    tags:
+    - habits
+  - id: d56
+    statement: Hoarding is just optimism about the future.
+    subcategory: Home
+    tags:
+    - clutter

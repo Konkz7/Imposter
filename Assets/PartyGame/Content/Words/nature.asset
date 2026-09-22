@@ -19,40 +19,418 @@ MonoBehaviour:
   accentIndex: 2
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
-  - crewWord: Thunderstorm
-    imposterWord: Hurricane
-    hint: The weather turns nasty
   - crewWord: Snow
     imposterWord: Hail
     hint: It falls from the sky and is cold
-  - crewWord: Forest
-    imposterWord: Jungle
-    hint: Full of trees
-  - crewWord: Volcano
-    imposterWord: Earthquake
-    hint: The ground is not behaving
-  - crewWord: River
-    imposterWord: Canal
-    hint: Water going somewhere
-  - crewWord: Sunset
-    imposterWord: Sunrise
-    hint: Everyone takes a photo of it
+    difficulty: 1
   - crewWord: Rainbow
     imposterWord: Lightning
     hint: You look up to see it
+    difficulty: 1
   - crewWord: Mountain
     imposterWord: Hill
     hint: It takes effort to get to the top
-  - crewWord: Desert
-    imposterWord: Beach
+    difficulty: 1
+  - crewWord: River
+    imposterWord: Canal
+    hint: Water going somewhere
+    difficulty: 1
+  - crewWord: Beach
+    imposterWord: Desert
     hint: Sand as far as you can see
+    difficulty: 1
+  - crewWord: Forest
+    imposterWord: Jungle
+    hint: Full of trees
+    difficulty: 1
+  - crewWord: Sunset
+    imposterWord: Sunrise
+    hint: Everyone takes a photo of it
+    difficulty: 1
   - crewWord: Cave
     imposterWord: Tunnel
     hint: Dark and underground
-  - crewWord: Oak tree
-    imposterWord: Pine tree
-    hint: It has been there a long time
+    difficulty: 1
+  - crewWord: Lake
+    imposterWord: Pond
+    hint: Still water you can walk around
+    difficulty: 1
+  - crewWord: Cloud
+    imposterWord: Fog
+    hint: You cannot see through it
+    difficulty: 1
+  - crewWord: Wind
+    imposterWord: Breeze
+    hint: You feel it but cannot see it
+    difficulty: 1
   - crewWord: Rose
     imposterWord: Tulip
     hint: You might buy someone a bunch
+    difficulty: 1
+  - crewWord: Grass
+    imposterWord: Moss
+    hint: Green and underfoot
+    difficulty: 1
+  - crewWord: Leaf
+    imposterWord: Petal
+    hint: It falls off a plant
+    difficulty: 1
+  - crewWord: Star
+    imposterWord: Planet
+    hint: You see it at night
+    difficulty: 1
+  - crewWord: Thunderstorm
+    imposterWord: Hurricane
+    hint: The weather turns nasty
+    difficulty: 2
+  - crewWord: Volcano
+    imposterWord: Earthquake
+    hint: The ground is not behaving
+    difficulty: 2
+  - crewWord: Oak tree
+    imposterWord: Pine tree
+    hint: It has been there a long time
+    difficulty: 2
+  - crewWord: Waterfall
+    imposterWord: Rapids
+    hint: Water moving far too fast
+    difficulty: 2
+  - crewWord: Glacier
+    imposterWord: Iceberg
+    hint: Ancient ice on the move
+    difficulty: 2
+  - crewWord: Island
+    imposterWord: Peninsula
+    hint: Surrounded by water, mostly
+    difficulty: 2
+  - crewWord: Cliff
+    imposterWord: Canyon
+    hint: A very long way down
+    difficulty: 2
+  - crewWord: Valley
+    imposterWord: Gorge
+    hint: Land between two high bits
+    difficulty: 2
+  - crewWord: Meadow
+    imposterWord: Field
+    hint: Open, green and full of insects
+    difficulty: 2
+  - crewWord: Swamp
+    imposterWord: Marsh
+    hint: Wet ground you should not walk on
+    difficulty: 2
+  - crewWord: Reef
+    imposterWord: Lagoon
+    hint: Warm, shallow and full of fish
+    difficulty: 2
+  - crewWord: Tide
+    imposterWord: Current
+    hint: The sea moving in one direction
+    difficulty: 2
+  - crewWord: Wave
+    imposterWord: Ripple
+    hint: The surface of water, moving
+    difficulty: 2
+  - crewWord: Drought
+    imposterWord: Heatwave
+    hint: Far too dry and far too hot
+    difficulty: 2
+  - crewWord: Flood
+    imposterWord: Landslide
+    hint: Something has gone badly wrong outside
+    difficulty: 2
+  - crewWord: Blizzard
+    imposterWord: Whiteout
+    hint: Snow and no visibility
+    difficulty: 2
+  - crewWord: Frost
+    imposterWord: Dew
+    hint: It appears overnight on the grass
+    difficulty: 2
+  - crewWord: Mist
+    imposterWord: Haze
+    hint: The air has gone soft
+    difficulty: 2
+  - crewWord: Drizzle
+    imposterWord: Downpour
+    hint: Rain, one way or another
+    difficulty: 2
+  - crewWord: Puddle
+    imposterWord: Stream
+    hint: Small water outdoors
+    difficulty: 2
+  - crewWord: Moss
+    imposterWord: Lichen
+    hint: Grows on a wall and nobody planted it
+    difficulty: 2
+  - crewWord: Fern
+    imposterWord: Bracken
+    hint: Green, leafy and everywhere underfoot
+    difficulty: 2
+  - crewWord: Ivy
+    imposterWord: Vine
+    hint: It climbs where it is not wanted
+    difficulty: 2
+  - crewWord: Cactus
+    imposterWord: Succulent
+    hint: It survives being ignored
+    difficulty: 2
+  - crewWord: Sunflower
+    imposterWord: Daffodil
+    hint: Tall, bright and cheerful
+    difficulty: 2
+  - crewWord: Daisy
+    imposterWord: Buttercup
+    hint: Small and in the lawn
+    difficulty: 2
+  - crewWord: Lavender
+    imposterWord: Rosemary
+    hint: It smells strongly
+    difficulty: 2
+  - crewWord: Bluebell
+    imposterWord: Snowdrop
+    hint: It appears for two weeks a year
+    difficulty: 2
+  - crewWord: Orchid
+    imposterWord: Lily
+    hint: A flower people are precious about
+    difficulty: 2
+  - crewWord: Bamboo
+    imposterWord: Reed
+    hint: Tall, hollow and grows fast
+    difficulty: 2
+  - crewWord: Willow
+    imposterWord: Birch
+    hint: A tree you can identify from a distance
+    difficulty: 2
+  - crewWord: Maple
+    imposterWord: Sycamore
+    hint: Its seeds spin as they fall
+    difficulty: 2
+  - crewWord: Palm tree
+    imposterWord: Banana tree
+    hint: It says holiday
+    difficulty: 2
+  - crewWord: Acorn
+    imposterWord: Conker
+    hint: It falls off a tree in autumn
+    difficulty: 2
+  - crewWord: Pine cone
+    imposterWord: Seed pod
+    hint: You pick it up on a walk
+    difficulty: 2
+  - crewWord: Mushroom
+    imposterWord: Toadstool
+    hint: It appears overnight and might kill you
+    difficulty: 2
+  - crewWord: Nettle
+    imposterWord: Thistle
+    hint: Do not grab it
+    difficulty: 2
+  - crewWord: Bramble
+    imposterWord: Hedge
+    hint: It catches your jumper
+    difficulty: 2
+  - crewWord: Sand dune
+    imposterWord: Sandbank
+    hint: Sand that has piled up
+    difficulty: 2
+  - crewWord: Pebble
+    imposterWord: Boulder
+    hint: A rock, one size or another
+    difficulty: 2
+  - crewWord: Clay
+    imposterWord: Chalk
+    hint: Soft ground you can mark with
+    difficulty: 2
+  - crewWord: Coal
+    imposterWord: Peat
+    hint: It burns and comes out of the ground
+    difficulty: 2
+  - crewWord: Crystal
+    imposterWord: Geode
+    hint: Pretty rock people put on a shelf
+    difficulty: 2
+  - crewWord: Fossil
+    imposterWord: Amber
+    hint: Something very old preserved
+    difficulty: 2
+  - crewWord: Moon
+    imposterWord: Sun
+    hint: It is in the sky and everyone knows it
+    difficulty: 2
+  - crewWord: Comet
+    imposterWord: Meteor
+    hint: It streaks across the sky
+    difficulty: 2
+  - crewWord: Eclipse
+    imposterWord: Aurora
+    hint: People travel to see it
+    difficulty: 2
+  - crewWord: Galaxy
+    imposterWord: Nebula
+    hint: Very far away and very big
+    difficulty: 2
+  - crewWord: Tornado
+    imposterWord: Waterspout
+    hint: A spinning column you should run from
+    difficulty: 2
+  - crewWord: Avalanche
+    imposterWord: Rockfall
+    hint: The mountain is coming down
+    difficulty: 2
+  - crewWord: Wildfire
+    imposterWord: Bonfire
+    hint: Fire outdoors, planned or not
+    difficulty: 2
+  - crewWord: Geyser
+    imposterWord: Hot spring
+    hint: Hot water out of the ground
+    difficulty: 2
+  - crewWord: Sandstorm
+    imposterWord: Dust cloud
+    hint: The air has turned solid
+    difficulty: 2
+  - crewWord: Monsoon
+    imposterWord: Rainy season
+    hint: Months of the same weather
+    difficulty: 2
+  - crewWord: Tsunami
+    imposterWord: Storm surge
+    hint: The sea arriving where it should not
+    difficulty: 2
+  - crewWord: Coral
+    imposterWord: Kelp
+    hint: It grows underwater
+    difficulty: 2
+  - crewWord: Plankton
+    imposterWord: Algae
+    hint: Tiny and the base of everything
+    difficulty: 2
+  - crewWord: Hive
+    imposterWord: Nest
+    hint: Somewhere small creatures live
+    difficulty: 2
+  - crewWord: Burrow
+    imposterWord: Den
+    hint: An animal home underground
+    difficulty: 2
+  - crewWord: Migration
+    imposterWord: Hibernation
+    hint: What animals do when the seasons turn
+    difficulty: 2
+  - crewWord: Spring
+    imposterWord: Autumn
+    hint: The in-between season
+    difficulty: 2
+  - crewWord: Summer
+    imposterWord: Winter
+    hint: The season with strong opinions
+    difficulty: 2
+  - crewWord: Sunshine
+    imposterWord: Moonlight
+    hint: Light you can see by outdoors
+    difficulty: 2
+  - crewWord: Shadow
+    imposterWord: Silhouette
+    hint: A dark shape with no detail
+    difficulty: 2
+  - crewWord: Horizon
+    imposterWord: Skyline
+    hint: Where the sky meets something
+    difficulty: 2
+  - crewWord: Compass
+    imposterWord: Map
+    hint: It stops you getting lost
+    difficulty: 2
+  - crewWord: Trail
+    imposterWord: Footpath
+    hint: You follow it on foot
+    difficulty: 2
+  - crewWord: Campfire
+    imposterWord: Barbecue
+    hint: Fire you sit around
+    difficulty: 2
+  - crewWord: Tent
+    imposterWord: Hammock
+    hint: You sleep outdoors in it
+    difficulty: 2
+  - crewWord: Binoculars
+    imposterWord: Telescope
+    hint: You look through it at something far away
+    difficulty: 2
+  - crewWord: Estuary
+    imposterWord: Delta
+    hint: Where a river gives up and meets the sea
+    difficulty: 3
+  - crewWord: Tundra
+    imposterWord: Steppe
+    hint: Flat, cold and nearly empty
+    difficulty: 3
+  - crewWord: Savannah
+    imposterWord: Prairie
+    hint: Grass to the horizon
+    difficulty: 3
+  - crewWord: Fjord
+    imposterWord: Loch
+    hint: Deep water between steep sides
+    difficulty: 3
+  - crewWord: Plateau
+    imposterWord: Mesa
+    hint: Flat on top, steep at the sides
+    difficulty: 3
+  - crewWord: Stalactite
+    imposterWord: Stalagmite
+    hint: It took a cave ten thousand years to make
+    difficulty: 3
+  - crewWord: Sediment
+    imposterWord: Silt
+    hint: What the water quietly leaves behind
+    difficulty: 3
+  - crewWord: Erosion
+    imposterWord: Weathering
+    hint: Slow damage nobody watches happen
+    difficulty: 3
+  - crewWord: Equinox
+    imposterWord: Solstice
+    hint: A day the calendar makes a fuss about
+    difficulty: 3
+  - crewWord: Cirrus
+    imposterWord: Cumulus
+    hint: A cloud with a proper name
+    difficulty: 3
+  - crewWord: Humidity
+    imposterWord: Air pressure
+    hint: You feel it before the forecast says it
+    difficulty: 3
+  - crewWord: Jet stream
+    imposterWord: Trade wind
+    hint: Wind with a route and a schedule
+    difficulty: 3
+  - crewWord: Permafrost
+    imposterWord: Tundra soil
+    hint: Ground that has not thawed in a long time
+    difficulty: 3
+  - crewWord: Photosynthesis
+    imposterWord: Respiration
+    hint: What a plant does all day
+    difficulty: 3
+  - crewWord: Pollination
+    imposterWord: Germination
+    hint: The start of a new plant
+    difficulty: 3
+  - crewWord: Canopy
+    imposterWord: Undergrowth
+    hint: A layer of the forest
+    difficulty: 3
+  - crewWord: Wetland
+    imposterWord: Bog
+    hint: Ground that is more water than land
+    difficulty: 3
+  - crewWord: Moor
+    imposterWord: Heath
+    hint: Open, windy and covered in low scrub
+    difficulty: 3

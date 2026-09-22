@@ -19,32 +19,422 @@ MonoBehaviour:
   accentIndex: 4
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   questions:
   - id: h1
     question: What was the original name of the search project that became Google?
     correctAnswer: BackRub
     difficulty: 2
+    subcategory: Technology history
+    tags:
+    - google
+    - internet
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/History_of_Google
+      verifiedDate: 
+      reviewBy: 
   - id: h2
     question: Which city hosted the first modern Olympic Games in 1896?
     correctAnswer: Athens
     difficulty: 1
+    subcategory: Sport history
+    tags:
+    - olympics
+    - greece
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/1896_Summer_Olympics
+      verifiedDate: 
+      reviewBy: 
   - id: h3
     question: In which year did the Berlin Wall come down?
     correctAnswer: 1989
     difficulty: 1
+    subcategory: 20th century
+    tags:
+    - germany
+    - cold war
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Berlin_Wall
+      verifiedDate: 
+      reviewBy: 
   - id: h4
     question: Who was the first person to walk on the Moon?
     correctAnswer: Neil Armstrong
     difficulty: 1
+    subcategory: Space
+    tags:
+    - nasa
+    - moon
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Neil_Armstrong
+      verifiedDate: 
+      reviewBy: 
   - id: h5
     question: Which country gave the Statue of Liberty to the United States?
     correctAnswer: France
     difficulty: 1
+    subcategory: Monuments
+    tags:
+    - usa
+    - gift
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Statue_of_Liberty
+      verifiedDate: 
+      reviewBy: 
   - id: h6
-    question: What was Germany's currency before the euro?
+    question: What was Germany's currency before it adopted the euro?
     correctAnswer: The Deutsche Mark
     difficulty: 2
+    subcategory: Economics
+    tags:
+    - germany
+    - money
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Deutsche_Mark
+      verifiedDate: 
+      reviewBy: 
   - id: h7
-    question: Which ship sank on its maiden voyage in 1912?
+    question: Which ocean liner sank on its maiden voyage in 1912?
     correctAnswer: The Titanic
     difficulty: 1
+    subcategory: Disasters
+    tags:
+    - ships
+    - atlantic
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Titanic
+      verifiedDate: 
+      reviewBy: 
+  - id: h8
+    question: How many wives did Henry VIII have?
+    correctAnswer: Six
+    difficulty: 1
+    subcategory: British monarchy
+    tags:
+    - tudors
+    - england
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Henry_VIII
+      verifiedDate: 
+      reviewBy: 
+  - id: h9
+    question: What name did the Romans give to Britain?
+    correctAnswer: Britannia
+    difficulty: 2
+    subcategory: Ancient Rome
+    tags:
+    - romans
+    - britain
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Roman_Britain
+      verifiedDate: 
+      reviewBy: 
+  - id: h10
+    question: Which war was formally ended by the Treaty of Versailles?
+    correctAnswer: The First World War
+    difficulty: 2
+    subcategory: 20th century
+    tags:
+    - ww1
+    - treaty
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Treaty_of_Versailles
+      verifiedDate: 
+      reviewBy: 
+  - id: h11
+    question: What was the name of the first artificial satellite launched into orbit?
+    correctAnswer: Sputnik 1
+    difficulty: 2
+    subcategory: Space
+    tags:
+    - ussr
+    - space race
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Sputnik_1
+      verifiedDate: 
+      reviewBy: 
+  - id: h12
+    question: In which year did the Chernobyl nuclear disaster happen?
+    correctAnswer: 1986
+    difficulty: 2
+    subcategory: Disasters
+    tags:
+    - nuclear
+    - ukraine
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Chernobyl_disaster
+      verifiedDate: 
+      reviewBy: 
+  - id: h13
+    question: Who was the first female Prime Minister of the United Kingdom?
+    correctAnswer: Margaret Thatcher
+    difficulty: 1
+    subcategory: British politics
+    tags:
+    - uk
+    - politics
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Margaret_Thatcher
+      verifiedDate: 
+      reviewBy: 
+  - id: h14
+    question: The Rosetta Stone was the key to deciphering which writing system?
+    correctAnswer: Egyptian hieroglyphs
+    difficulty: 2
+    subcategory: Archaeology
+    tags:
+    - egypt
+    - language
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Rosetta_Stone
+      verifiedDate: 
+      reviewBy: 
+  - id: h15
+    question: What was the name of Ernest Shackleton's ship, crushed by Antarctic ice?
+    correctAnswer: Endurance
+    difficulty: 3
+    subcategory: Exploration
+    tags:
+    - antarctic
+    - ships
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Endurance_(1912_ship)
+      verifiedDate: 
+      reviewBy: 
+  - id: h16
+    question: Which English king was forced to seal Magna Carta in 1215?
+    correctAnswer: King John
+    difficulty: 2
+    subcategory: Medieval
+    tags:
+    - england
+    - law
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Magna_Carta
+      verifiedDate: 
+      reviewBy: 
+  - id: h17
+    question: What disease was the Black Death?
+    correctAnswer: Bubonic plague
+    difficulty: 2
+    subcategory: Medieval
+    tags:
+    - plague
+    - europe
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Black_Death
+      verifiedDate: 
+      reviewBy: 
+  - id: h18
+    question: Which English country house was the centre of British codebreaking in the Second World War?
+    correctAnswer: Bletchley Park
+    difficulty: 2
+    subcategory: 20th century
+    tags:
+    - ww2
+    - codes
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Bletchley_Park
+      verifiedDate: 
+      reviewBy: 
+  - id: h19
+    question: Who painted the ceiling of the Sistine Chapel?
+    correctAnswer: Michelangelo
+    difficulty: 1
+    subcategory: Art history
+    tags:
+    - renaissance
+    - rome
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Sistine_Chapel_ceiling
+      verifiedDate: 
+      reviewBy: 
+  - id: h20
+    question: In which year did the Great Fire of London break out?
+    correctAnswer: 1666
+    difficulty: 2
+    subcategory: British history
+    tags:
+    - london
+    - fire
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Great_Fire_of_London
+      verifiedDate: 
+      reviewBy: 
+  - id: h21
+    question: Which empire built Machu Picchu?
+    correctAnswer: The Inca
+    difficulty: 2
+    subcategory: Ancient civilisations
+    tags:
+    - peru
+    - inca
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Machu_Picchu
+      verifiedDate: 
+      reviewBy: 
+  - id: h22
+    question: Which country was the first to grant women the national vote, in 1893?
+    correctAnswer: New Zealand
+    difficulty: 3
+    subcategory: Social history
+    tags:
+    - suffrage
+    - voting
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Women's_suffrage_in_New_Zealand
+      verifiedDate: 
+      reviewBy: 
+  - id: h23
+    question: What was the name of the first mammal cloned from an adult cell?
+    correctAnswer: Dolly the sheep
+    difficulty: 2
+    subcategory: Science history
+    tags:
+    - cloning
+    - scotland
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Dolly_(sheep)
+      verifiedDate: 
+      reviewBy: 
+  - id: h24
+    question: Which Portuguese explorer led the first expedition to sail around the world?
+    correctAnswer: Ferdinand Magellan
+    difficulty: 2
+    subcategory: Exploration
+    tags:
+    - sailing
+    - portugal
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Ferdinand_Magellan
+      verifiedDate: 
+      reviewBy: 
+  - id: h25
+    question: Which country was formerly known as Siam?
+    correctAnswer: Thailand
+    difficulty: 2
+    subcategory: Geography history
+    tags:
+    - asia
+    - names
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Thailand
+      verifiedDate: 
+      reviewBy: 
+  - id: h26
+    question: What is the name of the Roman wall built across northern England?
+    correctAnswer: Hadrian's Wall
+    difficulty: 1
+    subcategory: Ancient Rome
+    tags:
+    - romans
+    - britain
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Hadrian's_Wall
+      verifiedDate: 
+      reviewBy: 
+  - id: h27
+    question: In which year was the wreck of the Titanic finally located?
+    correctAnswer: 1985
+    difficulty: 3
+    subcategory: Disasters
+    tags:
+    - ships
+    - discovery
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Wreck_of_the_Titanic
+      verifiedDate: 
+      reviewBy: 
+  - id: h28
+    question: Which ancient wonder was a lighthouse guarding an Egyptian harbour?
+    correctAnswer: The Lighthouse of Alexandria
+    difficulty: 3
+    subcategory: Ancient civilisations
+    tags:
+    - egypt
+    - wonders
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria
+      verifiedDate: 
+      reviewBy: 
+  - id: h29
+    question: What was the name of the aircraft that dropped the first atomic bomb used in war?
+    correctAnswer: The Enola Gay
+    difficulty: 3
+    subcategory: 20th century
+    tags:
+    - ww2
+    - aviation
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Enola_Gay
+      verifiedDate: 
+      reviewBy: 
+  - id: h30
+    question: Which Egyptian queen was the last active ruler of the Ptolemaic Kingdom?
+    correctAnswer: Cleopatra
+    difficulty: 2
+    subcategory: Ancient civilisations
+    tags:
+    - egypt
+    - rulers
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Cleopatra
+      verifiedDate: 
+      reviewBy: 
+  - id: h31
+    question: What was the name of the ship that carried the Pilgrims to America in 1620?
+    correctAnswer: The Mayflower
+    difficulty: 2
+    subcategory: Exploration
+    tags:
+    - usa
+    - ships
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Mayflower
+      verifiedDate: 
+      reviewBy: 
+  - id: h32
+    question: Which city was buried by the eruption of Mount Vesuvius in AD 79?
+    correctAnswer: Pompeii
+    difficulty: 1
+    subcategory: Ancient Rome
+    tags:
+    - volcano
+    - italy
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Pompeii
+      verifiedDate: 
+      reviewBy: 

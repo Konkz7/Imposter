@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd070696ae389ea4fb49be65c1bdb3b9, type: 3}
+  m_Name: wave-culture
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
+  id: wave-culture
+  displayName: Culture and taste
+  description: Films, food and things people judge you for
+  glyph: CU
+  accentIndex: 1
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  questions:
+  - id: w131
+    prompt: Name a guilty pleasure
+    lowLabel: nothing to be ashamed of
+    highLabel: would never admit it
+    difficulty: 1
+    tags:
+    - culture
+  - id: w132
+    prompt: Name a way to eat a takeaway
+    lowLabel: barbaric
+    highLabel: entirely civilised
+    difficulty: 1
+    tags:
+    - food
+  - id: w133
+    prompt: Name a Christmas film
+    lowLabel: not festive at all
+    highLabel: essential viewing
+    difficulty: 1
+    tags:
+    - film
+  - id: w134
+    prompt: Name a karaoke song
+    lowLabel: clears the room
+    highLabel: gets everyone singing
+    difficulty: 1
+    tags:
+    - music
+  - id: w135
+    prompt: Name a museum exhibit
+    lowLabel: walk straight past
+    highLabel: worth the trip alone
+    difficulty: 2
+    tags:
+    - culture
+  - id: w136
+    prompt: Name a tourist activity
+    lowLabel: a tourist trap
+    highLabel: genuinely special
+    difficulty: 2
+    tags:
+    - travel
+  - id: w137
+    prompt: Name a book adaptation
+    lowLabel: butchered the book
+    highLabel: did it justice
+    difficulty: 2
+    tags:
+    - film
+  - id: w138
+    prompt: Name a British food
+    lowLabel: an acquired taste
+    highLabel: genuinely delicious
+    difficulty: 2
+    tags:
+    - food
+  - id: w139
+    prompt: Name a dance move
+    lowLabel: deeply embarrassing
+    highLabel: genuinely impressive
+    difficulty: 2
+    tags:
+    - social
+  - id: w140
+    prompt: Name a podcast topic
+    lowLabel: would not last one episode
+    highLabel: could listen for hours
+    difficulty: 2
+    tags:
+    - culture
+  - id: w141
+    prompt: Name a sequel to a video game
+    lowLabel: ruined the series
+    highLabel: improved on everything
+    difficulty: 2
+    tags:
+    - gaming
+  - id: w142
+    prompt: Name an art form
+    lowLabel: anyone could do it
+    highLabel: takes real genius
+    difficulty: 2
+    tags:
+    - art
+  - id: w143
+    prompt: Name a musical
+    lowLabel: unbearable
+    highLabel: life changing
+    difficulty: 2
+    tags:
+    - theatre
+  - id: w144
+    prompt: Name a fictional villain
+    lowLabel: not remotely threatening
+    highLabel: genuinely terrifying
+    difficulty: 2
+    tags:
+    - film
+  - id: w145
+    prompt: Name a talent worth having
+    lowLabel: a party trick
+    highLabel: a genuine gift
+    difficulty: 2
+    tags:
+    - skills
+  - id: w146
+    prompt: Name a way to end a TV series
+    lowLabel: an insult to the fans
+    highLabel: a perfect ending
+    difficulty: 3
+    tags:
+    - tv
+  - id: w147
+    prompt: Name a piece of classical music
+    lowLabel: background noise
+    highLabel: genuinely moving
+    difficulty: 3
+    tags:
+    - music
+  - id: w148
+    prompt: Name a poem
+    lowLabel: meaningless
+    highLabel: says it perfectly
+    difficulty: 3
+    tags:
+    - books
+  - id: w149
+    prompt: Name a work of architecture
+    lowLabel: an eyesore
+    highLabel: a masterpiece
+    difficulty: 3
+    tags:
+    - art
+  - id: w150
+    prompt: Name a cultural export
+    lowLabel: embarrassing abroad
+    highLabel: something to be proud of
+    difficulty: 3
+    tags:
+    - culture

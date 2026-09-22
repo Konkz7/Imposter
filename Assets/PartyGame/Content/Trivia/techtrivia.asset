@@ -19,28 +19,370 @@ MonoBehaviour:
   accentIndex: 0
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   questions:
   - id: t1
-    question: What does the www in a web address stand for?
+    question: What do the letters www stand for in a web address?
     correctAnswer: World Wide Web
     difficulty: 1
+    subcategory: Internet
+    tags:
+    - web
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/World_Wide_Web
+      verifiedDate: 
+      reviewBy: 
   - id: t2
     question: What does CPU stand for?
     correctAnswer: Central processing unit
     difficulty: 2
+    subcategory: Hardware
+    tags:
+    - computers
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Central_processing_unit
+      verifiedDate: 
+      reviewBy: 
   - id: t3
     question: How many bits are there in a byte?
     correctAnswer: Eight
     difficulty: 2
+    subcategory: Computing
+    tags:
+    - binary
+    - numbers
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Byte
+      verifiedDate: 
+      reviewBy: 
   - id: t4
-    question: Which 1972 Atari game was the first commercial hit?
+    question: Which 1972 Atari game became the first commercially successful video game?
     correctAnswer: Pong
     difficulty: 2
+    subcategory: Gaming
+    tags:
+    - atari
+    - history
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Pong
+      verifiedDate: 
+      reviewBy: 
   - id: t5
     question: What does HTTP stand for?
     correctAnswer: Hypertext transfer protocol
     difficulty: 3
+    subcategory: Internet
+    tags:
+    - web
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/HTTP
+      verifiedDate: 
+      reviewBy: 
   - id: t6
     question: Which company makes the iPhone?
     correctAnswer: Apple
     difficulty: 1
+    subcategory: Companies
+    tags:
+    - apple
+    - phones
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/IPhone
+      verifiedDate: 
+      reviewBy: 
+  - id: t7
+    question: Who is widely regarded as the first computer programmer?
+    correctAnswer: Ada Lovelace
+    difficulty: 2
+    subcategory: Computing history
+    tags:
+    - pioneers
+    - women
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Ada_Lovelace
+      verifiedDate: 
+      reviewBy: 
+  - id: t8
+    question: What does USB stand for?
+    correctAnswer: Universal Serial Bus
+    difficulty: 2
+    subcategory: Hardware
+    tags:
+    - cables
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/USB
+      verifiedDate: 
+      reviewBy: 
+  - id: t9
+    question: What does PDF stand for?
+    correctAnswer: Portable Document Format
+    difficulty: 2
+    subcategory: Software
+    tags:
+    - files
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/PDF
+      verifiedDate: 
+      reviewBy: 
+  - id: t10
+    question: Who invented the World Wide Web?
+    correctAnswer: Tim Berners-Lee
+    difficulty: 2
+    subcategory: Internet
+    tags:
+    - web
+    - pioneers
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Tim_Berners-Lee
+      verifiedDate: 
+      reviewBy: 
+  - id: t11
+    question: What does GPS stand for?
+    correctAnswer: Global Positioning System
+    difficulty: 2
+    subcategory: Navigation
+    tags:
+    - satellites
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Global_Positioning_System
+      verifiedDate: 
+      reviewBy: 
+  - id: t12
+    question: In which year was the first iPhone released?
+    correctAnswer: 2007
+    difficulty: 2
+    subcategory: Companies
+    tags:
+    - apple
+    - timeline
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/IPhone_(1st_generation)
+      verifiedDate: 
+      reviewBy: 
+  - id: t13
+    question: What does RAM stand for?
+    correctAnswer: Random access memory
+    difficulty: 2
+    subcategory: Hardware
+    tags:
+    - memory
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Random-access_memory
+      verifiedDate: 
+      reviewBy: 
+  - id: t14
+    question: What does HTML stand for?
+    correctAnswer: Hypertext markup language
+    difficulty: 2
+    subcategory: Internet
+    tags:
+    - web
+    - coding
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/HTML
+      verifiedDate: 
+      reviewBy: 
+  - id: t15
+    question: What does SIM stand for on a phone card?
+    correctAnswer: Subscriber identity module
+    difficulty: 3
+    subcategory: Phones
+    tags:
+    - mobile
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/SIM_card
+      verifiedDate: 
+      reviewBy: 
+  - id: t16
+    question: Which company develops the Android operating system?
+    correctAnswer: Google
+    difficulty: 1
+    subcategory: Companies
+    tags:
+    - android
+    - google
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Android_(operating_system)
+      verifiedDate: 
+      reviewBy: 
+  - id: t17
+    question: What does VPN stand for?
+    correctAnswer: Virtual private network
+    difficulty: 2
+    subcategory: Internet
+    tags:
+    - privacy
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Virtual_private_network
+      verifiedDate: 
+      reviewBy: 
+  - id: t18
+    question: What base does the binary number system use?
+    correctAnswer: Base two
+    difficulty: 2
+    subcategory: Computing
+    tags:
+    - binary
+    - maths
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Binary_number
+      verifiedDate: 
+      reviewBy: 
+  - id: t19
+    question: What does URL stand for?
+    correctAnswer: Uniform resource locator
+    difficulty: 3
+    subcategory: Internet
+    tags:
+    - web
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/URL
+      verifiedDate: 
+      reviewBy: 
+  - id: t20
+    question: What does SMS stand for in text messaging?
+    correctAnswer: Short message service
+    difficulty: 2
+    subcategory: Phones
+    tags:
+    - texting
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/SMS
+      verifiedDate: 
+      reviewBy: 
+  - id: t21
+    question: What does the QR in QR code stand for?
+    correctAnswer: Quick response
+    difficulty: 3
+    subcategory: Technology
+    tags:
+    - codes
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/QR_code
+      verifiedDate: 
+      reviewBy: 
+  - id: t22
+    question: What does LED stand for?
+    correctAnswer: Light emitting diode
+    difficulty: 2
+    subcategory: Hardware
+    tags:
+    - lighting
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Light-emitting_diode
+      verifiedDate: 
+      reviewBy: 
+  - id: t23
+    question: Which comedy sketch gave unwanted email its name?
+    correctAnswer: The Monty Python spam sketch
+    difficulty: 3
+    subcategory: Internet culture
+    tags:
+    - spam
+    - comedy
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Spam_(Monty_Python)
+      verifiedDate: 
+      reviewBy: 
+  - id: t24
+    question: Which two people founded Microsoft?
+    correctAnswer: Bill Gates and Paul Allen
+    difficulty: 2
+    subcategory: Companies
+    tags:
+    - microsoft
+    - founders
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Microsoft
+      verifiedDate: 
+      reviewBy: 
+  - id: t25
+    question: What does Wi-Fi allow devices to do without cables?
+    correctAnswer: Connect to a network
+    difficulty: 1
+    subcategory: Networking
+    tags:
+    - wireless
+    - internet
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Wi-Fi
+      verifiedDate: 
+      reviewBy: 
+  - id: t26
+    question: What is the name for a program that translates source code into machine code?
+    correctAnswer: A compiler
+    difficulty: 3
+    subcategory: Programming
+    tags:
+    - code
+    - tools
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Compiler
+      verifiedDate: 
+      reviewBy: 
+  - id: t27
+    question: Which company created the PlayStation console?
+    correctAnswer: Sony
+    difficulty: 1
+    subcategory: Gaming
+    tags:
+    - sony
+    - consoles
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/PlayStation
+      verifiedDate: 
+      reviewBy: 
+  - id: t28
+    question: The L and the A in laser stand for light and what?
+    correctAnswer: Amplification
+    difficulty: 3
+    subcategory: Physics
+    tags:
+    - laser
+    - acronyms
+    sourceInfo:
+      source: Wikipedia
+      sourceUrl: https://en.wikipedia.org/wiki/Laser
+      verifiedDate: 
+      reviewBy: 

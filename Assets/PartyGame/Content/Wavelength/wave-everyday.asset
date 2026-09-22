@@ -19,44 +19,216 @@ MonoBehaviour:
   accentIndex: 0
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   questions:
   - id: w1
-    prompt: Describe a place to eat
+    prompt: Name a place to eat
     lowLabel: an awful place
     highLabel: an incredible place
+    difficulty: 1
+    tags:
+    - food
   - id: w2
-    prompt: Describe a way to spend a Saturday
+    prompt: Name a way to spend a Saturday
     lowLabel: a wasted day
     highLabel: a perfect day
+    difficulty: 1
+    tags:
+    - leisure
   - id: w3
-    prompt: Describe a job
+    prompt: Name a job
     lowLabel: a terrible job
     highLabel: a dream job
+    difficulty: 1
+    tags:
+    - work
   - id: w4
-    prompt: Describe a holiday destination
+    prompt: Name a holiday destination
     lowLabel: a grim trip
     highLabel: the trip of a lifetime
+    difficulty: 1
+    tags:
+    - travel
   - id: w5
-    prompt: Describe a way to travel to work
+    prompt: Name a way to get to work
     lowLabel: the worst commute
     highLabel: the best commute
+    difficulty: 1
+    tags:
+    - travel
   - id: w6
-    prompt: Describe a birthday present
+    prompt: Name a birthday present
     lowLabel: a thoughtless gift
     highLabel: an amazing gift
+    difficulty: 1
+    tags:
+    - gifts
   - id: w7
-    prompt: Describe a breakfast
+    prompt: Name a breakfast
     lowLabel: barely edible
     highLabel: worth getting up for
+    difficulty: 1
+    tags:
+    - food
   - id: w8
-    prompt: Describe a place to live
+    prompt: Name a place to live
     lowLabel: somewhere miserable
     highLabel: somewhere wonderful
+    difficulty: 1
+    tags:
+    - home
   - id: w9
-    prompt: Describe a way to spend an evening
+    prompt: Name a way to spend an evening
     lowLabel: deeply boring
     highLabel: brilliant fun
+    difficulty: 1
+    tags:
+    - leisure
   - id: w10
-    prompt: Describe a piece of clothing
+    prompt: Name a piece of clothing
     lowLabel: an embarrassment
     highLabel: extremely stylish
+    difficulty: 1
+    tags:
+    - fashion
+  - id: w11
+    prompt: Name a household chore
+    lowLabel: barely counts as a chore
+    highLabel: the worst job in the house
+    difficulty: 1
+    tags:
+    - home
+  - id: w12
+    prompt: Name a drink to order at a bar
+    lowLabel: a questionable choice
+    highLabel: a perfect order
+    difficulty: 1
+    tags:
+    - food
+  - id: w13
+    prompt: Name a pet
+    lowLabel: a terrible idea
+    highLabel: the ideal companion
+    difficulty: 1
+    tags:
+    - animals
+  - id: w14
+    prompt: Name a way to wake up
+    lowLabel: a horrible start
+    highLabel: a lovely start
+    difficulty: 1
+    tags:
+    - home
+  - id: w15
+    prompt: Name a sandwich filling
+    lowLabel: an insult to bread
+    highLabel: genuinely excellent
+    difficulty: 1
+    tags:
+    - food
+  - id: w16
+    prompt: Name a way to spend a rainy afternoon
+    lowLabel: utterly bleak
+    highLabel: secretly brilliant
+    difficulty: 2
+    tags:
+    - leisure
+  - id: w17
+    prompt: Name a takeaway order
+    lowLabel: regret in a box
+    highLabel: a triumph
+    difficulty: 2
+    tags:
+    - food
+  - id: w18
+    prompt: Name a supermarket own brand product
+    lowLabel: avoid at all costs
+    highLabel: better than the real thing
+    difficulty: 2
+    tags:
+    - shopping
+  - id: w19
+    prompt: Name a piece of furniture
+    lowLabel: should be on a skip
+    highLabel: a genuine investment
+    difficulty: 2
+    tags:
+    - home
+  - id: w20
+    prompt: Name a kitchen gadget
+    lowLabel: used once and forgotten
+    highLabel: used every single day
+    difficulty: 2
+    tags:
+    - home
+  - id: w21
+    prompt: Name a way to travel a long distance
+    lowLabel: an ordeal
+    highLabel: a pleasure
+    difficulty: 2
+    tags:
+    - travel
+  - id: w22
+    prompt: Name a haircut
+    lowLabel: a serious mistake
+    highLabel: a great decision
+    difficulty: 2
+    tags:
+    - fashion
+  - id: w23
+    prompt: Name a wedding gift
+    lowLabel: thoughtless
+    highLabel: genuinely generous
+    difficulty: 2
+    tags:
+    - gifts
+  - id: w24
+    prompt: Name a way to spend a lunch break
+    lowLabel: a complete waste
+    highLabel: the best part of the day
+    difficulty: 2
+    tags:
+    - work
+  - id: w25
+    prompt: Name a phone habit
+    lowLabel: mildly annoying
+    highLabel: unforgivable
+    difficulty: 2
+    tags:
+    - technology
+  - id: w26
+    prompt: Name a thing to keep in a glovebox
+    lowLabel: pointless clutter
+    highLabel: a lifesaver
+    difficulty: 2
+    tags:
+    - home
+  - id: w27
+    prompt: Name a length of afternoon nap
+    lowLabel: not worth it
+    highLabel: perfectly judged
+    difficulty: 2
+    tags:
+    - home
+  - id: w28
+    prompt: Name a breakfast cereal
+    lowLabel: cardboard
+    highLabel: a genuine treat
+    difficulty: 2
+    tags:
+    - food
+  - id: w29
+    prompt: Name a way to spend a bank holiday
+    lowLabel: a total write off
+    highLabel: the ideal long weekend
+    difficulty: 2
+    tags:
+    - leisure
+  - id: w30
+    prompt: Name a thing to do on a first day in a new job
+    lowLabel: a disaster
+    highLabel: exactly right
+    difficulty: 3
+    tags:
+    - work

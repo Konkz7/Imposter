@@ -19,40 +19,414 @@ MonoBehaviour:
   accentIndex: 4
   enabled: 1
   premium: 0
+  freshness: 0
+  reviewBy: 
   pairs:
-  - crewWord: Beach
-    imposterWord: Swimming pool
-    hint: You go there to get wet
   - crewWord: Library
     imposterWord: Museum
     hint: Keep your voice down
+    difficulty: 1
   - crewWord: Hospital
     imposterWord: Dentist
     hint: Nobody goes there for fun
-  - crewWord: Airport
-    imposterWord: Train station
-    hint: People arrive and leave all day
+    difficulty: 1
   - crewWord: Cinema
     imposterWord: Theatre
     hint: Everyone faces the same way
+    difficulty: 1
   - crewWord: Supermarket
     imposterWord: Market
     hint: You leave with bags
+    difficulty: 1
   - crewWord: Park
     imposterWord: Garden
     hint: Green and outdoors
-  - crewWord: Hotel
-    imposterWord: Campsite
-    hint: You sleep somewhere unfamiliar
+    difficulty: 1
   - crewWord: Gym
     imposterWord: Playground
     hint: It is full of equipment
+    difficulty: 1
   - crewWord: Kitchen
     imposterWord: Bathroom
     hint: A room with taps
-  - crewWord: Castle
-    imposterWord: Cathedral
-    hint: Old, stone and full of tourists
+    difficulty: 1
   - crewWord: Nightclub
     imposterWord: Pub
     hint: It gets loud after dark
+    difficulty: 1
+  - crewWord: School
+    imposterWord: University
+    hint: You go there to learn
+    difficulty: 1
+  - crewWord: Bedroom
+    imposterWord: Living room
+    hint: A room in a house
+    difficulty: 1
+  - crewWord: Shop
+    imposterWord: Stall
+    hint: You buy things there
+    difficulty: 1
+  - crewWord: Cafe
+    imposterWord: Restaurant
+    hint: You sit down and someone brings food
+    difficulty: 1
+  - crewWord: Bank
+    imposterWord: Post office
+    hint: You queue there
+    difficulty: 1
+  - crewWord: Church
+    imposterWord: Temple
+    hint: People go there to be quiet
+    difficulty: 1
+  - crewWord: Zoo
+    imposterWord: Aquarium
+    hint: You pay to look at animals
+    difficulty: 1
+  - crewWord: Swimming pool
+    imposterWord: Water park
+    hint: You need a towel
+    difficulty: 2
+  - crewWord: Hotel
+    imposterWord: Campsite
+    hint: You sleep somewhere unfamiliar
+    difficulty: 2
+  - crewWord: Castle
+    imposterWord: Cathedral
+    hint: Old, stone and full of tourists
+    difficulty: 2
+  - crewWord: Office
+    imposterWord: Warehouse
+    hint: People work there
+    difficulty: 2
+  - crewWord: Factory
+    imposterWord: Power station
+    hint: Big, industrial and humming
+    difficulty: 2
+  - crewWord: Stadium
+    imposterWord: Arena
+    hint: Thousands of people face the middle
+    difficulty: 2
+  - crewWord: Car park
+    imposterWord: Driveway
+    hint: Cars sit still there
+    difficulty: 2
+  - crewWord: Garage
+    imposterWord: Shed
+    hint: Where things go to be forgotten
+    difficulty: 2
+  - crewWord: Attic
+    imposterWord: Basement
+    hint: A part of the house nobody likes
+    difficulty: 2
+  - crewWord: Hallway
+    imposterWord: Landing
+    hint: You only pass through it
+    difficulty: 2
+  - crewWord: Balcony
+    imposterWord: Patio
+    hint: Outdoor space attached to a building
+    difficulty: 2
+  - crewWord: Conservatory
+    imposterWord: Porch
+    hint: A glass room bolted onto a house
+    difficulty: 2
+  - crewWord: Studio
+    imposterWord: Workshop
+    hint: Someone makes things there
+    difficulty: 2
+  - crewWord: Salon
+    imposterWord: Barbers
+    hint: You leave looking different
+    difficulty: 2
+  - crewWord: Pharmacy
+    imposterWord: Opticians
+    hint: Health, on the high street
+    difficulty: 2
+  - crewWord: Bakery
+    imposterWord: Butchers
+    hint: A shop that smells of one thing
+    difficulty: 2
+  - crewWord: Bookshop
+    imposterWord: Record shop
+    hint: You browse and buy nothing
+    difficulty: 2
+  - crewWord: Charity shop
+    imposterWord: Car boot sale
+    hint: Somebody else's things
+    difficulty: 2
+  - crewWord: Shopping centre
+    imposterWord: Retail park
+    hint: Too many shops in one place
+    difficulty: 2
+  - crewWord: Petrol station
+    imposterWord: Service station
+    hint: You stop there reluctantly
+    difficulty: 2
+  - crewWord: Motorway services
+    imposterWord: Layby
+    hint: A break in a long journey
+    difficulty: 2
+  - crewWord: Bus stop
+    imposterWord: Taxi rank
+    hint: You wait there
+    difficulty: 2
+  - crewWord: Town hall
+    imposterWord: Courthouse
+    hint: Official and slightly intimidating
+    difficulty: 2
+  - crewWord: Police station
+    imposterWord: Fire station
+    hint: Emergency vehicles live there
+    difficulty: 2
+  - crewWord: Prison
+    imposterWord: Barracks
+    hint: You cannot come and go freely
+    difficulty: 2
+  - crewWord: Care home
+    imposterWord: Hostel
+    hint: People live there temporarily
+    difficulty: 2
+  - crewWord: Nursery
+    imposterWord: Playgroup
+    hint: Full of very small people
+    difficulty: 2
+  - crewWord: Lecture hall
+    imposterWord: Assembly hall
+    hint: Rows of seats facing forward
+    difficulty: 2
+  - crewWord: Staff room
+    imposterWord: Break room
+    hint: Where the kettle is
+    difficulty: 2
+  - crewWord: Canteen
+    imposterWord: Food court
+    hint: Trays and plastic chairs
+    difficulty: 2
+  - crewWord: Rooftop
+    imposterWord: Terrace
+    hint: Outside, but high up
+    difficulty: 2
+  - crewWord: Courtyard
+    imposterWord: Square
+    hint: Open space surrounded by buildings
+    difficulty: 2
+  - crewWord: Alley
+    imposterWord: Lane
+    hint: Narrow and between buildings
+    difficulty: 2
+  - crewWord: High street
+    imposterWord: Boulevard
+    hint: Shops down both sides
+    difficulty: 2
+  - crewWord: Roundabout
+    imposterWord: Junction
+    hint: Where roads argue
+    difficulty: 2
+  - crewWord: Bridge
+    imposterWord: Tunnel
+    hint: It gets you past an obstacle
+    difficulty: 2
+  - crewWord: Harbour
+    imposterWord: Marina
+    hint: Boats tied up in rows
+    difficulty: 2
+  - crewWord: Pier
+    imposterWord: Boardwalk
+    hint: You walk out over water
+    difficulty: 2
+  - crewWord: Lighthouse
+    imposterWord: Watchtower
+    hint: Tall, isolated and built to see from
+    difficulty: 2
+  - crewWord: Farm
+    imposterWord: Ranch
+    hint: Animals and a lot of land
+    difficulty: 2
+  - crewWord: Orchard
+    imposterWord: Vineyard
+    hint: Rows of plants that make something
+    difficulty: 2
+  - crewWord: Greenhouse
+    imposterWord: Polytunnel
+    hint: Warm, humid and full of plants
+    difficulty: 2
+  - crewWord: Allotment
+    imposterWord: Back garden
+    hint: Somewhere to grow vegetables
+    difficulty: 2
+  - crewWord: Graveyard
+    imposterWord: Memorial
+    hint: Quiet and about remembering
+    difficulty: 2
+  - crewWord: Ruins
+    imposterWord: Monument
+    hint: Old stone people photograph
+    difficulty: 2
+  - crewWord: Palace
+    imposterWord: Mansion
+    hint: Far too many rooms
+    difficulty: 2
+  - crewWord: Cottage
+    imposterWord: Bungalow
+    hint: Small house, no stairs to speak of
+    difficulty: 2
+  - crewWord: Flat
+    imposterWord: Bedsit
+    hint: Somebody lives above and below you
+    difficulty: 2
+  - crewWord: Terraced house
+    imposterWord: Semi-detached
+    hint: Attached to the neighbours
+    difficulty: 2
+  - crewWord: Caravan
+    imposterWord: Motorhome
+    hint: A home with wheels
+    difficulty: 2
+  - crewWord: Treehouse
+    imposterWord: Den
+    hint: Built by children, badly
+    difficulty: 2
+  - crewWord: Bunker
+    imposterWord: Cellar
+    hint: Underground and slightly grim
+    difficulty: 2
+  - crewWord: Loft
+    imposterWord: Mezzanine
+    hint: A floor that is not quite a floor
+    difficulty: 2
+  - crewWord: Reception
+    imposterWord: Lobby
+    hint: Where you wait to be told where to go
+    difficulty: 2
+  - crewWord: Waiting room
+    imposterWord: Departure lounge
+    hint: Everyone is looking at a screen
+    difficulty: 2
+  - crewWord: Changing room
+    imposterWord: Fitting room
+    hint: You go in with clothes and come out doubting
+    difficulty: 2
+  - crewWord: Ticket office
+    imposterWord: Box office
+    hint: You pay to be let in
+    difficulty: 2
+  - crewWord: Art gallery
+    imposterWord: Exhibition
+    hint: You walk slowly and nod
+    difficulty: 2
+  - crewWord: Concert hall
+    imposterWord: Bandstand
+    hint: Live music happens there
+    difficulty: 2
+  - crewWord: Bowling alley
+    imposterWord: Arcade
+    hint: Loud, dark and full of teenagers
+    difficulty: 2
+  - crewWord: Ice rink
+    imposterWord: Ski slope
+    hint: You will fall over
+    difficulty: 2
+  - crewWord: Golf course
+    imposterWord: Cricket pitch
+    hint: A lot of grass for very few people
+    difficulty: 2
+  - crewWord: Skate park
+    imposterWord: BMX track
+    hint: Concrete and broken elbows
+    difficulty: 2
+  - crewWord: Leisure centre
+    imposterWord: Sports hall
+    hint: It echoes
+    difficulty: 2
+  - crewWord: Community centre
+    imposterWord: Village hall
+    hint: Booked for everything
+    difficulty: 2
+  - crewWord: Observatory
+    imposterWord: Planetarium
+    hint: About the sky, one way or another
+    difficulty: 2
+  - crewWord: Laboratory
+    imposterWord: Clinic
+    hint: White coats and strong smells
+    difficulty: 2
+  - crewWord: Data centre
+    imposterWord: Server room
+    hint: Cold, loud and nobody visits
+    difficulty: 2
+  - crewWord: Call centre
+    imposterWord: Open plan office
+    hint: Rows of people on headsets
+    difficulty: 2
+  - crewWord: Loading bay
+    imposterWord: Depot
+    hint: Lorries reverse there all day
+    difficulty: 2
+  - crewWord: Airport lounge
+    imposterWord: Train buffet
+    hint: Overpriced food while travelling
+    difficulty: 2
+  - crewWord: Cloister
+    imposterWord: Crypt
+    hint: A part of an old religious building
+    difficulty: 3
+  - crewWord: Amphitheatre
+    imposterWord: Colosseum
+    hint: Stone seats in a curve
+    difficulty: 3
+  - crewWord: Citadel
+    imposterWord: Fortress
+    hint: Built to be very hard to get into
+    difficulty: 3
+  - crewWord: Arboretum
+    imposterWord: Botanical garden
+    hint: Plants with labels on
+    difficulty: 3
+  - crewWord: Aviary
+    imposterWord: Apiary
+    hint: Somewhere a specific creature is kept
+    difficulty: 3
+  - crewWord: Chalet
+    imposterWord: Lodge
+    hint: Wooden, and somewhere cold or remote
+    difficulty: 3
+  - crewWord: Hacienda
+    imposterWord: Villa
+    hint: Somewhere warm with a courtyard
+    difficulty: 3
+  - crewWord: Souk
+    imposterWord: Bazaar
+    hint: A covered market with no straight lines
+    difficulty: 3
+  - crewWord: Plaza
+    imposterWord: Piazza
+    hint: An open square with a fountain
+    difficulty: 3
+  - crewWord: Promenade
+    imposterWord: Esplanade
+    hint: A long walk beside the sea
+    difficulty: 3
+  - crewWord: Quarry
+    imposterWord: Mine
+    hint: A hole made on purpose
+    difficulty: 3
+  - crewWord: Reservoir
+    imposterWord: Dam
+    hint: Water held back deliberately
+    difficulty: 3
+  - crewWord: Aqueduct
+    imposterWord: Viaduct
+    hint: Arches carrying something across a valley
+    difficulty: 3
+  - crewWord: Foyer
+    imposterWord: Vestibule
+    hint: The bit just inside the door
+    difficulty: 3
+  - crewWord: Pantry
+    imposterWord: Larder
+    hint: Where the tins live
+    difficulty: 3
+  - crewWord: Utility room
+    imposterWord: Scullery
+    hint: Where the washing machine hides
+    difficulty: 3

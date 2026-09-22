@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd070696ae389ea4fb49be65c1bdb3b9, type: 3}
+  m_Name: wave-work
+  m_EditorClassIdentifier: PartyGame.Runtime::PartyGame.Core.Content.WavelengthPackData
+  id: wave-work
+  displayName: Work and money
+  description: Offices, bosses and the cost of things
+  glyph: WK
+  accentIndex: 4
+  enabled: 1
+  premium: 0
+  freshness: 0
+  reviewBy: 
+  questions:
+  - id: w111
+    prompt: Name a workplace perk
+    lowLabel: meaningless
+    highLabel: worth staying for
+    difficulty: 1
+    tags:
+    - work
+  - id: w112
+    prompt: Name a meeting
+    lowLabel: a total waste of an hour
+    highLabel: genuinely useful
+    difficulty: 1
+    tags:
+    - work
+  - id: w113
+    prompt: Name a boss behaviour
+    lowLabel: unbearable
+    highLabel: the sign of a great manager
+    difficulty: 1
+    tags:
+    - work
+  - id: w114
+    prompt: Name an email sign off
+    lowLabel: cold
+    highLabel: warm
+    difficulty: 1
+    tags:
+    - work
+  - id: w115
+    prompt: Name a way to spend a bonus
+    lowLabel: gone in a weekend
+    highLabel: genuinely sensible
+    difficulty: 1
+    tags:
+    - money
+  - id: w116
+    prompt: Name a thing to spend money on
+    lowLabel: a waste
+    highLabel: worth every penny
+    difficulty: 2
+    tags:
+    - money
+  - id: w117
+    prompt: Name a subscription
+    lowLabel: cancel it now
+    highLabel: worth every month
+    difficulty: 2
+    tags:
+    - money
+  - id: w118
+    prompt: Name a work deadline
+    lowLabel: completely unreasonable
+    highLabel: generous
+    difficulty: 2
+    tags:
+    - work
+  - id: w119
+    prompt: Name an office noise
+    lowLabel: barely noticeable
+    highLabel: impossible to work through
+    difficulty: 2
+    tags:
+    - work
+  - id: w120
+    prompt: Name a reason to call in sick
+    lowLabel: transparently fake
+    highLabel: entirely legitimate
+    difficulty: 2
+    tags:
+    - work
+  - id: w121
+    prompt: Name a career change
+    lowLabel: reckless
+    highLabel: the best decision they ever made
+    difficulty: 2
+    tags:
+    - work
+  - id: w122
+    prompt: Name a thing to negotiate for in a job offer
+    lowLabel: not worth asking
+    highLabel: always worth asking
+    difficulty: 2
+    tags:
+    - work
+  - id: w123
+    prompt: Name a work social event
+    lowLabel: a duty
+    highLabel: genuinely fun
+    difficulty: 2
+    tags:
+    - work
+  - id: w124
+    prompt: Name a way to save money
+    lowLabel: barely makes a difference
+    highLabel: genuinely transformative
+    difficulty: 2
+    tags:
+    - money
+  - id: w125
+    prompt: Name a thing to put on a CV
+    lowLabel: actively harmful
+    highLabel: gets you the interview
+    difficulty: 2
+    tags:
+    - work
+  - id: w126
+    prompt: Name a working pattern
+    lowLabel: exhausting
+    highLabel: ideal
+    difficulty: 2
+    tags:
+    - work
+  - id: w127
+    prompt: Name an office rule
+    lowLabel: petty
+    highLabel: completely sensible
+    difficulty: 3
+    tags:
+    - work
+  - id: w128
+    prompt: Name a thing worth paying extra for
+    lowLabel: never worth it
+    highLabel: always worth it
+    difficulty: 3
+    tags:
+    - money
+  - id: w129
+    prompt: Name a side hustle
+    lowLabel: not worth the effort
+    highLabel: genuinely lucrative
+    difficulty: 3
+    tags:
+    - money
+  - id: w130
+    prompt: Name a retirement plan
+    lowLabel: leaves you struggling
+    highLabel: completely secure
+    difficulty: 3
+    tags:
+    - money
