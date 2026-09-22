@@ -85,5 +85,5 @@ Alternatives:
 
 - A **feature graphic** (1024x500) for Play. Not generated.
 - Nothing further on privacy: the policy is live at
-  <https://konkz7.github.io/Imposter/privacy.html> and the listing contact is amara03@live.co.uk.
+  <https://konkz7.github.io/Imposter/privacy.html> and the listing contact is o.place100@gmail.com.
 - Confirmation that **"Odd One Out"** is free to use as a store name in your territories.

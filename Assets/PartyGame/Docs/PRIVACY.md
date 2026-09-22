@@ -13,7 +13,7 @@ Odd One Out is published by **Odd One Out Games**, a sole trader business operat
 Okonkwo in the United Kingdom. For the purposes of UK data protection law, that is the data
 controller for this app.
 
-You can get in touch at **amara03@live.co.uk**.
+You can get in touch at **o.place100@gmail.com**.
 
 ## What the app stores on your device
 
@@ -89,4 +89,4 @@ shows when it last changed.
 
 ## Contact
 
-Questions about this policy or about the app can be sent to **amara03@live.co.uk**.
+Questions about this policy or about the app can be sent to **o.place100@gmail.com**.
