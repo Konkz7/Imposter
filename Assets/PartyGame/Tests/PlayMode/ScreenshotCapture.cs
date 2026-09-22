@@ -13,8 +13,12 @@ namespace PartyGame.Tests.PlayMode
     /// </summary>
     public static class ScreenshotCapture
     {
-        public const int Width = 1080;
-        public const int Height = 1920;
+        /// <summary>Google Play's phone screenshot size, and the app's design resolution.</summary>
+        public const int DefaultWidth = 1080;
+        public const int DefaultHeight = 1920;
+
+        public static int Width { get; private set; } = DefaultWidth;
+        public static int Height { get; private set; } = DefaultHeight;
 
         public static string OutputFolder =
             Path.Combine(Directory.GetParent(Application.dataPath).FullName, "Screenshots");
@@ -31,10 +35,12 @@ namespace PartyGame.Tests.PlayMode
         private static Vector3 _previousPosition;
         private static Vector3 _previousScale;
 
-        public static void BeginSession(Canvas canvas)
+        public static void BeginSession(Canvas canvas, int width = DefaultWidth, int height = DefaultHeight)
         {
             if (canvas == null || _canvas != null) return;
 
+            Width = Mathf.Max(64, width);
+            Height = Mathf.Max(64, height);
             _canvas = canvas;
             var rect = (RectTransform)canvas.transform;
             _scaler = canvas.GetComponent<CanvasScaler>();
@@ -128,6 +134,8 @@ namespace PartyGame.Tests.PlayMode
             _scaler = null;
             _camera = null;
             _renderTexture = null;
+            Width = DefaultWidth;
+            Height = DefaultHeight;
         }
     }
 }
