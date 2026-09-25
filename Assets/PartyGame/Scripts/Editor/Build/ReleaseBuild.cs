@@ -98,10 +98,10 @@ namespace PartyGame.EditorTools
         /// </summary>
         private static bool ApplySigning()
         {
-            var keystore = Environment.GetEnvironmentVariable(EnvKeystorePath);
-            var keystorePassword = Environment.GetEnvironmentVariable(EnvKeystorePass);
-            var alias = Environment.GetEnvironmentVariable(EnvKeyAlias);
-            var aliasPassword = Environment.GetEnvironmentVariable(EnvKeyAliasPass);
+            var keystore = ReadUnquoted(EnvKeystorePath);
+            var keystorePassword = ReadUnquoted(EnvKeystorePass);
+            var alias = ReadUnquoted(EnvKeyAlias);
+            var aliasPassword = ReadUnquoted(EnvKeyAliasPass);
 
             var provided = new[] { keystore, keystorePassword, alias, aliasPassword };
             if (provided.All(string.IsNullOrEmpty))
@@ -132,6 +132,18 @@ namespace PartyGame.EditorTools
             PlayerSettings.Android.keyaliasName = alias;
             PlayerSettings.Android.keyaliasPass = aliasPassword;
             return true;
+        }
+
+        /// <summary>
+        /// Windows makes it easy to store a value with its surrounding quotes (setx "\"...\"",
+        /// or pasting a quoted path), which then fails File.Exists or the keystore password.
+        /// </summary>
+        private static string ReadUnquoted(string name)
+        {
+            var value = Environment.GetEnvironmentVariable(name)?.Trim();
+            if (value != null && value.Length >= 2 && value[0] == '"' && value[value.Length - 1] == '"')
+                value = value.Substring(1, value.Length - 2);
+            return value;
         }
 
         /// <summary>
