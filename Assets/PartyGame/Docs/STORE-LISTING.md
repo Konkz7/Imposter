@@ -60,11 +60,38 @@ Alternatives:
 > Everything runs offline. The app has no network code at all. Nothing about a round is ever
 > saved — your words, roles and votes exist only while you are playing.
 >
-> • 3 to 12 players
-> • Over 140 word pairs across 12 categories
-> • Trivia, wavelength prompts and debate topics included
+> • 3 to 12 players (The Suspects needs 5)
+> • Over 2,200 word pairs across 22 categories
+> • 326 trivia questions, 150 wavelength prompts, 146 debate topics
 > • Adjustable rounds, timers, categories and difficulty per game
 > • Reduced-motion option and large, readable text
+
+## Artwork to upload
+
+Play validates the sizes strictly, so these are generated at exactly what it asks for.
+
+| Field | File | Size |
+| --- | --- | --- |
+| App icon | `StoreAssets/store-icon-512.png` | 512x512 |
+| Feature graphic | `Screenshots/feature-graphic-1024x500.png` | 1024x500 |
+| Phone screenshots | see below | 1080x1920 (9:16) |
+
+Regenerate with **Party Game → Release → Generate Store Artwork** for the icon, and the
+`FeatureGraphicTests` play mode test for the feature graphic. Both are drawn from `Theme`, so a
+colour change flows through to the listing artwork.
+
+### Screenshots, in this order
+
+Six tells the story and clears Play's four-shot bar for promotion. All come from the
+`ScreenshotTests` play mode test.
+
+1. `01-main-menu.png` - what the app is
+2. `02-game-select.png` - five games, not one
+3. `08-handoff-secret-covered.png` - the hand-over gate, which is the thing no screenshot of a
+   quiz app has
+4. `09-secret-revealed.png` - a secret card actually revealed
+5. `15-suspects-reveal.png` - the vote coming out
+6. `14-results.png` - final scores
 
 ## Category and tags
 
@@ -84,6 +111,6 @@ Alternatives:
 ## What still needs a person
 
 - A **feature graphic** (1024x500) for Play. Not generated.
-- A **contact email** for the listing and the privacy policy.
-- A **hosted URL** for `PRIVACY.md`. Play will not accept a submission without one.
+- Nothing further on privacy: the policy is live at
+  <https://konkz7.github.io/Imposter/privacy.html> and the listing contact is o.place100@gmail.com.
 - Confirmation that **"Odd One Out"** is free to use as a store name in your territories.

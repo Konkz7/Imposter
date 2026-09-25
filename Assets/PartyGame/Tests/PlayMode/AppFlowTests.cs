@@ -212,6 +212,33 @@ namespace PartyGame.Tests.PlayMode
 
         // ------------------------------------------------------------------ helpers
 
+        /// <summary>
+        /// With no store wired up there are no ads and nothing to buy, so an "Advertising"
+        /// heading over a permanently disabled purchase button would describe a build that does
+        /// not exist - and contradict a listing that declares neither ads nor purchases.
+        /// </summary>
+        [UnityTest]
+        public IEnumerator SettingsHidesAdvertisingWhenThereIsNoStore()
+        {
+            yield return null;
+            Assert.IsFalse(_app.Services.Store_Purchases.StoreAvailable,
+                "This test describes a build with no store connected.");
+
+            _app.ShowSettings();
+            yield return null;
+            yield return null;
+
+            var texts = Object.FindObjectsByType<TMPro.TextMeshProUGUI>(FindObjectsSortMode.None)
+                .Where(t => t.isActiveAndEnabled)
+                .Select(t => t.text)
+                .ToList();
+
+            Assert.IsNotEmpty(texts, "The settings screen did not build.");
+            foreach (var banned in new[] { "ADVERTISING", "Remove ads", "Restore purchases" })
+                Assert.IsFalse(texts.Any(t => t != null && t.Contains(banned)),
+                    "Settings still offers \"" + banned + "\" with no store connected.");
+        }
+
         private IEnumerator PlayThrough(GameModeId modeId)
         {
             yield return null;

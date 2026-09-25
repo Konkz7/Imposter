@@ -17,6 +17,53 @@ namespace PartyGame.Tests
     {
         private const string BootstrapScenePath = "Assets/PartyGame/Scenes/Bootstrap.unity";
 
+        /// <summary>
+        /// The published privacy policy says the app contains no advertising, analytics or
+        /// purchasing SDK, and the store listing's data disclosures are filled in on that basis.
+        /// Adding one is a perfectly reasonable thing to do - but it has to happen together with
+        /// the policy and the store forms, so this fails loudly rather than letting the app and
+        /// its published claims drift apart.
+        /// </summary>
+        [Test]
+        public void NoAdvertisingOrAnalyticsSdkIsInstalled()
+        {
+            var manifestPath = System.IO.Path.Combine(
+                System.IO.Directory.GetParent(Application.dataPath).FullName, "Packages", "manifest.json");
+            Assert.IsTrue(System.IO.File.Exists(manifestPath), "No package manifest at " + manifestPath);
+
+            var manifest = System.IO.File.ReadAllText(manifestPath);
+            var trackers = new[]
+            {
+                "com.google.ads", "com.google.firebase", "com.google.android.gms",
+                "com.unity.ads", "com.unity.services.levelplay", "com.unity.services.analytics",
+                "com.unity.analytics", "com.unity.purchasing", "com.ironsource", "com.applovin",
+                "com.facebook", "com.appsflyer", "com.adjust"
+            };
+
+            foreach (var package in trackers)
+                Assert.IsFalse(manifest.Contains(package),
+                    package + " is installed. Update PRIVACY.md, the published policy at " +
+                    "konkz7.github.io/Imposter/privacy.html, the Play Data safety form and the " +
+                    "Apple privacy labels in the same release.");
+        }
+
+        /// <summary>
+        /// The same promise from the other direction: the shipping ad service is the one that
+        /// does nothing. A real one would need the policy updated before it could go out.
+        /// </summary>
+        [Test]
+        public void TheOnlyAdServiceIsTheOneThatShowsNothing()
+        {
+            var runtime = typeof(AppServices).Assembly;
+            var adServices = runtime.GetTypes()
+                .Where(t => typeof(Core.Monetisation.IAdService).IsAssignableFrom(t) && !t.IsInterface && !t.IsAbstract)
+                .Select(t => t.Name)
+                .ToList();
+
+            CollectionAssert.AreEquivalent(new[] { "NullAdService" }, adServices,
+                "An ad service was added. The published privacy policy says there is none.");
+        }
+
         [Test]
         public void TheBootstrapSceneIsFirstInTheBuild()
         {

@@ -59,6 +59,29 @@ namespace PartyGame.UI.Screens
                 settings.Settings.HoldToReveal,
                 value => settings.Apply(s => s.HoldToReveal = value));
 
+            BuildAdvertisingSection(content);
+
+            SectionTitle(content, "Players");
+
+            UiButton.Create(content, "Clear saved players", ButtonStyle.Ghost, ClearPlayers, Theme.CompactButtonHeight);
+
+            UIFactory.Spacer(content, Theme.SpaceL);
+        }
+
+        /// <summary>
+        /// Only shown when there is something to buy or something already bought. A build with
+        /// no store wired up has no ads either, so an "Advertising" heading over a dead purchase
+        /// button would be describing a version of the app that does not exist - and would
+        /// contradict the store listing, which declares no ads and no in-app purchases.
+        /// </summary>
+        private void BuildAdvertisingSection(Transform content)
+        {
+            _removeAdsButton = null;
+            _adStatus = null;
+
+            var owned = App.Services.Entitlements.Has(Entitlement.AdFree);
+            if (!App.Services.Store_Purchases.StoreAvailable && !owned) return;
+
             SectionTitle(content, "Advertising");
 
             var card = UIFactory.CreatePaddedCard(content, "RemoveAds", Theme.Surface);
@@ -75,12 +98,6 @@ namespace PartyGame.UI.Screens
             UiButton.Create(card, "Restore purchases", ButtonStyle.Ghost, RestorePurchases, 86f);
 
             RefreshAdSection();
-
-            SectionTitle(content, "Players");
-
-            UiButton.Create(content, "Clear saved players", ButtonStyle.Ghost, ClearPlayers, Theme.CompactButtonHeight);
-
-            UIFactory.Spacer(content, Theme.SpaceL);
         }
 
         private void SectionTitle(Transform parent, string text)
@@ -102,8 +119,7 @@ namespace PartyGame.UI.Screens
                     ? "You already own this. Thank you."
                     : storeAvailable
                         ? "One payment removes every advert, forever."
-                        : "The store is not connected in this build, so there is nothing to buy yet. " +
-                          "No adverts are shown either.";
+                        : "Temporarily unavailable. Try again later.";
             }
 
             if (_removeAdsButton != null)

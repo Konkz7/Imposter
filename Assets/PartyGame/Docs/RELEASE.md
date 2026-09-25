@@ -112,7 +112,7 @@ privacy policy both claim the app is fully offline, and that claim has to stay t
 | Phone screenshots | 1080x1920 | run the `ScreenshotTests` play-mode test; output lands in `Screenshots/` |
 | Feature graphic | 1024x500 | **not generated** - needs a designer or a simple banner |
 | Listing copy | - | `STORE-LISTING.md` |
-| Privacy policy | - | `PRIVACY.md`, needs hosting at a public URL before you can submit |
+| Privacy policy | - | `PRIVACY.md`, published at <https://konkz7.github.io/Imposter/privacy.html> |
 
 Play needs a minimum of two phone screenshots; four to eight tells the story better. The capture
 test already produces the main menu, game select, a covered secret card, a revealed one, the
@@ -149,5 +149,17 @@ But the moment either ships, the answers above change:
   signing secrets in the repository's secret store. The build methods already take everything
   from the environment, so the workflow itself is short, but nothing is wired up yet.
 - **Feature graphic and promotional art.** Needs a designer.
-- **A hosted privacy policy URL.** Play will not let you submit without one.
 - **iOS.** Needs a Mac, an Apple Developer account and the iOS module.
+
+## The privacy policy is published in two places
+
+`Assets/PartyGame/Docs/PRIVACY.md` is the source of truth. The same text is served as HTML from
+the `gh-pages` branch at <https://konkz7.github.io/Imposter/privacy.html>, which is the URL the
+store listing points at. They are separate files, so **change both together** - a store listing
+whose policy contradicts the app is a compliance problem, not a typo.
+
+The policy states that the app collects nothing, requests no permissions and contains no ad SDK.
+That is true today, and `ProjectSetupTests` fails if an advertising, analytics or purchasing
+package is added to the manifest, or if any ad service other than `NullAdService` appears. Any release that adds advertising,
+analytics or in-app purchases has to update the policy, the Play Data safety form and the Apple
+privacy labels *before* it ships.
