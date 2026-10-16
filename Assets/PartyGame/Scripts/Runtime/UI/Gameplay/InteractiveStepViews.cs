@@ -209,7 +209,8 @@ namespace PartyGame.UI.Gameplay
             _submit = BuildPrimaryAction(step.ContinueLabel, Submit);
             _submit.Interactable = step.AllowEmpty;
 
-            // Typing is the one place a phone keyboard can hide the thing being typed into.
+            // Typing is the one place a phone keyboard covers part of a step. Shrinking the view
+            // above it keeps the lock-in button reachable while the header stays where it is.
             KeyboardAvoider.Attach((RectTransform)transform);
         }
 
