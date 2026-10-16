@@ -34,6 +34,15 @@ namespace PartyGame.UI.Gameplay
             }
 
             BuildPrimaryAction(step.ContinueLabel, FinishAcknowledged);
+
+            if (!string.IsNullOrEmpty(step.SecondaryLabel))
+                BuildPrimaryAction(step.SecondaryLabel, TakeSecondary, ButtonStyle.Secondary);
+        }
+
+        private void TakeSecondary()
+        {
+            UiFeedback.Sound(SoundId.Confirm);
+            Finish(StepResult.ForChoice(Step, MessageStep.SecondaryOptionId));
         }
     }
 

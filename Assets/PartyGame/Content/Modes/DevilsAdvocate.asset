@@ -15,7 +15,7 @@ MonoBehaviour:
   modeId: 4
   displayName: Devil's Advocate
   tagline: Someone is arguing against their own opinion.
-  description: A statement appears and everybody privately picks a side. One player is secretly told to argue the opposite of whatever they chose. Everybody makes their case out loud, then the group votes on who is arguing for a side they do not believe.
+  description: A statement appears, or the group writes their own, and everybody privately picks a side. One player is secretly told to argue the opposite of whatever they chose. Each speaker's side is shown as they make their case, then the group votes on who is arguing for a side they do not believe.
   glyph: DA
   accentIndex: 5
   minPlayers: 3

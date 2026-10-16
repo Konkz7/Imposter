@@ -158,9 +158,9 @@ namespace PartyGame.EditorTools
 
             definitions.Add(Mode(GameModeId.DevilsAdvocate, "Devil's Advocate",
                 "Someone is arguing against their own opinion.",
-                "A statement appears and everybody privately picks a side. One player is secretly told to " +
-                "argue the opposite of whatever they chose. Everybody makes their case out loud, then the " +
-                "group votes on who is arguing for a side they do not believe.",
+                "A statement appears, or the group writes their own, and everybody privately picks a side. One " +
+                "player is secretly told to argue the opposite of whatever they chose. Each speaker's side is " +
+                "shown as they make their case, then the group votes on who is arguing for a side they do not believe.",
                 "DA", 5, minPlayers: 3, recommended: 4, maxPlayers: 10, minutes: 7));
 
             definitions.Add(Mode(GameModeId.SocialDeduction, "The Suspects",

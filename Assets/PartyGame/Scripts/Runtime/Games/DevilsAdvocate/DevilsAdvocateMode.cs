@@ -11,17 +11,23 @@ using PartyGame.Core.Util;
 namespace PartyGame.Games.DevilsAdvocate
 {
     /// <summary>
-    /// A debate statement appears. Everyone privately picks a side, then one player is
-    /// secretly told to argue the opposite of whatever they actually chose. The group has
-    /// to find the person whose reasoning does not match their real opinion.
+    /// A debate statement appears, or the group writes their own. Everyone privately picks a
+    /// side, then one player is secretly told to argue the opposite of whatever they actually
+    /// chose. The group has to find the person whose reasoning does not match their real opinion.
     /// </summary>
     public class DevilsAdvocateMode : ImposterModeBase
     {
         private const string StancePrefix = "stance-";
+        private const string StatementStepId = "statement";
+        private const string CustomStatementStepId = "custom-statement";
         public const string StanceAgree = "agree";
         public const string StanceDisagree = "disagree";
 
+        /// <summary>Longest statement a group can write. The packs top out at 65 characters.</summary>
+        public const int CustomStatementMaxLength = 90;
+
         private readonly ContentRotation<DebateStatement> _rotation = new ContentRotation<DebateStatement>(s => s.Id, 20);
+        private readonly Dictionary<int, MessageStep> _speakerTurns = new Dictionary<int, MessageStep>();
         private DebateStatement _statement;
 
         public override GameModeId Id => GameModeId.DevilsAdvocate;
@@ -70,9 +76,10 @@ namespace PartyGame.Games.DevilsAdvocate
         {
             return new List<string>
             {
-                "A statement appears. Everyone privately picks agree or disagree.",
+                "A statement appears - debate it, or write your own instead.",
+                "Everyone privately picks agree or disagree.",
                 "One player is secretly told to argue the opposite of what they picked.",
-                "Everyone gives a short, genuine sounding reason for their side.",
+                "Take turns giving a reason. The screen shows each speaker's side, so nobody can switch.",
                 "The advocate wins by sounding sincere, not by hiding.",
                 "Discuss, then vote for whoever is arguing against their real opinion."
             };
@@ -80,6 +87,8 @@ namespace PartyGame.Games.DevilsAdvocate
 
         protected override void BuildRound()
         {
+            _speakerTurns.Clear();
+
             var packs = Session.Content.ResolveSelection<DebatePackData>(
                 GameModeId.DevilsAdvocate, Session.Settings.GetList(CommonSettingKeys.Categories));
             var statements = packs.SelectMany(p => p.Statements).Where(s => s != null && s.IsValid).ToList();
@@ -99,16 +108,40 @@ namespace PartyGame.Games.DevilsAdvocate
             _statement = _rotation.Next(statements, Session.Random);
             AssignImposters(Session.Settings.GetInt(CommonSettingKeys.ImposterCount, 1));
 
+            // Everything after this screen quotes the statement, so the rest of the round is only
+            // built once the group has settled on one - possibly their own.
             Enqueue(new MessageStep
             {
+                Id = StatementStepId,
                 PhaseLabel = Session.RoundLabel,
                 Title = "Tonight's statement",
                 Feature = _statement.Statement,
                 Body = "Pass the phone around. Everyone privately decides where they really stand.",
                 Accent = StepAccent.Primary,
-                ContinueLabel = "Start passing"
+                ContinueLabel = "Start passing",
+                SecondaryLabel = "Write our own instead"
             });
+        }
 
+        /// <summary>Shared, not private: the whole table can see the statement being written.</summary>
+        private TextInputStep BuildCustomStatementStep()
+        {
+            return new TextInputStep
+            {
+                Id = CustomStatementStepId,
+                PhaseLabel = "Your statement",
+                Title = "Write your own",
+                Prompt = "Write something people can agree or disagree with.",
+                Placeholder = "e.g. Cereal is a soup",
+                MaxLength = CustomStatementMaxLength,
+                Accent = StepAccent.Primary,
+                ContinueLabel = "Debate this",
+                IsPrivate = false
+            };
+        }
+
+        private void BuildDebate()
+        {
             var steps = new List<GameStep>();
             foreach (var player in TurnOrder())
             {
@@ -134,15 +167,17 @@ namespace PartyGame.Games.DevilsAdvocate
                 PhaseLabel = "Debate",
                 Title = "Make your case",
                 Feature = _statement.Statement,
-                Body = "Go round the group. Everyone gives a short reason for the side they are arguing.",
+                Body = "Go round the group. Each speaker's side is shown on screen when it is their turn - stick to it.",
                 Accent = StepAccent.Primary,
                 ContinueLabel = "First speaker"
             });
 
+            // Each turn starts out generic and is given the speaker's side as soon as they pick it,
+            // which is always before the turn comes round.
             var promptSteps = new List<GameStep>();
             foreach (var player in TurnOrder())
             {
-                promptSteps.Add(Enqueue(new MessageStep
+                var turn = Enqueue(new MessageStep
                 {
                     PhaseLabel = "Debate",
                     Title = player.DisplayName + ", make your case",
@@ -150,7 +185,9 @@ namespace PartyGame.Games.DevilsAdvocate
                     Body = "Give one clear reason for your side. Sound like you mean it.",
                     ActorPlayerId = player.Id,
                     ContinueLabel = "Next speaker"
-                }));
+                });
+                _speakerTurns[player.Id] = turn;
+                promptSteps.Add(turn);
             }
             ApplySequence(promptSteps);
 
@@ -166,7 +203,25 @@ namespace PartyGame.Games.DevilsAdvocate
 
         protected override void OnStepHandled(GameStep step, StepResult result)
         {
-            if (step == null || !step.Id.StartsWith(StancePrefix, StringComparison.Ordinal)) return;
+            if (step == null) return;
+
+            if (step.Id == StatementStepId)
+            {
+                if (result.OptionId == MessageStep.SecondaryOptionId) Enqueue(BuildCustomStatementStep());
+                else BuildDebate();
+                return;
+            }
+
+            if (step.Id == CustomStatementStepId)
+            {
+                var written = (result.Text ?? string.Empty).Trim();
+                if (written.Length > 0)
+                    _statement = new DebateStatement("custom-" + Session.RoundNumber.ToString(CultureInfo.InvariantCulture), written);
+                BuildDebate();
+                return;
+            }
+
+            if (!step.Id.StartsWith(StancePrefix, StringComparison.Ordinal)) return;
             if (!step.ActorPlayerId.HasValue) return;
 
             var player = Session.PlayerOf(step.ActorPlayerId.Value);
@@ -201,6 +256,22 @@ namespace PartyGame.Games.DevilsAdvocate
                 : "Argue honestly. Someone in the group is not.";
 
             InsertNext(brief);
+
+            if (_speakerTurns.TryGetValue(player.Id, out var turn)) ShowSide(turn, player.DisplayName, argueFor);
+        }
+
+        /// <summary>
+        /// Puts the side a player must argue on their public turn, so nobody can quietly switch.
+        /// For the advocate that is the side they were told to fake, so it gives nothing away.
+        /// </summary>
+        private static void ShowSide(MessageStep turn, string name, string argueFor)
+        {
+            var arguesFor = argueFor == StanceAgree;
+            turn.Title = name + (arguesFor ? " argues FOR" : " argues AGAINST");
+            turn.Body = arguesFor
+                ? "Give one clear reason the statement is right. Sound like you mean it."
+                : "Give one clear reason the statement is wrong. Sound like you mean it.";
+            turn.Accent = arguesFor ? StepAccent.Success : StepAccent.Danger;
         }
 
         protected override void BuildReveal()

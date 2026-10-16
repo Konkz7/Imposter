@@ -66,12 +66,21 @@ namespace PartyGame.Core.Modes
     /// <summary>Plain information or a spoken-turn prompt. Advances on a single tap.</summary>
     public sealed class MessageStep : GameStep
     {
+        /// <summary>The result's option id when the secondary action is taken instead of continuing.</summary>
+        public const string SecondaryOptionId = "secondary";
+
         public override StepKind Kind => StepKind.Message;
 
         /// <summary>Optional large focal string, e.g. the debate statement or trivia question.</summary>
         public string Feature { get; set; } = string.Empty;
 
         public List<string> Bullets { get; } = new List<string>();
+
+        /// <summary>
+        /// Optional second way out of the step, e.g. "Write our own instead". Taking it reports
+        /// <see cref="SecondaryOptionId"/>; continuing normally reports no option at all.
+        /// </summary>
+        public string SecondaryLabel { get; set; } = string.Empty;
     }
 
     public readonly struct InfoLine
