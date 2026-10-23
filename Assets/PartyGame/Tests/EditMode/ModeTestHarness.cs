@@ -67,11 +67,15 @@ namespace PartyGame.Tests
             return session;
         }
 
-        /// <summary>Plays a single round and returns everything that happened.</summary>
-        public static Playthrough PlayRound(GameSession session, IGameMode mode, int maxSteps = 600)
+        /// <summary>
+        /// Plays a single round and returns everything that happened. <paramref name="respond"/>
+        /// can answer particular steps differently; returning null falls back to the default player.
+        /// </summary>
+        public static Playthrough PlayRound(GameSession session, IGameMode mode, int maxSteps = 600,
+            Func<GameStep, StepResult> respond = null)
         {
             var log = new Playthrough();
-            RunRound(session, mode, log, maxSteps);
+            RunRound(session, mode, log, maxSteps, respond);
             log.Rounds.Add(mode.CompleteRound());
             return log;
         }
@@ -94,7 +98,8 @@ namespace PartyGame.Tests
             return log;
         }
 
-        private static void RunRound(GameSession session, IGameMode mode, Playthrough log, int maxSteps = 600)
+        private static void RunRound(GameSession session, IGameMode mode, Playthrough log, int maxSteps = 600,
+            Func<GameStep, StepResult> respond = null)
         {
             mode.StartRound();
 
@@ -105,7 +110,7 @@ namespace PartyGame.Tests
                 if (step == null) break;
 
                 log.Steps.Add(step);
-                mode.Submit(Respond(step, session, guard));
+                mode.Submit(respond?.Invoke(step) ?? Respond(step, session, guard));
 
                 if (++guard > maxSteps) Assert.Fail("Round did not finish within " + maxSteps + " steps.");
             }
@@ -124,6 +129,12 @@ namespace PartyGame.Tests
                 case ChoiceStep choice:
                     var option = choice.Options.FirstOrDefault(o => o.Enabled);
                     return StepResult.ForChoice(choice, option != null ? option.Id : string.Empty);
+
+                case FormStep form:
+                    // Fills only what is required, so optional boxes are exercised left blank.
+                    var writer = step.ActorPlayerId.HasValue ? session.NameOf(step.ActorPlayerId.Value) : "anon";
+                    return StepResult.ForForm(form, form.Fields.Where(f => f.Required).ToDictionary(
+                        f => f.Id, f => writer + " " + f.Id + " " + counter.ToString(CultureInfo.InvariantCulture)));
 
                 default:
                     return StepResult.Acknowledged(step);

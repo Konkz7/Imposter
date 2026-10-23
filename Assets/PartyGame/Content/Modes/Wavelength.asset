@@ -15,12 +15,12 @@ MonoBehaviour:
   modeId: 3
   displayName: Number Wavelength
   tagline: Everyone has the same number. Almost everyone.
-  description: Everybody secretly receives the same number from one to ten, except one player. A question appears with a scale, and each answer has to match the strength of your number. Work out whose answer sits at the wrong end of the scale.
+  description: Everybody secretly receives the same number from one to ten, except one player. Players take turns writing a question with a scale, and everyone else answers it at the strength of their number. Work out whose answers sit at the wrong end of the scale.
   glyph: 1-10
   accentIndex: 4
   minPlayers: 3
   recommendedPlayers: 4
   maxPlayers: 12
-  minutesPerRound: 5
+  minutesPerRound: 8
   available: 1
   howToPlay: []

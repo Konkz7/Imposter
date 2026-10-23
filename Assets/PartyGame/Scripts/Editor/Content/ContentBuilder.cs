@@ -151,10 +151,10 @@ namespace PartyGame.EditorTools
 
             definitions.Add(Mode(GameModeId.Wavelength, "Number Wavelength",
                 "Everyone has the same number. Almost everyone.",
-                "Everybody secretly receives the same number from one to ten, except one player. A question " +
-                "appears with a scale, and each answer has to match the strength of your number. Work out " +
-                "whose answer sits at the wrong end of the scale.",
-                "1-10", 4, minPlayers: 3, recommended: 4, maxPlayers: 12, minutes: 5));
+                "Everybody secretly receives the same number from one to ten, except one player. Players take " +
+                "turns writing a question with a scale, and everyone else answers it at the strength of their " +
+                "number. Work out whose answers sit at the wrong end of the scale.",
+                "1-10", 4, minPlayers: 3, recommended: 4, maxPlayers: 12, minutes: 8));
 
             definitions.Add(Mode(GameModeId.DevilsAdvocate, "Devil's Advocate",
                 "Someone is arguing against their own opinion.",

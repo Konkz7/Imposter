@@ -14,7 +14,8 @@ namespace PartyGame.Core.Modes
         Choice = 3,
         Discussion = 4,
         Reveal = 5,
-        Scoreboard = 6
+        Scoreboard = 6,
+        Form = 7
     }
 
     /// <summary>Colour intent, resolved to real colours by the theme. Modes never mention hex codes.</summary>
@@ -128,6 +129,54 @@ namespace PartyGame.Core.Modes
         /// <summary>Answers that would be confusing if duplicated, checked case insensitively.</summary>
         public List<string> RejectedValues { get; } = new List<string>();
         public string RejectionMessage { get; set; } = "Someone already wrote that. Try another.";
+    }
+
+    /// <summary>One labelled box on a <see cref="FormStep"/>.</summary>
+    public sealed class FormField
+    {
+        public string Id { get; set; } = string.Empty;
+        public string Label { get; set; } = string.Empty;
+        public string Placeholder { get; set; } = "Type here";
+        public int MaxLength { get; set; } = 40;
+
+        /// <summary>Optional boxes can be left empty; the step only submits once every required one is filled.</summary>
+        public bool Required { get; set; }
+
+        public FormField() { }
+
+        public FormField(string id, string label, string placeholder, int maxLength, bool required)
+        {
+            Id = id;
+            Label = label;
+            Placeholder = placeholder;
+            MaxLength = maxLength;
+            Required = required;
+        }
+    }
+
+    /// <summary>
+    /// Several boxes filled in together by one player, e.g. a question and the two ends of its
+    /// scale. The result carries one value per field id.
+    /// </summary>
+    public sealed class FormStep : GameStep
+    {
+        public FormStep()
+        {
+            IsPrivate = true;
+            ContinueLabel = "Submit";
+        }
+
+        public override StepKind Kind => StepKind.Form;
+
+        public string Prompt { get; set; } = string.Empty;
+        public List<FormField> Fields { get; } = new List<FormField>();
+
+        /// <summary>
+        /// Ready-made fills, each mapping field ids to values. When there are any, the form offers
+        /// <see cref="SuggestionLabel"/> and each tap fills the boxes with the next one.
+        /// </summary>
+        public List<Dictionary<string, string>> Suggestions { get; } = new List<Dictionary<string, string>>();
+        public string SuggestionLabel { get; set; } = "Use a ready-made one";
     }
 
     public sealed class ChoiceOption

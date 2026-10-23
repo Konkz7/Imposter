@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace PartyGame.Core.Modes
 {
     /// <summary>
@@ -15,8 +18,17 @@ namespace PartyGame.Core.Modes
         /// <summary>Selected option id, for <see cref="ChoiceStep"/>.</summary>
         public string OptionId { get; set; } = string.Empty;
 
+        /// <summary>What was typed into each box, by field id, for <see cref="FormStep"/>.</summary>
+        public Dictionary<string, string> Values { get; } = new Dictionary<string, string>(StringComparer.Ordinal);
+
         /// <summary>True when a timed step ran out rather than being skipped.</summary>
         public bool TimedOut { get; set; }
+
+        /// <summary>A form value, trimmed, or empty when the box was left blank.</summary>
+        public string ValueOf(string fieldId)
+        {
+            return fieldId != null && Values.TryGetValue(fieldId, out var value) ? (value ?? string.Empty).Trim() : string.Empty;
+        }
 
         public static StepResult Acknowledged(GameStep step)
         {
@@ -38,6 +50,15 @@ namespace PartyGame.Core.Modes
         {
             var result = Acknowledged(step);
             result.OptionId = optionId ?? string.Empty;
+            return result;
+        }
+
+        public static StepResult ForForm(GameStep step, IEnumerable<KeyValuePair<string, string>> values)
+        {
+            var result = Acknowledged(step);
+            if (values != null)
+                foreach (var pair in values)
+                    if (!string.IsNullOrEmpty(pair.Key)) result.Values[pair.Key] = pair.Value ?? string.Empty;
             return result;
         }
     }
