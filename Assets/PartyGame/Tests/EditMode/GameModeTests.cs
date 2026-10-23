@@ -430,6 +430,97 @@ namespace PartyGame.Tests
                 Assert.IsTrue(reveal.Entries.Any(e => e.Title.StartsWith(player.DisplayName)),
                     player.DisplayName + " is missing from the reveal.");
         }
+
+        [Test]
+        public void EachSpeakersTurnShowsTheSideTheyMustArgue()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.DevilsAdvocate, 6, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+
+            // Read each turn as it comes up, not afterwards: the side has to be there on screen
+            // when the speaker is talking.
+            var shown = new System.Collections.Generic.Dictionary<int, string>();
+            ModeTestHarness.PlayRound(session, mode, respond: step =>
+            {
+                if (IsSpeakerTurn(step)) shown[step.ActorPlayerId.Value] = step.Title;
+                return null;
+            });
+
+            Assert.AreEqual(session.Players.Count, shown.Count, "Every player should get a speaking turn.");
+            foreach (var player in session.Players)
+            {
+                var arguesFor = player.GetRoundData(RoundDataKeys.Instruction) == DevilsAdvocateMode.StanceAgree;
+                StringAssert.EndsWith(arguesFor ? "argues FOR" : "argues AGAINST", shown[player.Id],
+                    player.DisplayName + "'s turn shows the wrong side.");
+            }
+        }
+
+        [Test]
+        public void TheAdvocatesTurnShowsTheSideTheyWereToldToArgue()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.DevilsAdvocate, 6, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            var advocate = session.Players.Single(p => p.RoleId == PlayerRoles.Imposter);
+            var turn = log.Steps.Where(IsSpeakerTurn).Cast<MessageStep>().Single(s => s.ActorPlayerId == advocate.Id);
+
+            var arguesFor = advocate.GetRoundData(RoundDataKeys.Instruction) == DevilsAdvocateMode.StanceAgree;
+            Assert.AreNotEqual(advocate.GetRoundData(RoundDataKeys.Stance), advocate.GetRoundData(RoundDataKeys.Instruction));
+            StringAssert.EndsWith(arguesFor ? "argues FOR" : "argues AGAINST", turn.Title,
+                "The advocate's turn must show the side they are faking, not their real view.");
+            Assert.AreEqual(arguesFor ? StepAccent.Success : StepAccent.Danger, turn.Accent);
+        }
+
+        [Test]
+        public void TheGroupCanWriteTheirOwnStatement()
+        {
+            const string written = "Cereal is a soup";
+            var session = ModeTestHarness.CreateSession(GameModeId.DevilsAdvocate, 5, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+
+            var log = ModeTestHarness.PlayRound(session, mode, respond: step =>
+            {
+                if (step is MessageStep message && !string.IsNullOrEmpty(message.SecondaryLabel))
+                    return StepResult.ForChoice(step, MessageStep.SecondaryOptionId);
+                if (step is TextInputStep)
+                    return StepResult.ForText(step, "  " + written + " ");
+                return null;
+            });
+
+            var entry = log.StepsOfType<TextInputStep>().Single();
+            Assert.IsFalse(entry.IsPrivate, "The whole table should see the statement being written.");
+
+            var stances = StanceChoices(log);
+            Assert.AreEqual(session.Players.Count, stances.Count);
+            Assert.IsTrue(stances.All(s => s.Body == written), "Everyone should be asked about the group's statement.");
+            Assert.IsTrue(log.Steps.Where(IsSpeakerTurn).Cast<MessageStep>().All(s => s.Feature == written),
+                "Every speaking turn should show the group's statement.");
+            Assert.IsTrue(log.Steps.Any(s => s.Kind == StepKind.Reveal), "The round should still finish.");
+        }
+
+        [Test]
+        public void CarryingOnDebatesThePackStatement()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.DevilsAdvocate, 5, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            var opening = log.StepsOfType<MessageStep>().First();
+            Assert.IsNotEmpty(opening.SecondaryLabel, "The statement screen should offer to write your own.");
+            Assert.IsEmpty(log.StepsOfType<TextInputStep>(), "Nobody asked to write a statement.");
+            Assert.IsTrue(StanceChoices(log).All(s => s.Body == opening.Feature));
+        }
+
+        private static bool IsSpeakerTurn(GameStep step)
+        {
+            return step is MessageStep && step.PhaseLabel == "Debate" && step.ActorPlayerId.HasValue;
+        }
+
+        private static System.Collections.Generic.List<ChoiceStep> StanceChoices(Playthrough log)
+        {
+            return log.StepsOfType<ChoiceStep>().Where(s => s.PhaseLabel == "Your real view").ToList();
+        }
     }
 
     public class SocialDeductionModeTests

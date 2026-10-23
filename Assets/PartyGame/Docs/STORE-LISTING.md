@@ -43,8 +43,9 @@ Alternatives:
 > whoever is answering from the wrong end of the scale.
 >
 > **DEVIL'S ADVOCATE**
-> A statement appears and everyone privately picks a side. One player is secretly told to argue
-> the opposite of whatever they chose. Everyone makes their case out loud. Who actually means it?
+> A statement appears, or you write your own, and everyone privately picks a side. One player is
+> secretly told to argue the opposite of whatever they chose. Everyone makes their case out loud,
+> with their side shown on screen. Who actually means it?
 >
 > **THE SUSPECTS**
 > Secret roles for the whole game. Every round the table hears a scene and a clue, while the
