@@ -129,6 +129,13 @@ namespace PartyGame.Tests.PlayMode
         }
 
         [UnityTest]
+        public IEnumerator WavelengthWithTypedAnswersPlaysThroughTheUi()
+        {
+            yield return PlayThrough(GameModeId.Wavelength, s => s.SetString(
+                Games.Wavelength.WavelengthMode.SettingAnswers, Games.Wavelength.WavelengthMode.AnswersTyped));
+        }
+
+        [UnityTest]
         public IEnumerator DevilsAdvocatePlaysThroughTheUi()
         {
             yield return PlayThrough(GameModeId.DevilsAdvocate);
@@ -239,10 +246,10 @@ namespace PartyGame.Tests.PlayMode
                     "Settings still offers \"" + banned + "\" with no store connected.");
         }
 
-        private IEnumerator PlayThrough(GameModeId modeId)
+        private IEnumerator PlayThrough(GameModeId modeId, System.Action<GameSettings> configure = null)
         {
             yield return null;
-            yield return StartGame(modeId, 2);
+            yield return StartGame(modeId, 2, configure);
 
             for (var i = 0; i < 900; i++)
             {
@@ -253,7 +260,7 @@ namespace PartyGame.Tests.PlayMode
             Assert.Fail(modeId + " never reached the results screen.");
         }
 
-        private IEnumerator StartGame(GameModeId modeId, int rounds)
+        private IEnumerator StartGame(GameModeId modeId, int rounds, System.Action<GameSettings> configure = null)
         {
             var definition = _app.Services.Content.GetMode(modeId);
             Assert.IsNotNull(definition, "No definition for " + modeId);
@@ -263,6 +270,7 @@ namespace PartyGame.Tests.PlayMode
             settings.Declare(mode.GetSettingDefinitions(_app.Services.Content));
             settings.SetInt(CommonSettingKeys.Rounds, rounds);
             settings.SetInt(CommonSettingKeys.DiscussionSeconds, 1);
+            configure?.Invoke(settings);
             settings.ClampAll(_app.Services.Roster.Count);
 
             Assert.IsTrue(_app.StartGame(definition, settings), modeId + " refused to start.");
@@ -271,7 +279,7 @@ namespace PartyGame.Tests.PlayMode
         }
 
         /// <summary>
-        /// One simulated interaction: fill in any text field, pick an option if one is needed,
+        /// One simulated interaction: fill in any empty text fields, pick an option if one is needed,
         /// then press whichever action button the screen is offering.
         /// </summary>
         private IEnumerator Tap(bool revealSecrets = true)
@@ -289,9 +297,9 @@ namespace PartyGame.Tests.PlayMode
                 }
             }
 
-            var field = Object.FindObjectsByType<TMP_InputField>()
-                .FirstOrDefault(f => f.isActiveAndEnabled);
-            if (field != null && string.IsNullOrEmpty(field.text))
+            // Every empty box, not just the first: a form's first box found may be an optional one.
+            foreach (var field in Object.FindObjectsByType<TMP_InputField>()
+                         .Where(f => f.isActiveAndEnabled && string.IsNullOrEmpty(f.text)))
                 field.text = "Answer " + Random.Range(1000, 999999);
 
             var confirm = ActionButton();

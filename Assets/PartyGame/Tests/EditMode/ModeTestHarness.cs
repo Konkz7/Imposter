@@ -130,6 +130,12 @@ namespace PartyGame.Tests
                     var option = choice.Options.FirstOrDefault(o => o.Enabled);
                     return StepResult.ForChoice(choice, option != null ? option.Id : string.Empty);
 
+                case FormStep form:
+                    // Fills only what is required, so optional boxes are exercised left blank.
+                    var writer = step.ActorPlayerId.HasValue ? session.NameOf(step.ActorPlayerId.Value) : "anon";
+                    return StepResult.ForForm(form, form.Fields.Where(f => f.Required).ToDictionary(
+                        f => f.Id, f => writer + " " + f.Id + " " + counter.ToString(CultureInfo.InvariantCulture)));
+
                 default:
                     return StepResult.Acknowledged(step);
             }

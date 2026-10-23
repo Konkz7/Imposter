@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using PartyGame.Core.Modes;
@@ -5,6 +6,7 @@ using PartyGame.Core.Session;
 using PartyGame.Games.DevilsAdvocate;
 using PartyGame.Games.DifferentWord;
 using PartyGame.Games.SocialDeduction;
+using PartyGame.Games.Wavelength;
 
 namespace PartyGame.Tests
 {
@@ -362,6 +364,184 @@ namespace PartyGame.Tests
 
             Assert.IsFalse(card.Lines.Any(l => l.Label == "Careful"),
                 "The odd player should not be warned when the setting is off.");
+        }
+
+        [Test]
+        public void EveryPlayerWritesAQuestionByDefault()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 5, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            var forms = log.StepsOfType<FormStep>().ToList();
+            CollectionAssert.AreEquivalent(session.Players.Select(p => p.Id), forms.Select(f => f.ActorPlayerId.Value),
+                "Everyone should write exactly one question.");
+
+            foreach (var form in forms)
+            {
+                Assert.IsTrue(form.IsPrivate, "The asker writes with the phone to themselves.");
+                Assert.IsTrue(form.Fields.Single(f => f.Id == WavelengthMode.FieldQuestion).Required);
+                Assert.IsFalse(form.Fields.Single(f => f.Id == WavelengthMode.FieldLow).Required, "The ends are optional.");
+                Assert.IsFalse(form.Fields.Single(f => f.Id == WavelengthMode.FieldHigh).Required, "The ends are optional.");
+            }
+        }
+
+        [Test]
+        public void EveryoneButTheAskerAnswersOutLoud()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 4, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            Assert.IsEmpty(log.StepsOfType<TextInputStep>(), "Out loud, nobody types an answer.");
+            foreach (var form in log.StepsOfType<FormStep>())
+            {
+                var start = log.Steps.IndexOf(form);
+                var next = log.Steps.Skip(start + 1).FirstOrDefault(s => s is FormStep);
+                var end = next != null ? log.Steps.IndexOf(next) : log.Steps.Count;
+                var turns = log.Steps.Skip(start).Take(end - start).Where(IsAnswerTurn).ToList();
+
+                CollectionAssert.AreEquivalent(
+                    session.Players.Where(p => p.Id != form.ActorPlayerId).Select(p => p.Id),
+                    turns.Select(t => t.ActorPlayerId.Value),
+                    "Everyone except the asker should answer, once each.");
+                Assert.IsTrue(turns.All(t => !t.IsPrivate), "Spoken answers are given to the whole table.");
+            }
+        }
+
+        [Test]
+        public void TheWrittenQuestionAndScaleAreShownWithEveryAnswer()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 4, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode, respond: step => step is FormStep form
+                ? StepResult.ForForm(form, new Dictionary<string, string>
+                {
+                    [WavelengthMode.FieldQuestion] = "Name a food " + form.Id,
+                    [WavelengthMode.FieldLow] = "disgusting",
+                    [WavelengthMode.FieldHigh] = "delicious"
+                })
+                : null);
+
+            foreach (var form in log.StepsOfType<FormStep>())
+            {
+                var showing = log.StepsOfType<MessageStep>().Where(s => s.Feature == "Name a food " + form.Id).ToList();
+                Assert.AreEqual(session.Players.Count, showing.Count,
+                    "The asker's screen and every answer turn should show the question.");
+                Assert.IsTrue(showing.All(s => s.Body.Contains("1 = disgusting") && s.Body.Contains("10 = delicious")),
+                    "A written scale should be on every one of them.");
+            }
+        }
+
+        [Test]
+        public void LeavingTheScaleBlankLeavesItsAreaEmpty()
+        {
+            // The default player writes only the question.
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 4, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            var asking = log.StepsOfType<MessageStep>().Where(s => s.Title.EndsWith(" asks")).ToList();
+            Assert.AreEqual(session.Players.Count, asking.Count);
+            Assert.IsTrue(asking.All(s => s.Body.Length == 0), "No ends written, so nothing should stand in for them.");
+            Assert.IsFalse(log.Steps.Where(IsAnswerTurn).Cast<MessageStep>().Any(s => s.Body.Contains("1 =")));
+        }
+
+        [Test]
+        public void TypedAnswersTakeOnePrivateSittingPerPlayer()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 4, out var mode, s =>
+            {
+                s.SetString(WavelengthMode.SettingAnswers, WavelengthMode.AnswersTyped);
+                s.SetInt(CommonSettingKeys.Rounds, 1);
+            });
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            var answers = log.StepsOfType<TextInputStep>().ToList();
+            Assert.AreEqual(4 * 3, answers.Count, "Everyone answers every question except their own.");
+            Assert.IsTrue(answers.All(a => a.IsPrivate && a.ActorPlayerId.HasValue));
+
+            // Each player's answers come back to back, so the phone changes hands once per player.
+            var holders = answers.Select(a => a.ActorPlayerId.Value).ToList();
+            Assert.AreEqual(session.Players.Count - 1, holders.Zip(holders.Skip(1), (a, b) => a != b).Count(changed => changed));
+
+            foreach (var answer in answers)
+            {
+                var number = session.PlayerOf(answer.ActorPlayerId.Value).GetRoundDataInt(RoundDataKeys.Number);
+                StringAssert.Contains("Your number is " + number + ".", answer.Prompt,
+                    "A private answer screen should remind the player of their own number.");
+            }
+        }
+
+        [Test]
+        public void TypedAnswersAreShownBeforeTheVoteAndInTheReveal()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 4, out var mode, s =>
+            {
+                s.SetString(WavelengthMode.SettingAnswers, WavelengthMode.AnswersTyped);
+                s.SetInt(CommonSettingKeys.Rounds, 1);
+            });
+            var log = ModeTestHarness.PlayRound(session, mode,
+                respond: step => step is TextInputStep ? StepResult.ForText(step, "said " + step.Id) : null);
+
+            var sheets = log.StepsOfType<MessageStep>().Where(s => s.Title.EndsWith(" asked")).ToList();
+            Assert.AreEqual(session.Players.Count, sheets.Count, "One answer sheet per question.");
+            Assert.IsTrue(sheets.All(s => !s.IsPrivate && s.Bullets.Count == session.Players.Count - 1));
+
+            var firstBallot = log.Steps.FindIndex(s => s is ChoiceStep && s.PhaseLabel == "Voting");
+            Assert.Greater(firstBallot, log.Steps.IndexOf(sheets.Last()), "Answers must be on show before anyone votes.");
+
+            var reveal = log.StepsOfType<RevealStep>().Single();
+            foreach (var answer in log.StepsOfType<TextInputStep>())
+            {
+                var line = session.NameOf(answer.ActorPlayerId.Value) + ": said " + answer.Id;
+                Assert.IsTrue(sheets.Any(s => s.Bullets.Contains(line)), "Missing from the answer sheets: " + line);
+                Assert.IsTrue(reveal.Entries.Any(e => e.Detail.Contains(line)), "Missing from the reveal: " + line);
+            }
+        }
+
+        [Test]
+        public void ACapOnQuestionsGivesEveryoneAGoAcrossTheGame()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 6, out var mode, s =>
+            {
+                s.SetInt(WavelengthMode.SettingQuestionsPerRound, 2);
+                s.SetInt(CommonSettingKeys.Rounds, 3);
+            });
+            var log = ModeTestHarness.PlayWholeGame(session, mode);
+
+            var askers = log.StepsOfType<FormStep>().Select(f => f.ActorPlayerId.Value).ToList();
+            Assert.AreEqual(6, askers.Count, "Two questions a round for three rounds.");
+            CollectionAssert.AreEquivalent(session.Players.Select(p => p.Id), askers,
+                "Askers should rotate so everyone asks once over the game.");
+        }
+
+        [Test]
+        public void TheQuestionFormOffersReadyMadeQuestionsFromThePacks()
+        {
+            var session = ModeTestHarness.CreateSession(GameModeId.Wavelength, 4, out var mode,
+                s => s.SetInt(CommonSettingKeys.Rounds, 1));
+            var log = ModeTestHarness.PlayRound(session, mode);
+
+            var packQuestions = new HashSet<string>(session.Content
+                .ResolveSelection<Core.Content.WavelengthPackData>(GameModeId.Wavelength, System.Array.Empty<string>())
+                .SelectMany(p => p.Questions).Select(q => q.Prompt));
+
+            foreach (var form in log.StepsOfType<FormStep>())
+            {
+                Assert.IsNotEmpty(form.Suggestions, "Every asker should be offered ready-made questions.");
+                foreach (var suggestion in form.Suggestions)
+                {
+                    Assert.IsTrue(packQuestions.Contains(suggestion[WavelengthMode.FieldQuestion]));
+                    Assert.IsNotEmpty(suggestion[WavelengthMode.FieldLow]);
+                    Assert.IsNotEmpty(suggestion[WavelengthMode.FieldHigh]);
+                }
+            }
+        }
+
+        private static bool IsAnswerTurn(GameStep step)
+        {
+            return step is MessageStep && step.ActorPlayerId.HasValue && step.Title.EndsWith(", your answer");
         }
     }
 

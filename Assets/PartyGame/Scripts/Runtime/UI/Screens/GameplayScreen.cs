@@ -113,6 +113,9 @@ namespace PartyGame.UI.Screens
                 case StepKind.TextInput:
                     _currentView = StepView.Spawn<TextInputStepView>(_stage, step, OnStepComplete);
                     break;
+                case StepKind.Form:
+                    _currentView = StepView.Spawn<FormStepView>(_stage, step, OnStepComplete);
+                    break;
                 case StepKind.Choice:
                     _currentView = StepView.Spawn<ChoiceStepView>(_stage, step, OnStepComplete);
                     break;

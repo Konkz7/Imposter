@@ -38,9 +38,10 @@ Alternatives:
 > again every time somebody falls for yours.
 >
 > **NUMBER WAVELENGTH**
-> Everyone gets the same number from one to ten. Almost everyone. A question appears with a
-> scale, and your answer has to match the strength of your number without ever saying it. Find
-> whoever is answering from the wrong end of the scale.
+> Everyone gets the same number from one to ten. Almost everyone. Take turns asking your own
+> question with a scale, and everyone else answers at the strength of their number without ever
+> saying it - out loud, or typed in private and revealed together. Find whoever keeps answering
+> from the wrong end of the scale.
 >
 > **DEVIL'S ADVOCATE**
 > A statement appears, or you write your own, and everyone privately picks a side. One player is

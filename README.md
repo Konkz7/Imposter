@@ -11,7 +11,7 @@ Built with **Unity 6000.6.2f1** (URP, uGUI, TextMesh Pro), targeting Android and
 | --- | --- | --- |
 | **Different Word** | 3–12 | Everyone gets the same secret word except the imposter, who gets something close. Describe it without saying it, then vote. |
 | **Fib** | 3–10 | A real trivia question. Everyone writes a fake answer; find the truth among the lies and score when people fall for yours. |
-| **Number Wavelength** | 3–12 | Everyone has the same number from 1 to 10, except one. Answer a scaled question to match your number's strength. |
+| **Number Wavelength** | 3–12 | Everyone has the same number from 1 to 10, except one. Take turns asking your own scaled question; everyone else answers at their number's strength. |
 | **Devil's Advocate** | 3–10 | Everyone picks a side on a statement. One player is secretly told to argue the opposite. Who actually means it? |
 | **The Suspects** | 5–12 | Secret roles for the whole game. Public scenes and clues, private clues for the investigator and witness, one accusation a round. |
 
