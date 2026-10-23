@@ -197,9 +197,10 @@ namespace PartyGame.UI.Gameplay
                 TextAlignmentOptions.Center, FontStyles.Normal, "Prompt");
             UIFactory.FitHeight(prompt.gameObject);
 
+            // Only the button submits. On Android, closing the keyboard with back reports the same
+            // "Done" as the keyboard's own key, so submitting on it would lock in half an answer.
             _field = UIFactory.CreateInputField(scroll, step.Placeholder, step.MaxLength);
             UIFactory.SetSize(_field.gameObject, 140f, 140f);
-            _field.onSubmit.AddListener(_ => Submit());
             _field.onValueChanged.AddListener(OnTextChanged);
 
             _error = UIFactory.CreateText(scroll, string.Empty, Theme.FontLabel, Theme.Danger,
